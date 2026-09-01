@@ -1,0 +1,33 @@
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { dirname } from 'node:path';
+import { base, rootFor, canonicalFor } from '../src/templates/base.mjs';
+import pageTemplate from '../src/templates/page.mjs';
+import noticiaTemplate from '../src/templates/noticia.mjs';
+import { personagemTemplate,veiculoTemplate,armaTemplate,missaoTemplate,localTemplate,guiaTemplate } from '../src/templates/entity.mjs';
+import { intro,image,badge } from '../src/templates/common.mjs';
+const read=async path=>JSON.parse(await readFile(path,'utf8'));
+const write=async(path,content)=>{await mkdir(dirname(path),{recursive:true});await writeFile(path,content)};
+const pages=await read('src/data/pages.json'),catalogs=await read('src/data/catalogs.json'),data={};
+for(const type of ['noticias','personagens','veiculos','armas','missoes','locais','guias'])data[type]=await read(`src/data/${type}.json`);
+const generated=[];
+async function add(page){await write(page.slug?`${page.slug}/index.html`:'index.html',base(page));generated.push(page)}
+const card=(entry,type,root)=>`<article class="card" data-filter-group="catalog" data-filter-item="${(entry.categoria||'todos').toLowerCase()}">${image(entry,root,type)}<div class="card-body">${badge(entry.status)}<h2>${entry.nome||entry.titulo}</h2><p class="muted">${entry.resumo}</p><a class="btn btn-secondary" href="${root}${type}/${entry.slug}/">Ver conteúdo</a></div></article>`;
+function catalog(type,items){const config=catalogs[type],root=rootFor(type);return {slug:type,title:config.title,description:config.description,body:`${intro({title:config.title,description:config.description},root)}<section class="section"><div class="container"><div class="filter-row" data-filter-group="catalog"><button class="filter active" data-filter="all">Todas</button>${config.filters.map(value=>`<button class="filter" data-filter="${value.toLowerCase()}">${value}</button>`).join('')}</div><div class="grid grid-3">${items.length?items.map(entry=>card(entry,type,root)).join(''):'<div class="empty-state"><strong>Conteúdo em preparação</strong><p>CONTEÚDO DEMONSTRATIVO — nenhuma informação fictícia é apresentada como real.</p></div>'}</div></div></section>`}}
+for(const page of pages)await add(pageTemplate(page));
+for(const type of Object.keys(catalogs))await add(catalog(type,data[type]||[]));
+const newsRoot=rootFor('noticias'),newsFilters=['Todas','GTA 6','Rockstar','Trailers','Gameplay','Mapa','Personagens','Veículos','Online','Atualizações','Rumores'];
+await add({slug:'noticias',title:'Notícias',description:'Cobertura editorial organizada, com separação clara entre confirmação, rumor e teoria.',body:`${intro({title:'Notícias',description:'Cobertura editorial organizada, com separação clara entre confirmação, rumor e teoria.'},newsRoot)}<section class="section"><div class="container"><div class="filter-row" data-filter-group="news">${newsFilters.map((value,index)=>`<button class="filter${index?'':' active'}" data-filter="${index?value.toLowerCase():'all'}">${value}</button>`).join('')}</div><div class="grid grid-3">${data.noticias.map(entry=>`<article class="card" data-filter-group="news" data-filter-item="${entry.categoria.toLowerCase()}">${image(entry,newsRoot,'noticias')}<div class="card-body">${badge(entry.status)}<p class="meta">${entry.categoria} · ${entry.data||'Data a definir'}</p><h2>${entry.titulo}</h2><h3>${entry.subtitulo}</h3><p>${entry.resumo}</p><a class="btn btn-secondary" href="${newsRoot}noticias/${entry.slug}/">Ler notícia</a></div></article>`).join('')}</div></div></section>`});
+for(const entry of data.noticias)await add(noticiaTemplate(entry,rootFor(`noticias/${entry.slug}`)));
+for(const entry of data.personagens)await add(personagemTemplate(entry,rootFor(`personagens/${entry.slug}`)));
+for(const entry of data.veiculos)await add(veiculoTemplate(entry,rootFor(`veiculos/${entry.slug}`)));
+for(const entry of data.armas)await add(armaTemplate(entry,rootFor(`armas/${entry.slug}`)));
+for(const entry of data.missoes)await add(missaoTemplate(entry,rootFor(`missoes/${entry.slug}`)));
+for(const entry of data.locais)await add(localTemplate(entry,rootFor(`locais/${entry.slug}`)));
+for(const entry of data.guias.filter(item=>!item.paginaExistente))await add(guiaTemplate(entry,rootFor(`guias/${entry.slug}`)));
+const notFound={slug:'404',is404:true,title:'Página não encontrada',description:'Essa área de Leonida ainda não foi encontrada.',body:`<section class="page-intro"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Início</a> › Página não encontrada</nav><span class="eyebrow">GTA6ZOONE</span><h1>Página não encontrada</h1><p class="lede">Essa área de Leonida ainda não foi encontrada. Verifique o endereço ou escolha um caminho abaixo.</p></div></section><section class="section"><div class="container"><div class="empty-state"><h2>Erro 404</h2><p>A página solicitada não existe.</p><div style="display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap"><a class="btn" href="/">Voltar ao início</a><a class="btn btn-secondary" href="/wiki/">Explorar a Wiki</a><a class="btn btn-secondary" href="/mapa/">Abrir o mapa</a></div></div></div></section>`};
+await write('404.html',base(notFound));
+const urls=generated.filter(page=>page.indexar!==false).map(page=>canonicalFor(page.slug)).sort((a,b)=>a.localeCompare(b,'pt-BR'));
+await write('sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(url=>`  <url><loc>${url}</loc></url>`).join('\n')}\n</urlset>\n`);
+const types={noticias:'notícias',personagens:'personagens',veiculos:'veículos',armas:'armas',missoes:'missões',locais:'locais',guias:'guias'};
+for(const [type,items] of Object.entries(data))await write(`assets/data/${type}.json`,JSON.stringify(items.map(entry=>({titulo:entry.titulo||entry.nome,resumo:entry.resumo,tipo:types[type],url:`${type}/${entry.slug}/`})),null,2)+'\n');
+console.log(`Build concluído: ${generated.length+1} HTML, sitemap e índices.`);

@@ -1,0 +1,5 @@
+import { wiki, guides } from './navigation.mjs';
+const links = (items, root) => items.map(([path,label]) => `<a href="${root}${path}/">${label}</a>`).join('');
+export function mobileMenu(root) {
+  return `<div class="mobile-overlay"></div><aside class="mobile-menu" id="mobile-menu" aria-label="Menu mobile" aria-hidden="true" inert><div class="mobile-menu-head"><strong>GTA6ZOONE</strong><button class="close-menu" data-menu-close aria-label="Fechar menu">×</button></div><nav class="mobile-links"><a href="${root}">Início</a><a href="${root}gta-6/">GTA 6</a><a href="${root}noticias/">Notícias</a><a href="${root}mapa/">Mapa</a><button class="submenu-toggle" aria-expanded="false" aria-controls="mobile-wiki">Wiki +</button><div class="mobile-submenu" id="mobile-wiki">${links(wiki,root)}</div><button class="submenu-toggle" aria-expanded="false" aria-controls="mobile-guias">Guias +</button><div class="mobile-submenu" id="mobile-guias">${links(guides,root)}</div><a href="${root}buscar/">Buscar</a></nav><div class="social-placeholders">Instagram · YouTube<br><small>Links serão adicionados quando fornecidos.</small></div></aside>`;
+}

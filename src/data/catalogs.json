@@ -1,0 +1,11 @@
+{
+ "personagens":{"title":"Personagens","description":"Estrutura completa preparada para receber conteúdo verificado, sem apresentar informações fictícias como fatos.","filters":["Protagonistas","Secundários","Outros"]},
+ "veiculos":{"title":"Veículos","description":"Estrutura completa preparada para receber conteúdo verificado, sem apresentar informações fictícias como fatos.","filters":["Carros","Motos","Barcos","Aviões","Helicópteros","Outros"]},
+ "armas":{"title":"Armas","description":"Estrutura completa preparada para receber conteúdo verificado, sem apresentar informações fictícias como fatos.","filters":["Pistolas","Fuzis","Escopetas","Submetralhadoras","Snipers","Explosivos","Corpo a corpo","Outras"]},
+ "missoes":{"title":"Missões","description":"Estrutura completa preparada para receber conteúdo verificado, sem apresentar informações fictícias como fatos.","filters":["História","Principais","Secundárias","Atividades"]},
+ "locais":{"title":"Locais","description":"Estrutura completa preparada para receber conteúdo verificado, sem apresentar informações fictícias como fatos.","filters":["Regiões","Interiores","Pontos de interesse"]},
+ "guias":{"title":"Guias","description":"Guias editoriais organizados por objetivo e nível de experiência.","filters":["Iniciantes","Dinheiro","Missões","Veículos","Armas","Segredos","Easter Eggs","100%"]},
+ "atividades":{"title":"Atividades","description":"Estrutura completa preparada para receber conteúdo verificado, sem apresentar informações fictícias como fatos.","filters":["Principais","Secundárias"]},
+ "colecionaveis":{"title":"Colecionáveis","description":"Estrutura completa preparada para receber conteúdo verificado, sem apresentar informações fictícias como fatos.","filters":["Categorias","Regiões"]},
+ "propriedades":{"title":"Propriedades","description":"Estrutura completa preparada para receber conteúdo verificado, sem apresentar informações fictícias como fatos.","filters":["Residenciais","Comerciais","Outras"]}
+}

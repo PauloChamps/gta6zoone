@@ -1,0 +1,3 @@
+export function banner(root) {
+  return `<div class="global-banner"><div class="banner-fallback">GTA6ZOONE</div><!-- SUBSTITUIR PELO BANNER OFICIAL --><img class="banner-image" src="${root}assets/images/branding/banner.webp" alt="" onload="this.previousElementSibling.hidden=true" onerror="this.hidden=true"></div>`;
+}

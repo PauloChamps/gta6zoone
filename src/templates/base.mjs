@@ -1,0 +1,14 @@
+import { banner } from '../components/banner.mjs';
+import { header } from '../components/header.mjs';
+import { mobileMenu } from '../components/mobile-menu.mjs';
+import { footer } from '../components/footer.mjs';
+export const siteUrl = 'https://gta6zoone.com.br';
+export const rootFor = slug => slug ? '../'.repeat(slug.split('/').length) : './';
+export const canonicalFor = slug => `${siteUrl}/${slug ? `${slug}/` : ''}`;
+const escape = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+const breadcrumbSchema = page => !page.slug || page.is404 ? null : ({'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Início',item:canonicalFor('')},...page.slug.split('/').map((part,index,parts)=>({'@type':'ListItem',position:index+2,name:index===parts.length-1?page.title:part.replaceAll('-',' '),item:canonicalFor(parts.slice(0,index+1).join('/'))}))]});
+export function base(page) {
+  const root=page.is404?'/':rootFor(page.slug), canonical=page.is404?`${siteUrl}/404.html`:canonicalFor(page.slug), description=page.description, schemas=[page.slug===''?{'@context':'https://schema.org','@type':'WebSite',name:'GTA6Zoone',url:siteUrl}:{'@context':'https://schema.org','@type':'WebPage',name:page.title,url:canonical},...(breadcrumbSchema(page)?[breadcrumbSchema(page)]:[]),...(page.schemas||[])];
+  const scripts=['menu.js','main.js',...(page.scripts||[])].map(file=>`<script src="${root}assets/js/${file}" defer></script>`).join('');
+  return `<!doctype html>\n<!-- Arquivo gerado automaticamente. Edite os arquivos-fonte, não este HTML. -->\n<html lang="pt-BR" data-root="${root}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(page.title)} | GTA6Zoone</title><meta name="description" content="${escape(description)}">${page.is404?'<meta name="robots" content="noindex,follow">':`<link rel="canonical" href="${canonical}">`}<meta property="og:type" content="${page.ogType||'website'}"><meta property="og:title" content="${escape(page.title)} | GTA6Zoone"><meta property="og:description" content="${escape(description)}"><meta property="og:url" content="${canonical}"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="${escape(page.title)} | GTA6Zoone"><meta name="twitter:description" content="${escape(description)}"><link rel="stylesheet" href="${root}assets/css/style.css"><link rel="stylesheet" href="${root}assets/css/components.css"><link rel="stylesheet" href="${root}assets/css/responsive.css">${schemas.map(schema=>`<script type="application/ld+json">${JSON.stringify(schema)}</script>`).join('')}${scripts}</head><body><a class="skip-link" href="#conteudo">Pular para o conteúdo</a>${banner(root)}${header(root)}${mobileMenu(root)}<main id="conteudo">${page.body}</main>${footer(root)}</body></html>\n`;
+}
