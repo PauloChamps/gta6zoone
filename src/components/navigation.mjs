@@ -1,0 +1,2 @@
+export const wiki=[['personagens','Personagens'],['veiculos','Veículos'],['armas','Armas'],['missoes','Missões'],['locais','Locais'],['propriedades','Propriedades'],['atividades','Atividades'],['colecionaveis','Colecionáveis']];
+export const guides=[['guias','Iniciantes'],['guias','Dinheiro'],['missoes','Missões'],['veiculos','Veículos'],['armas','Armas'],['segredos','Segredos'],['easter-eggs','Easter Eggs'],['guias/guia-100','Guia 100%']];

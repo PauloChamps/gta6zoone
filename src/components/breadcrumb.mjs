@@ -1,0 +1,1 @@
+export const breadcrumb=({root,items=[]})=>`<nav class="breadcrumb" aria-label="Breadcrumb"><a href="${root}">Início</a>${items.map((x,i)=>` › ${i<items.length-1?`<a href="${root}${x.slug}/">${x.label}</a>`:x.label}`).join('')}</nav>`;

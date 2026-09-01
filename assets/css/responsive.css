@@ -1,0 +1,2 @@
+@media(max-width:360px){.container{width:min(100% - 1.2rem,var(--container-width))}.section{padding:2rem 0}.search-bar{flex-direction:column}.btn{width:100%}}
+@media(min-width:700px) and (max-width:959px){.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
