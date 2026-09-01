@@ -1,0 +1,1 @@
+@media(max-width:360px){.container{width:min(100% - 1.2rem,var(--container-width))}.section{padding:2rem 0}.search-bar{flex-direction:column}.btn{width:100%}}
