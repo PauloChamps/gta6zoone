@@ -1,8 +1,16 @@
 [
   {
-    "titulo": "Conteúdo editorial de exemplo",
-    "resumo": "Estrutura demonstrativa para uma futura notícia verificada.",
+    "titulo": "GTA VI ganha apresentação estendida de 26 minutos",
+    "resumo": "A Rockstar Games publicou Grand Theft Auto VI: An Extended Look, uma apresentação de 26 minutos e 48 segundos capturada inteiramente a partir de imagens in-game no PlayStation 5.",
     "tipo": "notícias",
-    "url": "noticias/conteudo-demonstrativo/"
+    "url": "noticias/gta-vi-apresentacao-estendida/index.html",
+    "palavras": "GTA 6 GTA VI Rockstar apresentação estendida extended look trailer gameplay PS5 vídeo"
+  },
+  {
+    "titulo": "GTA VI será lançado em 19 de novembro de 2026",
+    "resumo": "Grand Theft Auto VI tem lançamento marcado para 19 de novembro de 2026 no PlayStation 5 e Xbox Series X|S.",
+    "tipo": "notícias",
+    "url": "noticias/gta-vi-lancamento-19-novembro-2026/index.html",
+    "palavras": "GTA 6 GTA VI lançamento data 19 novembro 2026 Rockstar PS5 PlayStation 5 Xbox Series X S pré-venda"
   }
 ]

@@ -1,8 +1,38 @@
 [
   {
-    "titulo": "Local demonstrativo",
-    "resumo": "Exemplo neutro para testar a navegação.",
+    "titulo": "Vice City",
+    "resumo": "Grande centro urbano de Leonida, conhecido por suas praias, vida noturna, hotéis, bairros movimentados e ruas iluminadas por neon.",
     "tipo": "locais",
-    "url": "locais/"
+    "url": "locais/vice-city/index.html"
+  },
+  {
+    "titulo": "Leonida Keys",
+    "resumo": "Arquipélago tropical de Leonida formado por ilhas conectadas por estradas e pontes, região ligada à história de Jason Duval e Brian Heder.",
+    "tipo": "locais",
+    "url": "locais/leonida-keys/index.html"
+  },
+  {
+    "titulo": "Port Gellhorn",
+    "resumo": "Região de Leonida apresentada oficialmente em GTA VI, com áreas urbanas, estradas, comércio e uma identidade marcada por seu passado turístico.",
+    "tipo": "locais",
+    "url": "locais/port-gellhorn/index.html"
+  },
+  {
+    "titulo": "Ambrosia",
+    "resumo": "Região de Leonida marcada por sua paisagem industrial e pela presença de grandes instalações ligadas à economia local.",
+    "tipo": "locais",
+    "url": "locais/ambrosia/index.html"
+  },
+  {
+    "titulo": "Grassrivers",
+    "resumo": "Grande região natural e alagada de Leonida, com vegetação, rios e vida selvagem.",
+    "tipo": "locais",
+    "url": "locais/grassrivers/index.html"
+  },
+  {
+    "titulo": "Mount Kalaga National Park",
+    "resumo": "Parque nacional de Leonida com montanhas, florestas, trilhas e extensas áreas naturais.",
+    "tipo": "locais",
+    "url": "locais/mount-kalaga/index.html"
   }
 ]
