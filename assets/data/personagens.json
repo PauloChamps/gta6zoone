@@ -1,8 +1,50 @@
 [
   {
-    "titulo": "Personagem demonstrativo",
-    "resumo": "Modelo sem referência a personagem real.",
+    "titulo": "Jason Duval",
+    "resumo": "Um dos protagonistas de GTA VI. Jason vive nas Leonida Keys e sua história está diretamente ligada a Lucia Caminos.",
     "tipo": "personagens",
-    "url": "personagens/personagem-demonstrativo/"
+    "url": "personagens/jason-duval/index.html"
+  },
+  {
+    "titulo": "Lucia Caminos",
+    "resumo": "Uma das protagonistas de GTA VI. Lucia busca uma vida melhor enquanto enfrenta ao lado de Jason os perigos de Leonida.",
+    "tipo": "personagens",
+    "url": "personagens/lucia-caminos/index.html"
+  },
+  {
+    "titulo": "Cal Hampton",
+    "resumo": "Amigo de Jason e associado de Brian Heder, Cal prefere ficar em casa acompanhando comunicações da Guarda Costeira.",
+    "tipo": "personagens",
+    "url": "personagens/cal-hampton/index.html"
+  },
+  {
+    "titulo": "Brian Heder",
+    "resumo": "Veterano contrabandista das Leonida Keys e associado de Jason Duval.",
+    "tipo": "personagens",
+    "url": "personagens/brian-heder/index.html"
+  },
+  {
+    "titulo": "Boobie Ike",
+    "resumo": "Figura conhecida de Vice City, empresário e proprietário da Only Raw Records.",
+    "tipo": "personagens",
+    "url": "personagens/boobie-ike/index.html"
+  },
+  {
+    "titulo": "Dre'Quan Priest",
+    "resumo": "Empresário ligado à música e à Only Raw Records, determinado a conquistar espaço na cena musical de Vice City.",
+    "tipo": "personagens",
+    "url": "personagens/drequan-priest/index.html"
+  },
+  {
+    "titulo": "Real Dimez",
+    "resumo": "Dupla formada por Bae-Luxe e Roxy, amigas desde o ensino médio e artistas contratadas pela Only Raw Records.",
+    "tipo": "personagens",
+    "url": "personagens/real-dimez/index.html"
+  },
+  {
+    "titulo": "Raul Bautista",
+    "resumo": "Assaltante de bancos experiente, confiante e carismático, sempre disposto a assumir grandes riscos em busca de grandes recompensas.",
+    "tipo": "personagens",
+    "url": "personagens/raul-bautista/index.html"
   }
 ]
