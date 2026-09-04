@@ -1,38 +1,44 @@
 [
   {
     "titulo": "Vice City",
-    "resumo": "Grande centro urbano de Leonida, conhecido por suas praias, vida noturna, hotéis, bairros movimentados e ruas iluminadas por neon.",
+    "resumo": "Um dos principais destinos de Leonida em GTA VI, marcado pelas ruas iluminadas por neon e pela presença central nos materiais oficiais da Rockstar Games.",
     "tipo": "locais",
-    "url": "locais/vice-city/index.html"
+    "url": "locais/vice-city/index.html",
+    "palavras": "Vice City GTA 6 GTA VI Leonida cidade neon Rockstar"
   },
   {
     "titulo": "Leonida Keys",
-    "resumo": "Arquipélago tropical de Leonida formado por ilhas conectadas por estradas e pontes, região ligada à história de Jason Duval e Brian Heder.",
+    "resumo": "Região de Leonida ligada diretamente a Jason Duval e Brian Heder, com forte presença da água e do contrabando nas informações oficiais já divulgadas.",
     "tipo": "locais",
-    "url": "locais/leonida-keys/index.html"
+    "url": "locais/leonida-keys/index.html",
+    "palavras": "Leonida Keys GTA 6 GTA VI Jason Duval Brian Heder Keys contrabando boat yard Rockstar"
   },
   {
     "titulo": "Port Gellhorn",
-    "resumo": "Região de Leonida apresentada oficialmente em GTA VI, com áreas urbanas, estradas, comércio e uma identidade marcada por seu passado turístico.",
+    "resumo": "Um dos destinos oficialmente apresentados de Leonida em GTA VI, retratado pela Rockstar como uma região com forte identidade própria e um passado ligado ao turismo.",
     "tipo": "locais",
-    "url": "locais/port-gellhorn/index.html"
+    "url": "locais/port-gellhorn/index.html",
+    "palavras": "Port Gellhorn GTA 6 GTA VI Leonida turismo Rockstar"
   },
   {
     "titulo": "Ambrosia",
-    "resumo": "Região de Leonida marcada por sua paisagem industrial e pela presença de grandes instalações ligadas à economia local.",
+    "resumo": "Um dos destinos oficialmente apresentados do estado de Leonida, com screenshots e postcard próprios divulgados pela Rockstar Games.",
     "tipo": "locais",
-    "url": "locais/ambrosia/index.html"
+    "url": "locais/ambrosia/index.html",
+    "palavras": "Ambrosia GTA 6 GTA VI Leonida Rockstar screenshots postcard"
   },
   {
     "titulo": "Grassrivers",
-    "resumo": "Grande região natural e alagada de Leonida, com vegetação, rios e vida selvagem.",
+    "resumo": "Região de wetlands de Leonida apresentada oficialmente pela Rockstar Games, com manguezais, áreas alagadas e alligators.",
     "tipo": "locais",
-    "url": "locais/grassrivers/index.html"
+    "url": "locais/grassrivers/index.html",
+    "palavras": "Grassrivers GTA 6 GTA VI Leonida wetlands manguezais alligators natureza Rockstar"
   },
   {
     "titulo": "Mount Kalaga National Park",
-    "resumo": "Parque nacional de Leonida com montanhas, florestas, trilhas e extensas áreas naturais.",
+    "resumo": "Um dos destinos naturais oficialmente apresentados de Leonida, com screenshots e postcard próprios divulgados pela Rockstar Games.",
     "tipo": "locais",
-    "url": "locais/mount-kalaga/index.html"
+    "url": "locais/mount-kalaga/index.html",
+    "palavras": "Mount Kalaga National Park Mount Kalaga GTA 6 GTA VI Leonida parque natureza Rockstar"
   }
 ]
