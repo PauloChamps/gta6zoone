@@ -6,15 +6,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Guia 100% de GTA VI: como completar o jogo | GTA6Zoone</title>
+  <title>Guias de Veículos de GTA VI: carros, motos e mais | GTA6Zoone</title>
 
   <meta
     name="description"
-    content="Guia 100% de GTA VI. Acompanhe os requisitos, missões, atividades, colecionáveis e tudo o que for necessário para completar Grand Theft Auto VI.">
+    content="Guias de veículos de GTA VI. Encontre ajuda sobre carros, motos, embarcações e outros veículos, com localização, obtenção, uso e informações verificadas no GTA6Zoone.">
 
   <link
     rel="canonical"
-    href="https://gta6zoone.com.br/guias/guia-100/">
+    href="https://gta6zoone.com.br/guias/veiculos/">
 
   <!-- FAVICON -->
 
@@ -23,22 +23,21 @@
     type="image/png"
     href="../../assets/images/branding/favicon.png">
 
-
   <!-- OPEN GRAPH -->
 
   <meta property="og:type" content="website">
 
   <meta
     property="og:title"
-    content="Guia 100% de GTA VI | GTA6Zoone">
+    content="Guias de Veículos de GTA VI | GTA6Zoone">
 
   <meta
     property="og:description"
-    content="Central para acompanhar tudo o que for necessário para completar Grand Theft Auto VI em 100%.">
+    content="Guias sobre carros, motos, embarcações e outros veículos de Grand Theft Auto VI.">
 
   <meta
     property="og:url"
-    content="https://gta6zoone.com.br/guias/guia-100/">
+    content="https://gta6zoone.com.br/guias/veiculos/">
 
   <meta
     property="og:image"
@@ -59,16 +58,16 @@
 
 
   <!-- =========================================================
-       CSS EXCLUSIVO — GUIA 100%
+       CSS EXCLUSIVO — GUIAS VEÍCULOS
   ========================================================= -->
 
   <style>
 
-    .completion-page {
+    .vehicle-guides-page {
       overflow: hidden;
     }
 
-    .completion-container {
+    .vehicle-guides-container {
       max-width: 1180px;
       margin-inline: auto;
     }
@@ -78,23 +77,23 @@
        HERO
     ========================================================= */
 
-    .completion-hero {
+    .vehicle-guides-hero {
       padding-top: 2.5rem;
       padding-bottom: 2rem;
     }
 
-    .completion-hero-grid {
+    .vehicle-guides-hero-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 2rem;
       align-items: center;
     }
 
-    .completion-hero-copy {
+    .vehicle-guides-copy {
       max-width: 850px;
     }
 
-    .completion-hero h1 {
+    .vehicle-guides-hero h1 {
       margin: .45rem 0 1rem;
 
       font-size:
@@ -103,14 +102,14 @@
       line-height: .96;
     }
 
-    .completion-hero .lede {
+    .vehicle-guides-hero .lede {
       max-width: 820px;
 
       font-size: 1.08rem;
       line-height: 1.75;
     }
 
-    .completion-hero p {
+    .vehicle-guides-hero p {
       max-width: 840px;
 
       line-height: 1.75;
@@ -121,7 +120,7 @@
        HERO — IMAGEM FUTURA
     ========================================================= */
 
-    .completion-hero-media {
+    .vehicle-guides-media {
       min-height: 280px;
 
       display: flex;
@@ -154,7 +153,7 @@
         var(--color-surface);
     }
 
-    .completion-hero-media img {
+    .vehicle-guides-media img {
       display: block;
 
       width: 100%;
@@ -167,19 +166,19 @@
       object-fit: cover;
     }
 
-    .completion-media-placeholder {
+    .vehicle-media-placeholder {
       text-align: center;
     }
 
-    .completion-media-placeholder strong {
+    .vehicle-media-placeholder strong {
       display: block;
 
       margin-bottom: .4rem;
 
-      font-size: 1.45rem;
+      font-size: 1.35rem;
     }
 
-    .completion-media-placeholder span {
+    .vehicle-media-placeholder span {
       color:
         var(--color-text-muted);
 
@@ -212,7 +211,7 @@
        AVISO
     ========================================================= */
 
-    .completion-notice {
+    .vehicle-guides-notice {
       margin-top: 1.6rem;
 
       max-width: 930px;
@@ -232,7 +231,7 @@
         var(--color-surface);
     }
 
-    .completion-notice p {
+    .vehicle-guides-notice p {
       margin: 0;
 
       line-height: 1.7;
@@ -243,20 +242,20 @@
        CABEÇALHOS
     ========================================================= */
 
-    .completion-section-head {
+    .vehicle-section-head {
       max-width: 880px;
 
       margin-bottom: 1.5rem;
     }
 
-    .completion-section-head h2 {
+    .vehicle-section-head h2 {
       margin: .4rem 0 .7rem;
 
       font-size:
         clamp(2rem, 5vw, 3rem);
     }
 
-    .completion-section-head p {
+    .vehicle-section-head p {
       margin: 0;
 
       color:
@@ -267,84 +266,55 @@
 
 
     /* =========================================================
-       STATUS
+       GUIAS DISPONÍVEIS
     ========================================================= */
 
-    .completion-status-section {
+    .vehicle-guides-list-section {
       padding-top: 4rem;
     }
 
-    .completion-status-panel {
+    .empty-guides {
       padding: 1.4rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-medium);
-
-      background:
-        var(--color-surface);
-    }
-
-    .completion-status-panel h2 {
-      margin: .4rem 0 .7rem;
-
-      font-size:
-        clamp(1.9rem, 5vw, 2.8rem);
-    }
-
-    .completion-status-panel > p {
-      max-width: 900px;
-
-      color:
-        var(--color-text-muted);
-
-      line-height: 1.75;
-    }
-
-    .completion-status-box {
-      margin-top: 1.3rem;
-
-      padding: 1rem;
 
       border:
         1px dashed var(--color-border);
 
       border-radius:
-        var(--radius-small);
+        var(--radius-medium);
 
       background:
         rgba(255,255,255,.015);
     }
 
-    .completion-status-box strong {
+    .empty-guides strong {
       display: block;
 
-      margin-bottom: .4rem;
+      margin-bottom: .5rem;
 
-      color: #ff73bd;
+      font-size: 1.05rem;
     }
 
-    .completion-status-box p {
+    .empty-guides p {
+      max-width: 880px;
+
       margin: 0;
 
       color:
         var(--color-text-muted);
 
-      line-height: 1.65;
+      line-height: 1.7;
     }
 
 
     /* =========================================================
-       ÁREAS DO 100%
+       FUTUROS TIPOS DE GUIA
     ========================================================= */
 
-    .completion-areas-section {
+    .vehicle-topics-section {
       padding-top: 4rem;
     }
 
-    .completion-areas-grid {
+    .vehicle-topics-grid {
       display: grid;
 
       grid-template-columns:
@@ -353,7 +323,7 @@
       gap: .8rem;
     }
 
-    .completion-area-card {
+    .vehicle-topic-card {
       min-width: 0;
 
       padding: 1rem;
@@ -368,7 +338,7 @@
         var(--color-surface);
     }
 
-    .completion-area-number {
+    .vehicle-topic-number {
       display: block;
 
       margin-bottom: .4rem;
@@ -381,13 +351,13 @@
       letter-spacing: .08em;
     }
 
-    .completion-area-card h3 {
+    .vehicle-topic-card h3 {
       margin: .3rem 0 .4rem;
 
       font-size: 1rem;
     }
 
-    .completion-area-card p {
+    .vehicle-topic-card p {
       margin: 0;
 
       color:
@@ -399,91 +369,29 @@
 
 
     /* =========================================================
-       COMO SERÁ O GUIA
+       CATÁLOGO ATUAL
     ========================================================= */
 
-    .completion-structure-section {
+    .vehicle-catalog-section {
       padding-top: 4rem;
     }
 
-    .completion-structure-panel {
-      padding: 1.4rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-medium);
-
-      background:
-        var(--color-surface);
-    }
-
-    .completion-structure-panel h2 {
-      margin: .4rem 0 .7rem;
-
-      font-size:
-        clamp(1.9rem, 5vw, 2.8rem);
-    }
-
-    .completion-structure-panel > p {
-      max-width: 900px;
-
-      color:
-        var(--color-text-muted);
-
-      line-height: 1.75;
-    }
-
-    .completion-structure-grid {
+    .vehicle-catalog-grid {
       display: grid;
 
       grid-template-columns:
         repeat(2, minmax(0, 1fr));
 
       gap: .8rem;
-
-      margin-top: 1.3rem;
     }
 
-    .completion-structure-card {
+    .vehicle-catalog-card {
+      display: flex;
+      flex-direction: column;
+
+      min-height: 100%;
+
       padding: 1rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-small);
-
-      background:
-        rgba(255,255,255,.02);
-    }
-
-    .completion-structure-card strong {
-      display: block;
-
-      margin-bottom: .3rem;
-    }
-
-    .completion-structure-card span {
-      color:
-        var(--color-text-muted);
-
-      font-size: .85rem;
-      line-height: 1.45;
-    }
-
-
-    /* =========================================================
-       PROGRESSO
-    ========================================================= */
-
-    .completion-progress-section {
-      padding-top: 4rem;
-    }
-
-    .completion-progress-panel {
-      padding: 1.4rem;
 
       border:
         1px solid var(--color-border);
@@ -493,96 +401,62 @@
 
       background:
         var(--color-surface);
+
+      color: inherit;
+      text-decoration: none;
+
+      transition:
+        transform .2s ease,
+        border-color .2s ease;
     }
 
-    .completion-progress-panel h2 {
-      margin: .4rem 0 .7rem;
+    .vehicle-catalog-card:hover {
+      transform:
+        translateY(-2px);
 
-      font-size:
-        clamp(1.9rem, 5vw, 2.8rem);
+      border-color:
+        rgba(255,255,255,.22);
+
+      color: inherit;
     }
 
-    .completion-progress-panel > p {
-      max-width: 900px;
+    .vehicle-catalog-card h3 {
+      margin: .35rem 0;
+    }
+
+    .vehicle-catalog-card p {
+      flex: 1;
+
+      margin: 0;
 
       color:
         var(--color-text-muted);
 
-      line-height: 1.75;
-    }
-
-    .completion-progress-placeholder {
-      margin-top: 1.3rem;
-
-      padding: 1.2rem;
-
-      border:
-        1px dashed var(--color-border);
-
-      border-radius:
-        var(--radius-small);
-
-      background:
-        rgba(255,255,255,.015);
-    }
-
-    .completion-progress-label {
-      display: flex;
-      justify-content: space-between;
-      gap: 1rem;
-
-      margin-bottom: .7rem;
-
-      font-size: .9rem;
-      font-weight: 800;
-    }
-
-    .completion-progress-bar {
-      width: 100%;
-      height: 12px;
-
-      overflow: hidden;
-
-      border-radius: 999px;
-
-      background:
-        rgba(255,255,255,.07);
-    }
-
-    .completion-progress-fill {
-      width: 0%;
-      height: 100%;
-
-      border-radius: inherit;
-
-      background:
-        linear-gradient(
-          90deg,
-          #ff3d9a,
-          #9b63ff
-        );
-    }
-
-    .completion-progress-note {
-      margin: .8rem 0 0;
-
-      color:
-        var(--color-text-muted);
-
-      font-size: .84rem;
+      font-size: .88rem;
       line-height: 1.55;
+    }
+
+    .vehicle-catalog-action {
+      display: block;
+
+      margin-top: .8rem;
+
+      color: #ff73bd;
+
+      font-size: .78rem;
+      font-weight: 800;
     }
 
 
     /* =========================================================
-       FERRAMENTA 100%
+       WIKI
     ========================================================= */
 
-    .completion-tool-section {
+    .vehicle-wiki-section {
       padding-top: 4rem;
     }
 
-    .completion-tool-panel {
+    .vehicle-wiki-panel {
       display: grid;
 
       grid-template-columns: 1fr;
@@ -601,14 +475,14 @@
         var(--color-surface);
     }
 
-    .completion-tool-panel h2 {
+    .vehicle-wiki-panel h2 {
       margin: .4rem 0 .7rem;
 
       font-size:
         clamp(1.9rem, 5vw, 2.8rem);
     }
 
-    .completion-tool-panel p {
+    .vehicle-wiki-panel p {
       max-width: 850px;
 
       color:
@@ -617,34 +491,21 @@
       line-height: 1.75;
     }
 
-    .future-tool-route {
-      display: inline-block;
-
-      margin-top: .5rem;
-
-      padding: .45rem .7rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-small);
-
-      color: #ff73bd;
-
-      font-family: monospace;
+    .vehicle-wiki-button {
+      align-self: center;
+      justify-self: start;
     }
 
 
     /* =========================================================
-       CONTEÚDO RELACIONADO
+       CONEXÕES
     ========================================================= */
 
-    .completion-related-section {
+    .vehicle-related-section {
       padding-top: 4rem;
     }
 
-    .completion-related-grid {
+    .vehicle-related-grid {
       display: grid;
 
       grid-template-columns:
@@ -653,7 +514,7 @@
       gap: .8rem;
     }
 
-    .completion-related-card {
+    .vehicle-related-card {
       display: block;
 
       padding: 1rem;
@@ -675,7 +536,7 @@
         border-color .2s ease;
     }
 
-    .completion-related-card:hover {
+    .vehicle-related-card:hover {
       transform:
         translateY(-2px);
 
@@ -685,13 +546,13 @@
       color: inherit;
     }
 
-    .completion-related-card strong {
+    .vehicle-related-card strong {
       display: block;
 
       margin-bottom: .3rem;
     }
 
-    .completion-related-card span {
+    .vehicle-related-card span {
       color:
         var(--color-text-muted);
 
@@ -784,11 +645,11 @@
        PESQUISA
     ========================================================= */
 
-    .completion-search-section {
+    .vehicle-search-section {
       padding-top: 4rem;
     }
 
-    .completion-search-panel {
+    .vehicle-search-panel {
       padding: 1.4rem;
 
       border:
@@ -801,11 +662,11 @@
         var(--color-surface);
     }
 
-    .completion-search-panel h2 {
+    .vehicle-search-panel h2 {
       margin: .4rem 0 .5rem;
     }
 
-    .completion-search-panel p {
+    .vehicle-search-panel p {
       max-width: 820px;
 
       color:
@@ -814,7 +675,7 @@
       line-height: 1.7;
     }
 
-    .completion-search-form {
+    .vehicle-search-form {
       display: grid;
 
       grid-template-columns: 1fr;
@@ -826,7 +687,7 @@
       margin-top: 1rem;
     }
 
-    .completion-search-form input {
+    .vehicle-search-form input {
       width: 100%;
 
       padding: .9rem 1rem;
@@ -852,24 +713,24 @@
 
     @media (min-width: 700px) {
 
-      .completion-areas-grid {
+      .vehicle-topics-grid {
         grid-template-columns:
           repeat(4, minmax(0, 1fr));
       }
 
-      .completion-structure-grid {
+      .vehicle-catalog-grid {
         grid-template-columns:
-          repeat(4, minmax(0, 1fr));
+          repeat(3, minmax(0, 1fr));
       }
 
-      .completion-tool-panel {
+      .vehicle-wiki-panel {
         grid-template-columns:
           1fr auto;
 
         align-items: center;
       }
 
-      .completion-related-grid {
+      .vehicle-related-grid {
         grid-template-columns:
           repeat(3, minmax(0, 1fr));
       }
@@ -879,7 +740,7 @@
           repeat(3, minmax(0, 1fr));
       }
 
-      .completion-search-form {
+      .vehicle-search-form {
         grid-template-columns:
           1fr auto;
       }
@@ -893,9 +754,14 @@
 
     @media (min-width: 960px) {
 
-      .completion-hero-grid {
+      .vehicle-guides-hero-grid {
         grid-template-columns:
           1.2fr .8fr;
+      }
+
+      .vehicle-catalog-grid {
+        grid-template-columns:
+          repeat(4, minmax(0, 1fr));
       }
 
       .other-guides-grid {
@@ -912,7 +778,7 @@
 
     @media (max-width: 699px) {
 
-      .completion-container {
+      .vehicle-guides-container {
         width: 100%;
         max-width: 100%;
       }
@@ -930,9 +796,9 @@
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "Guia 100% de GTA VI",
-    "description": "Central de acompanhamento para completar Grand Theft Auto VI em 100%.",
-    "url": "https://gta6zoone.com.br/guias/guia-100/",
+    "name": "Guias de Veículos de GTA VI",
+    "description": "Central de guias sobre veículos de Grand Theft Auto VI.",
+    "url": "https://gta6zoone.com.br/guias/veiculos/",
     "isPartOf": {
       "@type": "WebSite",
       "name": "GTA6Zoone",
@@ -1480,16 +1346,16 @@
 
 <main
   id="conteudo"
-  class="completion-page">
+  class="vehicle-guides-page">
 
 
 <!-- =========================================================
      HERO
 ========================================================= -->
 
-<section class="completion-hero">
+<section class="vehicle-guides-hero">
 
-  <div class="container completion-container">
+  <div class="container vehicle-guides-container">
 
 
     <nav
@@ -1508,46 +1374,44 @@
 
       ›
 
-      Guia 100%
+      Veículos
 
     </nav>
 
 
-    <div class="completion-hero-grid">
+    <div class="vehicle-guides-hero-grid">
 
 
-      <div class="completion-hero-copy">
+      <div class="vehicle-guides-copy">
 
 
         <span class="eyebrow">
-          GUIAS · 100%
+          GUIAS · VEÍCULOS
         </span>
 
 
         <h1>
-          Guia 100% de GTA VI
+          Veículos de GTA VI
         </h1>
 
 
         <p class="lede">
 
-          A central para acompanhar tudo
-          o que realmente for necessário
-          para completar GTA VI em 100%.
+          Guias para encontrar, conseguir
+          e entender os veículos disponíveis
+          em GTA VI.
 
         </p>
 
 
         <p>
 
-          Conforme os requisitos oficiais
-          e os sistemas do jogo forem conhecidos,
-          esta página será transformada em um
-          roteiro completo de progresso.
-
-          Cada etapa poderá se conectar aos
-          nossos guias de missões, atividades,
-          colecionáveis, mapa e outros conteúdos.
+          Conforme pudermos testar o jogo,
+          cada veículo relevante poderá ter
+          guias específicos com localização,
+          formas de obtenção, requisitos,
+          características práticas,
+          screenshots e gameplay próprio.
 
         </p>
 
@@ -1561,17 +1425,19 @@
         </a>
 
 
-        <div class="completion-notice">
+        <div class="vehicle-guides-notice">
 
           <p>
 
-            <strong>NÃO VAMOS INVENTAR O QUE CONTA PARA 100%:</strong>
-            determinadas atividades podem existir no jogo
-            sem fazer parte da porcentagem oficial.
+            <strong>GUIA E WIKI SÃO DIFERENTES:</strong>
+            as páginas da Wiki catalogam e apresentam
+            cada veículo.
 
-            Só adicionaremos itens à lista obrigatória
-            quando pudermos confirmar que eles realmente
-            contribuem para a conclusão de GTA VI.
+            Aqui ficarão os tutoriais práticos:
+            onde encontrar, como conseguir,
+            como desbloquear e como utilizar,
+            quando essas informações puderem
+            ser confirmadas.
 
           </p>
 
@@ -1583,12 +1449,12 @@
 
       <!-- IMAGEM FUTURA -->
 
-      <div class="completion-hero-media">
+      <div class="vehicle-guides-media">
 
-        <div class="completion-media-placeholder">
+        <div class="vehicle-media-placeholder">
 
           <strong>
-            GTA VI · 100%
+            GUIAS DE VEÍCULOS
           </strong>
 
           <span>
@@ -1608,57 +1474,59 @@
 
 
 <!-- =========================================================
-     STATUS
+     GUIAS DISPONÍVEIS
 ========================================================= -->
 
-<section class="completion-status-section section section-alt">
+<section class="vehicle-guides-list-section section section-alt">
 
-  <div class="container completion-container">
+  <div class="container vehicle-guides-container">
 
 
-    <div class="completion-status-panel">
-
+    <div class="vehicle-section-head">
 
       <span class="eyebrow">
-        STATUS DO GUIA
+        GUIAS
       </span>
 
 
       <h2>
-        Requisitos ainda serão documentados
+        Guias individuais de veículos
       </h2>
 
 
       <p>
 
-        Esta página já está preparada para
-        receber a estrutura completa dos 100%,
-        mas a lista definitiva dependerá
-        daquilo que GTA VI realmente exigir.
+        Os primeiros tutoriais aparecerão
+        aqui quando pudermos confirmar como
+        os veículos são encontrados e obtidos
+        dentro do jogo.
 
       </p>
 
+    </div>
 
-      <div class="completion-status-box">
 
-        <strong>
-          AGUARDANDO CONFIRMAÇÃO
-        </strong>
+    <div class="empty-guides">
 
-        <p>
+      <strong>
+        Guias individuais em breve
+      </strong>
 
-          Quando pudermos verificar os critérios
-          de conclusão do jogo, esta área passará
-          a mostrar a quantidade total de requisitos,
-          porcentagens, progresso e links diretos
-          para cada guia relacionado.
+      <p>
 
-        </p>
+        Já temos veículos catalogados na Wiki,
+        mas não vamos transformar isso em um
+        falso “como conseguir” antes de sabermos
+        como a obtenção realmente funciona.
 
-      </div>
+        Quando essas informações estiverem
+        disponíveis, cada dúvida importante
+        poderá receber sua própria página.
 
+      </p>
 
     </div>
+
 
   </div>
 
@@ -1666,182 +1534,179 @@
 
 
 <!-- =========================================================
-     POSSÍVEIS ÁREAS
+     FUTUROS TIPOS DE GUIA
 ========================================================= -->
 
-<section class="completion-areas-section section">
+<section class="vehicle-topics-section section">
 
-  <div class="container completion-container">
+  <div class="container vehicle-guides-container">
 
 
-    <div class="completion-section-head">
+    <div class="vehicle-section-head">
 
       <span class="eyebrow">
-        ORGANIZAÇÃO
+        CENTRAL DE AJUDA
       </span>
 
 
       <h2>
-        Áreas que vamos acompanhar
+        O que vamos explicar
       </h2>
 
 
       <p>
 
-        Estas são seções do GTA6Zoone que poderão
-        alimentar o Guia 100%.
-
-        A presença delas aqui não significa
-        que todas serão obrigatórias para
-        completar o jogo.
+        A categoria poderá reunir diferentes
+        tipos de guias conforme conhecermos
+        os sistemas de veículos de GTA VI.
 
       </p>
 
     </div>
 
 
-    <div class="completion-areas-grid">
+    <div class="vehicle-topics-grid">
 
 
-      <div class="completion-area-card">
+      <div class="vehicle-topic-card">
 
-        <span class="completion-area-number">
+        <span class="vehicle-topic-number">
           01
         </span>
 
         <h3>
-          Missões
+          Onde encontrar
         </h3>
 
         <p>
-          Acompanhamento da campanha
-          e outros tipos de missões.
+          Localizações confirmadas
+          de veículos.
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="vehicle-topic-card">
 
-        <span class="completion-area-number">
+        <span class="vehicle-topic-number">
           02
         </span>
 
         <h3>
-          Atividades
+          Como conseguir
         </h3>
 
         <p>
-          Conteúdos opcionais quando
-          fizerem parte da conclusão.
+          Métodos reais de obtenção
+          quando conhecidos.
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="vehicle-topic-card">
 
-        <span class="completion-area-number">
+        <span class="vehicle-topic-number">
           03
         </span>
 
         <h3>
-          Colecionáveis
+          Como desbloquear
         </h3>
 
         <p>
-          Conjuntos e itens necessários,
-          caso sejam exigidos.
+          Requisitos de desbloqueio
+          quando existirem.
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="vehicle-topic-card">
 
-        <span class="completion-area-number">
+        <span class="vehicle-topic-number">
           04
         </span>
 
         <h3>
-          Exploração
+          Comparações
         </h3>
 
         <p>
-          Requisitos relacionados ao mapa
-          quando forem confirmados.
+          Comparativos baseados
+          em testes reais.
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="vehicle-topic-card">
 
-        <span class="completion-area-number">
+        <span class="vehicle-topic-number">
           05
         </span>
 
         <h3>
-          Propriedades
+          Carros
         </h3>
 
         <p>
-          Imóveis ou estabelecimentos
-          apenas se tiverem relevância para 100%.
+          Guias específicos para
+          automóveis catalogados.
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="vehicle-topic-card">
 
-        <span class="completion-area-number">
+        <span class="vehicle-topic-number">
           06
         </span>
 
         <h3>
-          Veículos
+          Motos
         </h3>
 
         <p>
-          Objetivos relacionados a veículos
-          somente quando comprovados.
+          Obtenção e utilização
+          de motocicletas.
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="vehicle-topic-card">
 
-        <span class="completion-area-number">
+        <span class="vehicle-topic-number">
           07
         </span>
 
         <h3>
-          Desafios
+          Embarcações
         </h3>
 
         <p>
-          Categorias adicionais caso
-          existam requisitos desse tipo.
+          Guias relacionados aos
+          veículos aquáticos.
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="vehicle-topic-card">
 
-        <span class="completion-area-number">
+        <span class="vehicle-topic-number">
           08
         </span>
 
         <h3>
-          Outros requisitos
+          Outros veículos
         </h3>
 
         <p>
-          Qualquer categoria oficial
-          que não se encaixe nas anteriores.
+          Categorias adicionais
+          conforme forem confirmadas.
         </p>
 
       </div>
@@ -1855,221 +1720,230 @@
 
 
 <!-- =========================================================
-     COMO SERÁ O GUIA
+     VEÍCULOS JÁ CATALOGADOS
 ========================================================= -->
 
-<section class="completion-structure-section section section-alt">
+<section class="vehicle-catalog-section section section-alt">
 
-  <div class="container completion-container">
+  <div class="container vehicle-guides-container">
 
 
-    <div class="completion-structure-panel">
-
+    <div class="vehicle-section-head">
 
       <span class="eyebrow">
-        ESTRUTURA
+        WIKI · VEÍCULOS
       </span>
 
 
       <h2>
-        Um roteiro completo do início aos 100%
+        Veículos já catalogados
       </h2>
 
 
       <p>
 
-        Quando o conteúdo puder ser confirmado,
-        organizaremos este guia de forma que o
-        visitante consiga identificar rapidamente
-        o que falta e abrir o tutorial específico.
+        Enquanto os tutoriais ainda não estão
+        disponíveis, você pode consultar as fichas
+        dos veículos que já possuem página
+        no GTA6Zoone.
 
       </p>
-
-
-      <div class="completion-structure-grid">
-
-
-        <div class="completion-structure-card">
-
-          <strong>
-            Requisito
-          </strong>
-
-          <span>
-            O que precisa ser concluído.
-          </span>
-
-        </div>
-
-
-        <div class="completion-structure-card">
-
-          <strong>
-            Quantidade
-          </strong>
-
-          <span>
-            Quantos itens ou objetivos existem.
-          </span>
-
-        </div>
-
-
-        <div class="completion-structure-card">
-
-          <strong>
-            Percentual
-          </strong>
-
-          <span>
-            Quanto contribui para os 100%, se aplicável.
-          </span>
-
-        </div>
-
-
-        <div class="completion-structure-card">
-
-          <strong>
-            Checklist
-          </strong>
-
-          <span>
-            Lista organizada de objetivos.
-          </span>
-
-        </div>
-
-
-        <div class="completion-structure-card">
-
-          <strong>
-            Guia
-          </strong>
-
-          <span>
-            Link direto para o passo a passo.
-          </span>
-
-        </div>
-
-
-        <div class="completion-structure-card">
-
-          <strong>
-            Mapa
-          </strong>
-
-          <span>
-            Localizações quando forem necessárias.
-          </span>
-
-        </div>
-
-
-        <div class="completion-structure-card">
-
-          <strong>
-            Screenshots
-          </strong>
-
-          <span>
-            Imagens para facilitar a conclusão.
-          </span>
-
-        </div>
-
-
-        <div class="completion-structure-card">
-
-          <strong>
-            Vídeo
-          </strong>
-
-          <span>
-            Gameplay próprio quando útil.
-          </span>
-
-        </div>
-
-
-      </div>
-
 
     </div>
 
-  </div>
 
-</section>
-
-
-<!-- =========================================================
-     PROGRESSO
-========================================================= -->
-
-<section class="completion-progress-section section">
-
-  <div class="container completion-container">
+    <div class="vehicle-catalog-grid">
 
 
-    <div class="completion-progress-panel">
+      <a
+        class="vehicle-catalog-card"
+        href="../../veiculos/grotti-cheetah/index.html">
 
+        <span class="eyebrow">
+          VEÍCULO
+        </span>
 
-      <span class="eyebrow">
-        PROGRESSO
-      </span>
+        <h3>
+          ’95 Grotti Cheetah
+        </h3>
 
-
-      <h2>
-        Acompanhe sua conclusão
-      </h2>
-
-
-      <p>
-
-        O guia editorial mostrará todos
-        os requisitos confirmados.
-
-        Mais adiante, teremos também
-        uma ferramenta dedicada para
-        o visitante controlar o próprio progresso.
-
-      </p>
-
-
-      <div class="completion-progress-placeholder">
-
-
-        <div class="completion-progress-label">
-
-          <span>
-            Estrutura do checklist
-          </span>
-
-          <span>
-            0%
-          </span>
-
-        </div>
-
-
-        <div class="completion-progress-bar">
-
-          <div class="completion-progress-fill"></div>
-
-        </div>
-
-
-        <p class="completion-progress-note">
-
-          Demonstração estrutural.
-          Este número não representa o progresso
-          real nem os requisitos oficiais de GTA VI.
-
+        <p>
+          Consulte a ficha e as imagens
+          do veículo.
         </p>
 
+        <span class="vehicle-catalog-action">
+          Abrir na Wiki →
+        </span>
 
-      </div>
+      </a>
+
+
+      <a
+        class="vehicle-catalog-card"
+        href="../../veiculos/dinka-enduro/index.html">
+
+        <span class="eyebrow">
+          VEÍCULO
+        </span>
+
+        <h3>
+          Dinka Enduro
+        </h3>
+
+        <p>
+          Consulte a página dedicada
+          à motocicleta.
+        </p>
+
+        <span class="vehicle-catalog-action">
+          Abrir na Wiki →
+        </span>
+
+      </a>
+
+
+      <a
+        class="vehicle-catalog-card"
+        href="../../veiculos/ganado-retro/index.html">
+
+        <span class="eyebrow">
+          VEÍCULO
+        </span>
+
+        <h3>
+          Ganado Retro
+        </h3>
+
+        <p>
+          Veja as informações atualmente
+          catalogadas.
+        </p>
+
+        <span class="vehicle-catalog-action">
+          Abrir na Wiki →
+        </span>
+
+      </a>
+
+
+      <a
+        class="vehicle-catalog-card"
+        href="../../veiculos/shitzu-squalo/index.html">
+
+        <span class="eyebrow">
+          EMBARCAÇÃO
+        </span>
+
+        <h3>
+          Shitzu Squalo
+        </h3>
+
+        <p>
+          Consulte a ficha da embarcação.
+        </p>
+
+        <span class="vehicle-catalog-action">
+          Abrir na Wiki →
+        </span>
+
+      </a>
+
+
+      <a
+        class="vehicle-catalog-card"
+        href="../../veiculos/vapid-dominator-buggy/index.html">
+
+        <span class="eyebrow">
+          VEÍCULO
+        </span>
+
+        <h3>
+          Vapid Dominator Buggy
+        </h3>
+
+        <p>
+          Veja a página dedicada
+          ao veículo.
+        </p>
+
+        <span class="vehicle-catalog-action">
+          Abrir na Wiki →
+        </span>
+
+      </a>
+
+
+      <a
+        class="vehicle-catalog-card"
+        href="../../veiculos/vapid-stanier/index.html">
+
+        <span class="eyebrow">
+          VEÍCULO
+        </span>
+
+        <h3>
+          Vapid Stanier
+        </h3>
+
+        <p>
+          Consulte informações e imagens
+          atualmente disponíveis.
+        </p>
+
+        <span class="vehicle-catalog-action">
+          Abrir na Wiki →
+        </span>
+
+      </a>
+
+
+      <a
+        class="vehicle-catalog-card"
+        href="../../veiculos/crest-kayak/index.html">
+
+        <span class="eyebrow">
+          VEÍCULO
+        </span>
+
+        <h3>
+          Crest Kayak
+        </h3>
+
+        <p>
+          Veja a ficha dedicada
+          no catálogo de veículos.
+        </p>
+
+        <span class="vehicle-catalog-action">
+          Abrir na Wiki →
+        </span>
+
+      </a>
+
+
+      <a
+        class="vehicle-catalog-card"
+        href="../../veiculos/index.html">
+
+        <span class="eyebrow">
+          CATÁLOGO
+        </span>
+
+        <h3>
+          Todos os veículos
+        </h3>
+
+        <p>
+          Abra o índice completo
+          da Wiki de veículos.
+        </p>
+
+        <span class="vehicle-catalog-action">
+          Ver catálogo →
+        </span>
+
+      </a>
 
 
     </div>
@@ -2080,58 +1954,51 @@
 
 
 <!-- =========================================================
-     FERRAMENTA FUTURA
+     WIKI
 ========================================================= -->
 
-<section class="completion-tool-section section section-alt">
+<section class="vehicle-wiki-section section">
 
-  <div class="container completion-container">
+  <div class="container vehicle-guides-container">
 
 
-    <div class="completion-tool-panel">
+    <div class="vehicle-wiki-panel">
 
 
       <div>
 
-
         <span class="eyebrow">
-          FERRAMENTA FUTURA
+          WIKI · VEÍCULOS
         </span>
 
 
         <h2>
-          Checklist interativo de 100%
+          Guia ou ficha de veículo?
         </h2>
 
 
         <p>
 
-          Este Guia 100% será a referência editorial.
+          Se você quer saber o que é determinado
+          veículo, ver imagens ou consultar
+          as informações disponíveis, use a Wiki.
 
-          Separadamente, o GTA6Zoone terá
-          uma ferramenta onde o visitante poderá
-          marcar objetivos concluídos e acompanhar
-          seu percentual de progresso.
+          Se a dúvida for como encontrar,
+          conseguir ou utilizar aquele veículo,
+          esta Central de Guias será o lugar certo.
 
         </p>
 
-
       </div>
 
 
-      <div>
+      <a
+        class="btn vehicle-wiki-button"
+        href="../../veiculos/index.html">
 
-        <strong>
-          Rota reservada
-        </strong>
+        Ver Veículos na Wiki
 
-        <br>
-
-        <span class="future-tool-route">
-          /ferramentas/checklist-100/
-        </span>
-
-      </div>
+      </a>
 
 
     </div>
@@ -2145,12 +2012,12 @@
      CONTEÚDO RELACIONADO
 ========================================================= -->
 
-<section class="completion-related-section section">
+<section class="vehicle-related-section section section-alt">
 
-  <div class="container completion-container">
+  <div class="container vehicle-guides-container">
 
 
-    <div class="completion-section-head">
+    <div class="vehicle-section-head">
 
       <span class="eyebrow">
         TUDO CONECTADO
@@ -2158,85 +2025,26 @@
 
 
       <h2>
-        Do checklist para o guia certo
+        Veículos, mapa e mundo de GTA VI
       </h2>
 
 
       <p>
 
-        Cada requisito poderá levar diretamente
-        para as áreas e tutoriais relacionados.
+        Os futuros guias poderão se conectar
+        diretamente a locais, propriedades,
+        atividades, missões e pontos do mapa.
 
       </p>
 
     </div>
 
 
-    <div class="completion-related-grid">
+    <div class="vehicle-related-grid">
 
 
       <a
-        class="completion-related-card"
-        href="../missoes/index.html">
-
-        <strong>
-          Guias de Missões
-        </strong>
-
-        <span>
-          Passo a passo das missões.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
-        href="../atividades/index.html">
-
-        <strong>
-          Guias de Atividades
-        </strong>
-
-        <span>
-          Ajuda para conteúdos opcionais.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
-        href="../colecionaveis/index.html">
-
-        <strong>
-          Guias de Colecionáveis
-        </strong>
-
-        <span>
-          Localizações e rotas.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
-        href="../mapa/index.html">
-
-        <strong>
-          Guias do Mapa
-        </strong>
-
-        <span>
-          Ajuda com localizações.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
+        class="vehicle-related-card"
         href="../../mapa/index.html">
 
         <strong>
@@ -2244,44 +2052,29 @@
         </strong>
 
         <span>
-          Abra o mapa do GTA6Zoone.
+          Consulte localizações e regiões.
         </span>
 
       </a>
 
 
       <a
-        class="completion-related-card"
-        href="../../colecionaveis/index.html">
+        class="vehicle-related-card"
+        href="../../locais/index.html">
 
         <strong>
-          Colecionáveis
+          Locais
         </strong>
 
         <span>
-          Consulte o catálogo principal.
+          Explore as regiões de Leonida.
         </span>
 
       </a>
 
 
       <a
-        class="completion-related-card"
-        href="../../atividades/index.html">
-
-        <strong>
-          Atividades
-        </strong>
-
-        <span>
-          Consulte a área da Wiki.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
+        class="vehicle-related-card"
         href="../../missoes/index.html">
 
         <strong>
@@ -2289,14 +2082,14 @@
         </strong>
 
         <span>
-          Consulte o índice da campanha.
+          Veja a área dedicada à campanha.
         </span>
 
       </a>
 
 
       <a
-        class="completion-related-card"
+        class="vehicle-related-card"
         href="../../propriedades/index.html">
 
         <strong>
@@ -2304,7 +2097,37 @@
         </strong>
 
         <span>
-          Veja imóveis e estabelecimentos.
+          Casas, garagens e estabelecimentos.
+        </span>
+
+      </a>
+
+
+      <a
+        class="vehicle-related-card"
+        href="../../atividades/index.html">
+
+        <strong>
+          Atividades
+        </strong>
+
+        <span>
+          Conteúdos do mundo aberto.
+        </span>
+
+      </a>
+
+
+      <a
+        class="vehicle-related-card"
+        href="../../personagens/index.html">
+
+        <strong>
+          Personagens
+        </strong>
+
+        <span>
+          Conheça os personagens de GTA VI.
         </span>
 
       </a>
@@ -2318,15 +2141,15 @@
 
 
 <!-- =========================================================
-     OUTRAS CATEGORIAS DE GUIAS
+     OUTRAS CATEGORIAS
 ========================================================= -->
 
-<section class="other-guides-section section section-alt">
+<section class="other-guides-section section">
 
-  <div class="container completion-container">
+  <div class="container vehicle-guides-container">
 
 
-    <div class="completion-section-head">
+    <div class="vehicle-section-head">
 
       <span class="eyebrow">
         OUTRAS CATEGORIAS
@@ -2340,8 +2163,8 @@
 
       <p>
 
-        Todas as principais áreas
-        permanecem interligadas.
+        Todas as categorias permanecem
+        interligadas.
 
       </p>
 
@@ -2422,29 +2245,6 @@
 
       <a
         class="other-guide-card"
-        href="../veiculos/index.html">
-
-        <span class="eyebrow">
-          GUIAS
-        </span>
-
-        <h3>
-          Veículos
-        </h3>
-
-        <p>
-          Como encontrar e utilizar.
-        </p>
-
-        <span class="other-guide-action">
-          Abrir categoria →
-        </span>
-
-      </a>
-
-
-      <a
-        class="other-guide-card"
         href="../armas/index.html">
 
         <span class="eyebrow">
@@ -2479,7 +2279,7 @@
         </h3>
 
         <p>
-          Casas e estabelecimentos.
+          Casas, garagens e estabelecimentos.
         </p>
 
         <span class="other-guide-action">
@@ -2560,41 +2360,18 @@
 
       <a
         class="other-guide-card"
-        href="../segredos/index.html">
+        href="../guia-100/index.html">
 
         <span class="eyebrow">
-          DESCOBERTAS
+          GUIAS
         </span>
 
         <h3>
-          Segredos
+          Guia 100%
         </h3>
 
         <p>
-          Mistérios e descobertas.
-        </p>
-
-        <span class="other-guide-action">
-          Abrir categoria →
-        </span>
-
-      </a>
-
-
-      <a
-        class="other-guide-card"
-        href="../easter-eggs/index.html">
-
-        <span class="eyebrow">
-          DESCOBERTAS
-        </span>
-
-        <h3>
-          Easter Eggs
-        </h3>
-
-        <p>
-          Referências e homenagens.
+          Complete tudo em GTA VI.
         </p>
 
         <span class="other-guide-action">
@@ -2638,12 +2415,12 @@
      PESQUISA
 ========================================================= -->
 
-<section class="completion-search-section section">
+<section class="vehicle-search-section section section-alt">
 
-  <div class="container completion-container">
+  <div class="container vehicle-guides-container">
 
 
-    <div class="completion-search-panel">
+    <div class="vehicle-search-panel">
 
 
       <span class="eyebrow">
@@ -2652,28 +2429,27 @@
 
 
       <h2>
-        Procurando algum requisito?
+        Procurando um veículo?
       </h2>
 
 
       <p>
 
-        Use a pesquisa geral para localizar
-        missões, atividades, colecionáveis,
-        veículos, personagens e outros
-        conteúdos do GTA6Zoone.
+        Pesquise pelo nome do veículo
+        ou por qualquer outro conteúdo
+        já catalogado no GTA6Zoone.
 
       </p>
 
 
       <form
-        class="completion-search-form"
+        class="vehicle-search-form"
         action="../../buscar/index.html">
 
 
         <label
           class="hidden"
-          for="completion-search">
+          for="vehicle-guide-search">
 
           Pesquisar
 
@@ -2681,10 +2457,10 @@
 
 
         <input
-          id="completion-search"
+          id="vehicle-guide-search"
           name="q"
           type="search"
-          placeholder="O que você precisa completar?">
+          placeholder="Ex.: Cheetah, Stanier, Squalo...">
 
 
         <button
@@ -2721,8 +2497,6 @@
     <div class="footer-grid">
 
 
-      <!-- GTA6ZOONE -->
-
       <div>
 
         <strong class="brand-text">
@@ -2738,8 +2512,6 @@
 
       </div>
 
-
-      <!-- EXPLORAR -->
 
       <div>
 
@@ -2774,8 +2546,6 @@
       </div>
 
 
-      <!-- COMUNIDADE -->
-
       <div>
 
         <h3>
@@ -2793,7 +2563,6 @@
 
           </a>
 
-
           <a
             href="https://www.instagram.com/gta6zoone/"
             target="_blank"
@@ -2807,8 +2576,6 @@
 
       </div>
 
-
-      <!-- INSTITUCIONAL -->
 
       <div>
 

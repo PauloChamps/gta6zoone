@@ -6,15 +6,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Guia 100% de GTA VI: como completar o jogo | GTA6Zoone</title>
+  <title>Guias para Iniciantes em GTA VI: primeiros passos | GTA6Zoone</title>
 
   <meta
     name="description"
-    content="Guia 100% de GTA VI. Acompanhe os requisitos, missões, atividades, colecionáveis e tudo o que for necessário para completar Grand Theft Auto VI.">
+    content="Guias para iniciantes em GTA VI. Primeiros passos, controles, mapa, interface, progressão e ajuda para começar Grand Theft Auto VI no GTA6Zoone.">
 
   <link
     rel="canonical"
-    href="https://gta6zoone.com.br/guias/guia-100/">
+    href="https://gta6zoone.com.br/guias/iniciantes/">
 
   <!-- FAVICON -->
 
@@ -23,22 +23,21 @@
     type="image/png"
     href="../../assets/images/branding/favicon.png">
 
-
   <!-- OPEN GRAPH -->
 
   <meta property="og:type" content="website">
 
   <meta
     property="og:title"
-    content="Guia 100% de GTA VI | GTA6Zoone">
+    content="Guias para Iniciantes em GTA VI | GTA6Zoone">
 
   <meta
     property="og:description"
-    content="Central para acompanhar tudo o que for necessário para completar Grand Theft Auto VI em 100%.">
+    content="Primeiros passos, ajuda e futuros guias para quem está começando em Grand Theft Auto VI.">
 
   <meta
     property="og:url"
-    content="https://gta6zoone.com.br/guias/guia-100/">
+    content="https://gta6zoone.com.br/guias/iniciantes/">
 
   <meta
     property="og:image"
@@ -59,16 +58,16 @@
 
 
   <!-- =========================================================
-       CSS EXCLUSIVO — GUIA 100%
+       CSS EXCLUSIVO — GUIAS INICIANTES
   ========================================================= -->
 
   <style>
 
-    .completion-page {
+    .beginner-page {
       overflow: hidden;
     }
 
-    .completion-container {
+    .beginner-container {
       max-width: 1180px;
       margin-inline: auto;
     }
@@ -78,23 +77,23 @@
        HERO
     ========================================================= */
 
-    .completion-hero {
+    .beginner-hero {
       padding-top: 2.5rem;
       padding-bottom: 2rem;
     }
 
-    .completion-hero-grid {
+    .beginner-hero-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 2rem;
       align-items: center;
     }
 
-    .completion-hero-copy {
+    .beginner-hero-copy {
       max-width: 850px;
     }
 
-    .completion-hero h1 {
+    .beginner-hero h1 {
       margin: .45rem 0 1rem;
 
       font-size:
@@ -103,16 +102,15 @@
       line-height: .96;
     }
 
-    .completion-hero .lede {
+    .beginner-hero .lede {
       max-width: 820px;
 
       font-size: 1.08rem;
       line-height: 1.75;
     }
 
-    .completion-hero p {
+    .beginner-hero p {
       max-width: 840px;
-
       line-height: 1.75;
     }
 
@@ -121,7 +119,7 @@
        HERO — IMAGEM FUTURA
     ========================================================= */
 
-    .completion-hero-media {
+    .beginner-hero-media {
       min-height: 280px;
 
       display: flex;
@@ -134,27 +132,24 @@
 
       padding: 2rem;
 
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-medium);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-medium);
 
       background:
         radial-gradient(
           circle at 20% 20%,
-          rgba(255,61,154,.18),
+          rgba(255, 61, 154, .18),
           transparent 38%
         ),
         radial-gradient(
           circle at 80% 75%,
-          rgba(128,75,255,.18),
+          rgba(128, 75, 255, .18),
           transparent 42%
         ),
         var(--color-surface);
     }
 
-    .completion-hero-media img {
+    .beginner-hero-media img {
       display: block;
 
       width: 100%;
@@ -167,21 +162,20 @@
       object-fit: cover;
     }
 
-    .completion-media-placeholder {
+    .beginner-media-placeholder {
       text-align: center;
     }
 
-    .completion-media-placeholder strong {
+    .beginner-media-placeholder strong {
       display: block;
 
       margin-bottom: .4rem;
 
-      font-size: 1.45rem;
+      font-size: 1.35rem;
     }
 
-    .completion-media-placeholder span {
-      color:
-        var(--color-text-muted);
+    .beginner-media-placeholder span {
+      color: var(--color-text-muted);
 
       font-size: .88rem;
     }
@@ -212,7 +206,7 @@
        AVISO
     ========================================================= */
 
-    .completion-notice {
+    .beginner-notice {
       margin-top: 1.6rem;
 
       max-width: 930px;
@@ -232,7 +226,7 @@
         var(--color-surface);
     }
 
-    .completion-notice p {
+    .beginner-notice p {
       margin: 0;
 
       line-height: 1.7;
@@ -243,108 +237,77 @@
        CABEÇALHOS
     ========================================================= */
 
-    .completion-section-head {
+    .beginner-section-head {
       max-width: 880px;
 
       margin-bottom: 1.5rem;
     }
 
-    .completion-section-head h2 {
+    .beginner-section-head h2 {
       margin: .4rem 0 .7rem;
 
       font-size:
         clamp(2rem, 5vw, 3rem);
     }
 
-    .completion-section-head p {
+    .beginner-section-head p {
       margin: 0;
 
-      color:
-        var(--color-text-muted);
+      color: var(--color-text-muted);
 
       line-height: 1.7;
     }
 
 
     /* =========================================================
-       STATUS
+       GUIAS DISPONÍVEIS
     ========================================================= */
 
-    .completion-status-section {
+    .available-guides-section {
       padding-top: 4rem;
     }
 
-    .completion-status-panel {
+    .empty-guides {
       padding: 1.4rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-medium);
-
-      background:
-        var(--color-surface);
-    }
-
-    .completion-status-panel h2 {
-      margin: .4rem 0 .7rem;
-
-      font-size:
-        clamp(1.9rem, 5vw, 2.8rem);
-    }
-
-    .completion-status-panel > p {
-      max-width: 900px;
-
-      color:
-        var(--color-text-muted);
-
-      line-height: 1.75;
-    }
-
-    .completion-status-box {
-      margin-top: 1.3rem;
-
-      padding: 1rem;
 
       border:
         1px dashed var(--color-border);
 
       border-radius:
-        var(--radius-small);
+        var(--radius-medium);
 
       background:
         rgba(255,255,255,.015);
     }
 
-    .completion-status-box strong {
+    .empty-guides strong {
       display: block;
 
-      margin-bottom: .4rem;
+      margin-bottom: .5rem;
 
-      color: #ff73bd;
+      font-size: 1.05rem;
     }
 
-    .completion-status-box p {
+    .empty-guides p {
+      max-width: 880px;
+
       margin: 0;
 
-      color:
-        var(--color-text-muted);
+      color: var(--color-text-muted);
 
-      line-height: 1.65;
+      line-height: 1.7;
     }
 
 
     /* =========================================================
-       ÁREAS DO 100%
+       TÓPICOS FUTUROS
     ========================================================= */
 
-    .completion-areas-section {
+    .future-topics-section {
       padding-top: 4rem;
     }
 
-    .completion-areas-grid {
+    .future-topics-grid {
       display: grid;
 
       grid-template-columns:
@@ -353,7 +316,7 @@
       gap: .8rem;
     }
 
-    .completion-area-card {
+    .future-topic-card {
       min-width: 0;
 
       padding: 1rem;
@@ -368,7 +331,7 @@
         var(--color-surface);
     }
 
-    .completion-area-number {
+    .future-topic-number {
       display: block;
 
       margin-bottom: .4rem;
@@ -381,17 +344,16 @@
       letter-spacing: .08em;
     }
 
-    .completion-area-card h3 {
+    .future-topic-card h3 {
       margin: .3rem 0 .4rem;
 
       font-size: 1rem;
     }
 
-    .completion-area-card p {
+    .future-topic-card p {
       margin: 0;
 
-      color:
-        var(--color-text-muted);
+      color: var(--color-text-muted);
 
       font-size: .88rem;
       line-height: 1.55;
@@ -399,14 +361,14 @@
 
 
     /* =========================================================
-       COMO SERÁ O GUIA
+       WIKI
     ========================================================= */
 
-    .completion-structure-section {
+    .beginner-wiki-section {
       padding-top: 4rem;
     }
 
-    .completion-structure-panel {
+    .beginner-wiki-panel {
       padding: 1.4rem;
 
       border:
@@ -419,23 +381,22 @@
         var(--color-surface);
     }
 
-    .completion-structure-panel h2 {
+    .beginner-wiki-panel h2 {
       margin: .4rem 0 .7rem;
 
       font-size:
         clamp(1.9rem, 5vw, 2.8rem);
     }
 
-    .completion-structure-panel > p {
+    .beginner-wiki-panel > p {
       max-width: 900px;
 
-      color:
-        var(--color-text-muted);
+      color: var(--color-text-muted);
 
       line-height: 1.75;
     }
 
-    .completion-structure-grid {
+    .beginner-wiki-grid {
       display: grid;
 
       grid-template-columns:
@@ -446,7 +407,9 @@
       margin-top: 1.3rem;
     }
 
-    .completion-structure-card {
+    .beginner-wiki-card {
+      display: block;
+
       padding: 1rem;
 
       border:
@@ -457,215 +420,6 @@
 
       background:
         rgba(255,255,255,.02);
-    }
-
-    .completion-structure-card strong {
-      display: block;
-
-      margin-bottom: .3rem;
-    }
-
-    .completion-structure-card span {
-      color:
-        var(--color-text-muted);
-
-      font-size: .85rem;
-      line-height: 1.45;
-    }
-
-
-    /* =========================================================
-       PROGRESSO
-    ========================================================= */
-
-    .completion-progress-section {
-      padding-top: 4rem;
-    }
-
-    .completion-progress-panel {
-      padding: 1.4rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-medium);
-
-      background:
-        var(--color-surface);
-    }
-
-    .completion-progress-panel h2 {
-      margin: .4rem 0 .7rem;
-
-      font-size:
-        clamp(1.9rem, 5vw, 2.8rem);
-    }
-
-    .completion-progress-panel > p {
-      max-width: 900px;
-
-      color:
-        var(--color-text-muted);
-
-      line-height: 1.75;
-    }
-
-    .completion-progress-placeholder {
-      margin-top: 1.3rem;
-
-      padding: 1.2rem;
-
-      border:
-        1px dashed var(--color-border);
-
-      border-radius:
-        var(--radius-small);
-
-      background:
-        rgba(255,255,255,.015);
-    }
-
-    .completion-progress-label {
-      display: flex;
-      justify-content: space-between;
-      gap: 1rem;
-
-      margin-bottom: .7rem;
-
-      font-size: .9rem;
-      font-weight: 800;
-    }
-
-    .completion-progress-bar {
-      width: 100%;
-      height: 12px;
-
-      overflow: hidden;
-
-      border-radius: 999px;
-
-      background:
-        rgba(255,255,255,.07);
-    }
-
-    .completion-progress-fill {
-      width: 0%;
-      height: 100%;
-
-      border-radius: inherit;
-
-      background:
-        linear-gradient(
-          90deg,
-          #ff3d9a,
-          #9b63ff
-        );
-    }
-
-    .completion-progress-note {
-      margin: .8rem 0 0;
-
-      color:
-        var(--color-text-muted);
-
-      font-size: .84rem;
-      line-height: 1.55;
-    }
-
-
-    /* =========================================================
-       FERRAMENTA 100%
-    ========================================================= */
-
-    .completion-tool-section {
-      padding-top: 4rem;
-    }
-
-    .completion-tool-panel {
-      display: grid;
-
-      grid-template-columns: 1fr;
-
-      gap: 1.4rem;
-
-      padding: 1.4rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-medium);
-
-      background:
-        var(--color-surface);
-    }
-
-    .completion-tool-panel h2 {
-      margin: .4rem 0 .7rem;
-
-      font-size:
-        clamp(1.9rem, 5vw, 2.8rem);
-    }
-
-    .completion-tool-panel p {
-      max-width: 850px;
-
-      color:
-        var(--color-text-muted);
-
-      line-height: 1.75;
-    }
-
-    .future-tool-route {
-      display: inline-block;
-
-      margin-top: .5rem;
-
-      padding: .45rem .7rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-small);
-
-      color: #ff73bd;
-
-      font-family: monospace;
-    }
-
-
-    /* =========================================================
-       CONTEÚDO RELACIONADO
-    ========================================================= */
-
-    .completion-related-section {
-      padding-top: 4rem;
-    }
-
-    .completion-related-grid {
-      display: grid;
-
-      grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-
-      gap: .8rem;
-    }
-
-    .completion-related-card {
-      display: block;
-
-      padding: 1rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-small);
-
-      background:
-        var(--color-surface);
 
       color: inherit;
       text-decoration: none;
@@ -675,7 +429,7 @@
         border-color .2s ease;
     }
 
-    .completion-related-card:hover {
+    .beginner-wiki-card:hover {
       transform:
         translateY(-2px);
 
@@ -685,15 +439,14 @@
       color: inherit;
     }
 
-    .completion-related-card strong {
+    .beginner-wiki-card strong {
       display: block;
 
       margin-bottom: .3rem;
     }
 
-    .completion-related-card span {
-      color:
-        var(--color-text-muted);
+    .beginner-wiki-card span {
+      color: var(--color-text-muted);
 
       font-size: .85rem;
       line-height: 1.45;
@@ -701,7 +454,7 @@
 
 
     /* =========================================================
-       OUTROS GUIAS
+       OUTRAS CATEGORIAS
     ========================================================= */
 
     .other-guides-section {
@@ -761,8 +514,7 @@
 
       margin: 0;
 
-      color:
-        var(--color-text-muted);
+      color: var(--color-text-muted);
 
       font-size: .88rem;
       line-height: 1.55;
@@ -784,11 +536,11 @@
        PESQUISA
     ========================================================= */
 
-    .completion-search-section {
+    .beginner-search-section {
       padding-top: 4rem;
     }
 
-    .completion-search-panel {
+    .beginner-search-panel {
       padding: 1.4rem;
 
       border:
@@ -801,20 +553,19 @@
         var(--color-surface);
     }
 
-    .completion-search-panel h2 {
+    .beginner-search-panel h2 {
       margin: .4rem 0 .5rem;
     }
 
-    .completion-search-panel p {
+    .beginner-search-panel p {
       max-width: 820px;
 
-      color:
-        var(--color-text-muted);
+      color: var(--color-text-muted);
 
       line-height: 1.7;
     }
 
-    .completion-search-form {
+    .beginner-search-form {
       display: grid;
 
       grid-template-columns: 1fr;
@@ -826,7 +577,7 @@
       margin-top: 1rem;
     }
 
-    .completion-search-form input {
+    .beginner-search-form input {
       width: 100%;
 
       padding: .9rem 1rem;
@@ -852,24 +603,12 @@
 
     @media (min-width: 700px) {
 
-      .completion-areas-grid {
+      .future-topics-grid {
         grid-template-columns:
           repeat(4, minmax(0, 1fr));
       }
 
-      .completion-structure-grid {
-        grid-template-columns:
-          repeat(4, minmax(0, 1fr));
-      }
-
-      .completion-tool-panel {
-        grid-template-columns:
-          1fr auto;
-
-        align-items: center;
-      }
-
-      .completion-related-grid {
+      .beginner-wiki-grid {
         grid-template-columns:
           repeat(3, minmax(0, 1fr));
       }
@@ -879,7 +618,7 @@
           repeat(3, minmax(0, 1fr));
       }
 
-      .completion-search-form {
+      .beginner-search-form {
         grid-template-columns:
           1fr auto;
       }
@@ -893,7 +632,7 @@
 
     @media (min-width: 960px) {
 
-      .completion-hero-grid {
+      .beginner-hero-grid {
         grid-template-columns:
           1.2fr .8fr;
       }
@@ -912,7 +651,7 @@
 
     @media (max-width: 699px) {
 
-      .completion-container {
+      .beginner-container {
         width: 100%;
         max-width: 100%;
       }
@@ -930,9 +669,9 @@
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "Guia 100% de GTA VI",
-    "description": "Central de acompanhamento para completar Grand Theft Auto VI em 100%.",
-    "url": "https://gta6zoone.com.br/guias/guia-100/",
+    "name": "Guias para Iniciantes em GTA VI",
+    "description": "Central de ajuda e primeiros passos para jogadores de Grand Theft Auto VI.",
+    "url": "https://gta6zoone.com.br/guias/iniciantes/",
     "isPartOf": {
       "@type": "WebSite",
       "name": "GTA6Zoone",
@@ -1480,16 +1219,16 @@
 
 <main
   id="conteudo"
-  class="completion-page">
+  class="beginner-page">
 
 
 <!-- =========================================================
      HERO
 ========================================================= -->
 
-<section class="completion-hero">
+<section class="beginner-hero">
 
-  <div class="container completion-container">
+  <div class="container beginner-container">
 
 
     <nav
@@ -1508,46 +1247,46 @@
 
       ›
 
-      Guia 100%
+      Iniciantes
 
     </nav>
 
 
-    <div class="completion-hero-grid">
+    <div class="beginner-hero-grid">
 
 
-      <div class="completion-hero-copy">
+      <div class="beginner-hero-copy">
 
 
         <span class="eyebrow">
-          GUIAS · 100%
+          GUIAS · INICIANTES
         </span>
 
 
         <h1>
-          Guia 100% de GTA VI
+          Começando em GTA VI
         </h1>
 
 
         <p class="lede">
 
-          A central para acompanhar tudo
-          o que realmente for necessário
-          para completar GTA VI em 100%.
+          Primeiros passos, sistemas básicos
+          e respostas para as dúvidas de quem
+          está começando a explorar GTA VI.
 
         </p>
 
 
         <p>
 
-          Conforme os requisitos oficiais
-          e os sistemas do jogo forem conhecidos,
-          esta página será transformada em um
-          roteiro completo de progresso.
+          Esta categoria será ampliada conforme
+          pudermos verificar diretamente como
+          cada sistema do jogo funciona.
 
-          Cada etapa poderá se conectar aos
-          nossos guias de missões, atividades,
-          colecionáveis, mapa e outros conteúdos.
+          Os futuros guias terão instruções,
+          screenshots, ligações com a Wiki,
+          mapa e vídeos próprios sempre que
+          essas informações forem úteis.
 
         </p>
 
@@ -1561,17 +1300,18 @@
         </a>
 
 
-        <div class="completion-notice">
+        <div class="beginner-notice">
 
           <p>
 
-            <strong>NÃO VAMOS INVENTAR O QUE CONTA PARA 100%:</strong>
-            determinadas atividades podem existir no jogo
-            sem fazer parte da porcentagem oficial.
+            <strong>INFORMAÇÃO VERIFICADA:</strong>
+            não criaremos tutoriais baseados apenas
+            em expectativas ou sistemas de jogos
+            anteriores da série.
 
-            Só adicionaremos itens à lista obrigatória
-            quando pudermos confirmar que eles realmente
-            contribuem para a conclusão de GTA VI.
+            Os artigos serão publicados quando
+            houver conteúdo suficiente para
+            explicar corretamente como GTA VI funciona.
 
           </p>
 
@@ -1583,12 +1323,12 @@
 
       <!-- IMAGEM FUTURA -->
 
-      <div class="completion-hero-media">
+      <div class="beginner-hero-media">
 
-        <div class="completion-media-placeholder">
+        <div class="beginner-media-placeholder">
 
           <strong>
-            GTA VI · 100%
+            PRIMEIROS PASSOS
           </strong>
 
           <span>
@@ -1608,57 +1348,56 @@
 
 
 <!-- =========================================================
-     STATUS
+     GUIAS DISPONÍVEIS
 ========================================================= -->
 
-<section class="completion-status-section section section-alt">
+<section class="available-guides-section section section-alt">
 
-  <div class="container completion-container">
+  <div class="container beginner-container">
 
 
-    <div class="completion-status-panel">
-
+    <div class="beginner-section-head">
 
       <span class="eyebrow">
-        STATUS DO GUIA
+        GUIAS PARA INICIANTES
       </span>
 
 
       <h2>
-        Requisitos ainda serão documentados
+        Aprenda desde o começo
       </h2>
 
 
       <p>
 
-        Esta página já está preparada para
-        receber a estrutura completa dos 100%,
-        mas a lista definitiva dependerá
-        daquilo que GTA VI realmente exigir.
+        Aqui aparecerão os artigos individuais
+        conforme forem produzidos.
 
       </p>
 
+    </div>
 
-      <div class="completion-status-box">
 
-        <strong>
-          AGUARDANDO CONFIRMAÇÃO
-        </strong>
+    <div class="empty-guides">
 
-        <p>
+      <strong>
+        Guias individuais em breve
+      </strong>
 
-          Quando pudermos verificar os critérios
-          de conclusão do jogo, esta área passará
-          a mostrar a quantidade total de requisitos,
-          porcentagens, progresso e links diretos
-          para cada guia relacionado.
+      <p>
 
-        </p>
+        Depois que os sistemas de GTA VI puderem
+        ser testados, esta área poderá reunir
+        diversos tutoriais específicos.
 
-      </div>
+        Em vez de uma única página enorme,
+        cada dúvida importante poderá ter
+        seu próprio guia.
 
+      </p>
 
     </div>
+
 
   </div>
 
@@ -1666,136 +1405,133 @@
 
 
 <!-- =========================================================
-     POSSÍVEIS ÁREAS
+     TÓPICOS FUTUROS
 ========================================================= -->
 
-<section class="completion-areas-section section">
+<section class="future-topics-section section">
 
-  <div class="container completion-container">
+  <div class="container beginner-container">
 
 
-    <div class="completion-section-head">
+    <div class="beginner-section-head">
 
       <span class="eyebrow">
-        ORGANIZAÇÃO
+        CENTRAL DE AJUDA
       </span>
 
 
       <h2>
-        Áreas que vamos acompanhar
+        O que poderá encontrar aqui
       </h2>
 
 
       <p>
 
-        Estas são seções do GTA6Zoone que poderão
-        alimentar o Guia 100%.
-
-        A presença delas aqui não significa
-        que todas serão obrigatórias para
-        completar o jogo.
+        Estes blocos representam os tipos
+        de dúvidas que poderão gerar guias
+        específicos depois do lançamento.
 
       </p>
 
     </div>
 
 
-    <div class="completion-areas-grid">
+    <div class="future-topics-grid">
 
 
-      <div class="completion-area-card">
+      <div class="future-topic-card">
 
-        <span class="completion-area-number">
+        <span class="future-topic-number">
           01
         </span>
 
         <h3>
-          Missões
+          Primeiros passos
         </h3>
 
         <p>
-          Acompanhamento da campanha
-          e outros tipos de missões.
+          Como começar e entender
+          os principais sistemas.
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="future-topic-card">
 
-        <span class="completion-area-number">
+        <span class="future-topic-number">
           02
         </span>
 
         <h3>
-          Atividades
+          Controles
         </h3>
 
         <p>
-          Conteúdos opcionais quando
-          fizerem parte da conclusão.
+          Comandos e funções
+          importantes do jogo.
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="future-topic-card">
 
-        <span class="completion-area-number">
+        <span class="future-topic-number">
           03
         </span>
 
         <h3>
-          Colecionáveis
+          Interface
         </h3>
 
         <p>
-          Conjuntos e itens necessários,
-          caso sejam exigidos.
+          Menus, indicadores
+          e elementos da tela.
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="future-topic-card">
 
-        <span class="completion-area-number">
+        <span class="future-topic-number">
           04
         </span>
 
         <h3>
-          Exploração
+          Mapa
         </h3>
 
         <p>
-          Requisitos relacionados ao mapa
-          quando forem confirmados.
+          Como navegar e entender
+          os elementos do mapa.
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="future-topic-card">
 
-        <span class="completion-area-number">
+        <span class="future-topic-number">
           05
         </span>
 
         <h3>
-          Propriedades
+          Progressão
         </h3>
 
         <p>
-          Imóveis ou estabelecimentos
-          apenas se tiverem relevância para 100%.
+          Como desbloqueios e avanço
+          funcionarem na campanha.
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="future-topic-card">
 
-        <span class="completion-area-number">
+        <span class="future-topic-number">
           06
         </span>
 
@@ -1804,44 +1540,44 @@
         </h3>
 
         <p>
-          Objetivos relacionados a veículos
-          somente quando comprovados.
+          Conceitos básicos para
+          utilizar diferentes veículos.
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="future-topic-card">
 
-        <span class="completion-area-number">
+        <span class="future-topic-number">
           07
         </span>
 
         <h3>
-          Desafios
+          Armas
         </h3>
 
         <p>
-          Categorias adicionais caso
-          existam requisitos desse tipo.
+          Funcionamento básico
+          de armas e equipamentos.
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="future-topic-card">
 
-        <span class="completion-area-number">
+        <span class="future-topic-number">
           08
         </span>
 
         <h3>
-          Outros requisitos
+          Atividades
         </h3>
 
         <p>
-          Qualquer categoria oficial
-          que não se encaixe nas anteriores.
+          Como descobrir e começar
+          conteúdos opcionais.
         </p>
 
       </div>
@@ -1855,218 +1591,188 @@
 
 
 <!-- =========================================================
-     COMO SERÁ O GUIA
+     WIKI
 ========================================================= -->
 
-<section class="completion-structure-section section section-alt">
+<section class="beginner-wiki-section section section-alt">
 
-  <div class="container completion-container">
+  <div class="container beginner-container">
 
 
-    <div class="completion-structure-panel">
+    <div class="beginner-wiki-panel">
 
 
       <span class="eyebrow">
-        ESTRUTURA
+        CONHEÇA O JOGO
       </span>
 
 
       <h2>
-        Um roteiro completo do início aos 100%
+        Comece também pela Wiki
       </h2>
 
 
       <p>
 
-        Quando o conteúdo puder ser confirmado,
-        organizaremos este guia de forma que o
-        visitante consiga identificar rapidamente
-        o que falta e abrir o tutorial específico.
+        Enquanto os tutoriais práticos ainda
+        estão sendo preparados, você já pode
+        conhecer personagens, veículos, locais,
+        armas e outras áreas de GTA VI.
 
       </p>
 
 
-      <div class="completion-structure-grid">
+      <div class="beginner-wiki-grid">
 
 
-        <div class="completion-structure-card">
+        <a
+          class="beginner-wiki-card"
+          href="../../gta-6/index.html">
 
           <strong>
-            Requisito
+            GTA VI
           </strong>
 
           <span>
-            O que precisa ser concluído.
+            Visão geral do jogo.
           </span>
 
-        </div>
+        </a>
 
 
-        <div class="completion-structure-card">
+        <a
+          class="beginner-wiki-card"
+          href="../../personagens/index.html">
 
           <strong>
-            Quantidade
+            Personagens
           </strong>
 
           <span>
-            Quantos itens ou objetivos existem.
+            Conheça os personagens.
           </span>
 
-        </div>
+        </a>
 
 
-        <div class="completion-structure-card">
+        <a
+          class="beginner-wiki-card"
+          href="../../locais/index.html">
 
           <strong>
-            Percentual
+            Locais
           </strong>
 
           <span>
-            Quanto contribui para os 100%, se aplicável.
+            Explore as regiões.
           </span>
 
-        </div>
+        </a>
 
 
-        <div class="completion-structure-card">
-
-          <strong>
-            Checklist
-          </strong>
-
-          <span>
-            Lista organizada de objetivos.
-          </span>
-
-        </div>
-
-
-        <div class="completion-structure-card">
-
-          <strong>
-            Guia
-          </strong>
-
-          <span>
-            Link direto para o passo a passo.
-          </span>
-
-        </div>
-
-
-        <div class="completion-structure-card">
+        <a
+          class="beginner-wiki-card"
+          href="../../mapa/index.html">
 
           <strong>
             Mapa
           </strong>
 
           <span>
-            Localizações quando forem necessárias.
+            Explore Leonida.
           </span>
 
-        </div>
+        </a>
 
 
-        <div class="completion-structure-card">
+        <a
+          class="beginner-wiki-card"
+          href="../../veiculos/index.html">
 
           <strong>
-            Screenshots
+            Veículos
           </strong>
 
           <span>
-            Imagens para facilitar a conclusão.
+            Veja o catálogo.
           </span>
 
-        </div>
+        </a>
 
 
-        <div class="completion-structure-card">
+        <a
+          class="beginner-wiki-card"
+          href="../../armas/index.html">
 
           <strong>
-            Vídeo
+            Armas
           </strong>
 
           <span>
-            Gameplay próprio quando útil.
+            Equipamentos catalogados.
           </span>
 
-        </div>
+        </a>
 
 
-      </div>
+        <a
+          class="beginner-wiki-card"
+          href="../../missoes/index.html">
 
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================================================
-     PROGRESSO
-========================================================= -->
-
-<section class="completion-progress-section section">
-
-  <div class="container completion-container">
-
-
-    <div class="completion-progress-panel">
-
-
-      <span class="eyebrow">
-        PROGRESSO
-      </span>
-
-
-      <h2>
-        Acompanhe sua conclusão
-      </h2>
-
-
-      <p>
-
-        O guia editorial mostrará todos
-        os requisitos confirmados.
-
-        Mais adiante, teremos também
-        uma ferramenta dedicada para
-        o visitante controlar o próprio progresso.
-
-      </p>
-
-
-      <div class="completion-progress-placeholder">
-
-
-        <div class="completion-progress-label">
+          <strong>
+            Missões
+          </strong>
 
           <span>
-            Estrutura do checklist
+            Área da campanha.
           </span>
+
+        </a>
+
+
+        <a
+          class="beginner-wiki-card"
+          href="../../propriedades/index.html">
+
+          <strong>
+            Propriedades
+          </strong>
 
           <span>
-            0%
+            Imóveis e estabelecimentos.
           </span>
 
-        </div>
+        </a>
 
 
-        <div class="completion-progress-bar">
+        <a
+          class="beginner-wiki-card"
+          href="../../atividades/index.html">
 
-          <div class="completion-progress-fill"></div>
+          <strong>
+            Atividades
+          </strong>
 
-        </div>
+          <span>
+            Conteúdos do mundo aberto.
+          </span>
+
+        </a>
 
 
-        <p class="completion-progress-note">
+        <a
+          class="beginner-wiki-card"
+          href="../../colecionaveis/index.html">
 
-          Demonstração estrutural.
-          Este número não representa o progresso
-          real nem os requisitos oficiais de GTA VI.
+          <strong>
+            Colecionáveis
+          </strong>
 
-        </p>
+          <span>
+            Futuras localizações e conjuntos.
+          </span>
+
+        </a>
 
 
       </div>
@@ -2080,253 +1786,15 @@
 
 
 <!-- =========================================================
-     FERRAMENTA FUTURA
+     OUTROS GUIAS
 ========================================================= -->
 
-<section class="completion-tool-section section section-alt">
+<section class="other-guides-section section">
 
-  <div class="container completion-container">
+  <div class="container beginner-container">
 
 
-    <div class="completion-tool-panel">
-
-
-      <div>
-
-
-        <span class="eyebrow">
-          FERRAMENTA FUTURA
-        </span>
-
-
-        <h2>
-          Checklist interativo de 100%
-        </h2>
-
-
-        <p>
-
-          Este Guia 100% será a referência editorial.
-
-          Separadamente, o GTA6Zoone terá
-          uma ferramenta onde o visitante poderá
-          marcar objetivos concluídos e acompanhar
-          seu percentual de progresso.
-
-        </p>
-
-
-      </div>
-
-
-      <div>
-
-        <strong>
-          Rota reservada
-        </strong>
-
-        <br>
-
-        <span class="future-tool-route">
-          /ferramentas/checklist-100/
-        </span>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================================================
-     CONTEÚDO RELACIONADO
-========================================================= -->
-
-<section class="completion-related-section section">
-
-  <div class="container completion-container">
-
-
-    <div class="completion-section-head">
-
-      <span class="eyebrow">
-        TUDO CONECTADO
-      </span>
-
-
-      <h2>
-        Do checklist para o guia certo
-      </h2>
-
-
-      <p>
-
-        Cada requisito poderá levar diretamente
-        para as áreas e tutoriais relacionados.
-
-      </p>
-
-    </div>
-
-
-    <div class="completion-related-grid">
-
-
-      <a
-        class="completion-related-card"
-        href="../missoes/index.html">
-
-        <strong>
-          Guias de Missões
-        </strong>
-
-        <span>
-          Passo a passo das missões.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
-        href="../atividades/index.html">
-
-        <strong>
-          Guias de Atividades
-        </strong>
-
-        <span>
-          Ajuda para conteúdos opcionais.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
-        href="../colecionaveis/index.html">
-
-        <strong>
-          Guias de Colecionáveis
-        </strong>
-
-        <span>
-          Localizações e rotas.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
-        href="../mapa/index.html">
-
-        <strong>
-          Guias do Mapa
-        </strong>
-
-        <span>
-          Ajuda com localizações.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
-        href="../../mapa/index.html">
-
-        <strong>
-          Mapa
-        </strong>
-
-        <span>
-          Abra o mapa do GTA6Zoone.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
-        href="../../colecionaveis/index.html">
-
-        <strong>
-          Colecionáveis
-        </strong>
-
-        <span>
-          Consulte o catálogo principal.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
-        href="../../atividades/index.html">
-
-        <strong>
-          Atividades
-        </strong>
-
-        <span>
-          Consulte a área da Wiki.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
-        href="../../missoes/index.html">
-
-        <strong>
-          Missões
-        </strong>
-
-        <span>
-          Consulte o índice da campanha.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
-        href="../../propriedades/index.html">
-
-        <strong>
-          Propriedades
-        </strong>
-
-        <span>
-          Veja imóveis e estabelecimentos.
-        </span>
-
-      </a>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================================================
-     OUTRAS CATEGORIAS DE GUIAS
-========================================================= -->
-
-<section class="other-guides-section section section-alt">
-
-  <div class="container completion-container">
-
-
-    <div class="completion-section-head">
+    <div class="beginner-section-head">
 
       <span class="eyebrow">
         OUTRAS CATEGORIAS
@@ -2340,8 +1808,9 @@
 
       <p>
 
-        Todas as principais áreas
-        permanecem interligadas.
+        As categorias são interligadas
+        para facilitar a navegação entre
+        diferentes tipos de ajuda.
 
       </p>
 
@@ -2349,29 +1818,6 @@
 
 
     <div class="other-guides-grid">
-
-
-      <a
-        class="other-guide-card"
-        href="../iniciantes/index.html">
-
-        <span class="eyebrow">
-          GUIAS
-        </span>
-
-        <h3>
-          Iniciantes
-        </h3>
-
-        <p>
-          Primeiros passos e sistemas básicos.
-        </p>
-
-        <span class="other-guide-action">
-          Abrir categoria →
-        </span>
-
-      </a>
 
 
       <a
@@ -2479,7 +1925,7 @@
         </h3>
 
         <p>
-          Casas e estabelecimentos.
+          Casas, garagens e estabelecimentos.
         </p>
 
         <span class="other-guide-action">
@@ -2525,7 +1971,7 @@
         </h3>
 
         <p>
-          Localizações e rotas.
+          Localização e rotas.
         </p>
 
         <span class="other-guide-action">
@@ -2560,41 +2006,18 @@
 
       <a
         class="other-guide-card"
-        href="../segredos/index.html">
+        href="../guia-100/index.html">
 
         <span class="eyebrow">
-          DESCOBERTAS
+          GUIAS
         </span>
 
         <h3>
-          Segredos
+          Guia 100%
         </h3>
 
         <p>
-          Mistérios e descobertas.
-        </p>
-
-        <span class="other-guide-action">
-          Abrir categoria →
-        </span>
-
-      </a>
-
-
-      <a
-        class="other-guide-card"
-        href="../easter-eggs/index.html">
-
-        <span class="eyebrow">
-          DESCOBERTAS
-        </span>
-
-        <h3>
-          Easter Eggs
-        </h3>
-
-        <p>
-          Referências e homenagens.
+          Complete tudo em GTA VI.
         </p>
 
         <span class="other-guide-action">
@@ -2638,12 +2061,12 @@
      PESQUISA
 ========================================================= -->
 
-<section class="completion-search-section section">
+<section class="beginner-search-section section section-alt">
 
-  <div class="container completion-container">
+  <div class="container beginner-container">
 
 
-    <div class="completion-search-panel">
+    <div class="beginner-search-panel">
 
 
       <span class="eyebrow">
@@ -2652,28 +2075,27 @@
 
 
       <h2>
-        Procurando algum requisito?
+        Não encontrou o que precisava?
       </h2>
 
 
       <p>
 
-        Use a pesquisa geral para localizar
-        missões, atividades, colecionáveis,
-        veículos, personagens e outros
-        conteúdos do GTA6Zoone.
+        Pesquise em todo o GTA6Zoone
+        por personagens, veículos, locais,
+        armas, notícias e futuros guias.
 
       </p>
 
 
       <form
-        class="completion-search-form"
+        class="beginner-search-form"
         action="../../buscar/index.html">
 
 
         <label
           class="hidden"
-          for="completion-search">
+          for="beginner-search">
 
           Pesquisar
 
@@ -2681,10 +2103,10 @@
 
 
         <input
-          id="completion-search"
+          id="beginner-search"
           name="q"
           type="search"
-          placeholder="O que você precisa completar?">
+          placeholder="O que você quer descobrir?">
 
 
         <button
@@ -2721,8 +2143,6 @@
     <div class="footer-grid">
 
 
-      <!-- GTA6ZOONE -->
-
       <div>
 
         <strong class="brand-text">
@@ -2738,8 +2158,6 @@
 
       </div>
 
-
-      <!-- EXPLORAR -->
 
       <div>
 
@@ -2774,8 +2192,6 @@
       </div>
 
 
-      <!-- COMUNIDADE -->
-
       <div>
 
         <h3>
@@ -2793,7 +2209,6 @@
 
           </a>
 
-
           <a
             href="https://www.instagram.com/gta6zoone/"
             target="_blank"
@@ -2807,8 +2222,6 @@
 
       </div>
 
-
-      <!-- INSTITUCIONAL -->
 
       <div>
 

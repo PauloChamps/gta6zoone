@@ -6,15 +6,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Guia 100% de GTA VI: como completar o jogo | GTA6Zoone</title>
+  <title>Guias de Armas de GTA VI: armas e equipamentos | GTA6Zoone</title>
 
   <meta
     name="description"
-    content="Guia 100% de GTA VI. Acompanhe os requisitos, missões, atividades, colecionáveis e tudo o que for necessário para completar Grand Theft Auto VI.">
+    content="Guias de armas de GTA VI. Encontre ajuda sobre obtenção, uso, equipamentos, localização e futuros comparativos de armas em Grand Theft Auto VI.">
 
   <link
     rel="canonical"
-    href="https://gta6zoone.com.br/guias/guia-100/">
+    href="https://gta6zoone.com.br/guias/armas/">
 
   <!-- FAVICON -->
 
@@ -30,15 +30,15 @@
 
   <meta
     property="og:title"
-    content="Guia 100% de GTA VI | GTA6Zoone">
+    content="Guias de Armas de GTA VI | GTA6Zoone">
 
   <meta
     property="og:description"
-    content="Central para acompanhar tudo o que for necessário para completar Grand Theft Auto VI em 100%.">
+    content="Guias sobre armas e equipamentos de Grand Theft Auto VI.">
 
   <meta
     property="og:url"
-    content="https://gta6zoone.com.br/guias/guia-100/">
+    content="https://gta6zoone.com.br/guias/armas/">
 
   <meta
     property="og:image"
@@ -59,16 +59,16 @@
 
 
   <!-- =========================================================
-       CSS EXCLUSIVO — GUIA 100%
+       CSS EXCLUSIVO — GUIAS ARMAS
   ========================================================= -->
 
   <style>
 
-    .completion-page {
+    .weapon-guides-page {
       overflow: hidden;
     }
 
-    .completion-container {
+    .weapon-guides-container {
       max-width: 1180px;
       margin-inline: auto;
     }
@@ -78,23 +78,23 @@
        HERO
     ========================================================= */
 
-    .completion-hero {
+    .weapon-guides-hero {
       padding-top: 2.5rem;
       padding-bottom: 2rem;
     }
 
-    .completion-hero-grid {
+    .weapon-guides-hero-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 2rem;
       align-items: center;
     }
 
-    .completion-hero-copy {
+    .weapon-guides-copy {
       max-width: 850px;
     }
 
-    .completion-hero h1 {
+    .weapon-guides-hero h1 {
       margin: .45rem 0 1rem;
 
       font-size:
@@ -103,14 +103,14 @@
       line-height: .96;
     }
 
-    .completion-hero .lede {
+    .weapon-guides-hero .lede {
       max-width: 820px;
 
       font-size: 1.08rem;
       line-height: 1.75;
     }
 
-    .completion-hero p {
+    .weapon-guides-hero p {
       max-width: 840px;
 
       line-height: 1.75;
@@ -121,7 +121,7 @@
        HERO — IMAGEM FUTURA
     ========================================================= */
 
-    .completion-hero-media {
+    .weapon-guides-media {
       min-height: 280px;
 
       display: flex;
@@ -154,7 +154,7 @@
         var(--color-surface);
     }
 
-    .completion-hero-media img {
+    .weapon-guides-media img {
       display: block;
 
       width: 100%;
@@ -167,19 +167,19 @@
       object-fit: cover;
     }
 
-    .completion-media-placeholder {
+    .weapon-media-placeholder {
       text-align: center;
     }
 
-    .completion-media-placeholder strong {
+    .weapon-media-placeholder strong {
       display: block;
 
       margin-bottom: .4rem;
 
-      font-size: 1.45rem;
+      font-size: 1.35rem;
     }
 
-    .completion-media-placeholder span {
+    .weapon-media-placeholder span {
       color:
         var(--color-text-muted);
 
@@ -212,7 +212,7 @@
        AVISO
     ========================================================= */
 
-    .completion-notice {
+    .weapon-guides-notice {
       margin-top: 1.6rem;
 
       max-width: 930px;
@@ -232,7 +232,7 @@
         var(--color-surface);
     }
 
-    .completion-notice p {
+    .weapon-guides-notice p {
       margin: 0;
 
       line-height: 1.7;
@@ -243,20 +243,20 @@
        CABEÇALHOS
     ========================================================= */
 
-    .completion-section-head {
+    .weapon-section-head {
       max-width: 880px;
 
       margin-bottom: 1.5rem;
     }
 
-    .completion-section-head h2 {
+    .weapon-section-head h2 {
       margin: .4rem 0 .7rem;
 
       font-size:
         clamp(2rem, 5vw, 3rem);
     }
 
-    .completion-section-head p {
+    .weapon-section-head p {
       margin: 0;
 
       color:
@@ -267,84 +267,55 @@
 
 
     /* =========================================================
-       STATUS
+       GUIAS DISPONÍVEIS
     ========================================================= */
 
-    .completion-status-section {
+    .weapon-guides-list-section {
       padding-top: 4rem;
     }
 
-    .completion-status-panel {
+    .empty-guides {
       padding: 1.4rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-medium);
-
-      background:
-        var(--color-surface);
-    }
-
-    .completion-status-panel h2 {
-      margin: .4rem 0 .7rem;
-
-      font-size:
-        clamp(1.9rem, 5vw, 2.8rem);
-    }
-
-    .completion-status-panel > p {
-      max-width: 900px;
-
-      color:
-        var(--color-text-muted);
-
-      line-height: 1.75;
-    }
-
-    .completion-status-box {
-      margin-top: 1.3rem;
-
-      padding: 1rem;
 
       border:
         1px dashed var(--color-border);
 
       border-radius:
-        var(--radius-small);
+        var(--radius-medium);
 
       background:
         rgba(255,255,255,.015);
     }
 
-    .completion-status-box strong {
+    .empty-guides strong {
       display: block;
 
-      margin-bottom: .4rem;
+      margin-bottom: .5rem;
 
-      color: #ff73bd;
+      font-size: 1.05rem;
     }
 
-    .completion-status-box p {
+    .empty-guides p {
+      max-width: 880px;
+
       margin: 0;
 
       color:
         var(--color-text-muted);
 
-      line-height: 1.65;
+      line-height: 1.7;
     }
 
 
     /* =========================================================
-       ÁREAS DO 100%
+       FUTUROS TIPOS DE GUIA
     ========================================================= */
 
-    .completion-areas-section {
+    .weapon-topics-section {
       padding-top: 4rem;
     }
 
-    .completion-areas-grid {
+    .weapon-topics-grid {
       display: grid;
 
       grid-template-columns:
@@ -353,7 +324,7 @@
       gap: .8rem;
     }
 
-    .completion-area-card {
+    .weapon-topic-card {
       min-width: 0;
 
       padding: 1rem;
@@ -368,7 +339,7 @@
         var(--color-surface);
     }
 
-    .completion-area-number {
+    .weapon-topic-number {
       display: block;
 
       margin-bottom: .4rem;
@@ -381,13 +352,13 @@
       letter-spacing: .08em;
     }
 
-    .completion-area-card h3 {
+    .weapon-topic-card h3 {
       margin: .3rem 0 .4rem;
 
       font-size: 1rem;
     }
 
-    .completion-area-card p {
+    .weapon-topic-card p {
       margin: 0;
 
       color:
@@ -399,14 +370,93 @@
 
 
     /* =========================================================
-       COMO SERÁ O GUIA
+       ARMA JÁ CATALOGADA
     ========================================================= */
 
-    .completion-structure-section {
+    .weapon-catalog-section {
       padding-top: 4rem;
     }
 
-    .completion-structure-panel {
+    .weapon-catalog-grid {
+      display: grid;
+
+      grid-template-columns: 1fr;
+
+      gap: .8rem;
+    }
+
+    .weapon-catalog-card {
+      display: flex;
+      flex-direction: column;
+
+      min-height: 100%;
+
+      padding: 1rem;
+
+      border:
+        1px solid var(--color-border);
+
+      border-radius:
+        var(--radius-medium);
+
+      background:
+        var(--color-surface);
+
+      color: inherit;
+      text-decoration: none;
+
+      transition:
+        transform .2s ease,
+        border-color .2s ease;
+    }
+
+    .weapon-catalog-card:hover {
+      transform:
+        translateY(-2px);
+
+      border-color:
+        rgba(255,255,255,.22);
+
+      color: inherit;
+    }
+
+    .weapon-catalog-card h3 {
+      margin: .35rem 0;
+    }
+
+    .weapon-catalog-card p {
+      flex: 1;
+
+      margin: 0;
+
+      color:
+        var(--color-text-muted);
+
+      font-size: .88rem;
+      line-height: 1.55;
+    }
+
+    .weapon-catalog-action {
+      display: block;
+
+      margin-top: .8rem;
+
+      color: #ff73bd;
+
+      font-size: .78rem;
+      font-weight: 800;
+    }
+
+
+    /* =========================================================
+       ESTRUTURA FUTURA
+    ========================================================= */
+
+    .weapon-structure-section {
+      padding-top: 4rem;
+    }
+
+    .weapon-structure-panel {
       padding: 1.4rem;
 
       border:
@@ -419,14 +469,14 @@
         var(--color-surface);
     }
 
-    .completion-structure-panel h2 {
+    .weapon-structure-panel h2 {
       margin: .4rem 0 .7rem;
 
       font-size:
         clamp(1.9rem, 5vw, 2.8rem);
     }
 
-    .completion-structure-panel > p {
+    .weapon-structure-panel > p {
       max-width: 900px;
 
       color:
@@ -435,7 +485,7 @@
       line-height: 1.75;
     }
 
-    .completion-structure-grid {
+    .weapon-structure-grid {
       display: grid;
 
       grid-template-columns:
@@ -446,7 +496,7 @@
       margin-top: 1.3rem;
     }
 
-    .completion-structure-card {
+    .weapon-structure-card {
       padding: 1rem;
 
       border:
@@ -459,13 +509,13 @@
         rgba(255,255,255,.02);
     }
 
-    .completion-structure-card strong {
+    .weapon-structure-card strong {
       display: block;
 
       margin-bottom: .3rem;
     }
 
-    .completion-structure-card span {
+    .weapon-structure-card span {
       color:
         var(--color-text-muted);
 
@@ -475,114 +525,14 @@
 
 
     /* =========================================================
-       PROGRESSO
+       WIKI
     ========================================================= */
 
-    .completion-progress-section {
+    .weapon-wiki-section {
       padding-top: 4rem;
     }
 
-    .completion-progress-panel {
-      padding: 1.4rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-medium);
-
-      background:
-        var(--color-surface);
-    }
-
-    .completion-progress-panel h2 {
-      margin: .4rem 0 .7rem;
-
-      font-size:
-        clamp(1.9rem, 5vw, 2.8rem);
-    }
-
-    .completion-progress-panel > p {
-      max-width: 900px;
-
-      color:
-        var(--color-text-muted);
-
-      line-height: 1.75;
-    }
-
-    .completion-progress-placeholder {
-      margin-top: 1.3rem;
-
-      padding: 1.2rem;
-
-      border:
-        1px dashed var(--color-border);
-
-      border-radius:
-        var(--radius-small);
-
-      background:
-        rgba(255,255,255,.015);
-    }
-
-    .completion-progress-label {
-      display: flex;
-      justify-content: space-between;
-      gap: 1rem;
-
-      margin-bottom: .7rem;
-
-      font-size: .9rem;
-      font-weight: 800;
-    }
-
-    .completion-progress-bar {
-      width: 100%;
-      height: 12px;
-
-      overflow: hidden;
-
-      border-radius: 999px;
-
-      background:
-        rgba(255,255,255,.07);
-    }
-
-    .completion-progress-fill {
-      width: 0%;
-      height: 100%;
-
-      border-radius: inherit;
-
-      background:
-        linear-gradient(
-          90deg,
-          #ff3d9a,
-          #9b63ff
-        );
-    }
-
-    .completion-progress-note {
-      margin: .8rem 0 0;
-
-      color:
-        var(--color-text-muted);
-
-      font-size: .84rem;
-      line-height: 1.55;
-    }
-
-
-    /* =========================================================
-       FERRAMENTA 100%
-    ========================================================= */
-
-    .completion-tool-section {
-      padding-top: 4rem;
-    }
-
-    .completion-tool-panel {
+    .weapon-wiki-panel {
       display: grid;
 
       grid-template-columns: 1fr;
@@ -601,14 +551,14 @@
         var(--color-surface);
     }
 
-    .completion-tool-panel h2 {
+    .weapon-wiki-panel h2 {
       margin: .4rem 0 .7rem;
 
       font-size:
         clamp(1.9rem, 5vw, 2.8rem);
     }
 
-    .completion-tool-panel p {
+    .weapon-wiki-panel p {
       max-width: 850px;
 
       color:
@@ -617,22 +567,9 @@
       line-height: 1.75;
     }
 
-    .future-tool-route {
-      display: inline-block;
-
-      margin-top: .5rem;
-
-      padding: .45rem .7rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-small);
-
-      color: #ff73bd;
-
-      font-family: monospace;
+    .weapon-wiki-button {
+      align-self: center;
+      justify-self: start;
     }
 
 
@@ -640,11 +577,11 @@
        CONTEÚDO RELACIONADO
     ========================================================= */
 
-    .completion-related-section {
+    .weapon-related-section {
       padding-top: 4rem;
     }
 
-    .completion-related-grid {
+    .weapon-related-grid {
       display: grid;
 
       grid-template-columns:
@@ -653,7 +590,7 @@
       gap: .8rem;
     }
 
-    .completion-related-card {
+    .weapon-related-card {
       display: block;
 
       padding: 1rem;
@@ -675,7 +612,7 @@
         border-color .2s ease;
     }
 
-    .completion-related-card:hover {
+    .weapon-related-card:hover {
       transform:
         translateY(-2px);
 
@@ -685,13 +622,13 @@
       color: inherit;
     }
 
-    .completion-related-card strong {
+    .weapon-related-card strong {
       display: block;
 
       margin-bottom: .3rem;
     }
 
-    .completion-related-card span {
+    .weapon-related-card span {
       color:
         var(--color-text-muted);
 
@@ -784,11 +721,11 @@
        PESQUISA
     ========================================================= */
 
-    .completion-search-section {
+    .weapon-search-section {
       padding-top: 4rem;
     }
 
-    .completion-search-panel {
+    .weapon-search-panel {
       padding: 1.4rem;
 
       border:
@@ -801,11 +738,11 @@
         var(--color-surface);
     }
 
-    .completion-search-panel h2 {
+    .weapon-search-panel h2 {
       margin: .4rem 0 .5rem;
     }
 
-    .completion-search-panel p {
+    .weapon-search-panel p {
       max-width: 820px;
 
       color:
@@ -814,7 +751,7 @@
       line-height: 1.7;
     }
 
-    .completion-search-form {
+    .weapon-search-form {
       display: grid;
 
       grid-template-columns: 1fr;
@@ -826,7 +763,7 @@
       margin-top: 1rem;
     }
 
-    .completion-search-form input {
+    .weapon-search-form input {
       width: 100%;
 
       padding: .9rem 1rem;
@@ -852,24 +789,29 @@
 
     @media (min-width: 700px) {
 
-      .completion-areas-grid {
+      .weapon-topics-grid {
         grid-template-columns:
           repeat(4, minmax(0, 1fr));
       }
 
-      .completion-structure-grid {
+      .weapon-catalog-grid {
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
+      }
+
+      .weapon-structure-grid {
         grid-template-columns:
           repeat(4, minmax(0, 1fr));
       }
 
-      .completion-tool-panel {
+      .weapon-wiki-panel {
         grid-template-columns:
           1fr auto;
 
         align-items: center;
       }
 
-      .completion-related-grid {
+      .weapon-related-grid {
         grid-template-columns:
           repeat(3, minmax(0, 1fr));
       }
@@ -879,7 +821,7 @@
           repeat(3, minmax(0, 1fr));
       }
 
-      .completion-search-form {
+      .weapon-search-form {
         grid-template-columns:
           1fr auto;
       }
@@ -893,7 +835,7 @@
 
     @media (min-width: 960px) {
 
-      .completion-hero-grid {
+      .weapon-guides-hero-grid {
         grid-template-columns:
           1.2fr .8fr;
       }
@@ -912,7 +854,7 @@
 
     @media (max-width: 699px) {
 
-      .completion-container {
+      .weapon-guides-container {
         width: 100%;
         max-width: 100%;
       }
@@ -930,9 +872,9 @@
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "Guia 100% de GTA VI",
-    "description": "Central de acompanhamento para completar Grand Theft Auto VI em 100%.",
-    "url": "https://gta6zoone.com.br/guias/guia-100/",
+    "name": "Guias de Armas de GTA VI",
+    "description": "Central de guias sobre armas e equipamentos de Grand Theft Auto VI.",
+    "url": "https://gta6zoone.com.br/guias/armas/",
     "isPartOf": {
       "@type": "WebSite",
       "name": "GTA6Zoone",
@@ -1480,16 +1422,16 @@
 
 <main
   id="conteudo"
-  class="completion-page">
+  class="weapon-guides-page">
 
 
 <!-- =========================================================
      HERO
 ========================================================= -->
 
-<section class="completion-hero">
+<section class="weapon-guides-hero">
 
-  <div class="container completion-container">
+  <div class="container weapon-guides-container">
 
 
     <nav
@@ -1508,46 +1450,44 @@
 
       ›
 
-      Guia 100%
+      Armas
 
     </nav>
 
 
-    <div class="completion-hero-grid">
+    <div class="weapon-guides-hero-grid">
 
 
-      <div class="completion-hero-copy">
+      <div class="weapon-guides-copy">
 
 
         <span class="eyebrow">
-          GUIAS · 100%
+          GUIAS · ARMAS
         </span>
 
 
         <h1>
-          Guia 100% de GTA VI
+          Armas de GTA VI
         </h1>
 
 
         <p class="lede">
 
-          A central para acompanhar tudo
-          o que realmente for necessário
-          para completar GTA VI em 100%.
+          Guias para encontrar, conseguir
+          e entender as armas e equipamentos
+          disponíveis em GTA VI.
 
         </p>
 
 
         <p>
 
-          Conforme os requisitos oficiais
-          e os sistemas do jogo forem conhecidos,
-          esta página será transformada em um
-          roteiro completo de progresso.
-
-          Cada etapa poderá se conectar aos
-          nossos guias de missões, atividades,
-          colecionáveis, mapa e outros conteúdos.
+          Conforme pudermos testar o jogo,
+          esta categoria reunirá tutoriais
+          específicos sobre obtenção,
+          localização, utilização,
+          desbloqueios e comparações
+          baseadas em informações reais.
 
         </p>
 
@@ -1561,17 +1501,18 @@
         </a>
 
 
-        <div class="completion-notice">
+        <div class="weapon-guides-notice">
 
           <p>
 
-            <strong>NÃO VAMOS INVENTAR O QUE CONTA PARA 100%:</strong>
-            determinadas atividades podem existir no jogo
-            sem fazer parte da porcentagem oficial.
+            <strong>GUIAS BASEADOS EM TESTES:</strong>
+            não vamos assumir que sistemas,
+            lojas, preços, estatísticas ou métodos
+            de obtenção funcionam da mesma forma
+            que em títulos anteriores da série.
 
-            Só adicionaremos itens à lista obrigatória
-            quando pudermos confirmar que eles realmente
-            contribuem para a conclusão de GTA VI.
+            Essas informações serão adicionadas
+            quando puderem ser verificadas em GTA VI.
 
           </p>
 
@@ -1583,12 +1524,12 @@
 
       <!-- IMAGEM FUTURA -->
 
-      <div class="completion-hero-media">
+      <div class="weapon-guides-media">
 
-        <div class="completion-media-placeholder">
+        <div class="weapon-media-placeholder">
 
           <strong>
-            GTA VI · 100%
+            ARMAS & EQUIPAMENTOS
           </strong>
 
           <span>
@@ -1608,57 +1549,59 @@
 
 
 <!-- =========================================================
-     STATUS
+     GUIAS DISPONÍVEIS
 ========================================================= -->
 
-<section class="completion-status-section section section-alt">
+<section class="weapon-guides-list-section section section-alt">
 
-  <div class="container completion-container">
+  <div class="container weapon-guides-container">
 
 
-    <div class="completion-status-panel">
-
+    <div class="weapon-section-head">
 
       <span class="eyebrow">
-        STATUS DO GUIA
+        GUIAS
       </span>
 
 
       <h2>
-        Requisitos ainda serão documentados
+        Guias individuais de armas
       </h2>
 
 
       <p>
 
-        Esta página já está preparada para
-        receber a estrutura completa dos 100%,
-        mas a lista definitiva dependerá
-        daquilo que GTA VI realmente exigir.
+        Os tutoriais aparecerão aqui
+        conforme as formas de obtenção,
+        localização e funcionamento
+        puderem ser confirmadas.
 
       </p>
 
+    </div>
 
-      <div class="completion-status-box">
 
-        <strong>
-          AGUARDANDO CONFIRMAÇÃO
-        </strong>
+    <div class="empty-guides">
 
-        <p>
+      <strong>
+        Guias individuais em breve
+      </strong>
 
-          Quando pudermos verificar os critérios
-          de conclusão do jogo, esta área passará
-          a mostrar a quantidade total de requisitos,
-          porcentagens, progresso e links diretos
-          para cada guia relacionado.
+      <p>
 
-        </p>
+        Já temos conteúdo de armas catalogado
+        na Wiki, mas isso não significa que
+        sabemos como cada item será obtido
+        durante o jogo.
 
-      </div>
+        Quando essas informações estiverem
+        disponíveis, criaremos páginas específicas
+        para responder cada dúvida.
 
+      </p>
 
     </div>
+
 
   </div>
 
@@ -1666,182 +1609,195 @@
 
 
 <!-- =========================================================
-     POSSÍVEIS ÁREAS
+     FUTUROS TIPOS DE GUIA
 ========================================================= -->
 
-<section class="completion-areas-section section">
+<section class="weapon-topics-section section">
 
-  <div class="container completion-container">
+  <div class="container weapon-guides-container">
 
 
-    <div class="completion-section-head">
+    <div class="weapon-section-head">
 
       <span class="eyebrow">
-        ORGANIZAÇÃO
+        CENTRAL DE AJUDA
       </span>
 
 
       <h2>
-        Áreas que vamos acompanhar
+        O que vamos explicar
       </h2>
 
 
       <p>
 
-        Estas são seções do GTA6Zoone que poderão
-        alimentar o Guia 100%.
-
-        A presença delas aqui não significa
-        que todas serão obrigatórias para
-        completar o jogo.
+        A categoria poderá crescer conforme
+        conhecermos melhor o sistema de armas
+        e equipamentos de GTA VI.
 
       </p>
 
     </div>
 
 
-    <div class="completion-areas-grid">
+    <div class="weapon-topics-grid">
 
 
-      <div class="completion-area-card">
+      <div class="weapon-topic-card">
 
-        <span class="completion-area-number">
+        <span class="weapon-topic-number">
           01
         </span>
 
         <h3>
-          Missões
+          Onde encontrar
         </h3>
 
         <p>
-          Acompanhamento da campanha
-          e outros tipos de missões.
+
+          Localizações confirmadas
+          quando existirem.
+
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="weapon-topic-card">
 
-        <span class="completion-area-number">
+        <span class="weapon-topic-number">
           02
         </span>
 
         <h3>
-          Atividades
+          Como conseguir
         </h3>
 
         <p>
-          Conteúdos opcionais quando
-          fizerem parte da conclusão.
+
+          Métodos reais de obtenção
+          de cada equipamento.
+
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="weapon-topic-card">
 
-        <span class="completion-area-number">
+        <span class="weapon-topic-number">
           03
         </span>
 
         <h3>
-          Colecionáveis
+          Desbloqueios
         </h3>
 
         <p>
-          Conjuntos e itens necessários,
-          caso sejam exigidos.
+
+          Requisitos necessários
+          quando puderem ser confirmados.
+
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="weapon-topic-card">
 
-        <span class="completion-area-number">
+        <span class="weapon-topic-number">
           04
         </span>
 
         <h3>
-          Exploração
+          Comparações
         </h3>
 
         <p>
-          Requisitos relacionados ao mapa
-          quando forem confirmados.
+
+          Diferenças verificadas
+          entre equipamentos.
+
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="weapon-topic-card">
 
-        <span class="completion-area-number">
+        <span class="weapon-topic-number">
           05
         </span>
 
         <h3>
-          Propriedades
+          Funcionamento
         </h3>
 
         <p>
-          Imóveis ou estabelecimentos
-          apenas se tiverem relevância para 100%.
+
+          Como cada arma ou equipamento
+          funciona na prática.
+
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="weapon-topic-card">
 
-        <span class="completion-area-number">
+        <span class="weapon-topic-number">
           06
         </span>
 
         <h3>
-          Veículos
+          Utilização
         </h3>
 
         <p>
-          Objetivos relacionados a veículos
-          somente quando comprovados.
+
+          Dicas baseadas em situações
+          reais de gameplay.
+
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="weapon-topic-card">
 
-        <span class="completion-area-number">
+        <span class="weapon-topic-number">
           07
         </span>
 
         <h3>
-          Desafios
+          Personalização
         </h3>
 
         <p>
-          Categorias adicionais caso
-          existam requisitos desse tipo.
+
+          Sistemas de customização
+          quando forem confirmados.
+
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="weapon-topic-card">
 
-        <span class="completion-area-number">
+        <span class="weapon-topic-number">
           08
         </span>
 
         <h3>
-          Outros requisitos
+          Equipamentos
         </h3>
 
         <p>
-          Qualquer categoria oficial
-          que não se encaixe nas anteriores.
+
+          Outros itens relacionados
+          ao sistema de combate.
+
         </p>
 
       </div>
@@ -1855,139 +1811,236 @@
 
 
 <!-- =========================================================
-     COMO SERÁ O GUIA
+     CONTEÚDO JÁ CATALOGADO
 ========================================================= -->
 
-<section class="completion-structure-section section section-alt">
+<section class="weapon-catalog-section section section-alt">
 
-  <div class="container completion-container">
+  <div class="container weapon-guides-container">
 
 
-    <div class="completion-structure-panel">
-
+    <div class="weapon-section-head">
 
       <span class="eyebrow">
-        ESTRUTURA
+        WIKI · ARMAS
       </span>
 
 
       <h2>
-        Um roteiro completo do início aos 100%
+        Conteúdo já catalogado
       </h2>
 
 
       <p>
 
-        Quando o conteúdo puder ser confirmado,
-        organizaremos este guia de forma que o
-        visitante consiga identificar rapidamente
-        o que falta e abrir o tutorial específico.
+        Enquanto os tutoriais ainda não estão
+        disponíveis, você pode consultar
+        as informações e imagens que já
+        possuem página na Wiki.
+
+      </p>
+
+    </div>
+
+
+    <div class="weapon-catalog-grid">
+
+
+      <a
+        class="weapon-catalog-card"
+        href="../../armas/hawk-little-morgan-revolvers/index.html">
+
+        <span class="eyebrow">
+          ARMA
+        </span>
+
+        <h3>
+          Hawk &amp; Little Morgan Revolvers
+        </h3>
+
+        <p>
+
+          Consulte a página dedicada,
+          informações disponíveis
+          e screenshots.
+
+        </p>
+
+        <span class="weapon-catalog-action">
+          Abrir na Wiki →
+        </span>
+
+      </a>
+
+
+      <a
+        class="weapon-catalog-card"
+        href="../../armas/index.html">
+
+        <span class="eyebrow">
+          CATÁLOGO
+        </span>
+
+        <h3>
+          Todas as armas
+        </h3>
+
+        <p>
+
+          Abra o índice completo
+          da Wiki de armas e equipamentos.
+
+        </p>
+
+        <span class="weapon-catalog-action">
+          Ver catálogo →
+        </span>
+
+      </a>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     COMO SERÃO OS GUIAS
+========================================================= -->
+
+<section class="weapon-structure-section section">
+
+  <div class="container weapon-guides-container">
+
+
+    <div class="weapon-structure-panel">
+
+
+      <span class="eyebrow">
+        FUTUROS GUIAS
+      </span>
+
+
+      <h2>
+        Informação prática e organizada
+      </h2>
+
+
+      <p>
+
+        Os guias individuais serão feitos
+        para responder rapidamente como
+        conseguir ou utilizar determinado item,
+        com detalhes adicionais para quem
+        quiser entender tudo.
 
       </p>
 
 
-      <div class="completion-structure-grid">
+      <div class="weapon-structure-grid">
 
 
-        <div class="completion-structure-card">
+        <div class="weapon-structure-card">
 
           <strong>
-            Requisito
+            Resposta rápida
           </strong>
 
           <span>
-            O que precisa ser concluído.
+            A informação principal no início.
           </span>
 
         </div>
 
 
-        <div class="completion-structure-card">
+        <div class="weapon-structure-card">
 
           <strong>
-            Quantidade
+            Requisitos
           </strong>
 
           <span>
-            Quantos itens ou objetivos existem.
+            Condições necessárias quando existirem.
           </span>
 
         </div>
 
 
-        <div class="completion-structure-card">
+        <div class="weapon-structure-card">
 
           <strong>
-            Percentual
+            Localização
           </strong>
 
           <span>
-            Quanto contribui para os 100%, se aplicável.
+            Onde encontrar quando aplicável.
           </span>
 
         </div>
 
 
-        <div class="completion-structure-card">
+        <div class="weapon-structure-card">
 
           <strong>
-            Checklist
+            Passo a passo
           </strong>
 
           <span>
-            Lista organizada de objetivos.
+            Como obter ou desbloquear.
           </span>
 
         </div>
 
 
-        <div class="completion-structure-card">
-
-          <strong>
-            Guia
-          </strong>
-
-          <span>
-            Link direto para o passo a passo.
-          </span>
-
-        </div>
-
-
-        <div class="completion-structure-card">
-
-          <strong>
-            Mapa
-          </strong>
-
-          <span>
-            Localizações quando forem necessárias.
-          </span>
-
-        </div>
-
-
-        <div class="completion-structure-card">
+        <div class="weapon-structure-card">
 
           <strong>
             Screenshots
           </strong>
 
           <span>
-            Imagens para facilitar a conclusão.
+            Imagens para facilitar a identificação.
           </span>
 
         </div>
 
 
-        <div class="completion-structure-card">
+        <div class="weapon-structure-card">
 
           <strong>
-            Vídeo
+            Mapa
           </strong>
 
           <span>
-            Gameplay próprio quando útil.
+            Ligação para pontos relevantes.
+          </span>
+
+        </div>
+
+
+        <div class="weapon-structure-card">
+
+          <strong>
+            Comparação
+          </strong>
+
+          <span>
+            Diferenças baseadas em testes.
+          </span>
+
+        </div>
+
+
+        <div class="weapon-structure-card">
+
+          <strong>
+            Gameplay
+          </strong>
+
+          <span>
+            Vídeo próprio quando disponível.
           </span>
 
         </div>
@@ -2004,114 +2057,39 @@
 
 
 <!-- =========================================================
-     PROGRESSO
+     WIKI
 ========================================================= -->
 
-<section class="completion-progress-section section">
+<section class="weapon-wiki-section section section-alt">
 
-  <div class="container completion-container">
-
-
-    <div class="completion-progress-panel">
+  <div class="container weapon-guides-container">
 
 
-      <span class="eyebrow">
-        PROGRESSO
-      </span>
-
-
-      <h2>
-        Acompanhe sua conclusão
-      </h2>
-
-
-      <p>
-
-        O guia editorial mostrará todos
-        os requisitos confirmados.
-
-        Mais adiante, teremos também
-        uma ferramenta dedicada para
-        o visitante controlar o próprio progresso.
-
-      </p>
-
-
-      <div class="completion-progress-placeholder">
-
-
-        <div class="completion-progress-label">
-
-          <span>
-            Estrutura do checklist
-          </span>
-
-          <span>
-            0%
-          </span>
-
-        </div>
-
-
-        <div class="completion-progress-bar">
-
-          <div class="completion-progress-fill"></div>
-
-        </div>
-
-
-        <p class="completion-progress-note">
-
-          Demonstração estrutural.
-          Este número não representa o progresso
-          real nem os requisitos oficiais de GTA VI.
-
-        </p>
-
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================================================
-     FERRAMENTA FUTURA
-========================================================= -->
-
-<section class="completion-tool-section section section-alt">
-
-  <div class="container completion-container">
-
-
-    <div class="completion-tool-panel">
+    <div class="weapon-wiki-panel">
 
 
       <div>
 
 
         <span class="eyebrow">
-          FERRAMENTA FUTURA
+          WIKI · ARMAS
         </span>
 
 
         <h2>
-          Checklist interativo de 100%
+          Guia ou ficha da arma?
         </h2>
 
 
         <p>
 
-          Este Guia 100% será a referência editorial.
+          A Wiki reúne as páginas de cada
+          arma ou equipamento.
 
-          Separadamente, o GTA6Zoone terá
-          uma ferramenta onde o visitante poderá
-          marcar objetivos concluídos e acompanhar
-          seu percentual de progresso.
+          Esta seção de Guias será dedicada
+          às perguntas práticas, como onde encontrar,
+          como conseguir, como desbloquear
+          e como utilizar.
 
         </p>
 
@@ -2119,19 +2097,13 @@
       </div>
 
 
-      <div>
+      <a
+        class="btn weapon-wiki-button"
+        href="../../armas/index.html">
 
-        <strong>
-          Rota reservada
-        </strong>
+        Ver Armas na Wiki
 
-        <br>
-
-        <span class="future-tool-route">
-          /ferramentas/checklist-100/
-        </span>
-
-      </div>
+      </a>
 
 
     </div>
@@ -2145,12 +2117,12 @@
      CONTEÚDO RELACIONADO
 ========================================================= -->
 
-<section class="completion-related-section section">
+<section class="weapon-related-section section">
 
-  <div class="container completion-container">
+  <div class="container weapon-guides-container">
 
 
-    <div class="completion-section-head">
+    <div class="weapon-section-head">
 
       <span class="eyebrow">
         TUDO CONECTADO
@@ -2158,130 +2130,26 @@
 
 
       <h2>
-        Do checklist para o guia certo
+        Armas dentro do mundo de GTA VI
       </h2>
 
 
       <p>
 
-        Cada requisito poderá levar diretamente
-        para as áreas e tutoriais relacionados.
+        Os futuros guias poderão se conectar
+        com missões, personagens, locais,
+        atividades e pontos do mapa relacionados.
 
       </p>
 
     </div>
 
 
-    <div class="completion-related-grid">
+    <div class="weapon-related-grid">
 
 
       <a
-        class="completion-related-card"
-        href="../missoes/index.html">
-
-        <strong>
-          Guias de Missões
-        </strong>
-
-        <span>
-          Passo a passo das missões.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
-        href="../atividades/index.html">
-
-        <strong>
-          Guias de Atividades
-        </strong>
-
-        <span>
-          Ajuda para conteúdos opcionais.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
-        href="../colecionaveis/index.html">
-
-        <strong>
-          Guias de Colecionáveis
-        </strong>
-
-        <span>
-          Localizações e rotas.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
-        href="../mapa/index.html">
-
-        <strong>
-          Guias do Mapa
-        </strong>
-
-        <span>
-          Ajuda com localizações.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
-        href="../../mapa/index.html">
-
-        <strong>
-          Mapa
-        </strong>
-
-        <span>
-          Abra o mapa do GTA6Zoone.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
-        href="../../colecionaveis/index.html">
-
-        <strong>
-          Colecionáveis
-        </strong>
-
-        <span>
-          Consulte o catálogo principal.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
-        href="../../atividades/index.html">
-
-        <strong>
-          Atividades
-        </strong>
-
-        <span>
-          Consulte a área da Wiki.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
+        class="weapon-related-card"
         href="../../missoes/index.html">
 
         <strong>
@@ -2289,14 +2157,74 @@
         </strong>
 
         <span>
-          Consulte o índice da campanha.
+          Consulte a área da campanha.
         </span>
 
       </a>
 
 
       <a
-        class="completion-related-card"
+        class="weapon-related-card"
+        href="../../personagens/index.html">
+
+        <strong>
+          Personagens
+        </strong>
+
+        <span>
+          Conheça os personagens de GTA VI.
+        </span>
+
+      </a>
+
+
+      <a
+        class="weapon-related-card"
+        href="../../locais/index.html">
+
+        <strong>
+          Locais
+        </strong>
+
+        <span>
+          Explore as regiões de Leonida.
+        </span>
+
+      </a>
+
+
+      <a
+        class="weapon-related-card"
+        href="../../mapa/index.html">
+
+        <strong>
+          Mapa
+        </strong>
+
+        <span>
+          Consulte futuras localizações.
+        </span>
+
+      </a>
+
+
+      <a
+        class="weapon-related-card"
+        href="../../atividades/index.html">
+
+        <strong>
+          Atividades
+        </strong>
+
+        <span>
+          Veja conteúdos do mundo aberto.
+        </span>
+
+      </a>
+
+
+      <a
+        class="weapon-related-card"
         href="../../propriedades/index.html">
 
         <strong>
@@ -2304,7 +2232,7 @@
         </strong>
 
         <span>
-          Veja imóveis e estabelecimentos.
+          Consulte imóveis e estabelecimentos.
         </span>
 
       </a>
@@ -2318,15 +2246,15 @@
 
 
 <!-- =========================================================
-     OUTRAS CATEGORIAS DE GUIAS
+     OUTRAS CATEGORIAS
 ========================================================= -->
 
 <section class="other-guides-section section section-alt">
 
-  <div class="container completion-container">
+  <div class="container weapon-guides-container">
 
 
-    <div class="completion-section-head">
+    <div class="weapon-section-head">
 
       <span class="eyebrow">
         OUTRAS CATEGORIAS
@@ -2340,8 +2268,8 @@
 
       <p>
 
-        Todas as principais áreas
-        permanecem interligadas.
+        Todas as categorias permanecem
+        interligadas para facilitar a navegação.
 
       </p>
 
@@ -2445,29 +2373,6 @@
 
       <a
         class="other-guide-card"
-        href="../armas/index.html">
-
-        <span class="eyebrow">
-          GUIAS
-        </span>
-
-        <h3>
-          Armas
-        </h3>
-
-        <p>
-          Obtenção e funcionamento.
-        </p>
-
-        <span class="other-guide-action">
-          Abrir categoria →
-        </span>
-
-      </a>
-
-
-      <a
-        class="other-guide-card"
         href="../propriedades/index.html">
 
         <span class="eyebrow">
@@ -2479,7 +2384,7 @@
         </h3>
 
         <p>
-          Casas e estabelecimentos.
+          Casas, garagens e estabelecimentos.
         </p>
 
         <span class="other-guide-action">
@@ -2560,41 +2465,18 @@
 
       <a
         class="other-guide-card"
-        href="../segredos/index.html">
+        href="../guia-100/index.html">
 
         <span class="eyebrow">
-          DESCOBERTAS
+          GUIAS
         </span>
 
         <h3>
-          Segredos
+          Guia 100%
         </h3>
 
         <p>
-          Mistérios e descobertas.
-        </p>
-
-        <span class="other-guide-action">
-          Abrir categoria →
-        </span>
-
-      </a>
-
-
-      <a
-        class="other-guide-card"
-        href="../easter-eggs/index.html">
-
-        <span class="eyebrow">
-          DESCOBERTAS
-        </span>
-
-        <h3>
-          Easter Eggs
-        </h3>
-
-        <p>
-          Referências e homenagens.
+          Complete tudo em GTA VI.
         </p>
 
         <span class="other-guide-action">
@@ -2638,12 +2520,12 @@
      PESQUISA
 ========================================================= -->
 
-<section class="completion-search-section section">
+<section class="weapon-search-section section">
 
-  <div class="container completion-container">
+  <div class="container weapon-guides-container">
 
 
-    <div class="completion-search-panel">
+    <div class="weapon-search-panel">
 
 
       <span class="eyebrow">
@@ -2652,28 +2534,28 @@
 
 
       <h2>
-        Procurando algum requisito?
+        Procurando uma arma?
       </h2>
 
 
       <p>
 
-        Use a pesquisa geral para localizar
-        missões, atividades, colecionáveis,
-        veículos, personagens e outros
-        conteúdos do GTA6Zoone.
+        Use a pesquisa geral para encontrar
+        armas, veículos, personagens,
+        locais e outros conteúdos
+        já catalogados no GTA6Zoone.
 
       </p>
 
 
       <form
-        class="completion-search-form"
+        class="weapon-search-form"
         action="../../buscar/index.html">
 
 
         <label
           class="hidden"
-          for="completion-search">
+          for="weapon-guide-search">
 
           Pesquisar
 
@@ -2681,10 +2563,10 @@
 
 
         <input
-          id="completion-search"
+          id="weapon-guide-search"
           name="q"
           type="search"
-          placeholder="O que você precisa completar?">
+          placeholder="Ex.: Hawk & Little Morgan...">
 
 
         <button
@@ -2721,8 +2603,6 @@
     <div class="footer-grid">
 
 
-      <!-- GTA6ZOONE -->
-
       <div>
 
         <strong class="brand-text">
@@ -2738,8 +2618,6 @@
 
       </div>
 
-
-      <!-- EXPLORAR -->
 
       <div>
 
@@ -2774,8 +2652,6 @@
       </div>
 
 
-      <!-- COMUNIDADE -->
-
       <div>
 
         <h3>
@@ -2807,8 +2683,6 @@
 
       </div>
 
-
-      <!-- INSTITUCIONAL -->
 
       <div>
 

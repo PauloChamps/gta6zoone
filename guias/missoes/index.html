@@ -6,15 +6,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Guia 100% de GTA VI: como completar o jogo | GTA6Zoone</title>
+  <title>Missões de GTA VI: guias e passo a passo | GTA6Zoone</title>
 
   <meta
     name="description"
-    content="Guia 100% de GTA VI. Acompanhe os requisitos, missões, atividades, colecionáveis e tudo o que for necessário para completar Grand Theft Auto VI.">
+    content="Guias de missões de GTA VI com passo a passo, objetivos, estratégias, dicas e informações verificadas sobre a campanha de Grand Theft Auto VI.">
 
   <link
     rel="canonical"
-    href="https://gta6zoone.com.br/guias/guia-100/">
+    href="https://gta6zoone.com.br/guias/missoes/">
 
   <!-- FAVICON -->
 
@@ -23,22 +23,21 @@
     type="image/png"
     href="../../assets/images/branding/favicon.png">
 
-
   <!-- OPEN GRAPH -->
 
   <meta property="og:type" content="website">
 
   <meta
     property="og:title"
-    content="Guia 100% de GTA VI | GTA6Zoone">
+    content="Missões de GTA VI: guias e passo a passo | GTA6Zoone">
 
   <meta
     property="og:description"
-    content="Central para acompanhar tudo o que for necessário para completar Grand Theft Auto VI em 100%.">
+    content="Central de guias e passo a passo das missões de Grand Theft Auto VI.">
 
   <meta
     property="og:url"
-    content="https://gta6zoone.com.br/guias/guia-100/">
+    content="https://gta6zoone.com.br/guias/missoes/">
 
   <meta
     property="og:image"
@@ -59,16 +58,16 @@
 
 
   <!-- =========================================================
-       CSS EXCLUSIVO — GUIA 100%
+       CSS EXCLUSIVO — GUIAS MISSÕES
   ========================================================= -->
 
   <style>
 
-    .completion-page {
+    .missions-guides-page {
       overflow: hidden;
     }
 
-    .completion-container {
+    .missions-guides-container {
       max-width: 1180px;
       margin-inline: auto;
     }
@@ -78,23 +77,23 @@
        HERO
     ========================================================= */
 
-    .completion-hero {
+    .missions-guides-hero {
       padding-top: 2.5rem;
       padding-bottom: 2rem;
     }
 
-    .completion-hero-grid {
+    .missions-guides-hero-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 2rem;
       align-items: center;
     }
 
-    .completion-hero-copy {
+    .missions-guides-copy {
       max-width: 850px;
     }
 
-    .completion-hero h1 {
+    .missions-guides-hero h1 {
       margin: .45rem 0 1rem;
 
       font-size:
@@ -103,16 +102,15 @@
       line-height: .96;
     }
 
-    .completion-hero .lede {
+    .missions-guides-hero .lede {
       max-width: 820px;
 
       font-size: 1.08rem;
       line-height: 1.75;
     }
 
-    .completion-hero p {
+    .missions-guides-hero p {
       max-width: 840px;
-
       line-height: 1.75;
     }
 
@@ -121,7 +119,7 @@
        HERO — IMAGEM FUTURA
     ========================================================= */
 
-    .completion-hero-media {
+    .missions-guides-media {
       min-height: 280px;
 
       display: flex;
@@ -134,27 +132,24 @@
 
       padding: 2rem;
 
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-medium);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-medium);
 
       background:
         radial-gradient(
           circle at 20% 20%,
-          rgba(255,61,154,.18),
+          rgba(255, 61, 154, .18),
           transparent 38%
         ),
         radial-gradient(
           circle at 80% 75%,
-          rgba(128,75,255,.18),
+          rgba(128, 75, 255, .18),
           transparent 42%
         ),
         var(--color-surface);
     }
 
-    .completion-hero-media img {
+    .missions-guides-media img {
       display: block;
 
       width: 100%;
@@ -167,21 +162,20 @@
       object-fit: cover;
     }
 
-    .completion-media-placeholder {
+    .missions-media-placeholder {
       text-align: center;
     }
 
-    .completion-media-placeholder strong {
+    .missions-media-placeholder strong {
       display: block;
 
       margin-bottom: .4rem;
 
-      font-size: 1.45rem;
+      font-size: 1.35rem;
     }
 
-    .completion-media-placeholder span {
-      color:
-        var(--color-text-muted);
+    .missions-media-placeholder span {
+      color: var(--color-text-muted);
 
       font-size: .88rem;
     }
@@ -212,7 +206,7 @@
        AVISO
     ========================================================= */
 
-    .completion-notice {
+    .missions-notice {
       margin-top: 1.6rem;
 
       max-width: 930px;
@@ -232,7 +226,7 @@
         var(--color-surface);
     }
 
-    .completion-notice p {
+    .missions-notice p {
       margin: 0;
 
       line-height: 1.7;
@@ -243,108 +237,77 @@
        CABEÇALHOS
     ========================================================= */
 
-    .completion-section-head {
+    .missions-section-head {
       max-width: 880px;
 
       margin-bottom: 1.5rem;
     }
 
-    .completion-section-head h2 {
+    .missions-section-head h2 {
       margin: .4rem 0 .7rem;
 
       font-size:
         clamp(2rem, 5vw, 3rem);
     }
 
-    .completion-section-head p {
+    .missions-section-head p {
       margin: 0;
 
-      color:
-        var(--color-text-muted);
+      color: var(--color-text-muted);
 
       line-height: 1.7;
     }
 
 
     /* =========================================================
-       STATUS
+       GUIAS DISPONÍVEIS
     ========================================================= */
 
-    .completion-status-section {
+    .missions-list-section {
       padding-top: 4rem;
     }
 
-    .completion-status-panel {
+    .empty-guides {
       padding: 1.4rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-medium);
-
-      background:
-        var(--color-surface);
-    }
-
-    .completion-status-panel h2 {
-      margin: .4rem 0 .7rem;
-
-      font-size:
-        clamp(1.9rem, 5vw, 2.8rem);
-    }
-
-    .completion-status-panel > p {
-      max-width: 900px;
-
-      color:
-        var(--color-text-muted);
-
-      line-height: 1.75;
-    }
-
-    .completion-status-box {
-      margin-top: 1.3rem;
-
-      padding: 1rem;
 
       border:
         1px dashed var(--color-border);
 
       border-radius:
-        var(--radius-small);
+        var(--radius-medium);
 
       background:
         rgba(255,255,255,.015);
     }
 
-    .completion-status-box strong {
+    .empty-guides strong {
       display: block;
 
-      margin-bottom: .4rem;
+      margin-bottom: .5rem;
 
-      color: #ff73bd;
+      font-size: 1.05rem;
     }
 
-    .completion-status-box p {
+    .empty-guides p {
+      max-width: 880px;
+
       margin: 0;
 
-      color:
-        var(--color-text-muted);
+      color: var(--color-text-muted);
 
-      line-height: 1.65;
+      line-height: 1.7;
     }
 
 
     /* =========================================================
-       ÁREAS DO 100%
+       TIPOS DE CONTEÚDO
     ========================================================= */
 
-    .completion-areas-section {
+    .mission-topics-section {
       padding-top: 4rem;
     }
 
-    .completion-areas-grid {
+    .mission-topics-grid {
       display: grid;
 
       grid-template-columns:
@@ -353,7 +316,7 @@
       gap: .8rem;
     }
 
-    .completion-area-card {
+    .mission-topic-card {
       min-width: 0;
 
       padding: 1rem;
@@ -368,7 +331,7 @@
         var(--color-surface);
     }
 
-    .completion-area-number {
+    .mission-topic-number {
       display: block;
 
       margin-bottom: .4rem;
@@ -381,17 +344,16 @@
       letter-spacing: .08em;
     }
 
-    .completion-area-card h3 {
+    .mission-topic-card h3 {
       margin: .3rem 0 .4rem;
 
       font-size: 1rem;
     }
 
-    .completion-area-card p {
+    .mission-topic-card p {
       margin: 0;
 
-      color:
-        var(--color-text-muted);
+      color: var(--color-text-muted);
 
       font-size: .88rem;
       line-height: 1.55;
@@ -399,14 +361,14 @@
 
 
     /* =========================================================
-       COMO SERÁ O GUIA
+       ESTRUTURA DOS GUIAS
     ========================================================= */
 
-    .completion-structure-section {
+    .mission-structure-section {
       padding-top: 4rem;
     }
 
-    .completion-structure-panel {
+    .mission-structure-panel {
       padding: 1.4rem;
 
       border:
@@ -419,23 +381,22 @@
         var(--color-surface);
     }
 
-    .completion-structure-panel h2 {
+    .mission-structure-panel h2 {
       margin: .4rem 0 .7rem;
 
       font-size:
         clamp(1.9rem, 5vw, 2.8rem);
     }
 
-    .completion-structure-panel > p {
+    .mission-structure-panel > p {
       max-width: 900px;
 
-      color:
-        var(--color-text-muted);
+      color: var(--color-text-muted);
 
       line-height: 1.75;
     }
 
-    .completion-structure-grid {
+    .mission-structure-grid {
       display: grid;
 
       grid-template-columns:
@@ -446,7 +407,7 @@
       margin-top: 1.3rem;
     }
 
-    .completion-structure-card {
+    .mission-structure-card {
       padding: 1rem;
 
       border:
@@ -459,15 +420,14 @@
         rgba(255,255,255,.02);
     }
 
-    .completion-structure-card strong {
+    .mission-structure-card strong {
       display: block;
 
       margin-bottom: .3rem;
     }
 
-    .completion-structure-card span {
-      color:
-        var(--color-text-muted);
+    .mission-structure-card span {
+      color: var(--color-text-muted);
 
       font-size: .85rem;
       line-height: 1.45;
@@ -475,114 +435,14 @@
 
 
     /* =========================================================
-       PROGRESSO
+       MISSÕES WIKI
     ========================================================= */
 
-    .completion-progress-section {
+    .mission-wiki-section {
       padding-top: 4rem;
     }
 
-    .completion-progress-panel {
-      padding: 1.4rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-medium);
-
-      background:
-        var(--color-surface);
-    }
-
-    .completion-progress-panel h2 {
-      margin: .4rem 0 .7rem;
-
-      font-size:
-        clamp(1.9rem, 5vw, 2.8rem);
-    }
-
-    .completion-progress-panel > p {
-      max-width: 900px;
-
-      color:
-        var(--color-text-muted);
-
-      line-height: 1.75;
-    }
-
-    .completion-progress-placeholder {
-      margin-top: 1.3rem;
-
-      padding: 1.2rem;
-
-      border:
-        1px dashed var(--color-border);
-
-      border-radius:
-        var(--radius-small);
-
-      background:
-        rgba(255,255,255,.015);
-    }
-
-    .completion-progress-label {
-      display: flex;
-      justify-content: space-between;
-      gap: 1rem;
-
-      margin-bottom: .7rem;
-
-      font-size: .9rem;
-      font-weight: 800;
-    }
-
-    .completion-progress-bar {
-      width: 100%;
-      height: 12px;
-
-      overflow: hidden;
-
-      border-radius: 999px;
-
-      background:
-        rgba(255,255,255,.07);
-    }
-
-    .completion-progress-fill {
-      width: 0%;
-      height: 100%;
-
-      border-radius: inherit;
-
-      background:
-        linear-gradient(
-          90deg,
-          #ff3d9a,
-          #9b63ff
-        );
-    }
-
-    .completion-progress-note {
-      margin: .8rem 0 0;
-
-      color:
-        var(--color-text-muted);
-
-      font-size: .84rem;
-      line-height: 1.55;
-    }
-
-
-    /* =========================================================
-       FERRAMENTA 100%
-    ========================================================= */
-
-    .completion-tool-section {
-      padding-top: 4rem;
-    }
-
-    .completion-tool-panel {
+    .mission-wiki-panel {
       display: grid;
 
       grid-template-columns: 1fr;
@@ -601,50 +461,36 @@
         var(--color-surface);
     }
 
-    .completion-tool-panel h2 {
+    .mission-wiki-panel h2 {
       margin: .4rem 0 .7rem;
 
       font-size:
         clamp(1.9rem, 5vw, 2.8rem);
     }
 
-    .completion-tool-panel p {
+    .mission-wiki-panel p {
       max-width: 850px;
 
-      color:
-        var(--color-text-muted);
+      color: var(--color-text-muted);
 
       line-height: 1.75;
     }
 
-    .future-tool-route {
-      display: inline-block;
-
-      margin-top: .5rem;
-
-      padding: .45rem .7rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-small);
-
-      color: #ff73bd;
-
-      font-family: monospace;
+    .mission-wiki-button {
+      align-self: center;
+      justify-self: start;
     }
 
 
     /* =========================================================
-       CONTEÚDO RELACIONADO
+       CONEXÕES
     ========================================================= */
 
-    .completion-related-section {
+    .mission-related-section {
       padding-top: 4rem;
     }
 
-    .completion-related-grid {
+    .mission-related-grid {
       display: grid;
 
       grid-template-columns:
@@ -653,7 +499,7 @@
       gap: .8rem;
     }
 
-    .completion-related-card {
+    .mission-related-card {
       display: block;
 
       padding: 1rem;
@@ -675,7 +521,7 @@
         border-color .2s ease;
     }
 
-    .completion-related-card:hover {
+    .mission-related-card:hover {
       transform:
         translateY(-2px);
 
@@ -685,15 +531,14 @@
       color: inherit;
     }
 
-    .completion-related-card strong {
+    .mission-related-card strong {
       display: block;
 
       margin-bottom: .3rem;
     }
 
-    .completion-related-card span {
-      color:
-        var(--color-text-muted);
+    .mission-related-card span {
+      color: var(--color-text-muted);
 
       font-size: .85rem;
       line-height: 1.45;
@@ -761,8 +606,7 @@
 
       margin: 0;
 
-      color:
-        var(--color-text-muted);
+      color: var(--color-text-muted);
 
       font-size: .88rem;
       line-height: 1.55;
@@ -784,11 +628,11 @@
        PESQUISA
     ========================================================= */
 
-    .completion-search-section {
+    .missions-search-section {
       padding-top: 4rem;
     }
 
-    .completion-search-panel {
+    .missions-search-panel {
       padding: 1.4rem;
 
       border:
@@ -801,20 +645,19 @@
         var(--color-surface);
     }
 
-    .completion-search-panel h2 {
+    .missions-search-panel h2 {
       margin: .4rem 0 .5rem;
     }
 
-    .completion-search-panel p {
+    .missions-search-panel p {
       max-width: 820px;
 
-      color:
-        var(--color-text-muted);
+      color: var(--color-text-muted);
 
       line-height: 1.7;
     }
 
-    .completion-search-form {
+    .missions-search-form {
       display: grid;
 
       grid-template-columns: 1fr;
@@ -826,7 +669,7 @@
       margin-top: 1rem;
     }
 
-    .completion-search-form input {
+    .missions-search-form input {
       width: 100%;
 
       padding: .9rem 1rem;
@@ -852,24 +695,24 @@
 
     @media (min-width: 700px) {
 
-      .completion-areas-grid {
+      .mission-topics-grid {
         grid-template-columns:
           repeat(4, minmax(0, 1fr));
       }
 
-      .completion-structure-grid {
+      .mission-structure-grid {
         grid-template-columns:
           repeat(4, minmax(0, 1fr));
       }
 
-      .completion-tool-panel {
+      .mission-wiki-panel {
         grid-template-columns:
           1fr auto;
 
         align-items: center;
       }
 
-      .completion-related-grid {
+      .mission-related-grid {
         grid-template-columns:
           repeat(3, minmax(0, 1fr));
       }
@@ -879,7 +722,7 @@
           repeat(3, minmax(0, 1fr));
       }
 
-      .completion-search-form {
+      .missions-search-form {
         grid-template-columns:
           1fr auto;
       }
@@ -893,7 +736,7 @@
 
     @media (min-width: 960px) {
 
-      .completion-hero-grid {
+      .missions-guides-hero-grid {
         grid-template-columns:
           1.2fr .8fr;
       }
@@ -912,7 +755,7 @@
 
     @media (max-width: 699px) {
 
-      .completion-container {
+      .missions-guides-container {
         width: 100%;
         max-width: 100%;
       }
@@ -930,9 +773,9 @@
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "Guia 100% de GTA VI",
-    "description": "Central de acompanhamento para completar Grand Theft Auto VI em 100%.",
-    "url": "https://gta6zoone.com.br/guias/guia-100/",
+    "name": "Guias de Missões de GTA VI",
+    "description": "Central de guias e passo a passo das missões de Grand Theft Auto VI.",
+    "url": "https://gta6zoone.com.br/guias/missoes/",
     "isPartOf": {
       "@type": "WebSite",
       "name": "GTA6Zoone",
@@ -1480,16 +1323,16 @@
 
 <main
   id="conteudo"
-  class="completion-page">
+  class="missions-guides-page">
 
 
 <!-- =========================================================
      HERO
 ========================================================= -->
 
-<section class="completion-hero">
+<section class="missions-guides-hero">
 
-  <div class="container completion-container">
+  <div class="container missions-guides-container">
 
 
     <nav
@@ -1508,46 +1351,45 @@
 
       ›
 
-      Guia 100%
+      Missões
 
     </nav>
 
 
-    <div class="completion-hero-grid">
+    <div class="missions-guides-hero-grid">
 
 
-      <div class="completion-hero-copy">
+      <div class="missions-guides-copy">
 
 
         <span class="eyebrow">
-          GUIAS · 100%
+          GUIAS · MISSÕES
         </span>
 
 
         <h1>
-          Guia 100% de GTA VI
+          Missões de GTA VI
         </h1>
 
 
         <p class="lede">
 
-          A central para acompanhar tudo
-          o que realmente for necessário
-          para completar GTA VI em 100%.
+          Passo a passo, objetivos, estratégias
+          e ajuda para avançar pelas missões
+          da campanha de GTA VI.
 
         </p>
 
 
         <p>
 
-          Conforme os requisitos oficiais
-          e os sistemas do jogo forem conhecidos,
-          esta página será transformada em um
-          roteiro completo de progresso.
+          Cada missão poderá receber seu próprio
+          guia quando tivermos informações verificadas.
 
-          Cada etapa poderá se conectar aos
-          nossos guias de missões, atividades,
-          colecionáveis, mapa e outros conteúdos.
+          Esses artigos poderão reunir objetivos,
+          screenshots, personagens envolvidos,
+          localizações, dicas e vídeos próprios
+          do GTA6Zoone.
 
         </p>
 
@@ -1561,17 +1403,17 @@
         </a>
 
 
-        <div class="completion-notice">
+        <div class="missions-notice">
 
           <p>
 
-            <strong>NÃO VAMOS INVENTAR O QUE CONTA PARA 100%:</strong>
-            determinadas atividades podem existir no jogo
-            sem fazer parte da porcentagem oficial.
+            <strong>SEM MISSÕES FICTÍCIAS:</strong>
+            não vamos criar nomes, objetivos,
+            recompensas ou detalhes de missões
+            que ainda não tenham sido confirmados.
 
-            Só adicionaremos itens à lista obrigatória
-            quando pudermos confirmar que eles realmente
-            contribuem para a conclusão de GTA VI.
+            O índice crescerá conforme informações
+            reais puderem ser verificadas.
 
           </p>
 
@@ -1583,12 +1425,12 @@
 
       <!-- IMAGEM FUTURA -->
 
-      <div class="completion-hero-media">
+      <div class="missions-guides-media">
 
-        <div class="completion-media-placeholder">
+        <div class="missions-media-placeholder">
 
           <strong>
-            GTA VI · 100%
+            MISSÕES & PASSO A PASSO
           </strong>
 
           <span>
@@ -1608,51 +1450,238 @@
 
 
 <!-- =========================================================
-     STATUS
+     GUIAS DISPONÍVEIS
 ========================================================= -->
 
-<section class="completion-status-section section section-alt">
+<section class="missions-list-section section section-alt">
 
-  <div class="container completion-container">
+  <div class="container missions-guides-container">
 
 
-    <div class="completion-status-panel">
-
+    <div class="missions-section-head">
 
       <span class="eyebrow">
-        STATUS DO GUIA
+        PASSO A PASSO
       </span>
 
 
       <h2>
-        Requisitos ainda serão documentados
+        Guias das missões
       </h2>
 
 
       <p>
 
-        Esta página já está preparada para
-        receber a estrutura completa dos 100%,
-        mas a lista definitiva dependerá
-        daquilo que GTA VI realmente exigir.
+        Os guias individuais aparecerão
+        nesta área conforme as missões
+        puderem ser documentadas.
 
       </p>
 
+    </div>
 
-      <div class="completion-status-box">
 
-        <strong>
-          AGUARDANDO CONFIRMAÇÃO
-        </strong>
+    <div class="empty-guides">
+
+      <strong>
+        Guias individuais em breve
+      </strong>
+
+      <p>
+
+        Quando tivermos acesso às missões,
+        cada uma poderá receber uma página
+        específica com instruções organizadas
+        para facilitar a consulta.
+
+        Assim, quem procurar ajuda para uma
+        missão não precisará navegar por um
+        único guia gigantesco da campanha inteira.
+
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     TIPOS DE CONTEÚDO
+========================================================= -->
+
+<section class="mission-topics-section section">
+
+  <div class="container missions-guides-container">
+
+
+    <div class="missions-section-head">
+
+      <span class="eyebrow">
+        EM CADA MISSÃO
+      </span>
+
+
+      <h2>
+        O que os guias poderão mostrar
+      </h2>
+
+
+      <p>
+
+        A estrutura poderá variar conforme
+        cada missão, mas sempre priorizando
+        informações práticas e fáceis de encontrar.
+
+      </p>
+
+    </div>
+
+
+    <div class="mission-topics-grid">
+
+
+      <div class="mission-topic-card">
+
+        <span class="mission-topic-number">
+          01
+        </span>
+
+        <h3>
+          Objetivos
+        </h3>
 
         <p>
+          O que precisa ser feito
+          para avançar.
+        </p>
 
-          Quando pudermos verificar os critérios
-          de conclusão do jogo, esta área passará
-          a mostrar a quantidade total de requisitos,
-          porcentagens, progresso e links diretos
-          para cada guia relacionado.
+      </div>
 
+
+      <div class="mission-topic-card">
+
+        <span class="mission-topic-number">
+          02
+        </span>
+
+        <h3>
+          Passo a passo
+        </h3>
+
+        <p>
+          Sequência organizada
+          das etapas da missão.
+        </p>
+
+      </div>
+
+
+      <div class="mission-topic-card">
+
+        <span class="mission-topic-number">
+          03
+        </span>
+
+        <h3>
+          Localização
+        </h3>
+
+        <p>
+          Onde começar ou encontrar
+          pontos importantes.
+        </p>
+
+      </div>
+
+
+      <div class="mission-topic-card">
+
+        <span class="mission-topic-number">
+          04
+        </span>
+
+        <h3>
+          Personagens
+        </h3>
+
+        <p>
+          Quem participa da missão
+          quando essa informação for relevante.
+        </p>
+
+      </div>
+
+
+      <div class="mission-topic-card">
+
+        <span class="mission-topic-number">
+          05
+        </span>
+
+        <h3>
+          Dificuldades
+        </h3>
+
+        <p>
+          Trechos que possam exigir
+          atenção especial.
+        </p>
+
+      </div>
+
+
+      <div class="mission-topic-card">
+
+        <span class="mission-topic-number">
+          06
+        </span>
+
+        <h3>
+          Recompensas
+        </h3>
+
+        <p>
+          Resultados e recompensas
+          quando puderem ser confirmados.
+        </p>
+
+      </div>
+
+
+      <div class="mission-topic-card">
+
+        <span class="mission-topic-number">
+          07
+        </span>
+
+        <h3>
+          Screenshots
+        </h3>
+
+        <p>
+          Imagens para facilitar
+          a identificação de cada etapa.
+        </p>
+
+      </div>
+
+
+      <div class="mission-topic-card">
+
+        <span class="mission-topic-number">
+          08
+        </span>
+
+        <h3>
+          Vídeo
+        </h3>
+
+        <p>
+          Gameplay próprio para quem
+          preferir acompanhar visualmente.
         </p>
 
       </div>
@@ -1666,15 +1695,16 @@
 
 
 <!-- =========================================================
-     POSSÍVEIS ÁREAS
+     ESTRUTURA DOS GUIAS
 ========================================================= -->
 
-<section class="completion-areas-section section">
+<section class="mission-structure-section section section-alt">
 
-  <div class="container completion-container">
+  <div class="container missions-guides-container">
 
 
-    <div class="completion-section-head">
+    <div class="mission-structure-panel">
+
 
       <span class="eyebrow">
         ORGANIZAÇÃO
@@ -1682,312 +1712,122 @@
 
 
       <h2>
-        Áreas que vamos acompanhar
+        Uma página para cada missão
       </h2>
 
 
       <p>
 
-        Estas são seções do GTA6Zoone que poderão
-        alimentar o Guia 100%.
-
-        A presença delas aqui não significa
-        que todas serão obrigatórias para
-        completar o jogo.
+        Quando começarmos a catalogar a campanha,
+        cada missão poderá ter sua própria página
+        de guia e também sua respectiva ficha
+        na área de Missões da Wiki.
 
       </p>
 
-    </div>
 
+      <div class="mission-structure-grid">
 
-    <div class="completion-areas-grid">
 
-
-      <div class="completion-area-card">
-
-        <span class="completion-area-number">
-          01
-        </span>
-
-        <h3>
-          Missões
-        </h3>
-
-        <p>
-          Acompanhamento da campanha
-          e outros tipos de missões.
-        </p>
-
-      </div>
-
-
-      <div class="completion-area-card">
-
-        <span class="completion-area-number">
-          02
-        </span>
-
-        <h3>
-          Atividades
-        </h3>
-
-        <p>
-          Conteúdos opcionais quando
-          fizerem parte da conclusão.
-        </p>
-
-      </div>
-
-
-      <div class="completion-area-card">
-
-        <span class="completion-area-number">
-          03
-        </span>
-
-        <h3>
-          Colecionáveis
-        </h3>
-
-        <p>
-          Conjuntos e itens necessários,
-          caso sejam exigidos.
-        </p>
-
-      </div>
-
-
-      <div class="completion-area-card">
-
-        <span class="completion-area-number">
-          04
-        </span>
-
-        <h3>
-          Exploração
-        </h3>
-
-        <p>
-          Requisitos relacionados ao mapa
-          quando forem confirmados.
-        </p>
-
-      </div>
-
-
-      <div class="completion-area-card">
-
-        <span class="completion-area-number">
-          05
-        </span>
-
-        <h3>
-          Propriedades
-        </h3>
-
-        <p>
-          Imóveis ou estabelecimentos
-          apenas se tiverem relevância para 100%.
-        </p>
-
-      </div>
-
-
-      <div class="completion-area-card">
-
-        <span class="completion-area-number">
-          06
-        </span>
-
-        <h3>
-          Veículos
-        </h3>
-
-        <p>
-          Objetivos relacionados a veículos
-          somente quando comprovados.
-        </p>
-
-      </div>
-
-
-      <div class="completion-area-card">
-
-        <span class="completion-area-number">
-          07
-        </span>
-
-        <h3>
-          Desafios
-        </h3>
-
-        <p>
-          Categorias adicionais caso
-          existam requisitos desse tipo.
-        </p>
-
-      </div>
-
-
-      <div class="completion-area-card">
-
-        <span class="completion-area-number">
-          08
-        </span>
-
-        <h3>
-          Outros requisitos
-        </h3>
-
-        <p>
-          Qualquer categoria oficial
-          que não se encaixe nas anteriores.
-        </p>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================================================
-     COMO SERÁ O GUIA
-========================================================= -->
-
-<section class="completion-structure-section section section-alt">
-
-  <div class="container completion-container">
-
-
-    <div class="completion-structure-panel">
-
-
-      <span class="eyebrow">
-        ESTRUTURA
-      </span>
-
-
-      <h2>
-        Um roteiro completo do início aos 100%
-      </h2>
-
-
-      <p>
-
-        Quando o conteúdo puder ser confirmado,
-        organizaremos este guia de forma que o
-        visitante consiga identificar rapidamente
-        o que falta e abrir o tutorial específico.
-
-      </p>
-
-
-      <div class="completion-structure-grid">
-
-
-        <div class="completion-structure-card">
+        <div class="mission-structure-card">
 
           <strong>
-            Requisito
+            Resumo
           </strong>
 
           <span>
-            O que precisa ser concluído.
+            Explicação rápida da missão.
           </span>
 
         </div>
 
 
-        <div class="completion-structure-card">
+        <div class="mission-structure-card">
 
           <strong>
-            Quantidade
+            Pré-requisitos
           </strong>
 
           <span>
-            Quantos itens ou objetivos existem.
+            O que for necessário para iniciá-la.
           </span>
 
         </div>
 
 
-        <div class="completion-structure-card">
+        <div class="mission-structure-card">
 
           <strong>
-            Percentual
+            Objetivos
           </strong>
 
           <span>
-            Quanto contribui para os 100%, se aplicável.
+            Lista das etapas confirmadas.
           </span>
 
         </div>
 
 
-        <div class="completion-structure-card">
+        <div class="mission-structure-card">
 
           <strong>
-            Checklist
+            Passo a passo
           </strong>
 
           <span>
-            Lista organizada de objetivos.
+            Guia completo para avançar.
           </span>
 
         </div>
 
 
-        <div class="completion-structure-card">
-
-          <strong>
-            Guia
-          </strong>
-
-          <span>
-            Link direto para o passo a passo.
-          </span>
-
-        </div>
-
-
-        <div class="completion-structure-card">
+        <div class="mission-structure-card">
 
           <strong>
             Mapa
           </strong>
 
           <span>
-            Localizações quando forem necessárias.
+            Pontos relevantes quando aplicável.
           </span>
 
         </div>
 
 
-        <div class="completion-structure-card">
+        <div class="mission-structure-card">
 
           <strong>
-            Screenshots
+            Personagens
           </strong>
 
           <span>
-            Imagens para facilitar a conclusão.
+            Ligações com as fichas da Wiki.
           </span>
 
         </div>
 
 
-        <div class="completion-structure-card">
+        <div class="mission-structure-card">
 
           <strong>
-            Vídeo
+            Imagens
           </strong>
 
           <span>
-            Gameplay próprio quando útil.
+            Screenshots das etapas importantes.
+          </span>
+
+        </div>
+
+
+        <div class="mission-structure-card">
+
+          <strong>
+            Gameplay
+          </strong>
+
+          <span>
+            Vídeo próprio quando disponível.
           </span>
 
         </div>
@@ -2004,114 +1844,37 @@
 
 
 <!-- =========================================================
-     PROGRESSO
+     MISSÕES NA WIKI
 ========================================================= -->
 
-<section class="completion-progress-section section">
+<section class="mission-wiki-section section">
 
-  <div class="container completion-container">
-
-
-    <div class="completion-progress-panel">
+  <div class="container missions-guides-container">
 
 
-      <span class="eyebrow">
-        PROGRESSO
-      </span>
-
-
-      <h2>
-        Acompanhe sua conclusão
-      </h2>
-
-
-      <p>
-
-        O guia editorial mostrará todos
-        os requisitos confirmados.
-
-        Mais adiante, teremos também
-        uma ferramenta dedicada para
-        o visitante controlar o próprio progresso.
-
-      </p>
-
-
-      <div class="completion-progress-placeholder">
-
-
-        <div class="completion-progress-label">
-
-          <span>
-            Estrutura do checklist
-          </span>
-
-          <span>
-            0%
-          </span>
-
-        </div>
-
-
-        <div class="completion-progress-bar">
-
-          <div class="completion-progress-fill"></div>
-
-        </div>
-
-
-        <p class="completion-progress-note">
-
-          Demonstração estrutural.
-          Este número não representa o progresso
-          real nem os requisitos oficiais de GTA VI.
-
-        </p>
-
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================================================
-     FERRAMENTA FUTURA
-========================================================= -->
-
-<section class="completion-tool-section section section-alt">
-
-  <div class="container completion-container">
-
-
-    <div class="completion-tool-panel">
+    <div class="mission-wiki-panel">
 
 
       <div>
 
 
         <span class="eyebrow">
-          FERRAMENTA FUTURA
+          WIKI · MISSÕES
         </span>
 
 
         <h2>
-          Checklist interativo de 100%
+          Quer consultar o catálogo?
         </h2>
 
 
         <p>
 
-          Este Guia 100% será a referência editorial.
+          A seção de Missões da Wiki funciona
+          como catálogo da campanha.
 
-          Separadamente, o GTA6Zoone terá
-          uma ferramenta onde o visitante poderá
-          marcar objetivos concluídos e acompanhar
-          seu percentual de progresso.
+          Já esta área de Guias será dedicada
+          às instruções práticas e ao passo a passo.
 
         </p>
 
@@ -2119,19 +1882,13 @@
       </div>
 
 
-      <div>
+      <a
+        class="btn mission-wiki-button"
+        href="../../missoes/index.html">
 
-        <strong>
-          Rota reservada
-        </strong>
+        Ver Missões na Wiki
 
-        <br>
-
-        <span class="future-tool-route">
-          /ferramentas/checklist-100/
-        </span>
-
-      </div>
+      </a>
 
 
     </div>
@@ -2145,12 +1902,12 @@
      CONTEÚDO RELACIONADO
 ========================================================= -->
 
-<section class="completion-related-section section">
+<section class="mission-related-section section section-alt">
 
-  <div class="container completion-container">
+  <div class="container missions-guides-container">
 
 
-    <div class="completion-section-head">
+    <div class="missions-section-head">
 
       <span class="eyebrow">
         TUDO CONECTADO
@@ -2158,85 +1915,56 @@
 
 
       <h2>
-        Do checklist para o guia certo
+        Da missão para o resto do mundo
       </h2>
 
 
       <p>
 
-        Cada requisito poderá levar diretamente
-        para as áreas e tutoriais relacionados.
+        Os futuros guias poderão levar diretamente
+        para personagens, locais, veículos,
+        armas e pontos do mapa relacionados.
 
       </p>
 
     </div>
 
 
-    <div class="completion-related-grid">
+    <div class="mission-related-grid">
 
 
       <a
-        class="completion-related-card"
-        href="../missoes/index.html">
+        class="mission-related-card"
+        href="../../personagens/index.html">
 
         <strong>
-          Guias de Missões
+          Personagens
         </strong>
 
         <span>
-          Passo a passo das missões.
+          Conheça quem participa da história.
         </span>
 
       </a>
 
 
       <a
-        class="completion-related-card"
-        href="../atividades/index.html">
+        class="mission-related-card"
+        href="../../locais/index.html">
 
         <strong>
-          Guias de Atividades
+          Locais
         </strong>
 
         <span>
-          Ajuda para conteúdos opcionais.
+          Explore as regiões de Leonida.
         </span>
 
       </a>
 
 
       <a
-        class="completion-related-card"
-        href="../colecionaveis/index.html">
-
-        <strong>
-          Guias de Colecionáveis
-        </strong>
-
-        <span>
-          Localizações e rotas.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
-        href="../mapa/index.html">
-
-        <strong>
-          Guias do Mapa
-        </strong>
-
-        <span>
-          Ajuda com localizações.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
+        class="mission-related-card"
         href="../../mapa/index.html">
 
         <strong>
@@ -2244,59 +1972,44 @@
         </strong>
 
         <span>
-          Abra o mapa do GTA6Zoone.
+          Consulte localizações importantes.
         </span>
 
       </a>
 
 
       <a
-        class="completion-related-card"
-        href="../../colecionaveis/index.html">
+        class="mission-related-card"
+        href="../../veiculos/index.html">
 
         <strong>
-          Colecionáveis
+          Veículos
         </strong>
 
         <span>
-          Consulte o catálogo principal.
+          Veja os veículos catalogados.
         </span>
 
       </a>
 
 
       <a
-        class="completion-related-card"
-        href="../../atividades/index.html">
+        class="mission-related-card"
+        href="../../armas/index.html">
 
         <strong>
-          Atividades
+          Armas
         </strong>
 
         <span>
-          Consulte a área da Wiki.
+          Consulte armas e equipamentos.
         </span>
 
       </a>
 
 
       <a
-        class="completion-related-card"
-        href="../../missoes/index.html">
-
-        <strong>
-          Missões
-        </strong>
-
-        <span>
-          Consulte o índice da campanha.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
+        class="mission-related-card"
         href="../../propriedades/index.html">
 
         <strong>
@@ -2321,12 +2034,12 @@
      OUTRAS CATEGORIAS DE GUIAS
 ========================================================= -->
 
-<section class="other-guides-section section section-alt">
+<section class="other-guides-section section">
 
-  <div class="container completion-container">
+  <div class="container missions-guides-container">
 
 
-    <div class="completion-section-head">
+    <div class="missions-section-head">
 
       <span class="eyebrow">
         OUTRAS CATEGORIAS
@@ -2340,8 +2053,8 @@
 
       <p>
 
-        Todas as principais áreas
-        permanecem interligadas.
+        Passe de uma categoria para outra
+        sem precisar voltar à página inicial.
 
       </p>
 
@@ -2388,29 +2101,6 @@
 
         <p>
           Economia, ganhos e gastos.
-        </p>
-
-        <span class="other-guide-action">
-          Abrir categoria →
-        </span>
-
-      </a>
-
-
-      <a
-        class="other-guide-card"
-        href="../missoes/index.html">
-
-        <span class="eyebrow">
-          GUIAS
-        </span>
-
-        <h3>
-          Missões
-        </h3>
-
-        <p>
-          Passo a passo da campanha.
         </p>
 
         <span class="other-guide-action">
@@ -2479,7 +2169,7 @@
         </h3>
 
         <p>
-          Casas e estabelecimentos.
+          Casas, garagens e estabelecimentos.
         </p>
 
         <span class="other-guide-action">
@@ -2560,41 +2250,18 @@
 
       <a
         class="other-guide-card"
-        href="../segredos/index.html">
+        href="../guia-100/index.html">
 
         <span class="eyebrow">
-          DESCOBERTAS
+          GUIAS
         </span>
 
         <h3>
-          Segredos
+          Guia 100%
         </h3>
 
         <p>
-          Mistérios e descobertas.
-        </p>
-
-        <span class="other-guide-action">
-          Abrir categoria →
-        </span>
-
-      </a>
-
-
-      <a
-        class="other-guide-card"
-        href="../easter-eggs/index.html">
-
-        <span class="eyebrow">
-          DESCOBERTAS
-        </span>
-
-        <h3>
-          Easter Eggs
-        </h3>
-
-        <p>
-          Referências e homenagens.
+          Complete tudo em GTA VI.
         </p>
 
         <span class="other-guide-action">
@@ -2638,12 +2305,12 @@
      PESQUISA
 ========================================================= -->
 
-<section class="completion-search-section section">
+<section class="missions-search-section section section-alt">
 
-  <div class="container completion-container">
+  <div class="container missions-guides-container">
 
 
-    <div class="completion-search-panel">
+    <div class="missions-search-panel">
 
 
       <span class="eyebrow">
@@ -2652,28 +2319,27 @@
 
 
       <h2>
-        Procurando algum requisito?
+        Procure no GTA6Zoone
       </h2>
 
 
       <p>
 
-        Use a pesquisa geral para localizar
-        missões, atividades, colecionáveis,
-        veículos, personagens e outros
-        conteúdos do GTA6Zoone.
+        Pesquise missões, personagens,
+        veículos, locais, notícias
+        e futuros guias.
 
       </p>
 
 
       <form
-        class="completion-search-form"
+        class="missions-search-form"
         action="../../buscar/index.html">
 
 
         <label
           class="hidden"
-          for="completion-search">
+          for="missions-search">
 
           Pesquisar
 
@@ -2681,10 +2347,10 @@
 
 
         <input
-          id="completion-search"
+          id="missions-search"
           name="q"
           type="search"
-          placeholder="O que você precisa completar?">
+          placeholder="Qual missão ou conteúdo você procura?">
 
 
         <button
@@ -2721,8 +2387,6 @@
     <div class="footer-grid">
 
 
-      <!-- GTA6ZOONE -->
-
       <div>
 
         <strong class="brand-text">
@@ -2738,8 +2402,6 @@
 
       </div>
 
-
-      <!-- EXPLORAR -->
 
       <div>
 
@@ -2774,8 +2436,6 @@
       </div>
 
 
-      <!-- COMUNIDADE -->
-
       <div>
 
         <h3>
@@ -2793,7 +2453,6 @@
 
           </a>
 
-
           <a
             href="https://www.instagram.com/gta6zoone/"
             target="_blank"
@@ -2807,8 +2466,6 @@
 
       </div>
 
-
-      <!-- INSTITUCIONAL -->
 
       <div>
 

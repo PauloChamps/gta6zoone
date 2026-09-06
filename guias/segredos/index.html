@@ -6,15 +6,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Guia 100% de GTA VI: como completar o jogo | GTA6Zoone</title>
+  <title>Segredos de GTA VI: mistérios e descobertas | GTA6Zoone</title>
 
   <meta
     name="description"
-    content="Guia 100% de GTA VI. Acompanhe os requisitos, missões, atividades, colecionáveis e tudo o que for necessário para completar Grand Theft Auto VI.">
+    content="Segredos de GTA VI, mistérios, locais escondidos, interações ocultas e descobertas documentadas pelo GTA6Zoone.">
 
   <link
     rel="canonical"
-    href="https://gta6zoone.com.br/guias/guia-100/">
+    href="https://gta6zoone.com.br/guias/segredos/">
 
   <!-- FAVICON -->
 
@@ -30,15 +30,15 @@
 
   <meta
     property="og:title"
-    content="Guia 100% de GTA VI | GTA6Zoone">
+    content="Segredos de GTA VI | GTA6Zoone">
 
   <meta
     property="og:description"
-    content="Central para acompanhar tudo o que for necessário para completar Grand Theft Auto VI em 100%.">
+    content="Mistérios, locais escondidos, interações ocultas e descobertas de Grand Theft Auto VI.">
 
   <meta
     property="og:url"
-    content="https://gta6zoone.com.br/guias/guia-100/">
+    content="https://gta6zoone.com.br/guias/segredos/">
 
   <meta
     property="og:image"
@@ -59,16 +59,16 @@
 
 
   <!-- =========================================================
-       CSS EXCLUSIVO — GUIA 100%
+       CSS EXCLUSIVO — SEGREDOS
   ========================================================= -->
 
   <style>
 
-    .completion-page {
+    .secrets-page {
       overflow: hidden;
     }
 
-    .completion-container {
+    .secrets-container {
       max-width: 1180px;
       margin-inline: auto;
     }
@@ -78,23 +78,23 @@
        HERO
     ========================================================= */
 
-    .completion-hero {
+    .secrets-hero {
       padding-top: 2.5rem;
       padding-bottom: 2rem;
     }
 
-    .completion-hero-grid {
+    .secrets-hero-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 2rem;
       align-items: center;
     }
 
-    .completion-hero-copy {
+    .secrets-hero-copy {
       max-width: 850px;
     }
 
-    .completion-hero h1 {
+    .secrets-hero h1 {
       margin: .45rem 0 1rem;
 
       font-size:
@@ -103,14 +103,14 @@
       line-height: .96;
     }
 
-    .completion-hero .lede {
+    .secrets-hero .lede {
       max-width: 820px;
 
       font-size: 1.08rem;
       line-height: 1.75;
     }
 
-    .completion-hero p {
+    .secrets-hero p {
       max-width: 840px;
 
       line-height: 1.75;
@@ -121,7 +121,7 @@
        HERO — IMAGEM FUTURA
     ========================================================= */
 
-    .completion-hero-media {
+    .secrets-hero-media {
       min-height: 280px;
 
       display: flex;
@@ -154,7 +154,7 @@
         var(--color-surface);
     }
 
-    .completion-hero-media img {
+    .secrets-hero-media img {
       display: block;
 
       width: 100%;
@@ -167,19 +167,19 @@
       object-fit: cover;
     }
 
-    .completion-media-placeholder {
+    .secrets-media-placeholder {
       text-align: center;
     }
 
-    .completion-media-placeholder strong {
+    .secrets-media-placeholder strong {
       display: block;
 
       margin-bottom: .4rem;
 
-      font-size: 1.45rem;
+      font-size: 1.35rem;
     }
 
-    .completion-media-placeholder span {
+    .secrets-media-placeholder span {
       color:
         var(--color-text-muted);
 
@@ -212,7 +212,7 @@
        AVISO
     ========================================================= */
 
-    .completion-notice {
+    .secrets-notice {
       margin-top: 1.6rem;
 
       max-width: 930px;
@@ -232,7 +232,7 @@
         var(--color-surface);
     }
 
-    .completion-notice p {
+    .secrets-notice p {
       margin: 0;
 
       line-height: 1.7;
@@ -243,20 +243,20 @@
        CABEÇALHOS
     ========================================================= */
 
-    .completion-section-head {
+    .secrets-section-head {
       max-width: 880px;
 
       margin-bottom: 1.5rem;
     }
 
-    .completion-section-head h2 {
+    .secrets-section-head h2 {
       margin: .4rem 0 .7rem;
 
       font-size:
         clamp(2rem, 5vw, 3rem);
     }
 
-    .completion-section-head p {
+    .secrets-section-head p {
       margin: 0;
 
       color:
@@ -267,84 +267,55 @@
 
 
     /* =========================================================
-       STATUS
+       SEGREDOS DISPONÍVEIS
     ========================================================= */
 
-    .completion-status-section {
+    .secrets-list-section {
       padding-top: 4rem;
     }
 
-    .completion-status-panel {
+    .empty-secrets {
       padding: 1.4rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-medium);
-
-      background:
-        var(--color-surface);
-    }
-
-    .completion-status-panel h2 {
-      margin: .4rem 0 .7rem;
-
-      font-size:
-        clamp(1.9rem, 5vw, 2.8rem);
-    }
-
-    .completion-status-panel > p {
-      max-width: 900px;
-
-      color:
-        var(--color-text-muted);
-
-      line-height: 1.75;
-    }
-
-    .completion-status-box {
-      margin-top: 1.3rem;
-
-      padding: 1rem;
 
       border:
         1px dashed var(--color-border);
 
       border-radius:
-        var(--radius-small);
+        var(--radius-medium);
 
       background:
         rgba(255,255,255,.015);
     }
 
-    .completion-status-box strong {
+    .empty-secrets strong {
       display: block;
 
-      margin-bottom: .4rem;
+      margin-bottom: .5rem;
 
-      color: #ff73bd;
+      font-size: 1.05rem;
     }
 
-    .completion-status-box p {
+    .empty-secrets p {
+      max-width: 880px;
+
       margin: 0;
 
       color:
         var(--color-text-muted);
 
-      line-height: 1.65;
+      line-height: 1.7;
     }
 
 
     /* =========================================================
-       ÁREAS DO 100%
+       TIPOS DE SEGREDO
     ========================================================= */
 
-    .completion-areas-section {
+    .secret-types-section {
       padding-top: 4rem;
     }
 
-    .completion-areas-grid {
+    .secret-types-grid {
       display: grid;
 
       grid-template-columns:
@@ -353,7 +324,7 @@
       gap: .8rem;
     }
 
-    .completion-area-card {
+    .secret-type-card {
       min-width: 0;
 
       padding: 1rem;
@@ -368,7 +339,7 @@
         var(--color-surface);
     }
 
-    .completion-area-number {
+    .secret-type-number {
       display: block;
 
       margin-bottom: .4rem;
@@ -381,13 +352,13 @@
       letter-spacing: .08em;
     }
 
-    .completion-area-card h3 {
+    .secret-type-card h3 {
       margin: .3rem 0 .4rem;
 
       font-size: 1rem;
     }
 
-    .completion-area-card p {
+    .secret-type-card p {
       margin: 0;
 
       color:
@@ -399,14 +370,14 @@
 
 
     /* =========================================================
-       COMO SERÁ O GUIA
+       STATUS EDITORIAL
     ========================================================= */
 
-    .completion-structure-section {
+    .secret-status-section {
       padding-top: 4rem;
     }
 
-    .completion-structure-panel {
+    .secret-status-panel {
       padding: 1.4rem;
 
       border:
@@ -419,14 +390,14 @@
         var(--color-surface);
     }
 
-    .completion-structure-panel h2 {
+    .secret-status-panel h2 {
       margin: .4rem 0 .7rem;
 
       font-size:
         clamp(1.9rem, 5vw, 2.8rem);
     }
 
-    .completion-structure-panel > p {
+    .secret-status-panel > p {
       max-width: 900px;
 
       color:
@@ -435,18 +406,17 @@
       line-height: 1.75;
     }
 
-    .completion-structure-grid {
+    .secret-status-grid {
       display: grid;
 
-      grid-template-columns:
-        repeat(2, minmax(0, 1fr));
+      grid-template-columns: 1fr;
 
       gap: .8rem;
 
       margin-top: 1.3rem;
     }
 
-    .completion-structure-card {
+    .secret-status-card {
       padding: 1rem;
 
       border:
@@ -459,30 +429,43 @@
         rgba(255,255,255,.02);
     }
 
-    .completion-structure-card strong {
-      display: block;
+    .secret-status-label {
+      display: inline-block;
 
-      margin-bottom: .3rem;
+      margin-bottom: .45rem;
+
+      font-size: .72rem;
+      font-weight: 900;
+
+      letter-spacing: .08em;
     }
 
-    .completion-structure-card span {
+    .secret-status-card strong {
+      display: block;
+
+      margin-bottom: .35rem;
+    }
+
+    .secret-status-card p {
+      margin: 0;
+
       color:
         var(--color-text-muted);
 
-      font-size: .85rem;
-      line-height: 1.45;
+      font-size: .88rem;
+      line-height: 1.55;
     }
 
 
     /* =========================================================
-       PROGRESSO
+       COMO SERÃO AS PÁGINAS
     ========================================================= */
 
-    .completion-progress-section {
+    .secret-structure-section {
       padding-top: 4rem;
     }
 
-    .completion-progress-panel {
+    .secret-structure-panel {
       padding: 1.4rem;
 
       border:
@@ -495,14 +478,14 @@
         var(--color-surface);
     }
 
-    .completion-progress-panel h2 {
+    .secret-structure-panel h2 {
       margin: .4rem 0 .7rem;
 
       font-size:
         clamp(1.9rem, 5vw, 2.8rem);
     }
 
-    .completion-progress-panel > p {
+    .secret-structure-panel > p {
       max-width: 900px;
 
       color:
@@ -511,78 +494,54 @@
       line-height: 1.75;
     }
 
-    .completion-progress-placeholder {
-      margin-top: 1.3rem;
+    .secret-structure-grid {
+      display: grid;
 
-      padding: 1.2rem;
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      gap: .8rem;
+
+      margin-top: 1.3rem;
+    }
+
+    .secret-structure-card {
+      padding: 1rem;
 
       border:
-        1px dashed var(--color-border);
+        1px solid var(--color-border);
 
       border-radius:
         var(--radius-small);
 
       background:
-        rgba(255,255,255,.015);
+        rgba(255,255,255,.02);
     }
 
-    .completion-progress-label {
-      display: flex;
-      justify-content: space-between;
-      gap: 1rem;
+    .secret-structure-card strong {
+      display: block;
 
-      margin-bottom: .7rem;
-
-      font-size: .9rem;
-      font-weight: 800;
+      margin-bottom: .3rem;
     }
 
-    .completion-progress-bar {
-      width: 100%;
-      height: 12px;
-
-      overflow: hidden;
-
-      border-radius: 999px;
-
-      background:
-        rgba(255,255,255,.07);
-    }
-
-    .completion-progress-fill {
-      width: 0%;
-      height: 100%;
-
-      border-radius: inherit;
-
-      background:
-        linear-gradient(
-          90deg,
-          #ff3d9a,
-          #9b63ff
-        );
-    }
-
-    .completion-progress-note {
-      margin: .8rem 0 0;
-
+    .secret-structure-card span {
       color:
         var(--color-text-muted);
 
-      font-size: .84rem;
-      line-height: 1.55;
+      font-size: .85rem;
+      line-height: 1.45;
     }
 
 
     /* =========================================================
-       FERRAMENTA 100%
+       SEGREDOS X EASTER EGGS
     ========================================================= */
 
-    .completion-tool-section {
+    .secret-easter-section {
       padding-top: 4rem;
     }
 
-    .completion-tool-panel {
+    .secret-easter-panel {
       display: grid;
 
       grid-template-columns: 1fr;
@@ -601,14 +560,14 @@
         var(--color-surface);
     }
 
-    .completion-tool-panel h2 {
+    .secret-easter-panel h2 {
       margin: .4rem 0 .7rem;
 
       font-size:
         clamp(1.9rem, 5vw, 2.8rem);
     }
 
-    .completion-tool-panel p {
+    .secret-easter-panel p {
       max-width: 850px;
 
       color:
@@ -617,22 +576,9 @@
       line-height: 1.75;
     }
 
-    .future-tool-route {
-      display: inline-block;
-
-      margin-top: .5rem;
-
-      padding: .45rem .7rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-small);
-
-      color: #ff73bd;
-
-      font-family: monospace;
+    .secret-easter-button {
+      align-self: center;
+      justify-self: start;
     }
 
 
@@ -640,11 +586,11 @@
        CONTEÚDO RELACIONADO
     ========================================================= */
 
-    .completion-related-section {
+    .secret-related-section {
       padding-top: 4rem;
     }
 
-    .completion-related-grid {
+    .secret-related-grid {
       display: grid;
 
       grid-template-columns:
@@ -653,7 +599,7 @@
       gap: .8rem;
     }
 
-    .completion-related-card {
+    .secret-related-card {
       display: block;
 
       padding: 1rem;
@@ -675,7 +621,7 @@
         border-color .2s ease;
     }
 
-    .completion-related-card:hover {
+    .secret-related-card:hover {
       transform:
         translateY(-2px);
 
@@ -685,13 +631,13 @@
       color: inherit;
     }
 
-    .completion-related-card strong {
+    .secret-related-card strong {
       display: block;
 
       margin-bottom: .3rem;
     }
 
-    .completion-related-card span {
+    .secret-related-card span {
       color:
         var(--color-text-muted);
 
@@ -701,7 +647,7 @@
 
 
     /* =========================================================
-       OUTROS GUIAS
+       OUTRAS CATEGORIAS
     ========================================================= */
 
     .other-guides-section {
@@ -784,11 +730,11 @@
        PESQUISA
     ========================================================= */
 
-    .completion-search-section {
+    .secrets-search-section {
       padding-top: 4rem;
     }
 
-    .completion-search-panel {
+    .secrets-search-panel {
       padding: 1.4rem;
 
       border:
@@ -801,11 +747,11 @@
         var(--color-surface);
     }
 
-    .completion-search-panel h2 {
+    .secrets-search-panel h2 {
       margin: .4rem 0 .5rem;
     }
 
-    .completion-search-panel p {
+    .secrets-search-panel p {
       max-width: 820px;
 
       color:
@@ -814,7 +760,7 @@
       line-height: 1.7;
     }
 
-    .completion-search-form {
+    .secrets-search-form {
       display: grid;
 
       grid-template-columns: 1fr;
@@ -826,7 +772,7 @@
       margin-top: 1rem;
     }
 
-    .completion-search-form input {
+    .secrets-search-form input {
       width: 100%;
 
       padding: .9rem 1rem;
@@ -852,24 +798,29 @@
 
     @media (min-width: 700px) {
 
-      .completion-areas-grid {
+      .secret-types-grid {
         grid-template-columns:
           repeat(4, minmax(0, 1fr));
       }
 
-      .completion-structure-grid {
+      .secret-status-grid {
+        grid-template-columns:
+          repeat(3, minmax(0, 1fr));
+      }
+
+      .secret-structure-grid {
         grid-template-columns:
           repeat(4, minmax(0, 1fr));
       }
 
-      .completion-tool-panel {
+      .secret-easter-panel {
         grid-template-columns:
           1fr auto;
 
         align-items: center;
       }
 
-      .completion-related-grid {
+      .secret-related-grid {
         grid-template-columns:
           repeat(3, minmax(0, 1fr));
       }
@@ -879,7 +830,7 @@
           repeat(3, minmax(0, 1fr));
       }
 
-      .completion-search-form {
+      .secrets-search-form {
         grid-template-columns:
           1fr auto;
       }
@@ -893,7 +844,7 @@
 
     @media (min-width: 960px) {
 
-      .completion-hero-grid {
+      .secrets-hero-grid {
         grid-template-columns:
           1.2fr .8fr;
       }
@@ -912,7 +863,7 @@
 
     @media (max-width: 699px) {
 
-      .completion-container {
+      .secrets-container {
         width: 100%;
         max-width: 100%;
       }
@@ -930,9 +881,9 @@
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "Guia 100% de GTA VI",
-    "description": "Central de acompanhamento para completar Grand Theft Auto VI em 100%.",
-    "url": "https://gta6zoone.com.br/guias/guia-100/",
+    "name": "Segredos de GTA VI",
+    "description": "Central de segredos, mistérios e descobertas de Grand Theft Auto VI.",
+    "url": "https://gta6zoone.com.br/guias/segredos/",
     "isPartOf": {
       "@type": "WebSite",
       "name": "GTA6Zoone",
@@ -1480,16 +1431,16 @@
 
 <main
   id="conteudo"
-  class="completion-page">
+  class="secrets-page">
 
 
 <!-- =========================================================
      HERO
 ========================================================= -->
 
-<section class="completion-hero">
+<section class="secrets-hero">
 
-  <div class="container completion-container">
+  <div class="container secrets-container">
 
 
     <nav
@@ -1508,46 +1459,45 @@
 
       ›
 
-      Guia 100%
+      Segredos
 
     </nav>
 
 
-    <div class="completion-hero-grid">
+    <div class="secrets-hero-grid">
 
 
-      <div class="completion-hero-copy">
+      <div class="secrets-hero-copy">
 
 
         <span class="eyebrow">
-          GUIAS · 100%
+          GUIAS · SEGREDOS
         </span>
 
 
         <h1>
-          Guia 100% de GTA VI
+          Segredos de GTA VI
         </h1>
 
 
         <p class="lede">
 
-          A central para acompanhar tudo
-          o que realmente for necessário
-          para completar GTA VI em 100%.
+          Mistérios, locais escondidos,
+          interações pouco óbvias e descobertas
+          encontradas no mundo de GTA VI.
 
         </p>
 
 
         <p>
 
-          Conforme os requisitos oficiais
-          e os sistemas do jogo forem conhecidos,
-          esta página será transformada em um
-          roteiro completo de progresso.
+          Esta área será dedicada às descobertas
+          que vão além do caminho principal do jogo.
 
-          Cada etapa poderá se conectar aos
-          nossos guias de missões, atividades,
-          colecionáveis, mapa e outros conteúdos.
+          Cada segredo relevante poderá receber
+          sua própria página com explicação,
+          localização, screenshots, mapa
+          e vídeo quando necessário.
 
         </p>
 
@@ -1561,17 +1511,17 @@
         </a>
 
 
-        <div class="completion-notice">
+        <div class="secrets-notice">
 
           <p>
 
-            <strong>NÃO VAMOS INVENTAR O QUE CONTA PARA 100%:</strong>
-            determinadas atividades podem existir no jogo
-            sem fazer parte da porcentagem oficial.
+            <strong>SEGREDO NÃO É SINÔNIMO DE RUMOR:</strong>
+            quando uma descoberta puder ser comprovada,
+            ela será apresentada como confirmada.
 
-            Só adicionaremos itens à lista obrigatória
-            quando pudermos confirmar que eles realmente
-            contribuem para a conclusão de GTA VI.
+            Informações ainda sem comprovação
+            serão claramente identificadas como
+            rumor ou teoria.
 
           </p>
 
@@ -1583,12 +1533,12 @@
 
       <!-- IMAGEM FUTURA -->
 
-      <div class="completion-hero-media">
+      <div class="secrets-hero-media">
 
-        <div class="completion-media-placeholder">
+        <div class="secrets-media-placeholder">
 
           <strong>
-            GTA VI · 100%
+            SEGREDOS & MISTÉRIOS
           </strong>
 
           <span>
@@ -1608,57 +1558,58 @@
 
 
 <!-- =========================================================
-     STATUS
+     SEGREDOS DISPONÍVEIS
 ========================================================= -->
 
-<section class="completion-status-section section section-alt">
+<section class="secrets-list-section section section-alt">
 
-  <div class="container completion-container">
+  <div class="container secrets-container">
 
 
-    <div class="completion-status-panel">
-
+    <div class="secrets-section-head">
 
       <span class="eyebrow">
-        STATUS DO GUIA
+        DESCOBERTAS
       </span>
 
 
       <h2>
-        Requisitos ainda serão documentados
+        Segredos encontrados
       </h2>
 
 
       <p>
 
-        Esta página já está preparada para
-        receber a estrutura completa dos 100%,
-        mas a lista definitiva dependerá
-        daquilo que GTA VI realmente exigir.
+        Os artigos aparecerão nesta área
+        conforme descobertas reais puderem
+        ser verificadas e documentadas.
 
       </p>
 
+    </div>
 
-      <div class="completion-status-box">
 
-        <strong>
-          AGUARDANDO CONFIRMAÇÃO
-        </strong>
+    <div class="empty-secrets">
 
-        <p>
+      <strong>
+        Segredos individuais em breve
+      </strong>
 
-          Quando pudermos verificar os critérios
-          de conclusão do jogo, esta área passará
-          a mostrar a quantidade total de requisitos,
-          porcentagens, progresso e links diretos
-          para cada guia relacionado.
+      <p>
 
-        </p>
+        Não vamos preencher esta página
+        com listas especulativas apenas
+        para aumentar a quantidade de conteúdo.
 
-      </div>
+        Conforme GTA VI for explorado,
+        os segredos encontrados poderão
+        receber páginas próprias e ficar
+        conectados aos locais e ao mapa.
 
+      </p>
 
     </div>
+
 
   </div>
 
@@ -1666,182 +1617,195 @@
 
 
 <!-- =========================================================
-     POSSÍVEIS ÁREAS
+     TIPOS DE SEGREDO
 ========================================================= -->
 
-<section class="completion-areas-section section">
+<section class="secret-types-section section">
 
-  <div class="container completion-container">
+  <div class="container secrets-container">
 
 
-    <div class="completion-section-head">
+    <div class="secrets-section-head">
 
       <span class="eyebrow">
-        ORGANIZAÇÃO
+        EXPLORAÇÃO
       </span>
 
 
       <h2>
-        Áreas que vamos acompanhar
+        O que poderá aparecer aqui
       </h2>
 
 
       <p>
 
-        Estas são seções do GTA6Zoone que poderão
-        alimentar o Guia 100%.
-
-        A presença delas aqui não significa
-        que todas serão obrigatórias para
-        completar o jogo.
+        A classificação será ajustada conforme
+        descobrirmos que tipos de conteúdo
+        realmente existem em GTA VI.
 
       </p>
 
     </div>
 
 
-    <div class="completion-areas-grid">
+    <div class="secret-types-grid">
 
 
-      <div class="completion-area-card">
+      <div class="secret-type-card">
 
-        <span class="completion-area-number">
+        <span class="secret-type-number">
           01
         </span>
 
         <h3>
-          Missões
+          Locais escondidos
         </h3>
 
         <p>
-          Acompanhamento da campanha
-          e outros tipos de missões.
+
+          Áreas pouco óbvias ou difíceis
+          de encontrar.
+
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="secret-type-card">
 
-        <span class="completion-area-number">
+        <span class="secret-type-number">
           02
         </span>
 
         <h3>
-          Atividades
+          Interações ocultas
         </h3>
 
         <p>
-          Conteúdos opcionais quando
-          fizerem parte da conclusão.
+
+          Ações e interações que possam
+          passar despercebidas.
+
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="secret-type-card">
 
-        <span class="completion-area-number">
+        <span class="secret-type-number">
           03
         </span>
 
         <h3>
-          Colecionáveis
+          Mistérios
         </h3>
 
         <p>
-          Conjuntos e itens necessários,
-          caso sejam exigidos.
+
+          Elementos do mundo que levantem
+          perguntas ou exijam investigação.
+
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="secret-type-card">
 
-        <span class="completion-area-number">
+        <span class="secret-type-number">
           04
         </span>
 
         <h3>
-          Exploração
+          Detalhes escondidos
         </h3>
 
         <p>
-          Requisitos relacionados ao mapa
-          quando forem confirmados.
+
+          Pequenos elementos que tenham
+          significado ou utilidade.
+
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="secret-type-card">
 
-        <span class="completion-area-number">
+        <span class="secret-type-number">
           05
         </span>
 
         <h3>
-          Propriedades
+          Mecânicas ocultas
         </h3>
 
         <p>
-          Imóveis ou estabelecimentos
-          apenas se tiverem relevância para 100%.
+
+          Sistemas ou comportamentos
+          pouco explicados pelo jogo.
+
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="secret-type-card">
 
-        <span class="completion-area-number">
+        <span class="secret-type-number">
           06
         </span>
 
         <h3>
-          Veículos
+          Descobertas raras
         </h3>
 
         <p>
-          Objetivos relacionados a veículos
-          somente quando comprovados.
+
+          Situações incomuns encontradas
+          durante a exploração.
+
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="secret-type-card">
 
-        <span class="completion-area-number">
+        <span class="secret-type-number">
           07
         </span>
 
         <h3>
-          Desafios
+          Eventos escondidos
         </h3>
 
         <p>
-          Categorias adicionais caso
-          existam requisitos desse tipo.
+
+          Ocorrências especiais quando
+          puderem ser verificadas.
+
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="secret-type-card">
 
-        <span class="completion-area-number">
+        <span class="secret-type-number">
           08
         </span>
 
         <h3>
-          Outros requisitos
+          Outros segredos
         </h3>
 
         <p>
-          Qualquer categoria oficial
-          que não se encaixe nas anteriores.
+
+          Descobertas que não se encaixem
+          nas demais categorias.
+
         </p>
 
       </div>
@@ -1855,139 +1819,246 @@
 
 
 <!-- =========================================================
-     COMO SERÁ O GUIA
+     STATUS EDITORIAL
 ========================================================= -->
 
-<section class="completion-structure-section section section-alt">
+<section class="secret-status-section section section-alt">
 
-  <div class="container completion-container">
+  <div class="container secrets-container">
 
 
-    <div class="completion-structure-panel">
+    <div class="secret-status-panel">
 
 
       <span class="eyebrow">
-        ESTRUTURA
+        TRANSPARÊNCIA
       </span>
 
 
       <h2>
-        Um roteiro completo do início aos 100%
+        Como classificamos as descobertas
       </h2>
 
 
       <p>
 
-        Quando o conteúdo puder ser confirmado,
-        organizaremos este guia de forma que o
-        visitante consiga identificar rapidamente
-        o que falta e abrir o tutorial específico.
+        Segredos e mistérios costumam gerar
+        muita especulação.
+
+        Por isso, o GTA6Zoone diferencia
+        claramente aquilo que foi comprovado
+        do que ainda está sendo investigado.
 
       </p>
 
 
-      <div class="completion-structure-grid">
+      <div class="secret-status-grid">
 
 
-        <div class="completion-structure-card">
+        <div class="secret-status-card">
+
+          <span class="secret-status-label">
+            CONFIRMADO
+          </span>
 
           <strong>
-            Requisito
+            Verificado
+          </strong>
+
+          <p>
+
+            A descoberta pode ser comprovada
+            através do jogo ou de material oficial.
+
+          </p>
+
+        </div>
+
+
+        <div class="secret-status-card">
+
+          <span class="secret-status-label">
+            RUMOR
+          </span>
+
+          <strong>
+            Ainda sem confirmação
+          </strong>
+
+          <p>
+
+            Existe uma alegação ou descoberta
+            circulando, mas faltam provas suficientes.
+
+          </p>
+
+        </div>
+
+
+        <div class="secret-status-card">
+
+          <span class="secret-status-label">
+            TEORIA
+          </span>
+
+          <strong>
+            Interpretação
+          </strong>
+
+          <p>
+
+            Uma hipótese construída a partir
+            de pistas, detalhes ou conexões.
+
+          </p>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     ESTRUTURA DOS FUTUROS SEGREDOS
+========================================================= -->
+
+<section class="secret-structure-section section">
+
+  <div class="container secrets-container">
+
+
+    <div class="secret-structure-panel">
+
+
+      <span class="eyebrow">
+        FUTURAS PÁGINAS
+      </span>
+
+
+      <h2>
+        Cada descoberta poderá ter seu próprio guia
+      </h2>
+
+
+      <p>
+
+        Quando um segredo tiver conteúdo suficiente,
+        criaremos uma página específica para ele
+        em vez de concentrar centenas de descobertas
+        em uma única página.
+
+      </p>
+
+
+      <div class="secret-structure-grid">
+
+
+        <div class="secret-structure-card">
+
+          <strong>
+            O que é
           </strong>
 
           <span>
-            O que precisa ser concluído.
+            Explicação direta da descoberta.
           </span>
 
         </div>
 
 
-        <div class="completion-structure-card">
+        <div class="secret-structure-card">
 
           <strong>
-            Quantidade
+            Status
           </strong>
 
           <span>
-            Quantos itens ou objetivos existem.
+            Confirmado, rumor ou teoria.
           </span>
 
         </div>
 
 
-        <div class="completion-structure-card">
+        <div class="secret-structure-card">
 
           <strong>
-            Percentual
+            Onde encontrar
           </strong>
 
           <span>
-            Quanto contribui para os 100%, se aplicável.
+            Região e localização quando aplicável.
           </span>
 
         </div>
 
 
-        <div class="completion-structure-card">
+        <div class="secret-structure-card">
 
           <strong>
-            Checklist
+            Como encontrar
           </strong>
 
           <span>
-            Lista organizada de objetivos.
+            Passo a passo da descoberta.
           </span>
 
         </div>
 
 
-        <div class="completion-structure-card">
-
-          <strong>
-            Guia
-          </strong>
-
-          <span>
-            Link direto para o passo a passo.
-          </span>
-
-        </div>
-
-
-        <div class="completion-structure-card">
-
-          <strong>
-            Mapa
-          </strong>
-
-          <span>
-            Localizações quando forem necessárias.
-          </span>
-
-        </div>
-
-
-        <div class="completion-structure-card">
+        <div class="secret-structure-card">
 
           <strong>
             Screenshots
           </strong>
 
           <span>
-            Imagens para facilitar a conclusão.
+            Imagens para comprovar e localizar.
           </span>
 
         </div>
 
 
-        <div class="completion-structure-card">
+        <div class="secret-structure-card">
+
+          <strong>
+            Mapa
+          </strong>
+
+          <span>
+            Ligação com o mapa quando necessário.
+          </span>
+
+        </div>
+
+
+        <div class="secret-structure-card">
+
+          <strong>
+            Investigação
+          </strong>
+
+          <span>
+            Explicação das pistas existentes.
+          </span>
+
+        </div>
+
+
+        <div class="secret-structure-card">
 
           <strong>
             Vídeo
           </strong>
 
           <span>
-            Gameplay próprio quando útil.
+            Gameplay próprio quando disponível.
           </span>
 
         </div>
@@ -2004,114 +2075,40 @@
 
 
 <!-- =========================================================
-     PROGRESSO
+     SEGREDOS X EASTER EGGS
 ========================================================= -->
 
-<section class="completion-progress-section section">
+<section class="secret-easter-section section section-alt">
 
-  <div class="container completion-container">
-
-
-    <div class="completion-progress-panel">
+  <div class="container secrets-container">
 
 
-      <span class="eyebrow">
-        PROGRESSO
-      </span>
-
-
-      <h2>
-        Acompanhe sua conclusão
-      </h2>
-
-
-      <p>
-
-        O guia editorial mostrará todos
-        os requisitos confirmados.
-
-        Mais adiante, teremos também
-        uma ferramenta dedicada para
-        o visitante controlar o próprio progresso.
-
-      </p>
-
-
-      <div class="completion-progress-placeholder">
-
-
-        <div class="completion-progress-label">
-
-          <span>
-            Estrutura do checklist
-          </span>
-
-          <span>
-            0%
-          </span>
-
-        </div>
-
-
-        <div class="completion-progress-bar">
-
-          <div class="completion-progress-fill"></div>
-
-        </div>
-
-
-        <p class="completion-progress-note">
-
-          Demonstração estrutural.
-          Este número não representa o progresso
-          real nem os requisitos oficiais de GTA VI.
-
-        </p>
-
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================================================
-     FERRAMENTA FUTURA
-========================================================= -->
-
-<section class="completion-tool-section section section-alt">
-
-  <div class="container completion-container">
-
-
-    <div class="completion-tool-panel">
+    <div class="secret-easter-panel">
 
 
       <div>
 
 
         <span class="eyebrow">
-          FERRAMENTA FUTURA
+          NÃO É A MESMA COISA
         </span>
 
 
         <h2>
-          Checklist interativo de 100%
+          Segredo ou Easter Egg?
         </h2>
 
 
         <p>
 
-          Este Guia 100% será a referência editorial.
+          Nesta seção ficam mistérios,
+          locais escondidos, interações
+          e outras descobertas.
 
-          Separadamente, o GTA6Zoone terá
-          uma ferramenta onde o visitante poderá
-          marcar objetivos concluídos e acompanhar
-          seu percentual de progresso.
+          Referências, homenagens,
+          piadas internas e referências
+          culturais terão uma seção própria
+          em Easter Eggs.
 
         </p>
 
@@ -2119,19 +2116,13 @@
       </div>
 
 
-      <div>
+      <a
+        class="btn secret-easter-button"
+        href="../easter-eggs/index.html">
 
-        <strong>
-          Rota reservada
-        </strong>
+        Ver Easter Eggs
 
-        <br>
-
-        <span class="future-tool-route">
-          /ferramentas/checklist-100/
-        </span>
-
-      </div>
+      </a>
 
 
     </div>
@@ -2145,12 +2136,12 @@
      CONTEÚDO RELACIONADO
 ========================================================= -->
 
-<section class="completion-related-section section">
+<section class="secret-related-section section">
 
-  <div class="container completion-container">
+  <div class="container secrets-container">
 
 
-    <div class="completion-section-head">
+    <div class="secrets-section-head">
 
       <span class="eyebrow">
         TUDO CONECTADO
@@ -2158,85 +2149,27 @@
 
 
       <h2>
-        Do checklist para o guia certo
+        Explore além dos segredos
       </h2>
 
 
       <p>
 
-        Cada requisito poderá levar diretamente
-        para as áreas e tutoriais relacionados.
+        Cada descoberta poderá se conectar
+        a locais, mapa, personagens,
+        atividades e outros conteúdos
+        relacionados.
 
       </p>
 
     </div>
 
 
-    <div class="completion-related-grid">
+    <div class="secret-related-grid">
 
 
       <a
-        class="completion-related-card"
-        href="../missoes/index.html">
-
-        <strong>
-          Guias de Missões
-        </strong>
-
-        <span>
-          Passo a passo das missões.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
-        href="../atividades/index.html">
-
-        <strong>
-          Guias de Atividades
-        </strong>
-
-        <span>
-          Ajuda para conteúdos opcionais.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
-        href="../colecionaveis/index.html">
-
-        <strong>
-          Guias de Colecionáveis
-        </strong>
-
-        <span>
-          Localizações e rotas.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
-        href="../mapa/index.html">
-
-        <strong>
-          Guias do Mapa
-        </strong>
-
-        <span>
-          Ajuda com localizações.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
+        class="secret-related-card"
         href="../../mapa/index.html">
 
         <strong>
@@ -2244,29 +2177,44 @@
         </strong>
 
         <span>
-          Abra o mapa do GTA6Zoone.
+          Consulte localizações e regiões.
         </span>
 
       </a>
 
 
       <a
-        class="completion-related-card"
-        href="../../colecionaveis/index.html">
+        class="secret-related-card"
+        href="../../locais/index.html">
 
         <strong>
-          Colecionáveis
+          Locais
         </strong>
 
         <span>
-          Consulte o catálogo principal.
+          Explore as regiões de Leonida.
         </span>
 
       </a>
 
 
       <a
-        class="completion-related-card"
+        class="secret-related-card"
+        href="../../personagens/index.html">
+
+        <strong>
+          Personagens
+        </strong>
+
+        <span>
+          Conheça os personagens.
+        </span>
+
+      </a>
+
+
+      <a
+        class="secret-related-card"
         href="../../atividades/index.html">
 
         <strong>
@@ -2274,29 +2222,29 @@
         </strong>
 
         <span>
-          Consulte a área da Wiki.
+          Veja conteúdos do mundo aberto.
         </span>
 
       </a>
 
 
       <a
-        class="completion-related-card"
-        href="../../missoes/index.html">
+        class="secret-related-card"
+        href="../../colecionaveis/index.html">
 
         <strong>
-          Missões
+          Colecionáveis
         </strong>
 
         <span>
-          Consulte o índice da campanha.
+          Consulte conjuntos e localizações.
         </span>
 
       </a>
 
 
       <a
-        class="completion-related-card"
+        class="secret-related-card"
         href="../../propriedades/index.html">
 
         <strong>
@@ -2304,7 +2252,7 @@
         </strong>
 
         <span>
-          Veja imóveis e estabelecimentos.
+          Veja estabelecimentos e imóveis.
         </span>
 
       </a>
@@ -2318,15 +2266,15 @@
 
 
 <!-- =========================================================
-     OUTRAS CATEGORIAS DE GUIAS
+     OUTRAS CATEGORIAS
 ========================================================= -->
 
 <section class="other-guides-section section section-alt">
 
-  <div class="container completion-container">
+  <div class="container secrets-container">
 
 
-    <div class="completion-section-head">
+    <div class="secrets-section-head">
 
       <span class="eyebrow">
         OUTRAS CATEGORIAS
@@ -2340,7 +2288,7 @@
 
       <p>
 
-        Todas as principais áreas
+        Todas as principais categorias
         permanecem interligadas.
 
       </p>
@@ -2560,29 +2508,6 @@
 
       <a
         class="other-guide-card"
-        href="../segredos/index.html">
-
-        <span class="eyebrow">
-          DESCOBERTAS
-        </span>
-
-        <h3>
-          Segredos
-        </h3>
-
-        <p>
-          Mistérios e descobertas.
-        </p>
-
-        <span class="other-guide-action">
-          Abrir categoria →
-        </span>
-
-      </a>
-
-
-      <a
-        class="other-guide-card"
         href="../easter-eggs/index.html">
 
         <span class="eyebrow">
@@ -2595,6 +2520,29 @@
 
         <p>
           Referências e homenagens.
+        </p>
+
+        <span class="other-guide-action">
+          Abrir categoria →
+        </span>
+
+      </a>
+
+
+      <a
+        class="other-guide-card"
+        href="../guia-100/index.html">
+
+        <span class="eyebrow">
+          GUIAS
+        </span>
+
+        <h3>
+          Guia 100%
+        </h3>
+
+        <p>
+          Complete tudo em GTA VI.
         </p>
 
         <span class="other-guide-action">
@@ -2638,12 +2586,12 @@
      PESQUISA
 ========================================================= -->
 
-<section class="completion-search-section section">
+<section class="secrets-search-section section">
 
-  <div class="container completion-container">
+  <div class="container secrets-container">
 
 
-    <div class="completion-search-panel">
+    <div class="secrets-search-panel">
 
 
       <span class="eyebrow">
@@ -2652,28 +2600,28 @@
 
 
       <h2>
-        Procurando algum requisito?
+        Procurando alguma descoberta?
       </h2>
 
 
       <p>
 
-        Use a pesquisa geral para localizar
-        missões, atividades, colecionáveis,
-        veículos, personagens e outros
-        conteúdos do GTA6Zoone.
+        Use a pesquisa geral para encontrar
+        locais, personagens, veículos,
+        armas e outros conteúdos
+        do GTA6Zoone.
 
       </p>
 
 
       <form
-        class="completion-search-form"
+        class="secrets-search-form"
         action="../../buscar/index.html">
 
 
         <label
           class="hidden"
-          for="completion-search">
+          for="secrets-search">
 
           Pesquisar
 
@@ -2681,10 +2629,10 @@
 
 
         <input
-          id="completion-search"
+          id="secrets-search"
           name="q"
           type="search"
-          placeholder="O que você precisa completar?">
+          placeholder="O que você está procurando?">
 
 
         <button

@@ -6,15 +6,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Guia 100% de GTA VI: como completar o jogo | GTA6Zoone</title>
+  <title>Easter Eggs de GTA VI: referências e homenagens | GTA6Zoone</title>
 
   <meta
     name="description"
-    content="Guia 100% de GTA VI. Acompanhe os requisitos, missões, atividades, colecionáveis e tudo o que for necessário para completar Grand Theft Auto VI.">
+    content="Easter Eggs de GTA VI, referências, homenagens, piadas internas e conexões escondidas encontradas em Grand Theft Auto VI.">
 
   <link
     rel="canonical"
-    href="https://gta6zoone.com.br/guias/guia-100/">
+    href="https://gta6zoone.com.br/guias/easter-eggs/">
 
   <!-- FAVICON -->
 
@@ -30,15 +30,15 @@
 
   <meta
     property="og:title"
-    content="Guia 100% de GTA VI | GTA6Zoone">
+    content="Easter Eggs de GTA VI | GTA6Zoone">
 
   <meta
     property="og:description"
-    content="Central para acompanhar tudo o que for necessário para completar Grand Theft Auto VI em 100%.">
+    content="Referências, homenagens e detalhes escondidos encontrados em Grand Theft Auto VI.">
 
   <meta
     property="og:url"
-    content="https://gta6zoone.com.br/guias/guia-100/">
+    content="https://gta6zoone.com.br/guias/easter-eggs/">
 
   <meta
     property="og:image"
@@ -59,16 +59,16 @@
 
 
   <!-- =========================================================
-       CSS EXCLUSIVO — GUIA 100%
+       CSS EXCLUSIVO — EASTER EGGS
   ========================================================= -->
 
   <style>
 
-    .completion-page {
+    .easter-page {
       overflow: hidden;
     }
 
-    .completion-container {
+    .easter-container {
       max-width: 1180px;
       margin-inline: auto;
     }
@@ -78,23 +78,23 @@
        HERO
     ========================================================= */
 
-    .completion-hero {
+    .easter-hero {
       padding-top: 2.5rem;
       padding-bottom: 2rem;
     }
 
-    .completion-hero-grid {
+    .easter-hero-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 2rem;
       align-items: center;
     }
 
-    .completion-hero-copy {
+    .easter-hero-copy {
       max-width: 850px;
     }
 
-    .completion-hero h1 {
+    .easter-hero h1 {
       margin: .45rem 0 1rem;
 
       font-size:
@@ -103,14 +103,14 @@
       line-height: .96;
     }
 
-    .completion-hero .lede {
+    .easter-hero .lede {
       max-width: 820px;
 
       font-size: 1.08rem;
       line-height: 1.75;
     }
 
-    .completion-hero p {
+    .easter-hero p {
       max-width: 840px;
 
       line-height: 1.75;
@@ -121,7 +121,7 @@
        HERO — IMAGEM FUTURA
     ========================================================= */
 
-    .completion-hero-media {
+    .easter-hero-media {
       min-height: 280px;
 
       display: flex;
@@ -154,7 +154,7 @@
         var(--color-surface);
     }
 
-    .completion-hero-media img {
+    .easter-hero-media img {
       display: block;
 
       width: 100%;
@@ -167,19 +167,19 @@
       object-fit: cover;
     }
 
-    .completion-media-placeholder {
+    .easter-media-placeholder {
       text-align: center;
     }
 
-    .completion-media-placeholder strong {
+    .easter-media-placeholder strong {
       display: block;
 
       margin-bottom: .4rem;
 
-      font-size: 1.45rem;
+      font-size: 1.35rem;
     }
 
-    .completion-media-placeholder span {
+    .easter-media-placeholder span {
       color:
         var(--color-text-muted);
 
@@ -212,7 +212,7 @@
        AVISO
     ========================================================= */
 
-    .completion-notice {
+    .easter-notice {
       margin-top: 1.6rem;
 
       max-width: 930px;
@@ -232,7 +232,7 @@
         var(--color-surface);
     }
 
-    .completion-notice p {
+    .easter-notice p {
       margin: 0;
 
       line-height: 1.7;
@@ -243,20 +243,20 @@
        CABEÇALHOS
     ========================================================= */
 
-    .completion-section-head {
+    .easter-section-head {
       max-width: 880px;
 
       margin-bottom: 1.5rem;
     }
 
-    .completion-section-head h2 {
+    .easter-section-head h2 {
       margin: .4rem 0 .7rem;
 
       font-size:
         clamp(2rem, 5vw, 3rem);
     }
 
-    .completion-section-head p {
+    .easter-section-head p {
       margin: 0;
 
       color:
@@ -267,84 +267,55 @@
 
 
     /* =========================================================
-       STATUS
+       LISTA
     ========================================================= */
 
-    .completion-status-section {
+    .easter-list-section {
       padding-top: 4rem;
     }
 
-    .completion-status-panel {
+    .empty-easter {
       padding: 1.4rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-medium);
-
-      background:
-        var(--color-surface);
-    }
-
-    .completion-status-panel h2 {
-      margin: .4rem 0 .7rem;
-
-      font-size:
-        clamp(1.9rem, 5vw, 2.8rem);
-    }
-
-    .completion-status-panel > p {
-      max-width: 900px;
-
-      color:
-        var(--color-text-muted);
-
-      line-height: 1.75;
-    }
-
-    .completion-status-box {
-      margin-top: 1.3rem;
-
-      padding: 1rem;
 
       border:
         1px dashed var(--color-border);
 
       border-radius:
-        var(--radius-small);
+        var(--radius-medium);
 
       background:
         rgba(255,255,255,.015);
     }
 
-    .completion-status-box strong {
+    .empty-easter strong {
       display: block;
 
-      margin-bottom: .4rem;
+      margin-bottom: .5rem;
 
-      color: #ff73bd;
+      font-size: 1.05rem;
     }
 
-    .completion-status-box p {
+    .empty-easter p {
+      max-width: 880px;
+
       margin: 0;
 
       color:
         var(--color-text-muted);
 
-      line-height: 1.65;
+      line-height: 1.7;
     }
 
 
     /* =========================================================
-       ÁREAS DO 100%
+       TIPOS
     ========================================================= */
 
-    .completion-areas-section {
+    .easter-types-section {
       padding-top: 4rem;
     }
 
-    .completion-areas-grid {
+    .easter-types-grid {
       display: grid;
 
       grid-template-columns:
@@ -353,7 +324,7 @@
       gap: .8rem;
     }
 
-    .completion-area-card {
+    .easter-type-card {
       min-width: 0;
 
       padding: 1rem;
@@ -368,7 +339,7 @@
         var(--color-surface);
     }
 
-    .completion-area-number {
+    .easter-type-number {
       display: block;
 
       margin-bottom: .4rem;
@@ -381,13 +352,13 @@
       letter-spacing: .08em;
     }
 
-    .completion-area-card h3 {
+    .easter-type-card h3 {
       margin: .3rem 0 .4rem;
 
       font-size: 1rem;
     }
 
-    .completion-area-card p {
+    .easter-type-card p {
       margin: 0;
 
       color:
@@ -399,14 +370,14 @@
 
 
     /* =========================================================
-       COMO SERÁ O GUIA
+       STATUS
     ========================================================= */
 
-    .completion-structure-section {
+    .easter-status-section {
       padding-top: 4rem;
     }
 
-    .completion-structure-panel {
+    .easter-status-panel {
       padding: 1.4rem;
 
       border:
@@ -419,14 +390,14 @@
         var(--color-surface);
     }
 
-    .completion-structure-panel h2 {
+    .easter-status-panel h2 {
       margin: .4rem 0 .7rem;
 
       font-size:
         clamp(1.9rem, 5vw, 2.8rem);
     }
 
-    .completion-structure-panel > p {
+    .easter-status-panel > p {
       max-width: 900px;
 
       color:
@@ -435,18 +406,17 @@
       line-height: 1.75;
     }
 
-    .completion-structure-grid {
+    .easter-status-grid {
       display: grid;
 
-      grid-template-columns:
-        repeat(2, minmax(0, 1fr));
+      grid-template-columns: 1fr;
 
       gap: .8rem;
 
       margin-top: 1.3rem;
     }
 
-    .completion-structure-card {
+    .easter-status-card {
       padding: 1rem;
 
       border:
@@ -459,30 +429,45 @@
         rgba(255,255,255,.02);
     }
 
-    .completion-structure-card strong {
-      display: block;
+    .easter-status-label {
+      display: inline-block;
 
-      margin-bottom: .3rem;
+      margin-bottom: .45rem;
+
+      color: #ff73bd;
+
+      font-size: .72rem;
+      font-weight: 900;
+
+      letter-spacing: .08em;
     }
 
-    .completion-structure-card span {
+    .easter-status-card strong {
+      display: block;
+
+      margin-bottom: .35rem;
+    }
+
+    .easter-status-card p {
+      margin: 0;
+
       color:
         var(--color-text-muted);
 
-      font-size: .85rem;
-      line-height: 1.45;
+      font-size: .88rem;
+      line-height: 1.55;
     }
 
 
     /* =========================================================
-       PROGRESSO
+       ESTRUTURA FUTURA
     ========================================================= */
 
-    .completion-progress-section {
+    .easter-structure-section {
       padding-top: 4rem;
     }
 
-    .completion-progress-panel {
+    .easter-structure-panel {
       padding: 1.4rem;
 
       border:
@@ -495,14 +480,14 @@
         var(--color-surface);
     }
 
-    .completion-progress-panel h2 {
+    .easter-structure-panel h2 {
       margin: .4rem 0 .7rem;
 
       font-size:
         clamp(1.9rem, 5vw, 2.8rem);
     }
 
-    .completion-progress-panel > p {
+    .easter-structure-panel > p {
       max-width: 900px;
 
       color:
@@ -511,78 +496,54 @@
       line-height: 1.75;
     }
 
-    .completion-progress-placeholder {
-      margin-top: 1.3rem;
+    .easter-structure-grid {
+      display: grid;
 
-      padding: 1.2rem;
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      gap: .8rem;
+
+      margin-top: 1.3rem;
+    }
+
+    .easter-structure-card {
+      padding: 1rem;
 
       border:
-        1px dashed var(--color-border);
+        1px solid var(--color-border);
 
       border-radius:
         var(--radius-small);
 
       background:
-        rgba(255,255,255,.015);
+        rgba(255,255,255,.02);
     }
 
-    .completion-progress-label {
-      display: flex;
-      justify-content: space-between;
-      gap: 1rem;
+    .easter-structure-card strong {
+      display: block;
 
-      margin-bottom: .7rem;
-
-      font-size: .9rem;
-      font-weight: 800;
+      margin-bottom: .3rem;
     }
 
-    .completion-progress-bar {
-      width: 100%;
-      height: 12px;
-
-      overflow: hidden;
-
-      border-radius: 999px;
-
-      background:
-        rgba(255,255,255,.07);
-    }
-
-    .completion-progress-fill {
-      width: 0%;
-      height: 100%;
-
-      border-radius: inherit;
-
-      background:
-        linear-gradient(
-          90deg,
-          #ff3d9a,
-          #9b63ff
-        );
-    }
-
-    .completion-progress-note {
-      margin: .8rem 0 0;
-
+    .easter-structure-card span {
       color:
         var(--color-text-muted);
 
-      font-size: .84rem;
-      line-height: 1.55;
+      font-size: .85rem;
+      line-height: 1.45;
     }
 
 
     /* =========================================================
-       FERRAMENTA 100%
+       SEGREDOS X EASTER EGGS
     ========================================================= */
 
-    .completion-tool-section {
+    .easter-secrets-section {
       padding-top: 4rem;
     }
 
-    .completion-tool-panel {
+    .easter-secrets-panel {
       display: grid;
 
       grid-template-columns: 1fr;
@@ -601,14 +562,14 @@
         var(--color-surface);
     }
 
-    .completion-tool-panel h2 {
+    .easter-secrets-panel h2 {
       margin: .4rem 0 .7rem;
 
       font-size:
         clamp(1.9rem, 5vw, 2.8rem);
     }
 
-    .completion-tool-panel p {
+    .easter-secrets-panel p {
       max-width: 850px;
 
       color:
@@ -617,34 +578,21 @@
       line-height: 1.75;
     }
 
-    .future-tool-route {
-      display: inline-block;
-
-      margin-top: .5rem;
-
-      padding: .45rem .7rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-small);
-
-      color: #ff73bd;
-
-      font-family: monospace;
+    .easter-secrets-button {
+      align-self: center;
+      justify-self: start;
     }
 
 
     /* =========================================================
-       CONTEÚDO RELACIONADO
+       RELACIONADOS
     ========================================================= */
 
-    .completion-related-section {
+    .easter-related-section {
       padding-top: 4rem;
     }
 
-    .completion-related-grid {
+    .easter-related-grid {
       display: grid;
 
       grid-template-columns:
@@ -653,7 +601,7 @@
       gap: .8rem;
     }
 
-    .completion-related-card {
+    .easter-related-card {
       display: block;
 
       padding: 1rem;
@@ -675,7 +623,7 @@
         border-color .2s ease;
     }
 
-    .completion-related-card:hover {
+    .easter-related-card:hover {
       transform:
         translateY(-2px);
 
@@ -685,13 +633,13 @@
       color: inherit;
     }
 
-    .completion-related-card strong {
+    .easter-related-card strong {
       display: block;
 
       margin-bottom: .3rem;
     }
 
-    .completion-related-card span {
+    .easter-related-card span {
       color:
         var(--color-text-muted);
 
@@ -784,11 +732,11 @@
        PESQUISA
     ========================================================= */
 
-    .completion-search-section {
+    .easter-search-section {
       padding-top: 4rem;
     }
 
-    .completion-search-panel {
+    .easter-search-panel {
       padding: 1.4rem;
 
       border:
@@ -801,11 +749,11 @@
         var(--color-surface);
     }
 
-    .completion-search-panel h2 {
+    .easter-search-panel h2 {
       margin: .4rem 0 .5rem;
     }
 
-    .completion-search-panel p {
+    .easter-search-panel p {
       max-width: 820px;
 
       color:
@@ -814,7 +762,7 @@
       line-height: 1.7;
     }
 
-    .completion-search-form {
+    .easter-search-form {
       display: grid;
 
       grid-template-columns: 1fr;
@@ -826,7 +774,7 @@
       margin-top: 1rem;
     }
 
-    .completion-search-form input {
+    .easter-search-form input {
       width: 100%;
 
       padding: .9rem 1rem;
@@ -852,24 +800,29 @@
 
     @media (min-width: 700px) {
 
-      .completion-areas-grid {
+      .easter-types-grid {
         grid-template-columns:
           repeat(4, minmax(0, 1fr));
       }
 
-      .completion-structure-grid {
+      .easter-status-grid {
+        grid-template-columns:
+          repeat(3, minmax(0, 1fr));
+      }
+
+      .easter-structure-grid {
         grid-template-columns:
           repeat(4, minmax(0, 1fr));
       }
 
-      .completion-tool-panel {
+      .easter-secrets-panel {
         grid-template-columns:
           1fr auto;
 
         align-items: center;
       }
 
-      .completion-related-grid {
+      .easter-related-grid {
         grid-template-columns:
           repeat(3, minmax(0, 1fr));
       }
@@ -879,7 +832,7 @@
           repeat(3, minmax(0, 1fr));
       }
 
-      .completion-search-form {
+      .easter-search-form {
         grid-template-columns:
           1fr auto;
       }
@@ -893,7 +846,7 @@
 
     @media (min-width: 960px) {
 
-      .completion-hero-grid {
+      .easter-hero-grid {
         grid-template-columns:
           1.2fr .8fr;
       }
@@ -912,7 +865,7 @@
 
     @media (max-width: 699px) {
 
-      .completion-container {
+      .easter-container {
         width: 100%;
         max-width: 100%;
       }
@@ -930,9 +883,9 @@
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "Guia 100% de GTA VI",
-    "description": "Central de acompanhamento para completar Grand Theft Auto VI em 100%.",
-    "url": "https://gta6zoone.com.br/guias/guia-100/",
+    "name": "Easter Eggs de GTA VI",
+    "description": "Central de Easter Eggs, referências e homenagens de Grand Theft Auto VI.",
+    "url": "https://gta6zoone.com.br/guias/easter-eggs/",
     "isPartOf": {
       "@type": "WebSite",
       "name": "GTA6Zoone",
@@ -1480,16 +1433,16 @@
 
 <main
   id="conteudo"
-  class="completion-page">
+  class="easter-page">
 
 
 <!-- =========================================================
      HERO
 ========================================================= -->
 
-<section class="completion-hero">
+<section class="easter-hero">
 
-  <div class="container completion-container">
+  <div class="container easter-container">
 
 
     <nav
@@ -1508,46 +1461,43 @@
 
       ›
 
-      Guia 100%
+      Easter Eggs
 
     </nav>
 
 
-    <div class="completion-hero-grid">
+    <div class="easter-hero-grid">
 
 
-      <div class="completion-hero-copy">
+      <div class="easter-hero-copy">
 
 
         <span class="eyebrow">
-          GUIAS · 100%
+          GUIAS · EASTER EGGS
         </span>
 
 
         <h1>
-          Guia 100% de GTA VI
+          Easter Eggs de GTA VI
         </h1>
 
 
         <p class="lede">
 
-          A central para acompanhar tudo
-          o que realmente for necessário
-          para completar GTA VI em 100%.
+          Referências, homenagens,
+          piadas internas e conexões escondidas
+          encontradas no mundo de GTA VI.
 
         </p>
 
 
         <p>
 
-          Conforme os requisitos oficiais
-          e os sistemas do jogo forem conhecidos,
-          esta página será transformada em um
-          roteiro completo de progresso.
-
-          Cada etapa poderá se conectar aos
-          nossos guias de missões, atividades,
-          colecionáveis, mapa e outros conteúdos.
+          Esta área reunirá referências que possam
+          estar ligadas a outros jogos da Rockstar,
+          elementos da cultura popular,
+          acontecimentos, obras ou detalhes
+          colocados propositalmente no jogo.
 
         </p>
 
@@ -1561,17 +1511,16 @@
         </a>
 
 
-        <div class="completion-notice">
+        <div class="easter-notice">
 
           <p>
 
-            <strong>NÃO VAMOS INVENTAR O QUE CONTA PARA 100%:</strong>
-            determinadas atividades podem existir no jogo
-            sem fazer parte da porcentagem oficial.
+            <strong>NEM TODA SEMELHANÇA É UM EASTER EGG:</strong>
+            quando uma referência puder ser sustentada
+            por evidências suficientes, isso será explicado.
 
-            Só adicionaremos itens à lista obrigatória
-            quando pudermos confirmar que eles realmente
-            contribuem para a conclusão de GTA VI.
+            Interpretações que ainda não puderem ser
+            comprovadas serão identificadas claramente.
 
           </p>
 
@@ -1583,12 +1532,12 @@
 
       <!-- IMAGEM FUTURA -->
 
-      <div class="completion-hero-media">
+      <div class="easter-hero-media">
 
-        <div class="completion-media-placeholder">
+        <div class="easter-media-placeholder">
 
           <strong>
-            GTA VI · 100%
+            EASTER EGGS & REFERÊNCIAS
           </strong>
 
           <span>
@@ -1608,57 +1557,57 @@
 
 
 <!-- =========================================================
-     STATUS
+     EASTER EGGS DISPONÍVEIS
 ========================================================= -->
 
-<section class="completion-status-section section section-alt">
+<section class="easter-list-section section section-alt">
 
-  <div class="container completion-container">
+  <div class="container easter-container">
 
 
-    <div class="completion-status-panel">
-
+    <div class="easter-section-head">
 
       <span class="eyebrow">
-        STATUS DO GUIA
+        DESCOBERTAS
       </span>
 
 
       <h2>
-        Requisitos ainda serão documentados
+        Easter Eggs encontrados
       </h2>
 
 
       <p>
 
-        Esta página já está preparada para
-        receber a estrutura completa dos 100%,
-        mas a lista definitiva dependerá
-        daquilo que GTA VI realmente exigir.
+        Os artigos individuais aparecerão
+        nesta área conforme referências
+        puderem ser identificadas e documentadas.
 
       </p>
 
+    </div>
 
-      <div class="completion-status-box">
 
-        <strong>
-          AGUARDANDO CONFIRMAÇÃO
-        </strong>
+    <div class="empty-easter">
 
-        <p>
+      <strong>
+        Easter Eggs individuais em breve
+      </strong>
 
-          Quando pudermos verificar os critérios
-          de conclusão do jogo, esta área passará
-          a mostrar a quantidade total de requisitos,
-          porcentagens, progresso e links diretos
-          para cada guia relacionado.
+      <p>
 
-        </p>
+        Não vamos preencher esta página
+        com referências inventadas ou interpretações
+        apresentadas como fatos.
 
-      </div>
+        Conforme o jogo for explorado,
+        cada descoberta relevante poderá
+        receber sua própria página.
 
+      </p>
 
     </div>
+
 
   </div>
 
@@ -1666,182 +1615,195 @@
 
 
 <!-- =========================================================
-     POSSÍVEIS ÁREAS
+     TIPOS
 ========================================================= -->
 
-<section class="completion-areas-section section">
+<section class="easter-types-section section">
 
-  <div class="container completion-container">
+  <div class="container easter-container">
 
 
-    <div class="completion-section-head">
+    <div class="easter-section-head">
 
       <span class="eyebrow">
-        ORGANIZAÇÃO
+        REFERÊNCIAS
       </span>
 
 
       <h2>
-        Áreas que vamos acompanhar
+        O que poderá aparecer aqui
       </h2>
 
 
       <p>
 
-        Estas são seções do GTA6Zoone que poderão
-        alimentar o Guia 100%.
-
-        A presença delas aqui não significa
-        que todas serão obrigatórias para
-        completar o jogo.
+        As categorias serão adaptadas
+        conforme os Easter Eggs reais
+        de GTA VI forem encontrados.
 
       </p>
 
     </div>
 
 
-    <div class="completion-areas-grid">
+    <div class="easter-types-grid">
 
 
-      <div class="completion-area-card">
+      <div class="easter-type-card">
 
-        <span class="completion-area-number">
+        <span class="easter-type-number">
           01
         </span>
 
         <h3>
-          Missões
+          Outros GTA
         </h3>
 
         <p>
-          Acompanhamento da campanha
-          e outros tipos de missões.
+
+          Possíveis referências a outros
+          títulos da série Grand Theft Auto.
+
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="easter-type-card">
 
-        <span class="completion-area-number">
+        <span class="easter-type-number">
           02
         </span>
 
         <h3>
-          Atividades
+          Jogos da Rockstar
         </h3>
 
         <p>
-          Conteúdos opcionais quando
-          fizerem parte da conclusão.
+
+          Referências relacionadas
+          a outras franquias da Rockstar.
+
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="easter-type-card">
 
-        <span class="completion-area-number">
+        <span class="easter-type-number">
           03
         </span>
 
         <h3>
-          Colecionáveis
+          Cinema e TV
         </h3>
 
         <p>
-          Conjuntos e itens necessários,
-          caso sejam exigidos.
+
+          Possíveis homenagens ou referências
+          a produções audiovisuais.
+
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="easter-type-card">
 
-        <span class="completion-area-number">
+        <span class="easter-type-number">
           04
         </span>
 
         <h3>
-          Exploração
+          Música
         </h3>
 
         <p>
-          Requisitos relacionados ao mapa
-          quando forem confirmados.
+
+          Referências ligadas à música
+          e à cultura musical.
+
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="easter-type-card">
 
-        <span class="completion-area-number">
+        <span class="easter-type-number">
           05
         </span>
 
         <h3>
-          Propriedades
+          Cultura popular
         </h3>
 
         <p>
-          Imóveis ou estabelecimentos
-          apenas se tiverem relevância para 100%.
+
+          Elementos relacionados
+          a referências culturais conhecidas.
+
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="easter-type-card">
 
-        <span class="completion-area-number">
+        <span class="easter-type-number">
           06
         </span>
 
         <h3>
-          Veículos
+          Internet
         </h3>
 
         <p>
-          Objetivos relacionados a veículos
-          somente quando comprovados.
+
+          Referências a tendências,
+          comportamentos ou fenômenos digitais.
+
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="easter-type-card">
 
-        <span class="completion-area-number">
+        <span class="easter-type-number">
           07
         </span>
 
         <h3>
-          Desafios
+          Piadas internas
         </h3>
 
         <p>
-          Categorias adicionais caso
-          existam requisitos desse tipo.
+
+          Detalhes humorísticos ou referências
+          recorrentes quando identificados.
+
         </p>
 
       </div>
 
 
-      <div class="completion-area-card">
+      <div class="easter-type-card">
 
-        <span class="completion-area-number">
+        <span class="easter-type-number">
           08
         </span>
 
         <h3>
-          Outros requisitos
+          Outras referências
         </h3>
 
         <p>
-          Qualquer categoria oficial
-          que não se encaixe nas anteriores.
+
+          Easter Eggs que não se encaixem
+          nas categorias anteriores.
+
         </p>
 
       </div>
@@ -1855,139 +1817,248 @@
 
 
 <!-- =========================================================
-     COMO SERÁ O GUIA
+     STATUS EDITORIAL
 ========================================================= -->
 
-<section class="completion-structure-section section section-alt">
+<section class="easter-status-section section section-alt">
 
-  <div class="container completion-container">
+  <div class="container easter-container">
 
 
-    <div class="completion-structure-panel">
+    <div class="easter-status-panel">
 
 
       <span class="eyebrow">
-        ESTRUTURA
+        TRANSPARÊNCIA
       </span>
 
 
       <h2>
-        Um roteiro completo do início aos 100%
+        Como vamos classificar cada descoberta
       </h2>
 
 
       <p>
 
-        Quando o conteúdo puder ser confirmado,
-        organizaremos este guia de forma que o
-        visitante consiga identificar rapidamente
-        o que falta e abrir o tutorial específico.
+        Muitas referências podem depender
+        de interpretação.
+
+        Por isso, o GTA6Zoone diferencia
+        claramente o que possui evidência
+        do que ainda é apenas uma possibilidade.
 
       </p>
 
 
-      <div class="completion-structure-grid">
+      <div class="easter-status-grid">
 
 
-        <div class="completion-structure-card">
+        <div class="easter-status-card">
+
+          <span class="easter-status-label">
+            CONFIRMADO
+          </span>
 
           <strong>
-            Requisito
+            Evidência suficiente
+          </strong>
+
+          <p>
+
+            A relação pode ser sustentada
+            por elementos claros do jogo
+            ou material oficial.
+
+          </p>
+
+        </div>
+
+
+        <div class="easter-status-card">
+
+          <span class="easter-status-label">
+            RUMOR
+          </span>
+
+          <strong>
+            Informação ainda não verificada
+          </strong>
+
+          <p>
+
+            Existe uma alegação circulando,
+            mas ainda faltam elementos
+            suficientes para confirmá-la.
+
+          </p>
+
+        </div>
+
+
+        <div class="easter-status-card">
+
+          <span class="easter-status-label">
+            TEORIA
+          </span>
+
+          <strong>
+            Possível interpretação
+          </strong>
+
+          <p>
+
+            Uma conexão sugerida por detalhes
+            ou semelhanças, mas que ainda
+            depende de interpretação.
+
+          </p>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     ESTRUTURA FUTURA
+========================================================= -->
+
+<section class="easter-structure-section section">
+
+  <div class="container easter-container">
+
+
+    <div class="easter-structure-panel">
+
+
+      <span class="eyebrow">
+        FUTURAS PÁGINAS
+      </span>
+
+
+      <h2>
+        Cada Easter Egg poderá ser documentado
+      </h2>
+
+
+      <p>
+
+        Quando uma descoberta tiver informação
+        suficiente, poderá ganhar sua própria página
+        com evidências, contexto e localização.
+
+      </p>
+
+
+      <div class="easter-structure-grid">
+
+
+        <div class="easter-structure-card">
+
+          <strong>
+            O que foi encontrado
           </strong>
 
           <span>
-            O que precisa ser concluído.
+            Explicação direta da referência.
           </span>
 
         </div>
 
 
-        <div class="completion-structure-card">
+        <div class="easter-structure-card">
 
           <strong>
-            Quantidade
+            Referência
           </strong>
 
           <span>
-            Quantos itens ou objetivos existem.
+            A que elemento ela parece estar ligada.
           </span>
 
         </div>
 
 
-        <div class="completion-structure-card">
+        <div class="easter-structure-card">
 
           <strong>
-            Percentual
+            Status
           </strong>
 
           <span>
-            Quanto contribui para os 100%, se aplicável.
+            Confirmado, rumor ou teoria.
           </span>
 
         </div>
 
 
-        <div class="completion-structure-card">
+        <div class="easter-structure-card">
 
           <strong>
-            Checklist
+            Localização
           </strong>
 
           <span>
-            Lista organizada de objetivos.
+            Onde pode ser encontrado.
           </span>
 
         </div>
 
 
-        <div class="completion-structure-card">
+        <div class="easter-structure-card">
 
           <strong>
-            Guia
+            Como encontrar
           </strong>
 
           <span>
-            Link direto para o passo a passo.
+            Passo a passo quando necessário.
           </span>
 
         </div>
 
 
-        <div class="completion-structure-card">
-
-          <strong>
-            Mapa
-          </strong>
-
-          <span>
-            Localizações quando forem necessárias.
-          </span>
-
-        </div>
-
-
-        <div class="completion-structure-card">
+        <div class="easter-structure-card">
 
           <strong>
             Screenshots
           </strong>
 
           <span>
-            Imagens para facilitar a conclusão.
+            Imagens para documentar a descoberta.
           </span>
 
         </div>
 
 
-        <div class="completion-structure-card">
+        <div class="easter-structure-card">
+
+          <strong>
+            Contexto
+          </strong>
+
+          <span>
+            Explicação da possível referência.
+          </span>
+
+        </div>
+
+
+        <div class="easter-structure-card">
 
           <strong>
             Vídeo
           </strong>
 
           <span>
-            Gameplay próprio quando útil.
+            Gameplay próprio quando disponível.
           </span>
 
         </div>
@@ -2004,114 +2075,39 @@
 
 
 <!-- =========================================================
-     PROGRESSO
+     SEGREDOS X EASTER EGGS
 ========================================================= -->
 
-<section class="completion-progress-section section">
+<section class="easter-secrets-section section section-alt">
 
-  <div class="container completion-container">
-
-
-    <div class="completion-progress-panel">
+  <div class="container easter-container">
 
 
-      <span class="eyebrow">
-        PROGRESSO
-      </span>
-
-
-      <h2>
-        Acompanhe sua conclusão
-      </h2>
-
-
-      <p>
-
-        O guia editorial mostrará todos
-        os requisitos confirmados.
-
-        Mais adiante, teremos também
-        uma ferramenta dedicada para
-        o visitante controlar o próprio progresso.
-
-      </p>
-
-
-      <div class="completion-progress-placeholder">
-
-
-        <div class="completion-progress-label">
-
-          <span>
-            Estrutura do checklist
-          </span>
-
-          <span>
-            0%
-          </span>
-
-        </div>
-
-
-        <div class="completion-progress-bar">
-
-          <div class="completion-progress-fill"></div>
-
-        </div>
-
-
-        <p class="completion-progress-note">
-
-          Demonstração estrutural.
-          Este número não representa o progresso
-          real nem os requisitos oficiais de GTA VI.
-
-        </p>
-
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================================================
-     FERRAMENTA FUTURA
-========================================================= -->
-
-<section class="completion-tool-section section section-alt">
-
-  <div class="container completion-container">
-
-
-    <div class="completion-tool-panel">
+    <div class="easter-secrets-panel">
 
 
       <div>
 
 
         <span class="eyebrow">
-          FERRAMENTA FUTURA
+          SEÇÕES DIFERENTES
         </span>
 
 
         <h2>
-          Checklist interativo de 100%
+          Procurando Segredos?
         </h2>
 
 
         <p>
 
-          Este Guia 100% será a referência editorial.
+          Easter Eggs são referências,
+          homenagens e conexões escondidas.
 
-          Separadamente, o GTA6Zoone terá
-          uma ferramenta onde o visitante poderá
-          marcar objetivos concluídos e acompanhar
-          seu percentual de progresso.
+          Mistérios, locais ocultos,
+          interações pouco óbvias
+          e outras descobertas ficam
+          na área de Segredos.
 
         </p>
 
@@ -2119,19 +2115,13 @@
       </div>
 
 
-      <div>
+      <a
+        class="btn easter-secrets-button"
+        href="../segredos/index.html">
 
-        <strong>
-          Rota reservada
-        </strong>
+        Ver Segredos
 
-        <br>
-
-        <span class="future-tool-route">
-          /ferramentas/checklist-100/
-        </span>
-
-      </div>
+      </a>
 
 
     </div>
@@ -2145,12 +2135,12 @@
      CONTEÚDO RELACIONADO
 ========================================================= -->
 
-<section class="completion-related-section section">
+<section class="easter-related-section section">
 
-  <div class="container completion-container">
+  <div class="container easter-container">
 
 
-    <div class="completion-section-head">
+    <div class="easter-section-head">
 
       <span class="eyebrow">
         TUDO CONECTADO
@@ -2158,85 +2148,42 @@
 
 
       <h2>
-        Do checklist para o guia certo
+        Explore o contexto da descoberta
       </h2>
 
 
       <p>
 
-        Cada requisito poderá levar diretamente
-        para as áreas e tutoriais relacionados.
+        Os futuros Easter Eggs poderão
+        se conectar diretamente a personagens,
+        locais, mapa, veículos, missões
+        e outros elementos relacionados.
 
       </p>
 
     </div>
 
 
-    <div class="completion-related-grid">
+    <div class="easter-related-grid">
 
 
       <a
-        class="completion-related-card"
-        href="../missoes/index.html">
+        class="easter-related-card"
+        href="../../locais/index.html">
 
         <strong>
-          Guias de Missões
+          Locais
         </strong>
 
         <span>
-          Passo a passo das missões.
+          Explore as regiões de Leonida.
         </span>
 
       </a>
 
 
       <a
-        class="completion-related-card"
-        href="../atividades/index.html">
-
-        <strong>
-          Guias de Atividades
-        </strong>
-
-        <span>
-          Ajuda para conteúdos opcionais.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
-        href="../colecionaveis/index.html">
-
-        <strong>
-          Guias de Colecionáveis
-        </strong>
-
-        <span>
-          Localizações e rotas.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
-        href="../mapa/index.html">
-
-        <strong>
-          Guias do Mapa
-        </strong>
-
-        <span>
-          Ajuda com localizações.
-        </span>
-
-      </a>
-
-
-      <a
-        class="completion-related-card"
+        class="easter-related-card"
         href="../../mapa/index.html">
 
         <strong>
@@ -2244,44 +2191,44 @@
         </strong>
 
         <span>
-          Abra o mapa do GTA6Zoone.
+          Consulte localizações.
         </span>
 
       </a>
 
 
       <a
-        class="completion-related-card"
-        href="../../colecionaveis/index.html">
+        class="easter-related-card"
+        href="../../personagens/index.html">
 
         <strong>
-          Colecionáveis
+          Personagens
         </strong>
 
         <span>
-          Consulte o catálogo principal.
+          Conheça os personagens.
         </span>
 
       </a>
 
 
       <a
-        class="completion-related-card"
-        href="../../atividades/index.html">
+        class="easter-related-card"
+        href="../../veiculos/index.html">
 
         <strong>
-          Atividades
+          Veículos
         </strong>
 
         <span>
-          Consulte a área da Wiki.
+          Veja o catálogo de veículos.
         </span>
 
       </a>
 
 
       <a
-        class="completion-related-card"
+        class="easter-related-card"
         href="../../missoes/index.html">
 
         <strong>
@@ -2289,22 +2236,22 @@
         </strong>
 
         <span>
-          Consulte o índice da campanha.
+          Consulte a área da campanha.
         </span>
 
       </a>
 
 
       <a
-        class="completion-related-card"
-        href="../../propriedades/index.html">
+        class="easter-related-card"
+        href="../../atividades/index.html">
 
         <strong>
-          Propriedades
+          Atividades
         </strong>
 
         <span>
-          Veja imóveis e estabelecimentos.
+          Explore conteúdos do mundo aberto.
         </span>
 
       </a>
@@ -2318,15 +2265,15 @@
 
 
 <!-- =========================================================
-     OUTRAS CATEGORIAS DE GUIAS
+     OUTRAS CATEGORIAS
 ========================================================= -->
 
 <section class="other-guides-section section section-alt">
 
-  <div class="container completion-container">
+  <div class="container easter-container">
 
 
-    <div class="completion-section-head">
+    <div class="easter-section-head">
 
       <span class="eyebrow">
         OUTRAS CATEGORIAS
@@ -2583,18 +2530,18 @@
 
       <a
         class="other-guide-card"
-        href="../easter-eggs/index.html">
+        href="../guia-100/index.html">
 
         <span class="eyebrow">
-          DESCOBERTAS
+          GUIAS
         </span>
 
         <h3>
-          Easter Eggs
+          Guia 100%
         </h3>
 
         <p>
-          Referências e homenagens.
+          Complete tudo em GTA VI.
         </p>
 
         <span class="other-guide-action">
@@ -2638,12 +2585,12 @@
      PESQUISA
 ========================================================= -->
 
-<section class="completion-search-section section">
+<section class="easter-search-section section">
 
-  <div class="container completion-container">
+  <div class="container easter-container">
 
 
-    <div class="completion-search-panel">
+    <div class="easter-search-panel">
 
 
       <span class="eyebrow">
@@ -2652,28 +2599,28 @@
 
 
       <h2>
-        Procurando algum requisito?
+        Procurando alguma referência?
       </h2>
 
 
       <p>
 
-        Use a pesquisa geral para localizar
-        missões, atividades, colecionáveis,
-        veículos, personagens e outros
-        conteúdos do GTA6Zoone.
+        Use a pesquisa geral para encontrar
+        personagens, locais, veículos,
+        armas e outros conteúdos
+        do GTA6Zoone.
 
       </p>
 
 
       <form
-        class="completion-search-form"
+        class="easter-search-form"
         action="../../buscar/index.html">
 
 
         <label
           class="hidden"
-          for="completion-search">
+          for="easter-search">
 
           Pesquisar
 
@@ -2681,10 +2628,10 @@
 
 
         <input
-          id="completion-search"
+          id="easter-search"
           name="q"
           type="search"
-          placeholder="O que você precisa completar?">
+          placeholder="O que você está procurando?">
 
 
         <button
