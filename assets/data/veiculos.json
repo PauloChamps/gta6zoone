@@ -1,8 +1,44 @@
 [
   {
-    "titulo": "Veículo demonstrativo",
-    "resumo": "Ficha fictícia apenas para validar a estrutura.",
+    "titulo": "’95 Grotti Cheetah",
+    "resumo": "Carro esportivo oficialmente apresentado pela Rockstar Games para GTA VI.",
     "tipo": "veículos",
-    "url": "veiculos/veiculo-demonstrativo/"
+    "url": "veiculos/grotti-cheetah/index.html"
+  },
+  {
+    "titulo": "Dinka Enduro Motorcycle",
+    "resumo": "Motocicleta Dinka Enduro apresentada oficialmente entre os conteúdos de GTA VI.",
+    "tipo": "veículos",
+    "url": "veiculos/dinka-enduro/index.html"
+  },
+  {
+    "titulo": "Ganado Retro Build",
+    "resumo": "Veículo identificado oficialmente como Ganado Retro Build em GTA VI.",
+    "tipo": "veículos",
+    "url": "veiculos/ganado-retro/index.html"
+  },
+  {
+    "titulo": "Shitzu Squalo",
+    "resumo": "Embarcação Shitzu Squalo apresentada oficialmente para GTA VI.",
+    "tipo": "veículos",
+    "url": "veiculos/shitzu-squalo/index.html"
+  },
+  {
+    "titulo": "’67 Vapid Dominator Buggy",
+    "resumo": "Vapid Dominator Buggy de 1967 apresentado oficialmente entre os veículos de GTA VI.",
+    "tipo": "veículos",
+    "url": "veiculos/vapid-dominator-buggy/index.html"
+  },
+  {
+    "titulo": "’55 Vapid Stanier",
+    "resumo": "Sedan Vapid Stanier de 1955 apresentado oficialmente para GTA VI.",
+    "tipo": "veículos",
+    "url": "veiculos/vapid-stanier/index.html"
+  },
+  {
+    "titulo": "Crest Kayak",
+    "resumo": "Kayak identificado oficialmente pela Rockstar Games entre os veículos de GTA VI.",
+    "tipo": "veículos",
+    "url": "veiculos/crest-kayak/index.html"
   }
 ]
