@@ -1,33 +1,333 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://gta6zoone.com.br/</loc></url>
-  <url><loc>https://gta6zoone.com.br/armas/</loc></url>
-  <url><loc>https://gta6zoone.com.br/atividades/</loc></url>
-  <url><loc>https://gta6zoone.com.br/aviso-legal/</loc></url>
-  <url><loc>https://gta6zoone.com.br/buscar/</loc></url>
-  <url><loc>https://gta6zoone.com.br/colecionaveis/</loc></url>
-  <url><loc>https://gta6zoone.com.br/contato/</loc></url>
-  <url><loc>https://gta6zoone.com.br/easter-eggs/</loc></url>
-  <url><loc>https://gta6zoone.com.br/ferramentas/</loc></url>
-  <url><loc>https://gta6zoone.com.br/gta-6/</loc></url>
-  <url><loc>https://gta6zoone.com.br/guias/</loc></url>
-  <url><loc>https://gta6zoone.com.br/guias/guia-100/</loc></url>
-  <url><loc>https://gta6zoone.com.br/locais/</loc></url>
-  <url><loc>https://gta6zoone.com.br/mapa/</loc></url>
-  <url><loc>https://gta6zoone.com.br/missoes/</loc></url>
-  <url><loc>https://gta6zoone.com.br/noticias/</loc></url>
-  <url><loc>https://gta6zoone.com.br/noticias/conteudo-demonstrativo/</loc></url>
-  <url><loc>https://gta6zoone.com.br/personagens/</loc></url>
-  <url><loc>https://gta6zoone.com.br/personagens/personagem-demonstrativo/</loc></url>
-  <url><loc>https://gta6zoone.com.br/politica-de-cookies/</loc></url>
-  <url><loc>https://gta6zoone.com.br/politica-de-privacidade/</loc></url>
-  <url><loc>https://gta6zoone.com.br/propriedades/</loc></url>
-  <url><loc>https://gta6zoone.com.br/segredos/</loc></url>
-  <url><loc>https://gta6zoone.com.br/sobre/</loc></url>
-  <url><loc>https://gta6zoone.com.br/termos-de-uso/</loc></url>
-  <url><loc>https://gta6zoone.com.br/trofeus/</loc></url>
-  <url><loc>https://gta6zoone.com.br/veiculos/</loc></url>
-  <url><loc>https://gta6zoone.com.br/veiculos/veiculo-demonstrativo/</loc></url>
-  <url><loc>https://gta6zoone.com.br/wiki/</loc></url>
-  <url><loc>https://gta6zoone.com.br/youtube/</loc></url>
+
+
+  <!-- =========================================================
+       HOME
+  ========================================================= -->
+
+  <url>
+    <loc>https://gta6zoone.com.br/</loc>
+  </url>
+
+
+  <!-- =========================================================
+       GTA VI
+  ========================================================= -->
+
+  <url>
+    <loc>https://gta6zoone.com.br/gta-6/</loc>
+  </url>
+
+
+  <!-- =========================================================
+       WIKI
+  ========================================================= -->
+
+  <url>
+    <loc>https://gta6zoone.com.br/wiki/</loc>
+  </url>
+
+
+  <!-- =========================================================
+       PERSONAGENS
+  ========================================================= -->
+
+  <url>
+    <loc>https://gta6zoone.com.br/personagens/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/personagens/jason-duval/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/personagens/lucia-caminos/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/personagens/cal-hampton/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/personagens/brian-heder/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/personagens/boobie-ike/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/personagens/drequan-priest/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/personagens/real-dimez/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/personagens/raul-bautista/</loc>
+  </url>
+
+
+  <!-- =========================================================
+       LOCAIS
+  ========================================================= -->
+
+  <url>
+    <loc>https://gta6zoone.com.br/locais/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/locais/vice-city/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/locais/leonida-keys/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/locais/port-gellhorn/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/locais/ambrosia/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/locais/grassrivers/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/locais/mount-kalaga/</loc>
+  </url>
+
+
+  <!-- =========================================================
+       MAPA
+  ========================================================= -->
+
+  <url>
+    <loc>https://gta6zoone.com.br/mapa/</loc>
+  </url>
+
+
+  <!-- =========================================================
+       VEÍCULOS
+  ========================================================= -->
+
+  <url>
+    <loc>https://gta6zoone.com.br/veiculos/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/veiculos/grotti-cheetah/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/veiculos/dinka-enduro/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/veiculos/ganado-retro/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/veiculos/crest-kayak/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/veiculos/shitzu-squalo/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/veiculos/vapid-dominator-buggy/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/veiculos/vapid-stanier/</loc>
+  </url>
+
+
+  <!-- =========================================================
+       ARMAS
+  ========================================================= -->
+
+  <url>
+    <loc>https://gta6zoone.com.br/armas/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/armas/hawk-little-morgan-revolvers/</loc>
+  </url>
+
+
+  <!-- =========================================================
+       MISSÕES
+  ========================================================= -->
+
+  <url>
+    <loc>https://gta6zoone.com.br/missoes/</loc>
+  </url>
+
+
+  <!-- =========================================================
+       PROPRIEDADES
+  ========================================================= -->
+
+  <url>
+    <loc>https://gta6zoone.com.br/propriedades/</loc>
+  </url>
+
+
+  <!-- =========================================================
+       ATIVIDADES
+  ========================================================= -->
+
+  <url>
+    <loc>https://gta6zoone.com.br/atividades/</loc>
+  </url>
+
+
+  <!-- =========================================================
+       COLECIONÁVEIS
+  ========================================================= -->
+
+  <url>
+    <loc>https://gta6zoone.com.br/colecionaveis/</loc>
+  </url>
+
+
+  <!-- =========================================================
+       GUIAS
+  ========================================================= -->
+
+  <url>
+    <loc>https://gta6zoone.com.br/guias/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/guias/iniciantes/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/guias/dinheiro/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/guias/missoes/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/guias/veiculos/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/guias/armas/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/guias/segredos/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/guias/easter-eggs/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/guias/guia-100/</loc>
+  </url>
+
+
+  <!-- =========================================================
+       TROFÉUS E CONQUISTAS
+  ========================================================= -->
+
+  <url>
+    <loc>https://gta6zoone.com.br/trofeus/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/trofeus/playstation/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/trofeus/xbox/</loc>
+  </url>
+
+
+  <!-- =========================================================
+       NOTÍCIAS
+  ========================================================= -->
+
+  <url>
+    <loc>https://gta6zoone.com.br/noticias/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/noticias/gta-vi-apresentacao-estendida/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/noticias/gta-vi-lancamento-19-novembro-2026/</loc>
+  </url>
+
+
+  <!-- =========================================================
+       FERRAMENTAS
+  ========================================================= -->
+
+  <url>
+    <loc>https://gta6zoone.com.br/ferramentas/</loc>
+  </url>
+
+
+  <!-- =========================================================
+       YOUTUBE
+  ========================================================= -->
+
+  <url>
+    <loc>https://gta6zoone.com.br/youtube/</loc>
+  </url>
+
+
+  <!-- =========================================================
+       PESQUISA
+  ========================================================= -->
+
+  <url>
+    <loc>https://gta6zoone.com.br/buscar/</loc>
+  </url>
+
+
+  <!-- =========================================================
+       INSTITUCIONAL
+  ========================================================= -->
+
+  <url>
+    <loc>https://gta6zoone.com.br/sobre/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/contato/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/politica-de-privacidade/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/politica-de-cookies/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/termos-de-uso/</loc>
+  </url>
+
+  <url>
+    <loc>https://gta6zoone.com.br/aviso-legal/</loc>
+  </url>
+
+
 </urlset>
