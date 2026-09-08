@@ -1,8 +1,65 @@
 [
   {
-    "titulo": "Guia 100% demonstrativo",
-    "resumo": "Checklist local para demonstrar progresso.",
+    "titulo": "Guias de GTA VI",
+    "resumo": "Central de guias do GTA6Zoone com ajuda, dicas, passo a passo e conteúdos para jogadores de Grand Theft Auto VI.",
     "tipo": "guias",
-    "url": "guias/guia-100/"
+    "url": "guias/index.html",
+    "palavras": "GTA 6 GTA VI guias guia dicas ajuda passo a passo Grand Theft Auto VI"
+  },
+  {
+    "titulo": "Guias para Iniciantes em GTA VI",
+    "resumo": "Primeiros passos, controles, mapa, interface, progressão e ajuda para quem está começando em Grand Theft Auto VI.",
+    "tipo": "guias",
+    "url": "guias/iniciantes/index.html",
+    "palavras": "GTA 6 GTA VI iniciantes primeiros passos começar controles interface progressão dicas"
+  },
+  {
+    "titulo": "Dinheiro em GTA VI",
+    "resumo": "Guias sobre dinheiro, economia, ganhos, gastos e administração de recursos em Grand Theft Auto VI.",
+    "tipo": "guias",
+    "url": "guias/dinheiro/index.html",
+    "palavras": "GTA 6 GTA VI dinheiro ganhar dinheiro economia gastar economizar recursos"
+  },
+  {
+    "titulo": "Guias de Missões de GTA VI",
+    "resumo": "Central de guias e passo a passo das missões de GTA VI, com objetivos, estratégias e informações verificadas.",
+    "tipo": "guias",
+    "url": "guias/missoes/index.html",
+    "palavras": "GTA 6 GTA VI missões missoes missão missao passo a passo objetivos campanha estratégia"
+  },
+  {
+    "titulo": "Guias de Veículos de GTA VI",
+    "resumo": "Guias sobre carros, motos, embarcações e outros veículos de GTA VI, incluindo obtenção, localização e utilização.",
+    "tipo": "guias",
+    "url": "guias/veiculos/index.html",
+    "palavras": "GTA 6 GTA VI veículos veiculos carros motos embarcações aeronaves localização obter"
+  },
+  {
+    "titulo": "Guias de Armas de GTA VI",
+    "resumo": "Guias sobre armas e equipamentos de GTA VI, com informações sobre obtenção, localização, uso e comparativos.",
+    "tipo": "guias",
+    "url": "guias/armas/index.html",
+    "palavras": "GTA 6 GTA VI armas arma equipamentos localização obter combate"
+  },
+  {
+    "titulo": "Segredos de GTA VI",
+    "resumo": "Guias sobre segredos, mistérios, locais escondidos, interações ocultas e descobertas de Grand Theft Auto VI.",
+    "tipo": "guias",
+    "url": "guias/segredos/index.html",
+    "palavras": "GTA 6 GTA VI segredos segredo mistérios misterios escondidos locais secretos descobertas"
+  },
+  {
+    "titulo": "Easter Eggs de GTA VI",
+    "resumo": "Guias sobre Easter Eggs, referências, homenagens, piadas internas e detalhes escondidos encontrados em GTA VI.",
+    "tipo": "guias",
+    "url": "guias/easter-eggs/index.html",
+    "palavras": "GTA 6 GTA VI easter eggs referências referencias homenagens detalhes escondidos segredos"
+  },
+  {
+    "titulo": "Guia para completar GTA VI em 100%",
+    "resumo": "Central de conclusão de GTA VI com requisitos, missões, atividades, colecionáveis e tudo o que for necessário para completar o jogo em 100%.",
+    "tipo": "guias",
+    "url": "guias/guia-100/index.html",
+    "palavras": "GTA 6 GTA VI 100% cem por cento completar jogo conclusão completionist missões atividades colecionáveis progresso"
   }
 ]

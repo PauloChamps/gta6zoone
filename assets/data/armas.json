@@ -1,8 +1,16 @@
 [
   {
-    "titulo": "Arma — modelo de ficha",
-    "resumo": "Campos preparados, sem dados reais.",
+    "titulo": "Armas de GTA VI",
+    "resumo": "Wiki de armas de GTA VI com revólveres, pistolas, rifles, escopetas e outras categorias, além de informações verificadas, screenshots e futuras fichas completas.",
     "tipo": "armas",
-    "url": "armas/"
+    "url": "armas/index.html",
+    "palavras": "GTA 6 GTA VI armas arma revólver revolver pistola rifle rifles escopeta escopetas equipamentos combate"
+  },
+  {
+    "titulo": "Hawk & Little Morgan Revolvers",
+    "resumo": "Ficha dos Hawk & Little Morgan Revolvers em GTA VI com informações, screenshots e espaço preparado para futuros dados de gameplay.",
+    "tipo": "armas",
+    "url": "armas/hawk-little-morgan-revolvers/index.html",
+    "palavras": "GTA 6 GTA VI Hawk Little Morgan Revolvers revolver revólver revólveres arma armas"
   }
 ]
