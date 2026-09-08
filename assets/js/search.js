@@ -18,14 +18,15 @@
   try {
 
     const files = [
-      'noticias',
-      'personagens',
-      'veiculos',
-      'armas',
-      'missoes',
-      'locais',
-      'guias'
-    ];
+  'noticias',
+  'personagens',
+  'veiculos',
+  'armas',
+  'missoes',
+  'locais',
+  'guias',
+  'paginas'
+];
 
 
     const sets = await Promise.all(
