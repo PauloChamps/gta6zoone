@@ -10,7 +10,7 @@
 
   <meta
     name="description"
-    content="Central de guias de GTA VI do GTA6Zoone. Encontre ajuda para iniciantes, dinheiro, missões, veículos, armas, propriedades, atividades, colecionáveis, mapa e conclusão 100%.">
+    content="Central de guias de GTA VI do GTA6Zoone. Encontre ajuda para iniciantes, dinheiro, missões, veículos, armas, segredos, Easter Eggs e conclusão 100%.">
 
   <link
     rel="canonical"
@@ -25,7 +25,9 @@
 
   <!-- OPEN GRAPH -->
 
-  <meta property="og:type" content="website">
+  <meta
+    property="og:type"
+    content="website">
 
   <meta
     property="og:title"
@@ -119,17 +121,13 @@
 
 
     /* =========================================================
-       VISUAL FUTURO
+       HERO — IMAGEM
     ========================================================= */
 
     .guides-hero-visual {
       min-height: 280px;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      padding: 2rem;
+      position: relative;
 
       overflow: hidden;
 
@@ -137,35 +135,20 @@
       border-radius: var(--radius-medium);
 
       background:
-        radial-gradient(
-          circle at 20% 20%,
-          rgba(255, 61, 154, .18),
-          transparent 38%
-        ),
-        radial-gradient(
-          circle at 80% 75%,
-          rgba(128, 75, 255, .18),
-          transparent 42%
-        ),
         var(--color-surface);
     }
 
-    .guides-hero-placeholder {
-      text-align: center;
-    }
-
-    .guides-hero-placeholder strong {
+    .guides-hero-visual img {
       display: block;
 
-      margin-bottom: .4rem;
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
 
-      font-size: 1.4rem;
-    }
+      position: absolute;
+      inset: 0;
 
-    .guides-hero-placeholder span {
-      color: var(--color-text-muted);
-
-      font-size: .9rem;
+      object-fit: cover;
     }
 
 
@@ -326,7 +309,7 @@
 
 
     /* =========================================================
-       IMAGEM FUTURA
+       IMAGENS DOS CARDS
     ========================================================= */
 
     .guide-category-media {
@@ -355,16 +338,6 @@
           transparent 45%
         ),
         rgba(255,255,255,.018);
-    }
-
-    .guide-category-media span {
-      color:
-        var(--color-text-muted);
-
-      font-size: .72rem;
-      font-weight: 800;
-
-      letter-spacing: .12em;
     }
 
     .guide-category-media img {
@@ -834,6 +807,7 @@
     },
     "mainEntity": {
       "@type": "ItemList",
+      "numberOfItems": 8,
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -868,31 +842,19 @@
         {
           "@type": "ListItem",
           "position": 6,
-          "name": "Guias de propriedades",
-          "url": "https://gta6zoone.com.br/guias/propriedades/"
+          "name": "Segredos de GTA VI",
+          "url": "https://gta6zoone.com.br/guias/segredos/"
         },
         {
           "@type": "ListItem",
           "position": 7,
-          "name": "Guias de atividades",
-          "url": "https://gta6zoone.com.br/guias/atividades/"
+          "name": "Easter Eggs de GTA VI",
+          "url": "https://gta6zoone.com.br/guias/easter-eggs/"
         },
         {
           "@type": "ListItem",
           "position": 8,
-          "name": "Guias de colecionáveis",
-          "url": "https://gta6zoone.com.br/guias/colecionaveis/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 9,
-          "name": "Guias do mapa",
-          "url": "https://gta6zoone.com.br/guias/mapa/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 10,
-          "name": "Guia 100%",
+          "name": "Guia 100% de GTA VI",
           "url": "https://gta6zoone.com.br/guias/guia-100/"
         }
       ]
@@ -1528,12 +1490,12 @@
 
       <div class="guides-hero-visual">
 
-  <img
-    class="js-zoomable-image"
-    src="../assets/images/guias/guias/guias.jpg"
-    alt="Central de Guias de GTA VI no GTA6Zoone">
+        <img
+          class="js-zoomable-image"
+          src="../assets/images/guias/guias/guias.jpg"
+          alt="Central de Guias de GTA VI no GTA6Zoone">
 
-</div>
+      </div>
 
 
     </div>
@@ -1648,352 +1610,352 @@
     <div class="guide-category-grid">
 
 
-  <!-- 01 -->
+      <!-- 01 -->
 
-  <a
-    class="guide-category-card"
-    href="./iniciantes/index.html">
+      <a
+        class="guide-category-card"
+        href="./iniciantes/index.html">
 
-    <div class="guide-category-media">
+        <div class="guide-category-media">
 
-      <img
-        src="../assets/images/guias/iniciantes/iniciantes.jpg"
-        alt="Guia para iniciantes em GTA VI"
-        loading="lazy">
+          <img
+            src="../assets/images/guias/iniciantes/iniciantes.jpg"
+            alt="Guia para iniciantes em GTA VI"
+            loading="lazy">
+
+        </div>
+
+
+        <div class="guide-category-body">
+
+          <span class="guide-category-number">
+            01 · INICIANTES
+          </span>
+
+          <h3>
+            Primeiros passos
+          </h3>
+
+          <p>
+
+            Controles, sistemas básicos,
+            configurações e ajuda para
+            começar GTA VI.
+
+          </p>
+
+          <span class="guide-category-action">
+            Ver guias →
+          </span>
+
+        </div>
+
+      </a>
+
+
+      <!-- 02 -->
+
+      <a
+        class="guide-category-card"
+        href="./dinheiro/index.html">
+
+        <div class="guide-category-media">
+
+          <img
+            src="../assets/images/guias/dinheiro/dinheiro.jpg"
+            alt="Guia de dinheiro e economia em GTA VI"
+            loading="lazy">
+
+        </div>
+
+
+        <div class="guide-category-body">
+
+          <span class="guide-category-number">
+            02 · DINHEIRO
+          </span>
+
+          <h3>
+            Dinheiro e economia
+          </h3>
+
+          <p>
+
+            Guias sobre formas de ganhar,
+            gastar e administrar dinheiro
+            dentro do jogo.
+
+          </p>
+
+          <span class="guide-category-action">
+            Ver guias →
+          </span>
+
+        </div>
+
+      </a>
+
+
+      <!-- 03 -->
+
+      <a
+        class="guide-category-card"
+        href="./missoes/index.html">
+
+        <div class="guide-category-media">
+
+          <img
+            src="../assets/images/guias/missoes/missoes.jpg"
+            alt="Guias de missões de GTA VI"
+            loading="lazy">
+
+        </div>
+
+
+        <div class="guide-category-body">
+
+          <span class="guide-category-number">
+            03 · MISSÕES
+          </span>
+
+          <h3>
+            Missões e passo a passo
+          </h3>
+
+          <p>
+
+            Objetivos, estratégias,
+            caminhos e soluções para
+            as missões de GTA VI.
+
+          </p>
+
+          <span class="guide-category-action">
+            Ver guias →
+          </span>
+
+        </div>
+
+      </a>
+
+
+      <!-- 04 -->
+
+      <a
+        class="guide-category-card"
+        href="./veiculos/index.html">
+
+        <div class="guide-category-media">
+
+          <img
+            src="../assets/images/guias/veiculos/veiculos.jpg"
+            alt="Guias de veículos de GTA VI"
+            loading="lazy">
+
+        </div>
+
+
+        <div class="guide-category-body">
+
+          <span class="guide-category-number">
+            04 · VEÍCULOS
+          </span>
+
+          <h3>
+            Veículos
+          </h3>
+
+          <p>
+
+            Como encontrar, conseguir,
+            utilizar e futuramente
+            comparar veículos.
+
+          </p>
+
+          <span class="guide-category-action">
+            Ver guias →
+          </span>
+
+        </div>
+
+      </a>
+
+
+      <!-- 05 -->
+
+      <a
+        class="guide-category-card"
+        href="./armas/index.html">
+
+        <div class="guide-category-media">
+
+          <img
+            src="../assets/images/guias/armas/armas.jpg"
+            alt="Guias de armas e equipamentos de GTA VI"
+            loading="lazy">
+
+        </div>
+
+
+        <div class="guide-category-body">
+
+          <span class="guide-category-number">
+            05 · ARMAS
+          </span>
+
+          <h3>
+            Armas e equipamentos
+          </h3>
+
+          <p>
+
+            Guias de obtenção,
+            utilização e comparação
+            de equipamentos.
+
+          </p>
+
+          <span class="guide-category-action">
+            Ver guias →
+          </span>
+
+        </div>
+
+      </a>
+
+
+      <!-- 06 -->
+
+      <a
+        class="guide-category-card"
+        href="./segredos/index.html">
+
+        <div class="guide-category-media">
+
+          <img
+            src="../assets/images/guias/segredos/segredos.jpg"
+            alt="Segredos e mistérios de GTA VI"
+            loading="lazy">
+
+        </div>
+
+
+        <div class="guide-category-body">
+
+          <span class="guide-category-number">
+            06 · SEGREDOS
+          </span>
+
+          <h3>
+            Segredos e mistérios
+          </h3>
+
+          <p>
+
+            Descobertas, locais escondidos,
+            mistérios e detalhes que merecem
+            uma investigação mais profunda.
+
+          </p>
+
+          <span class="guide-category-action">
+            Ver segredos →
+          </span>
+
+        </div>
+
+      </a>
+
+
+      <!-- 07 -->
+
+      <a
+        class="guide-category-card"
+        href="./easter-eggs/index.html">
+
+        <div class="guide-category-media">
+
+          <img
+            src="../assets/images/guias/easter-eggs/easter-eggs.jpg"
+            alt="Easter Eggs e referências de GTA VI"
+            loading="lazy">
+
+        </div>
+
+
+        <div class="guide-category-body">
+
+          <span class="guide-category-number">
+            07 · EASTER EGGS
+          </span>
+
+          <h3>
+            Easter Eggs e referências
+          </h3>
+
+          <p>
+
+            Referências, homenagens,
+            piadas internas e detalhes
+            escondidos encontrados em GTA VI.
+
+          </p>
+
+          <span class="guide-category-action">
+            Ver Easter Eggs →
+          </span>
+
+        </div>
+
+      </a>
+
+
+      <!-- 08 -->
+
+      <a
+        class="guide-category-card"
+        href="./guia-100/index.html">
+
+        <div class="guide-category-media">
+
+          <img
+            src="../assets/images/guias/guia-100/guia-100.jpg"
+            alt="Guia para completar GTA VI em 100%"
+            loading="lazy">
+
+        </div>
+
+
+        <div class="guide-category-body">
+
+          <span class="guide-category-number">
+            08 · GUIA 100%
+          </span>
+
+          <h3>
+            Complete GTA VI
+          </h3>
+
+          <p>
+
+            Checklist e organização
+            para acompanhar tudo o que
+            for necessário para completar
+            o jogo em 100%.
+
+          </p>
+
+          <span class="guide-category-action">
+            Ver Guia 100% →
+          </span>
+
+        </div>
+
+      </a>
+
 
     </div>
-
-
-    <div class="guide-category-body">
-
-      <span class="guide-category-number">
-        01 · INICIANTES
-      </span>
-
-      <h3>
-        Primeiros passos
-      </h3>
-
-      <p>
-
-        Controles, sistemas básicos,
-        configurações e ajuda para
-        começar GTA VI.
-
-      </p>
-
-      <span class="guide-category-action">
-        Ver guias →
-      </span>
-
-    </div>
-
-  </a>
-
-
-  <!-- 02 -->
-
-  <a
-    class="guide-category-card"
-    href="./dinheiro/index.html">
-
-    <div class="guide-category-media">
-
-      <img
-        src="../assets/images/guias/dinheiro/dinheiro.jpg"
-        alt="Guia de dinheiro e economia em GTA VI"
-        loading="lazy">
-
-    </div>
-
-
-    <div class="guide-category-body">
-
-      <span class="guide-category-number">
-        02 · DINHEIRO
-      </span>
-
-      <h3>
-        Dinheiro e economia
-      </h3>
-
-      <p>
-
-        Guias sobre formas de ganhar,
-        gastar e administrar dinheiro
-        dentro do jogo.
-
-      </p>
-
-      <span class="guide-category-action">
-        Ver guias →
-      </span>
-
-    </div>
-
-  </a>
-
-
-  <!-- 03 -->
-
-  <a
-    class="guide-category-card"
-    href="./missoes/index.html">
-
-    <div class="guide-category-media">
-
-      <img
-        src="../assets/images/guias/missoes/missoes.jpg"
-        alt="Guias de missões de GTA VI"
-        loading="lazy">
-
-    </div>
-
-
-    <div class="guide-category-body">
-
-      <span class="guide-category-number">
-        03 · MISSÕES
-      </span>
-
-      <h3>
-        Missões e passo a passo
-      </h3>
-
-      <p>
-
-        Objetivos, estratégias,
-        caminhos e soluções para
-        as missões de GTA VI.
-
-      </p>
-
-      <span class="guide-category-action">
-        Ver guias →
-      </span>
-
-    </div>
-
-  </a>
-
-
-  <!-- 04 -->
-
-  <a
-    class="guide-category-card"
-    href="./veiculos/index.html">
-
-    <div class="guide-category-media">
-
-      <img
-        src="../assets/images/guias/veiculos/veiculos.jpg"
-        alt="Guias de veículos de GTA VI"
-        loading="lazy">
-
-    </div>
-
-
-    <div class="guide-category-body">
-
-      <span class="guide-category-number">
-        04 · VEÍCULOS
-      </span>
-
-      <h3>
-        Veículos
-      </h3>
-
-      <p>
-
-        Como encontrar, conseguir,
-        utilizar e futuramente
-        comparar veículos.
-
-      </p>
-
-      <span class="guide-category-action">
-        Ver guias →
-      </span>
-
-    </div>
-
-  </a>
-
-
-  <!-- 05 -->
-
-  <a
-    class="guide-category-card"
-    href="./armas/index.html">
-
-    <div class="guide-category-media">
-
-      <img
-        src="../assets/images/guias/armas/armas.jpg"
-        alt="Guias de armas e equipamentos de GTA VI"
-        loading="lazy">
-
-    </div>
-
-
-    <div class="guide-category-body">
-
-      <span class="guide-category-number">
-        05 · ARMAS
-      </span>
-
-      <h3>
-        Armas e equipamentos
-      </h3>
-
-      <p>
-
-        Guias de obtenção,
-        utilização e comparação
-        de equipamentos.
-
-      </p>
-
-      <span class="guide-category-action">
-        Ver guias →
-      </span>
-
-    </div>
-
-  </a>
-
-
-  <!-- 06 -->
-
-  <a
-    class="guide-category-card"
-    href="./segredos/index.html">
-
-    <div class="guide-category-media">
-
-      <img
-        src="../assets/images/guias/segredos/segredos.jpg"
-        alt="Segredos e mistérios de GTA VI"
-        loading="lazy">
-
-    </div>
-
-
-    <div class="guide-category-body">
-
-      <span class="guide-category-number">
-        06 · SEGREDOS
-      </span>
-
-      <h3>
-        Segredos e mistérios
-      </h3>
-
-      <p>
-
-        Descobertas, locais escondidos,
-        mistérios e detalhes que merecem
-        uma investigação mais profunda.
-
-      </p>
-
-      <span class="guide-category-action">
-        Ver segredos →
-      </span>
-
-    </div>
-
-  </a>
-
-
-  <!-- 07 -->
-
-  <a
-    class="guide-category-card"
-    href="./easter-eggs/index.html">
-
-    <div class="guide-category-media">
-
-      <img
-        src="../assets/images/guias/easter-eggs/easter-eggs.jpg"
-        alt="Easter Eggs e referências de GTA VI"
-        loading="lazy">
-
-    </div>
-
-
-    <div class="guide-category-body">
-
-      <span class="guide-category-number">
-        07 · EASTER EGGS
-      </span>
-
-      <h3>
-        Easter Eggs e referências
-      </h3>
-
-      <p>
-
-        Referências, homenagens,
-        piadas internas e detalhes
-        escondidos encontrados em GTA VI.
-
-      </p>
-
-      <span class="guide-category-action">
-        Ver Easter Eggs →
-      </span>
-
-    </div>
-
-  </a>
-
-
-  <!-- 08 -->
-
-  <a
-    class="guide-category-card"
-    href="./guia-100/index.html">
-
-    <div class="guide-category-media">
-
-      <img
-        src="../assets/images/guias/guia-100/guia-100.jpg"
-        alt="Guia para completar GTA VI em 100%"
-        loading="lazy">
-
-    </div>
-
-
-    <div class="guide-category-body">
-
-      <span class="guide-category-number">
-        08 · GUIA 100%
-      </span>
-
-      <h3>
-        Complete GTA VI
-      </h3>
-
-      <p>
-
-        Checklist e organização
-        para acompanhar tudo o que
-        for necessário para completar
-        o jogo em 100%.
-
-      </p>
-
-      <span class="guide-category-action">
-        Ver Guia 100% →
-      </span>
-
-    </div>
-
-  </a>
-
-
-</div>
 
   </div>
 
@@ -2360,7 +2322,7 @@
 
       <a
         class="special-guide-card"
-        href="../guias/segredos/index.html">
+        href="./segredos/index.html">
 
         <span class="eyebrow">
           DESCOBERTAS
