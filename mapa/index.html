@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- FAVICON -->
+
   <link
     rel="icon"
     type="image/png"
@@ -21,6 +22,7 @@
   <link
     rel="canonical"
     href="https://gta6zoone.com.br/mapa/">
+
 
   <!-- OPEN GRAPH -->
 
@@ -42,10 +44,14 @@
     property="og:image"
     content="https://gta6zoone.com.br/assets/images/branding/banner01.jpg">
 
-  <meta name="twitter:card" content="summary_large_image">
+  <meta
+    name="twitter:card"
+    content="summary_large_image">
 
 
-  <!-- CSS GLOBAL -->
+  <!-- =========================================================
+       CSS GLOBAL
+  ========================================================= -->
 
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/components.css">
@@ -53,10 +59,7 @@
 
 
   <!-- =========================================================
-       ESTILOS EXCLUSIVOS DA PÁGINA DO MAPA
-
-       Não altera o sistema global.
-       Não altera as classes utilizadas pelo map.js.
+       CSS EXCLUSIVO — MAPA
   ========================================================= -->
 
   <style>
@@ -115,24 +118,44 @@
 
     .map-notice {
       max-width: 950px;
+
       margin-top: 1.5rem;
+
       padding: 1rem 1.15rem;
-      border-left: 3px solid var(--color-pink);
-      border-top: 1px solid var(--color-border);
-      border-right: 1px solid var(--color-border);
-      border-bottom: 1px solid var(--color-border);
-      border-radius: 0 var(--radius-small) var(--radius-small) 0;
-      background: var(--color-surface);
+
+      border-left:
+        3px solid var(--color-pink);
+
+      border-top:
+        1px solid var(--color-border);
+
+      border-right:
+        1px solid var(--color-border);
+
+      border-bottom:
+        1px solid var(--color-border);
+
+      border-radius:
+        0
+        var(--radius-small)
+        var(--radius-small)
+        0;
+
+      background:
+        var(--color-surface);
     }
 
     .map-notice strong {
       display: block;
+
       margin-bottom: .35rem;
     }
 
     .map-notice p {
       margin: 0;
-      color: var(--color-text-muted);
+
+      color:
+        var(--color-text-muted);
     }
 
 
@@ -158,12 +181,15 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+
       gap: .65rem;
+
       margin-bottom: 1rem;
     }
 
     .map-search {
       flex: 1 1 280px;
+
       width: 100%;
       min-width: 0;
       max-width: 460px;
@@ -177,6 +203,7 @@
     .map-controls {
       display: flex;
       flex-wrap: wrap;
+
       gap: .5rem;
     }
 
@@ -188,7 +215,9 @@
     .map-filters {
       display: flex;
       flex-wrap: wrap;
+
       gap: .5rem;
+
       margin-bottom: 1rem;
     }
 
@@ -196,13 +225,19 @@
       cursor: pointer;
     }
 
+    .map-filters .filter.is-active {
+      border-color:
+        rgba(255,79,163,.55);
+
+      background:
+        rgba(255,79,163,.08);
+
+      color: #ff73bd;
+    }
+
 
     /* =========================================================
        MAP LAYOUT
-
-       IMPORTANTE:
-       Mantém .map-layout, .map-viewport, .map-canvas e
-       .map-detail para preservar o funcionamento do map.js.
     ========================================================= */
 
     .map-layout {
@@ -220,6 +255,10 @@
       max-width: 100%;
     }
 
+    .map-pin[hidden] {
+      display: none !important;
+    }
+
 
     /* =========================================================
        PLACEHOLDER DO MAPA
@@ -227,9 +266,11 @@
 
     .map-placeholder {
       position: relative;
+
       width: 100%;
       height: 100%;
       min-height: 100%;
+
       overflow: hidden;
 
       background:
@@ -252,6 +293,7 @@
 
     .map-placeholder::before {
       content: "";
+
       position: absolute;
       inset: 0;
 
@@ -266,7 +308,9 @@
           transparent 1px
         );
 
-      background-size: 42px 42px;
+      background-size:
+        42px 42px;
+
       pointer-events: none;
     }
 
@@ -279,31 +323,40 @@
       justify-content: center;
 
       padding: 2rem;
+
       text-align: center;
+
       pointer-events: none;
     }
 
     .map-placeholder-inner {
       position: relative;
       z-index: 1;
+
       max-width: 520px;
     }
 
     .map-placeholder-icon {
       display: block;
+
       margin-bottom: .8rem;
+
       font-size: 2rem;
     }
 
     .map-placeholder-inner strong {
       display: block;
+
       margin-bottom: .5rem;
+
       font-size: 1.15rem;
     }
 
     .map-placeholder-inner p {
       margin: 0;
-      color: var(--color-text-muted);
+
+      color:
+        var(--color-text-muted);
     }
 
 
@@ -329,22 +382,35 @@
     ========================================================= */
 
     .map-features-section {
-      border-top: 1px solid rgba(255,255,255,.04);
-      border-bottom: 1px solid rgba(255,255,255,.04);
-      background: rgba(255,255,255,.012);
+      border-top:
+        1px solid rgba(255,255,255,.04);
+
+      border-bottom:
+        1px solid rgba(255,255,255,.04);
+
+      background:
+        rgba(255,255,255,.012);
     }
 
     .map-feature-grid {
       display: grid;
+
       grid-template-columns: 1fr;
+
       gap: 1rem;
     }
 
     .map-feature-card {
       padding: 1.25rem;
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-medium);
-      background: var(--color-surface);
+
+      border:
+        1px solid var(--color-border);
+
+      border-radius:
+        var(--radius-medium);
+
+      background:
+        var(--color-surface);
     }
 
     .map-feature-card h3 {
@@ -362,18 +428,28 @@
 
     .map-region-grid {
       display: grid;
+
       grid-template-columns: 1fr;
+
       gap: 1rem;
     }
 
     .map-region-card {
       display: flex;
       flex-direction: column;
+
       min-height: 100%;
+
       padding: 1.25rem;
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-medium);
-      background: var(--color-surface);
+
+      border:
+        1px solid var(--color-border);
+
+      border-radius:
+        var(--radius-medium);
+
+      background:
+        var(--color-surface);
     }
 
     .map-region-card h3 {
@@ -386,6 +462,7 @@
 
     .map-region-card .btn {
       align-self: flex-start;
+
       margin-top: .5rem;
     }
 
@@ -396,26 +473,44 @@
 
     .map-category-grid {
       display: grid;
+
       grid-template-columns: 1fr;
+
       gap: .75rem;
     }
 
     .map-category-card {
       display: block;
+
       min-height: 100%;
+
       padding: 1.1rem;
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-medium);
-      background: var(--color-surface);
+
+      border:
+        1px solid var(--color-border);
+
+      border-radius:
+        var(--radius-medium);
+
+      background:
+        var(--color-surface);
+
+      color: inherit;
       text-decoration: none;
+
       transition:
         transform .2s ease,
         border-color .2s ease;
     }
 
     .map-category-card:hover {
-      transform: translateY(-2px);
-      border-color: rgba(255,255,255,.18);
+      transform:
+        translateY(-2px);
+
+      border-color:
+        rgba(255,255,255,.18);
+
+      color: inherit;
     }
 
     .map-category-card h3 {
@@ -424,7 +519,9 @@
 
     .map-category-card p {
       margin: 0;
-      color: var(--color-text-muted);
+
+      color:
+        var(--color-text-muted);
     }
 
 
@@ -434,10 +531,17 @@
 
     .map-editorial {
       max-width: 920px;
+
       padding: 1.35rem;
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-medium);
-      background: var(--color-surface);
+
+      border:
+        1px solid var(--color-border);
+
+      border-radius:
+        var(--radius-medium);
+
+      background:
+        var(--color-surface);
     }
 
     .map-editorial h2 {
@@ -466,6 +570,7 @@
 
       .map-search {
         flex: 1 1 100%;
+
         max-width: 100%;
       }
 
@@ -495,15 +600,18 @@
     @media (min-width: 700px) {
 
       .map-feature-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns:
+          repeat(3, 1fr);
       }
 
       .map-region-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+          repeat(2, 1fr);
       }
 
       .map-category-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+          repeat(2, 1fr);
       }
 
     }
@@ -520,7 +628,8 @@
       }
 
       .map-category-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns:
+          repeat(4, 1fr);
       }
 
     }
@@ -528,7 +637,9 @@
   </style>
 
 
-  <!-- SCHEMA -->
+  <!-- =========================================================
+       SCHEMA
+  ========================================================= -->
 
   <script type="application/ld+json">
   {
@@ -546,7 +657,9 @@
   </script>
 
 
-  <!-- JS -->
+  <!-- =========================================================
+       JS
+  ========================================================= -->
 
   <script src="../assets/js/menu.js" defer></script>
   <script src="../assets/js/main.js" defer></script>
@@ -558,8 +671,12 @@
 <body>
 
 
-<a class="skip-link" href="#conteudo">
+<a
+  class="skip-link"
+  href="#conteudo">
+
   Pular para o conteúdo
+
 </a>
 
 
@@ -569,9 +686,7 @@
 
 <div class="global-banner">
 
-  <div class="banner-fallback">
-     
-  </div>
+  <div class="banner-fallback"></div>
 
   <img
     class="banner-image"
@@ -581,9 +696,9 @@
 </div>
 
 
-<!-- ==================================================
+<!-- =========================================================
      HEADER
-================================================== -->
+========================================================= -->
 
 <header class="site-header">
 
@@ -604,232 +719,232 @@
     </a>
 
 
-<!-- ==================================================
-     MENU DESKTOP
-================================================== -->
+    <!-- ==================================================
+         MENU DESKTOP
+    ================================================== -->
 
-<nav
-  class="desktop-nav"
-  aria-label="Navegação principal">
-
-
-  <a href="../index.html">
-    INÍCIO
-  </a>
+    <nav
+      class="desktop-nav"
+      aria-label="Navegação principal">
 
 
-  <a href="../gta-6/index.html">
-    GTA 6
-  </a>
+      <a href="../index.html">
+        INÍCIO
+      </a>
 
 
-  <!-- ONLINE -->
+      <a href="../gta-6/index.html">
+        GTA 6
+      </a>
 
-  <div class="dropdown">
+
+      <!-- ONLINE -->
+
+      <div class="dropdown">
+
+        <button
+          type="button"
+          aria-haspopup="true"
+          aria-expanded="false">
+
+          ONLINE ▾
+
+        </button>
+
+
+        <div class="dropdown-menu">
+
+          <a href="#">
+            Hub Online
+          </a>
+
+          <a href="#">
+            Missões Online
+          </a>
+
+          <a href="#">
+            Veículos Online
+          </a>
+
+          <a href="#">
+            Armas Online
+          </a>
+
+          <a href="#">
+            Propriedades Online
+          </a>
+
+          <a href="#">
+            Negócios
+          </a>
+
+          <a href="#">
+            Atividades Online
+          </a>
+
+          <a href="#">
+            Eventos
+          </a>
+
+          <a href="#">
+            Atualizações
+          </a>
+
+          <a href="#">
+            Guias Online
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <a href="../noticias/index.html">
+        NOTÍCIAS
+      </a>
+
+
+      <a href="../mapa/index.html">
+        MAPA
+      </a>
+
+
+      <!-- WIKI -->
+
+      <div class="dropdown">
+
+        <button
+          type="button"
+          aria-haspopup="true"
+          aria-expanded="false">
+
+          WIKI ▾
+
+        </button>
+
+
+        <div class="dropdown-menu">
+
+          <a href="../personagens/index.html">
+            Personagens
+          </a>
+
+          <a href="../veiculos/index.html">
+            Veículos
+          </a>
+
+          <a href="../armas/index.html">
+            Armas
+          </a>
+
+          <a href="../missoes/index.html">
+            Missões
+          </a>
+
+          <a href="../locais/index.html">
+            Locais
+          </a>
+
+          <a href="../propriedades/index.html">
+            Propriedades
+          </a>
+
+          <a href="../atividades/index.html">
+            Atividades
+          </a>
+
+          <a href="../colecionaveis/index.html">
+            Colecionáveis
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- GUIAS -->
+
+      <div class="dropdown">
+
+        <button
+          type="button"
+          aria-haspopup="true"
+          aria-expanded="false">
+
+          GUIAS ▾
+
+        </button>
+
+
+        <div class="dropdown-menu">
+
+          <a href="../guias/iniciantes/index.html">
+            Iniciantes
+          </a>
+
+          <a href="../guias/dinheiro/index.html">
+            Dinheiro
+          </a>
+
+          <a href="../guias/missoes/index.html">
+            Missões
+          </a>
+
+          <a href="../guias/veiculos/index.html">
+            Veículos
+          </a>
+
+          <a href="../guias/armas/index.html">
+            Armas
+          </a>
+
+          <a href="../guias/segredos/index.html">
+            Segredos
+          </a>
+
+          <a href="../guias/easter-eggs/index.html">
+            Easter Eggs
+          </a>
+
+          <a href="../guias/guia-100/index.html">
+            Guia 100%
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <a href="../buscar/index.html">
+        PESQUISAR
+      </a>
+
+
+    </nav>
+
+
+    <!-- BOTÃO MOBILE -->
 
     <button
-      type="button"
-      aria-haspopup="true"
-      aria-expanded="false">
+      class="menu-button"
+      data-menu-open
+      aria-controls="mobile-menu"
+      aria-expanded="false"
+      aria-label="Abrir menu">
 
-      ONLINE ▾
+      ☰
 
     </button>
 
 
-    <div class="dropdown-menu">
-
-      <a href="#">
-        Hub Online
-      </a>
-
-      <a href="#">
-        Missões Online
-      </a>
-
-      <a href="#">
-        Veículos Online
-      </a>
-
-      <a href="#">
-        Armas Online
-      </a>
-
-      <a href="#">
-        Propriedades Online
-      </a>
-
-      <a href="#">
-        Negócios
-      </a>
-
-      <a href="#">
-        Atividades Online
-      </a>
-
-      <a href="#">
-        Eventos
-      </a>
-
-      <a href="#">
-        Atualizações
-      </a>
-
-      <a href="#">
-        Guias Online
-      </a>
-
-    </div>
-
   </div>
-
-
-  <a href="../noticias/index.html">
-    NOTÍCIAS
-  </a>
-
-
-  <a href="../mapa/index.html">
-    MAPA
-  </a>
-
-
-  <!-- WIKI -->
-
-  <div class="dropdown">
-
-    <button
-      type="button"
-      aria-haspopup="true"
-      aria-expanded="false">
-
-      WIKI ▾
-
-    </button>
-
-
-    <div class="dropdown-menu">
-
-      <a href="../personagens/index.html">
-        Personagens
-      </a>
-
-      <a href="../veiculos/index.html">
-        Veículos
-      </a>
-
-      <a href="../armas/index.html">
-        Armas
-      </a>
-
-      <a href="../missoes/index.html">
-        Missões
-      </a>
-
-      <a href="../locais/index.html">
-        Locais
-      </a>
-
-      <a href="../propriedades/index.html">
-        Propriedades
-      </a>
-
-      <a href="../atividades/index.html">
-        Atividades
-      </a>
-
-      <a href="../colecionaveis/index.html">
-        Colecionáveis
-      </a>
-
-    </div>
-
-  </div>
-
-
-  <!-- GUIAS -->
-
-  <div class="dropdown">
-
-    <button
-      type="button"
-      aria-haspopup="true"
-      aria-expanded="false">
-
-      GUIAS ▾
-
-    </button>
-
-
-    <div class="dropdown-menu">
-
-      <a href="../guias/iniciantes/index.html">
-        Iniciantes
-      </a>
-
-      <a href="../guias/dinheiro/index.html">
-        Dinheiro
-      </a>
-
-      <a href="../guias/missoes/index.html">
-        Missões
-      </a>
-
-      <a href="../guias/veiculos/index.html">
-        Veículos
-      </a>
-
-      <a href="../guias/armas/index.html">
-        Armas
-      </a>
-
-      <a href="../guias/segredos/index.html">
-        Segredos
-      </a>
-
-      <a href="../guias/easter-eggs/index.html">
-        Easter Eggs
-      </a>
-
-      <a href="../guias/guia-100/index.html">
-        Guia 100%
-      </a>
-
-    </div>
-
-  </div>
-
-
-  <a href="../buscar/index.html">
-    PESQUISAR
-  </a>
-
-
-</nav>
-
-
-<!-- BOTÃO MOBILE -->
-
-<button
-  class="menu-button"
-  data-menu-open
-  aria-controls="mobile-menu"
-  aria-expanded="false"
-  aria-label="Abrir menu">
-
-  ☰
-
-</button>
-
-
-</div>
 
 </header>
 
 
-<!-- ==================================================
+<!-- =========================================================
      MENU MOBILE
-================================================== -->
+========================================================= -->
 
 <div class="mobile-overlay"></div>
 
@@ -1208,9 +1323,11 @@
 
           <input
             class="control"
+            data-map-search
             type="search"
             aria-label="Pesquisar no mapa"
-            placeholder="Pesquisar marcador">
+            placeholder="Pesquisar marcador"
+            autocomplete="off">
 
         </div>
 
@@ -1219,7 +1336,10 @@
 
           <button
             class="btn filter-drawer-button"
-            data-map-filters-toggle>
+            type="button"
+            data-map-filters-toggle
+            aria-controls="map-filters"
+            aria-expanded="false">
 
             Filtros
 
@@ -1228,6 +1348,7 @@
 
           <button
             class="btn btn-secondary"
+            type="button"
             data-zoom-in
             aria-label="Ampliar mapa"
             title="Ampliar">
@@ -1239,6 +1360,7 @@
 
           <button
             class="btn btn-secondary"
+            type="button"
             data-zoom-out
             aria-label="Reduzir mapa"
             title="Reduzir">
@@ -1250,6 +1372,7 @@
 
           <button
             class="btn btn-secondary"
+            type="button"
             data-map-reset>
 
             Resetar
@@ -1264,47 +1387,120 @@
 
       <!-- FILTROS -->
 
-      <div class="map-filters">
+      <div
+        class="map-filters"
+        id="map-filters">
 
-        <button class="filter">
+
+        <button
+          class="filter"
+          type="button"
+          data-map-category="locais"
+          aria-pressed="false">
+
           Locais
+
         </button>
 
-        <button class="filter">
+
+        <button
+          class="filter"
+          type="button"
+          data-map-category="missoes"
+          aria-pressed="false">
+
           Missões
+
         </button>
 
-        <button class="filter">
+
+        <button
+          class="filter"
+          type="button"
+          data-map-category="veiculos"
+          aria-pressed="false">
+
           Veículos
+
         </button>
 
-        <button class="filter">
+
+        <button
+          class="filter"
+          type="button"
+          data-map-category="armas"
+          aria-pressed="false">
+
           Armas
+
         </button>
 
-        <button class="filter">
+
+        <button
+          class="filter"
+          type="button"
+          data-map-category="lojas"
+          aria-pressed="false">
+
           Lojas
+
         </button>
 
-        <button class="filter">
+
+        <button
+          class="filter"
+          type="button"
+          data-map-category="propriedades"
+          aria-pressed="false">
+
           Propriedades
+
         </button>
 
-        <button class="filter">
+
+        <button
+          class="filter"
+          type="button"
+          data-map-category="atividades"
+          aria-pressed="false">
+
           Atividades
+
         </button>
 
-        <button class="filter">
+
+        <button
+          class="filter"
+          type="button"
+          data-map-category="colecionaveis"
+          aria-pressed="false">
+
           Colecionáveis
+
         </button>
 
-        <button class="filter">
+
+        <button
+          class="filter"
+          type="button"
+          data-map-category="easter-eggs"
+          aria-pressed="false">
+
           Easter Eggs
+
         </button>
 
-        <button class="filter">
+
+        <button
+          class="filter"
+          type="button"
+          data-map-category="segredos"
+          aria-pressed="false">
+
           Segredos
+
         </button>
+
 
       </div>
 
@@ -1365,7 +1561,8 @@
 
         <aside
           class="map-detail"
-          data-map-detail>
+          data-map-detail
+          aria-live="polite">
 
 
           <div class="map-detail-status">
@@ -1511,10 +1708,6 @@
      REGIÕES
 ========================================================= -->
 
-<!-- =========================================================
-     REGIÕES
-========================================================= -->
-
 <section class="section">
 
   <div class="container map-block">
@@ -1544,9 +1737,7 @@
     <div class="map-region-grid">
 
 
-      <!-- =====================================================
-           VICE CITY
-      ====================================================== -->
+      <!-- VICE CITY -->
 
       <article class="map-region-card">
 
@@ -1577,9 +1768,7 @@
       </article>
 
 
-      <!-- =====================================================
-           LEONIDA KEYS
-      ====================================================== -->
+      <!-- LEONIDA KEYS -->
 
       <article class="map-region-card">
 
@@ -1610,9 +1799,7 @@
       </article>
 
 
-      <!-- =====================================================
-           PORT GELLHORN
-      ====================================================== -->
+      <!-- PORT GELLHORN -->
 
       <article class="map-region-card">
 
@@ -1644,9 +1831,7 @@
       </article>
 
 
-      <!-- =====================================================
-           AMBROSIA
-      ====================================================== -->
+      <!-- AMBROSIA -->
 
       <article class="map-region-card">
 
@@ -1677,9 +1862,7 @@
       </article>
 
 
-      <!-- =====================================================
-           GRASSRIVERS
-      ====================================================== -->
+      <!-- GRASSRIVERS -->
 
       <article class="map-region-card">
 
@@ -1710,9 +1893,7 @@
       </article>
 
 
-      <!-- =====================================================
-           MOUNT KALAGA
-      ====================================================== -->
+      <!-- MOUNT KALAGA -->
 
       <article class="map-region-card">
 
@@ -2001,6 +2182,8 @@
     <div class="footer-grid">
 
 
+      <!-- GTA6ZOONE -->
+
       <div>
 
         <strong class="brand-text">
@@ -2017,6 +2200,8 @@
       </div>
 
 
+      <!-- EXPLORAR -->
+
       <div>
 
         <h3>
@@ -2025,16 +2210,32 @@
 
         <div class="footer-links">
 
-          <a href="../gta-6/index.html">GTA 6</a>
-          <a href="../mapa/index.html">Mapa</a>
-          <a href="../wiki/index.html">Wiki</a>
-          <a href="../guias/index.html">Guias</a>
-          <a href="../noticias/index.html">Notícias</a>
+          <a href="../gta-6/index.html">
+            GTA 6
+          </a>
+
+          <a href="../mapa/index.html">
+            Mapa
+          </a>
+
+          <a href="../wiki/index.html">
+            Wiki
+          </a>
+
+          <a href="../guias/index.html">
+            Guias
+          </a>
+
+          <a href="../noticias/index.html">
+            Notícias
+          </a>
 
         </div>
 
       </div>
 
+
+      <!-- COMUNIDADE -->
 
       <div>
 
@@ -2067,6 +2268,8 @@
       </div>
 
 
+      <!-- INSTITUCIONAL -->
+
       <div>
 
         <h3>
@@ -2075,12 +2278,29 @@
 
         <div class="footer-links">
 
-          <a href="../sobre/index.html">Sobre</a>
-          <a href="../contato/index.html">Contato</a>
-          <a href="../politica-de-privacidade/index.html">Privacidade</a>
-          <a href="../politica-de-cookies/index.html">Cookies</a>
-          <a href="../termos-de-uso/index.html">Termos</a>
-          <a href="../aviso-legal/index.html">Aviso legal</a>
+          <a href="../sobre/index.html">
+            Sobre
+          </a>
+
+          <a href="../contato/index.html">
+            Contato
+          </a>
+
+          <a href="../politica-de-privacidade/index.html">
+            Privacidade
+          </a>
+
+          <a href="../politica-de-cookies/index.html">
+            Cookies
+          </a>
+
+          <a href="../termos-de-uso/index.html">
+            Termos
+          </a>
+
+          <a href="../aviso-legal/index.html">
+            Aviso legal
+          </a>
 
         </div>
 
