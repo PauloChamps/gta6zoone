@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 <html lang="pt-BR" data-root="../">
 
@@ -8,14 +9,18 @@
 
   <link
     rel="icon"
-    type="image/png"
-    href="../assets/images/branding/favicon.png">
+    type="image/webp"
+    href="../assets/images/branding/favicon.webp">
 
   <title>Colecionáveis de GTA VI: itens escondidos e guia completo | GTA6Zoone</title>
 
   <meta
     name="description"
-    content="Acompanhe os colecionáveis de GTA VI no GTA6Zoone. Itens escondidos, conjuntos, recompensas, localização no mapa e futuros guias completos da campanha.">
+    content="Acompanhe os colecionáveis de GTA VI no GTA6Zoone. Veja o que já pode ser confirmado, como a Wiki será organizada e quais informações ainda estão a verificar.">
+
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large">
 
   <link
     rel="canonical"
@@ -29,7 +34,7 @@
 
   <meta
     property="og:description"
-    content="Wiki de colecionáveis de GTA VI com localização, recompensas e futuros guias completos.">
+    content="Wiki de colecionáveis de GTA VI com informações confirmadas, organização futura, localização e guias do GTA6Zoone.">
 
   <meta
     property="og:url"
@@ -37,14 +42,52 @@
 
   <meta
     property="og:image"
-    content="https://gta6zoone.com.br/assets/images/branding/banner01.jpg">
+    content="https://gta6zoone.com.br/assets/images/branding/banner01.webp">
 
-  <meta name="twitter:card" content="summary_large_image">
+  <meta
+    property="og:image:alt"
+    content="GTA6Zoone — Grand Theft Auto VI">
+
+  <meta
+    property="og:locale"
+    content="pt_BR">
+
+  <meta
+    property="og:site_name"
+    content="GTA6Zoone">
+
+  <meta
+    name="twitter:card"
+    content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Colecionáveis de GTA VI | GTA6Zoone">
+
+  <meta
+    name="twitter:description"
+    content="Wiki de colecionáveis de GTA VI com informações confirmadas, organização futura, localização e guias do GTA6Zoone.">
+
+  <meta
+    name="twitter:image"
+    content="https://gta6zoone.com.br/assets/images/branding/banner01.webp">
+
+  <meta
+    name="twitter:image:alt"
+    content="GTA6Zoone — Grand Theft Auto VI">
+
+
+  <!-- =========================================================
+       ADSENSE
+  ========================================================== -->
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
+       crossorigin="anonymous"></script>
 
 
   <!-- =========================================================
        CSS GLOBAL
-  ========================================================= -->
+  ========================================================== -->
 
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/components.css">
@@ -53,7 +96,7 @@
 
   <!-- =========================================================
        CSS EXCLUSIVO — COLECIONÁVEIS
-  ========================================================= -->
+  ========================================================== -->
 
   <style>
 
@@ -674,21 +717,76 @@
 
   <!-- =========================================================
        SCHEMA
-  ========================================================= -->
+  ========================================================== -->
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "Colecionáveis de GTA VI",
-    "description": "Índice de colecionáveis de Grand Theft Auto VI com futuros guias de localização e conclusão.",
-    "url": "https://gta6zoone.com.br/colecionaveis/",
-    "dateModified": "2026-09-06",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "GTA6Zoone",
-      "url": "https://gta6zoone.com.br/"
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://gta6zoone.com.br/#organization",
+        "name": "GTA6Zoone",
+        "url": "https://gta6zoone.com.br/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://gta6zoone.com.br/assets/images/branding/favicon.webp"
+        },
+        "sameAs": [
+          "https://www.instagram.com/gta6zoone/",
+          "https://www.youtube.com/channel/UCR-PxT2Lt8Pte8I_f_zdtDg"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://gta6zoone.com.br/#website",
+        "name": "GTA6Zoone",
+        "url": "https://gta6zoone.com.br/",
+        "publisher": {
+          "@id": "https://gta6zoone.com.br/#organization"
+        },
+        "inLanguage": "pt-BR"
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://gta6zoone.com.br/colecionaveis/#webpage",
+        "name": "Colecionáveis de GTA VI",
+        "description": "Wiki de colecionáveis de Grand Theft Auto VI com informações confirmadas, organização futura e guias do GTA6Zoone.",
+        "url": "https://gta6zoone.com.br/colecionaveis/",
+        "dateModified": "2026-09-11",
+        "isPartOf": {
+          "@id": "https://gta6zoone.com.br/#website"
+        },
+        "publisher": {
+          "@id": "https://gta6zoone.com.br/#organization"
+        },
+        "inLanguage": "pt-BR"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://gta6zoone.com.br/colecionaveis/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://gta6zoone.com.br/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Wiki",
+            "item": "https://gta6zoone.com.br/wiki/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Colecionáveis",
+            "item": "https://gta6zoone.com.br/colecionaveis/"
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -701,7 +799,6 @@
 
 <body>
 
-
 <a class="skip-link" href="#conteudo">
   Pular para o conteúdo
 </a>
@@ -709,7 +806,7 @@
 
 <!-- =========================================================
      BANNER
-========================================================= -->
+========================================================== -->
 
 <div class="global-banner">
 
@@ -717,8 +814,11 @@
 
   <img
     class="banner-image"
-    src="../assets/images/branding/banner01.jpg"
-    alt="">
+    src="../assets/images/branding/banner01.webp"
+    alt=""
+    loading="eager"
+    fetchpriority="high"
+    decoding="async">
 
 </div>
 
@@ -730,9 +830,6 @@
 <header class="site-header">
 
   <div class="container header-inner">
-
-
-    <!-- MARCA -->
 
     <a
       class="brand"
@@ -746,225 +843,142 @@
     </a>
 
 
-<!-- ==================================================
-     MENU DESKTOP
-================================================== -->
+    <!-- ==================================================
+         MENU DESKTOP
+    ================================================== -->
 
-<nav
-  class="desktop-nav"
-  aria-label="Navegação principal">
+    <nav
+      class="desktop-nav"
+      aria-label="Navegação principal">
 
+      <a href="../index.html">
+        INÍCIO
+      </a>
 
-  <a href="../index.html">
-    INÍCIO
-  </a>
-
-
-  <a href="../gta-6/index.html">
-    GTA 6
-  </a>
+      <a href="../gta-6/index.html">
+        GTA 6
+      </a>
 
 
-  <!-- ONLINE -->
+      <div class="dropdown">
 
-  <div class="dropdown">
+        <button
+          type="button"
+          aria-haspopup="true"
+          aria-expanded="false">
+
+          ONLINE ▾
+
+        </button>
+
+        <div class="dropdown-menu">
+
+          <a href="#">Hub Online</a>
+          <a href="#">Missões Online</a>
+          <a href="#">Veículos Online</a>
+          <a href="#">Armas Online</a>
+          <a href="#">Propriedades Online</a>
+          <a href="#">Negócios</a>
+          <a href="#">Atividades Online</a>
+          <a href="#">Eventos</a>
+          <a href="#">Atualizações</a>
+          <a href="#">Guias Online</a>
+
+        </div>
+
+      </div>
+
+
+      <a href="../noticias/index.html">
+        NOTÍCIAS
+      </a>
+
+      <a href="../mapa/index.html">
+        MAPA
+      </a>
+
+
+      <div class="dropdown">
+
+        <button
+          type="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+          aria-current="location">
+
+          WIKI ▾
+
+        </button>
+
+        <div class="dropdown-menu">
+
+          <a href="../personagens/index.html">Personagens</a>
+          <a href="../veiculos/index.html">Veículos</a>
+          <a href="../armas/index.html">Armas</a>
+          <a href="../missoes/index.html">Missões</a>
+          <a href="../locais/index.html">Locais</a>
+          <a href="../propriedades/index.html">Propriedades</a>
+          <a href="../atividades/index.html">Atividades</a>
+          <a
+            href="../colecionaveis/index.html"
+            aria-current="page">
+            Colecionáveis
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="dropdown">
+
+        <button
+          type="button"
+          aria-haspopup="true"
+          aria-expanded="false">
+
+          GUIAS ▾
+
+        </button>
+
+        <div class="dropdown-menu">
+
+          <a href="../guias/iniciantes/index.html">Iniciantes</a>
+          <a href="../guias/dinheiro/index.html">Dinheiro</a>
+          <a href="../guias/missoes/index.html">Missões</a>
+          <a href="../guias/veiculos/index.html">Veículos</a>
+          <a href="../guias/armas/index.html">Armas</a>
+          <a href="../guias/segredos/index.html">Segredos</a>
+          <a href="../guias/easter-eggs/index.html">Easter Eggs</a>
+          <a href="../guias/guia-100/index.html">Guia 100%</a>
+
+        </div>
+
+      </div>
+
+
+      <a href="../buscar/index.html">
+        PESQUISAR
+      </a>
+
+    </nav>
+
+
+    <!-- BOTÃO MOBILE -->
 
     <button
       type="button"
-      aria-haspopup="true"
-      aria-expanded="false">
+      class="menu-button"
+      data-menu-open
+      aria-controls="mobile-menu"
+      aria-expanded="false"
+      aria-label="Abrir menu">
 
-      ONLINE ▾
-
-    </button>
-
-
-    <div class="dropdown-menu">
-
-      <a href="#">
-        Hub Online
-      </a>
-
-      <a href="#">
-        Missões Online
-      </a>
-
-      <a href="#">
-        Veículos Online
-      </a>
-
-      <a href="#">
-        Armas Online
-      </a>
-
-      <a href="#">
-        Propriedades Online
-      </a>
-
-      <a href="#">
-        Negócios
-      </a>
-
-      <a href="#">
-        Atividades Online
-      </a>
-
-      <a href="#">
-        Eventos
-      </a>
-
-      <a href="#">
-        Atualizações
-      </a>
-
-      <a href="#">
-        Guias Online
-      </a>
-
-    </div>
-
-  </div>
-
-
-  <a href="../noticias/index.html">
-    NOTÍCIAS
-  </a>
-
-
-  <a href="../mapa/index.html">
-    MAPA
-  </a>
-
-
-  <!-- WIKI -->
-
-  <div class="dropdown">
-
-    <button
-      type="button"
-      aria-haspopup="true"
-      aria-expanded="false">
-
-      WIKI ▾
+      ☰
 
     </button>
 
-
-    <div class="dropdown-menu">
-
-      <a href="../personagens/index.html">
-        Personagens
-      </a>
-
-      <a href="../veiculos/index.html">
-        Veículos
-      </a>
-
-      <a href="../armas/index.html">
-        Armas
-      </a>
-
-      <a href="../missoes/index.html">
-        Missões
-      </a>
-
-      <a href="../locais/index.html">
-        Locais
-      </a>
-
-      <a href="../propriedades/index.html">
-        Propriedades
-      </a>
-
-      <a href="../atividades/index.html">
-        Atividades
-      </a>
-
-      <a href="../colecionaveis/index.html">
-        Colecionáveis
-      </a>
-
-    </div>
-
   </div>
-
-
-  <!-- GUIAS -->
-
-  <div class="dropdown">
-
-    <button
-      type="button"
-      aria-haspopup="true"
-      aria-expanded="false">
-
-      GUIAS ▾
-
-    </button>
-
-
-    <div class="dropdown-menu">
-
-      <a href="../guias/iniciantes/index.html">
-        Iniciantes
-      </a>
-
-      <a href="../guias/dinheiro/index.html">
-        Dinheiro
-      </a>
-
-      <a href="../guias/missoes/index.html">
-        Missões
-      </a>
-
-      <a href="../guias/veiculos/index.html">
-        Veículos
-      </a>
-
-      <a href="../guias/armas/index.html">
-        Armas
-      </a>
-
-      <a href="../guias/segredos/index.html">
-        Segredos
-      </a>
-
-      <a href="../guias/easter-eggs/index.html">
-        Easter Eggs
-      </a>
-
-      <a href="../guias/guia-100/index.html">
-        Guia 100%
-      </a>
-
-    </div>
-
-  </div>
-
-
-  <a href="../buscar/index.html">
-    PESQUISAR
-  </a>
-
-
-</nav>
-
-
-<!-- BOTÃO MOBILE -->
-
-<button
-  class="menu-button"
-  data-menu-open
-  aria-controls="mobile-menu"
-  aria-expanded="false"
-  aria-label="Abrir menu">
-
-  ☰
-
-</button>
-
-
-</div>
 
 </header>
 
@@ -975,13 +989,11 @@
 
 <div class="mobile-overlay"></div>
 
-
 <aside
   class="mobile-menu"
   id="mobile-menu"
   aria-label="Menu mobile"
   aria-hidden="true">
-
 
   <div class="mobile-menu-head">
 
@@ -990,6 +1002,7 @@
     </strong>
 
     <button
+      type="button"
       class="close-menu"
       data-menu-close
       aria-label="Fechar menu">
@@ -1003,20 +1016,17 @@
 
   <nav class="mobile-links">
 
-
     <a href="../index.html">
       Início
     </a>
-
 
     <a href="../gta-6/index.html">
       GTA 6
     </a>
 
 
-    <!-- ONLINE MOBILE -->
-
     <button
+      type="button"
       class="submenu-toggle"
       aria-expanded="false"
       aria-controls="mobile-online">
@@ -1025,50 +1035,20 @@
 
     </button>
 
-
     <div
       class="mobile-submenu"
       id="mobile-online">
 
-      <a href="#">
-        Hub Online
-      </a>
-
-      <a href="#">
-        Missões Online
-      </a>
-
-      <a href="#">
-        Veículos Online
-      </a>
-
-      <a href="#">
-        Armas Online
-      </a>
-
-      <a href="#">
-        Propriedades Online
-      </a>
-
-      <a href="#">
-        Negócios
-      </a>
-
-      <a href="#">
-        Atividades Online
-      </a>
-
-      <a href="#">
-        Eventos
-      </a>
-
-      <a href="#">
-        Atualizações
-      </a>
-
-      <a href="#">
-        Guias Online
-      </a>
+      <a href="#">Hub Online</a>
+      <a href="#">Missões Online</a>
+      <a href="#">Veículos Online</a>
+      <a href="#">Armas Online</a>
+      <a href="#">Propriedades Online</a>
+      <a href="#">Negócios</a>
+      <a href="#">Atividades Online</a>
+      <a href="#">Eventos</a>
+      <a href="#">Atualizações</a>
+      <a href="#">Guias Online</a>
 
     </div>
 
@@ -1077,66 +1057,44 @@
       Notícias
     </a>
 
-
     <a href="../mapa/index.html">
       Mapa
     </a>
 
 
-    <!-- WIKI MOBILE -->
-
     <button
+      type="button"
       class="submenu-toggle"
-      aria-expanded="false"
-      aria-controls="mobile-wiki">
+      aria-expanded="true"
+      aria-controls="mobile-wiki"
+      aria-current="location">
 
       Wiki +
 
     </button>
 
-
     <div
       class="mobile-submenu"
       id="mobile-wiki">
 
-      <a href="../personagens/index.html">
-        Personagens
-      </a>
-
-      <a href="../veiculos/index.html">
-        Veículos
-      </a>
-
-      <a href="../armas/index.html">
-        Armas
-      </a>
-
-      <a href="../missoes/index.html">
-        Missões
-      </a>
-
-      <a href="../locais/index.html">
-        Locais
-      </a>
-
-      <a href="../propriedades/index.html">
-        Propriedades
-      </a>
-
-      <a href="../atividades/index.html">
-        Atividades
-      </a>
-
-      <a href="../colecionaveis/index.html">
+      <a href="../personagens/index.html">Personagens</a>
+      <a href="../veiculos/index.html">Veículos</a>
+      <a href="../armas/index.html">Armas</a>
+      <a href="../missoes/index.html">Missões</a>
+      <a href="../locais/index.html">Locais</a>
+      <a href="../propriedades/index.html">Propriedades</a>
+      <a href="../atividades/index.html">Atividades</a>
+      <a
+        href="../colecionaveis/index.html"
+        aria-current="page">
         Colecionáveis
       </a>
 
     </div>
 
 
-    <!-- GUIAS MOBILE -->
-
     <button
+      type="button"
       class="submenu-toggle"
       aria-expanded="false"
       aria-controls="mobile-guias">
@@ -1145,42 +1103,18 @@
 
     </button>
 
-
     <div
       class="mobile-submenu"
       id="mobile-guias">
 
-      <a href="../guias/iniciantes/index.html">
-        Iniciantes
-      </a>
-
-      <a href="../guias/dinheiro/index.html">
-        Dinheiro
-      </a>
-
-      <a href="../guias/missoes/index.html">
-        Missões
-      </a>
-
-      <a href="../guias/veiculos/index.html">
-        Veículos
-      </a>
-
-      <a href="../guias/armas/index.html">
-        Armas
-      </a>
-
-      <a href="../guias/segredos/index.html">
-        Segredos
-      </a>
-
-      <a href="../guias/easter-eggs/index.html">
-        Easter Eggs
-      </a>
-
-      <a href="../guias/guia-100/index.html">
-        Guia 100%
-      </a>
+      <a href="../guias/iniciantes/index.html">Iniciantes</a>
+      <a href="../guias/dinheiro/index.html">Dinheiro</a>
+      <a href="../guias/missoes/index.html">Missões</a>
+      <a href="../guias/veiculos/index.html">Veículos</a>
+      <a href="../guias/armas/index.html">Armas</a>
+      <a href="../guias/segredos/index.html">Segredos</a>
+      <a href="../guias/easter-eggs/index.html">Easter Eggs</a>
+      <a href="../guias/guia-100/index.html">Guia 100%</a>
 
     </div>
 
@@ -1189,11 +1123,8 @@
       Buscar
     </a>
 
-
   </nav>
 
-
-  <!-- REDES SOCIAIS MOBILE -->
 
   <div class="social-placeholders">
 
@@ -1219,1226 +1150,1004 @@
 
   </div>
 
-
 </aside>
 
 
 <!-- =========================================================
      CONTEÚDO
-========================================================= -->
+========================================================== -->
 
 <main id="conteudo" class="collectibles-page">
 
 
-<!-- =========================================================
-     INTRO
-========================================================= -->
+  <!-- =========================================================
+       INTRO
+  ========================================================== -->
 
-<section class="collectibles-intro">
+  <section class="collectibles-intro">
 
-  <div class="container collectibles-container">
+    <div class="container collectibles-container">
 
+      <nav class="breadcrumb" aria-label="Breadcrumb">
 
-    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">
+          Início
+        </a>
 
-      <a href="../index.html">
-        Início
-      </a>
+        ›
 
-      ›
+        <a href="../wiki/index.html">
+          Wiki
+        </a>
 
-      Colecionáveis
+        ›
 
-    </nav>
-
-
-    <div class="collectibles-intro-content">
-
-
-      <span class="eyebrow">
-        WIKI · COLECIONÁVEIS
-      </span>
-
-
-      <h1>
-        Colecionáveis de GTA VI
-      </h1>
-
-
-      <p class="lede">
-
-        Itens escondidos, conjuntos e desafios
-        de exploração que fizerem parte da campanha
-        de Grand Theft Auto VI serão catalogados aqui.
-
-      </p>
-
-
-      <p>
-
-        Quando os colecionáveis forem revelados,
-        esta seção reunirá localização, progresso,
-        recompensas e ligação direta com o
-        mapa interativo do GTA6Zoone.
-
-      </p>
-
-    </div>
-
-
-    <div class="collectible-notice">
-
-      <p>
-
-        <strong>TRANSPARÊNCIA:</strong>
-        até o momento, o GTA6Zoone não possui
-        uma lista oficial de colecionáveis da campanha.
-
-        Não vamos copiar sistemas de GTA V,
-        GTA Online, Red Dead Redemption ou outros
-        jogos e apresentá-los como se estivessem
-        confirmados para GTA VI.
-
-      </p>
-
-    </div>
-
-
-  </div>
-
-</section>
-
-
-<!-- =========================================================
-     STATUS ATUAL
-========================================================= -->
-
-<section class="status-section section">
-
-  <div class="container collectibles-container">
-
-
-    <div class="status-panel">
-
-
-      <span class="eyebrow">
-        STATUS ATUAL
-      </span>
-
-
-      <h2>
-        O catálogo ainda aguarda o jogo
-      </h2>
-
-
-      <p>
-
-        Os materiais oficiais atuais revelam personagens,
-        regiões, veículos, armas e diversos conteúdos
-        do mundo de GTA VI.
-
-        Entretanto, ainda não temos conjuntos de
-        colecionáveis da campanha suficientemente
-        identificados para criar fichas individuais.
-
-      </p>
-
-
-      <div class="status-grid">
-
-
-        <div class="status-card">
-
-          <span class="status-label">
-            A CONFIRMAR
-          </span>
-
-          <strong>
-            Tipos
-          </strong>
-
-          <span>
-            Ainda não definimos categorias reais
-            de colecionáveis.
-          </span>
-
-        </div>
-
-
-        <div class="status-card">
-
-          <span class="status-label">
-            A CONFIRMAR
-          </span>
-
-          <strong>
-            Quantidades
-          </strong>
-
-          <span>
-            Nenhum total será estimado.
-          </span>
-
-        </div>
-
-
-        <div class="status-card">
-
-          <span class="status-label">
-            A CONFIRMAR
-          </span>
-
-          <strong>
-            Recompensas
-          </strong>
-
-          <span>
-            Benefícios por completar conjuntos
-            ainda serão verificados.
-          </span>
-
-        </div>
-
-
-        <div class="status-card">
-
-          <span class="status-label">
-            FUTURO
-          </span>
-
-          <strong>
-            Mapa completo
-          </strong>
-
-          <span>
-            Cada item poderá ser relacionado
-            ao mapa do GTA6Zoone.
-          </span>
-
-        </div>
-
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================================================
-     CATEGORIAS FUTURAS
-========================================================= -->
-
-<section class="collectible-categories-section section">
-
-  <div class="container collectibles-container">
-
-
-    <div class="section-heading">
-
-      <span class="eyebrow">
-        ORGANIZAÇÃO
-      </span>
-
-      <h2>
-        O catálogo será dividido por conjuntos
-      </h2>
-
-
-      <p>
-
-        Ainda não conhecemos as categorias reais.
-
-        Os blocos abaixo representam apenas
-        como a Wiki poderá ser organizada quando
-        os sistemas forem descobertos.
-
-      </p>
-
-    </div>
-
-
-    <div class="collectible-category-grid">
-
-
-      <a
-        class="collectible-category-card"
-        href="#catalogo">
-
-        <span class="collectible-category-number">
-          01
+        <span aria-current="page">
+          Colecionáveis
         </span>
 
-        <h3>
-          Itens escondidos
-        </h3>
+      </nav>
 
-        <p>
 
-          Objetos espalhados pelo mundo,
-          caso existam conjuntos desse tipo.
-
-        </p>
-
-        <span class="collectible-category-status">
-          Categoria futura
-        </span>
-
-      </a>
-
-
-      <a
-        class="collectible-category-card"
-        href="#catalogo">
-
-        <span class="collectible-category-number">
-          02
-        </span>
-
-        <h3>
-          Conjuntos
-        </h3>
-
-        <p>
-
-          Coleções formadas por vários itens
-          relacionados entre si.
-
-        </p>
-
-        <span class="collectible-category-status">
-          Categoria futura
-        </span>
-
-      </a>
-
-
-      <a
-        class="collectible-category-card"
-        href="#catalogo">
-
-        <span class="collectible-category-number">
-          03
-        </span>
-
-        <h3>
-          Descobertas
-        </h3>
-
-        <p>
-
-          Pontos ou elementos especiais de exploração,
-          se GTA VI utilizar esse sistema.
-
-        </p>
-
-        <span class="collectible-category-status">
-          Categoria futura
-        </span>
-
-      </a>
-
-
-      <a
-        class="collectible-category-card"
-        href="#catalogo">
-
-        <span class="collectible-category-number">
-          04
-        </span>
-
-        <h3>
-          Outros
-        </h3>
-
-        <p>
-
-          Sistemas que não se encaixem
-          nas demais categorias.
-
-        </p>
-
-        <span class="collectible-category-status">
-          Categoria futura
-        </span>
-
-      </a>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================================================
-     CATÁLOGO
-========================================================= -->
-
-<section
-  class="catalog-section section"
-  id="catalogo">
-
-  <div class="container collectibles-container">
-
-
-    <div class="section-heading">
-
-      <span class="eyebrow">
-        CATÁLOGO
-      </span>
-
-      <h2>
-        Colecionáveis identificados
-      </h2>
-
-    </div>
-
-
-    <div class="empty-catalog">
-
-      <strong>
-        Nenhum conjunto individual catalogado ainda
-      </strong>
-
-      <p>
-
-        Quando os primeiros colecionáveis puderem
-        ser identificados de maneira confiável,
-        criaremos aqui os cartões de acesso aos
-        respectivos guias.
-
-        Até lá, esta área permanece propositalmente
-        vazia em vez de ser preenchida com especulação.
-
-      </p>
-
-    </div>
-
-
-  </div>
-
-</section>
-
-
-<!-- =========================================================
-     DIFERENÇA ENTRE CONTEÚDOS
-========================================================= -->
-
-<section class="difference-section section">
-
-  <div class="container collectibles-container">
-
-
-    <div class="difference-panel">
-
-
-      <span class="eyebrow">
-        ORGANIZAÇÃO DA WIKI
-      </span>
-
-
-      <h2>
-        Colecionável não é qualquer item que possa ser colecionado
-      </h2>
-
-
-      <p>
-
-        Essa distinção evita que veículos,
-        armas e objetos de personalização
-        acabem duplicados dentro desta seção.
-
-      </p>
-
-
-      <div class="difference-grid">
-
-
-        <div class="difference-card">
-
-          <strong>
-            Veículos
-          </strong>
-
-          <p>
-
-            Continuam catalogados em
-            `/veiculos/`, mesmo quando fazem
-            parte de uma coleção temática.
-
-          </p>
-
-        </div>
-
-
-        <div class="difference-card">
-
-          <strong>
-            Armas e itens
-          </strong>
-
-          <p>
-
-            Equipamentos utilizáveis permanecem
-            em suas respectivas áreas da Wiki.
-
-          </p>
-
-        </div>
-
-
-        <div class="difference-card">
-
-          <strong>
-            Colecionáveis
-          </strong>
-
-          <p>
-
-            Aqui entram sistemas de busca,
-            descoberta ou conjuntos espalhados
-            pelo jogo quando forem confirmados.
-
-          </p>
-
-        </div>
-
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================================================
-     CLASSIC CAR COLLECTION
-========================================================= -->
-
-<section class="classic-section section">
-
-  <div class="container collectibles-container">
-
-
-    <div class="classic-panel">
-
-
-      <div class="classic-copy">
-
+      <div class="collectibles-intro-content">
 
         <span class="eyebrow">
-          EXEMPLO DE CAUTELA
+          WIKI · COLECIONÁVEIS
         </span>
 
+        <h1>
+          Colecionáveis de GTA VI
+        </h1>
 
-        <h2>
-          E a Classic Car Collection?
-        </h2>
+        <p class="lede">
 
-
-        <p>
-
-          A Rockstar já confirmou um conteúdo chamado
-          <strong>Classic Car Collection</strong>
-          para GTA VI.
+          Itens escondidos, conjuntos e desafios
+          de exploração que fizerem parte da campanha
+          de Grand Theft Auto VI serão catalogados aqui.
 
         </p>
 
-
         <p>
 
-          A galeria oficial possui seis screenshots
-          identificados como Classic Car Collection
-          01 até 06.
+          Quando os colecionáveis puderem ser identificados
+          de forma confiável, esta seção reunirá localização,
+          progresso, recompensas e ligação direta com o
+          mapa interativo do GTA6Zoone.
 
         </p>
-
-
-        <p>
-
-          Apesar da palavra “Collection”,
-          isso não é suficiente para classificarmos
-          esse conteúdo como um sistema de
-          colecionáveis da campanha.
-
-          Trataremos esses veículos dentro
-          da estrutura de Veículos enquanto
-          aguardamos detalhes adicionais.
-
-        </p>
-
 
       </div>
 
 
-      <div class="classic-facts">
+      <div class="collectible-notice">
 
+        <p>
 
-        <div class="classic-fact">
+          <strong>TRANSPARÊNCIA:</strong>
+          até o momento, o GTA6Zoone não possui
+          uma lista oficial de colecionáveis da campanha.
 
-          <strong>
-            Nome
-          </strong>
+          Não vamos copiar sistemas de GTA V,
+          GTA Online, Red Dead Redemption ou outros
+          jogos e apresentá-los como se estivessem
+          confirmados para GTA VI.
 
-          <p>
-            Classic Car Collection.
-          </p>
-
-        </div>
-
-
-        <div class="classic-fact">
-
-          <strong>
-            Material oficial
-          </strong>
-
-          <p>
-            6 screenshots publicados.
-          </p>
-
-        </div>
-
-
-        <div class="classic-fact">
-
-          <strong>
-            Tipo
-          </strong>
-
-          <p>
-            Conteúdo relacionado a veículos.
-          </p>
-
-        </div>
-
-
-        <div class="classic-fact">
-
-          <strong>
-            Colecionável da campanha?
-          </strong>
-
-          <p>
-            Não classificamos dessa forma atualmente.
-          </p>
-
-        </div>
-
+        </p>
 
       </div>
-
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<!-- =========================================================
-     MAPA
-========================================================= -->
+  <!-- =========================================================
+       STATUS ATUAL
+  ========================================================== -->
 
-<section class="map-section section">
+  <section class="status-section section">
 
-  <div class="container collectibles-container">
+    <div class="container collectibles-container">
 
-
-    <div class="map-panel">
-
-
-      <span class="eyebrow">
-        MAPA INTERATIVO
-      </span>
-
-
-      <h2>
-        Colecionáveis e mapa trabalharão juntos
-      </h2>
-
-
-      <p>
-
-        Depois do lançamento, essa será uma das
-        integrações mais úteis do GTA6Zoone.
-
-        Cada colecionável poderá ter localização,
-        região e ligação direta com o mapa interativo.
-
-      </p>
-
-
-      <div class="map-grid">
-
-
-        <div class="map-card">
-
-          <strong>
-            Marcadores
-          </strong>
-
-          <span>
-            Pins específicos no mapa.
-          </span>
-
-        </div>
-
-
-        <div class="map-card">
-
-          <strong>
-            Filtros
-          </strong>
-
-          <span>
-            Exibir somente determinado conjunto.
-          </span>
-
-        </div>
-
-
-        <div class="map-card">
-
-          <strong>
-            Regiões
-          </strong>
-
-          <span>
-            Separação por área de Leonida.
-          </span>
-
-        </div>
-
-
-        <div class="map-card">
-
-          <strong>
-            Progresso
-          </strong>
-
-          <span>
-            Estrutura preparada para guias completos.
-          </span>
-
-        </div>
-
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================================================
-     FUTURAS FICHAS
-========================================================= -->
-
-<section class="collectible-pages-section section">
-
-  <div class="container collectibles-container">
-
-
-    <div class="collectible-pages-panel">
-
-
-      <div>
-
+      <div class="status-panel">
 
         <span class="eyebrow">
-          FUTUROS GUIAS
+          STATUS ATUAL
         </span>
-
 
         <h2>
-          Cada conjunto terá sua própria página
+          O catálogo ainda aguarda informações verificáveis
         </h2>
 
-
         <p>
 
-          Não será necessário criar uma página
-          para cada pequeno objeto individual.
+          Os materiais oficiais atuais revelam personagens,
+          regiões, veículos, armas e diversos conteúdos
+          do mundo de GTA VI.
 
-          O mais organizado será criar uma ficha
-          para cada conjunto de colecionáveis.
+          Entretanto, ainda não temos conjuntos de
+          colecionáveis da campanha suficientemente
+          identificados para criar fichas individuais.
 
         </p>
 
 
-        <p>
+        <div class="status-grid">
 
-          Dentro dela teremos todos os itens,
-          localização, imagens, mapa e progresso.
+          <div class="status-card">
 
-        </p>
+            <span class="status-label">
+              A VERIFICAR
+            </span>
 
+            <strong>
+              Tipos
+            </strong>
+
+            <span>
+              Ainda não definimos categorias reais
+              de colecionáveis.
+            </span>
+
+          </div>
+
+
+          <div class="status-card">
+
+            <span class="status-label">
+              A VERIFICAR
+            </span>
+
+            <strong>
+              Quantidades
+            </strong>
+
+            <span>
+              Nenhum total será estimado.
+            </span>
+
+          </div>
+
+
+          <div class="status-card">
+
+            <span class="status-label">
+              A VERIFICAR
+            </span>
+
+            <strong>
+              Recompensas
+            </strong>
+
+            <span>
+              Benefícios por completar conjuntos
+              ainda serão verificados.
+            </span>
+
+          </div>
+
+
+          <div class="status-card">
+
+            <span class="status-label">
+              A VERIFICAR
+            </span>
+
+            <strong>
+              Mapa completo
+            </strong>
+
+            <span>
+              Cada item poderá ser relacionado
+              ao mapa do GTA6Zoone quando houver
+              informações confiáveis.
+            </span>
+
+          </div>
+
+        </div>
 
       </div>
-
-
-      <div class="collectible-page-features">
-
-
-        <div class="collectible-page-feature">
-
-          <strong>
-            Quantidade
-          </strong>
-
-          <span>
-            Total de itens do conjunto.
-          </span>
-
-        </div>
-
-
-        <div class="collectible-page-feature">
-
-          <strong>
-            Localizações
-          </strong>
-
-          <span>
-            Onde encontrar cada item.
-          </span>
-
-        </div>
-
-
-        <div class="collectible-page-feature">
-
-          <strong>
-            Screenshots
-          </strong>
-
-          <span>
-            Referência visual de cada ponto.
-          </span>
-
-        </div>
-
-
-        <div class="collectible-page-feature">
-
-          <strong>
-            Mapa
-          </strong>
-
-          <span>
-            Localização ligada ao mapa interativo.
-          </span>
-
-        </div>
-
-
-        <div class="collectible-page-feature">
-
-          <strong>
-            Ordem
-          </strong>
-
-          <span>
-            Rota eficiente para completar o conjunto.
-          </span>
-
-        </div>
-
-
-        <div class="collectible-page-feature">
-
-          <strong>
-            Recompensa
-          </strong>
-
-          <span>
-            O que é desbloqueado ao concluir.
-          </span>
-
-        </div>
-
-
-        <div class="collectible-page-feature">
-
-          <strong>
-            Requisitos
-          </strong>
-
-          <span>
-            Condições necessárias, se houver.
-          </span>
-
-        </div>
-
-
-        <div class="collectible-page-feature">
-
-          <strong>
-            Gameplay
-          </strong>
-
-          <span>
-            Guia em vídeo do GTA6Zoone.
-          </span>
-
-        </div>
-
-
-        <div class="collectible-page-feature">
-
-          <strong>
-            100%
-          </strong>
-
-          <span>
-            Relação com a conclusão total do jogo.
-          </span>
-
-        </div>
-
-
-      </div>
-
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<!-- =========================================================
-     PROGRESSO
-========================================================= -->
+  <!-- =========================================================
+       CATEGORIAS FUTURAS
+  ========================================================== -->
 
-<section class="progress-section section">
+  <section class="collectible-categories-section section">
 
-  <div class="container collectibles-container">
+    <div class="container collectibles-container">
 
+      <div class="section-heading">
 
-    <div class="section-heading">
-
-      <span class="eyebrow">
-        DEPOIS DO LANÇAMENTO
-      </span>
-
-      <h2>
-        O que vamos documentar
-      </h2>
-
-
-      <p>
-
-        Quando os sistemas reais forem conhecidos,
-        a Wiki poderá servir tanto para encontrar
-        um único item quanto para completar 100%.
-
-      </p>
-
-    </div>
-
-
-    <div class="progress-grid">
-
-
-      <div class="progress-card">
-
-        <span class="future-status">
-          FUTURO
+        <span class="eyebrow">
+          ORGANIZAÇÃO
         </span>
 
-        <h3>
-          Total
-        </h3>
+        <h2>
+          O catálogo poderá ser dividido por conjuntos
+        </h2>
 
         <p>
-          Quantidade exata por conjunto.
+
+          Ainda não conhecemos as categorias reais.
+
+          Os blocos abaixo representam apenas
+          como a Wiki poderá ser organizada quando
+          os sistemas forem descobertos.
+
         </p>
 
       </div>
 
 
-      <div class="progress-card">
-
-        <span class="future-status">
-          FUTURO
-        </span>
-
-        <h3>
-          Checklist
-        </h3>
-
-        <p>
-          Organização para completar todos.
-        </p>
-
-      </div>
-
-
-      <div class="progress-card">
-
-        <span class="future-status">
-          FUTURO
-        </span>
-
-        <h3>
-          Regiões
-        </h3>
-
-        <p>
-          Quantidade por área do mapa.
-        </p>
-
-      </div>
-
-
-      <div class="progress-card">
-
-        <span class="future-status">
-          FUTURO
-        </span>
-
-        <h3>
-          Recompensas
-        </h3>
-
-        <p>
-          Prêmios por completar conjuntos.
-        </p>
-
-      </div>
-
-
-      <div class="progress-card">
-
-        <span class="future-status">
-          FUTURO
-        </span>
-
-        <h3>
-          Ordem ideal
-        </h3>
-
-        <p>
-          Rotas eficientes de coleta.
-        </p>
-
-      </div>
-
-
-      <div class="progress-card">
-
-        <span class="future-status">
-          FUTURO
-        </span>
-
-        <h3>
-          Vídeos
-        </h3>
-
-        <p>
-          Guias próprios no YouTube.
-        </p>
-
-      </div>
-
-
-      <div class="progress-card">
-
-        <span class="future-status">
-          FUTURO
-        </span>
-
-        <h3>
-          Mapa
-        </h3>
-
-        <p>
-          Pins e filtros específicos.
-        </p>
-
-      </div>
-
-
-      <div class="progress-card">
-
-        <span class="future-status">
-          FUTURO
-        </span>
-
-        <h3>
-          100%
-        </h3>
-
-        <p>
-          Impacto na conclusão do jogo.
-        </p>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================================================
-     ONLINE
-========================================================= -->
-
-<section class="online-section section">
-
-  <div class="container collectibles-container">
-
-
-    <div class="online-panel">
-
-
-      <span class="eyebrow">
-        SINGLE-PLAYER
-      </span>
-
-
-      <h2>
-        Colecionáveis do Online também ficarão separados
-      </h2>
-
-
-      <p>
-
-        Esta página pertence à Wiki da campanha
-        de GTA VI.
-
-        Se o futuro componente Online possuir
-        colecionáveis exclusivos, desafios temporários
-        ou conjuntos próprios, eles serão organizados
-        separadamente dentro da área Online.
-
-      </p>
-
-
-      <span class="online-route">
-        /online/colecionaveis/
-      </span>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================================================
-     FONTES
-========================================================= -->
-
-<section class="section">
-
-  <div class="container collectibles-container">
-
-
-    <div class="sources-box">
-
-
-      <span class="eyebrow">
-        FONTES OFICIAIS
-      </span>
-
-
-      <h2>
-        Rockstar Games
-      </h2>
-
-
-      <p>
-
-        O catálogo permanecerá sem colecionáveis
-        individuais até que existam informações
-        suficientemente confiáveis.
-
-        Conteúdos com palavras como “collection”
-        também não serão automaticamente classificados
-        como sistemas de colecionáveis.
-
-      </p>
-
-
-      <p>
+      <div class="collectible-category-grid">
 
         <a
-          href="https://www.rockstargames.com/VI"
-          target="_blank"
-          rel="noopener noreferrer">
+          class="collectible-category-card"
+          href="#catalogo">
 
-          Rockstar Games — Grand Theft Auto VI
+          <span class="collectible-category-number">
+            01
+          </span>
+
+          <h3>
+            Itens escondidos
+          </h3>
+
+          <p>
+
+            Objetos espalhados pelo mundo,
+            caso existam conjuntos desse tipo.
+
+          </p>
+
+          <span class="collectible-category-status">
+            A verificar
+          </span>
 
         </a>
 
-      </p>
-
-
-      <p>
 
         <a
-          href="https://www.rockstargames.com/VI/media"
-          target="_blank"
-          rel="noopener noreferrer">
+          class="collectible-category-card"
+          href="#catalogo">
 
-          Rockstar Games — GTA VI Media
+          <span class="collectible-category-number">
+            02
+          </span>
+
+          <h3>
+            Conjuntos
+          </h3>
+
+          <p>
+
+            Coleções formadas por vários itens
+            relacionados entre si.
+
+          </p>
+
+          <span class="collectible-category-status">
+            A verificar
+          </span>
 
         </a>
 
-      </p>
-
-
-      <p>
 
         <a
-          href="https://www.rockstargames.com/VI/media/screenshots"
-          target="_blank"
-          rel="noopener noreferrer">
+          class="collectible-category-card"
+          href="#catalogo">
 
-          Rockstar Games — GTA VI Screenshots
+          <span class="collectible-category-number">
+            03
+          </span>
+
+          <h3>
+            Descobertas
+          </h3>
+
+          <p>
+
+            Pontos ou elementos especiais de exploração,
+            se GTA VI utilizar esse sistema.
+
+          </p>
+
+          <span class="collectible-category-status">
+            A verificar
+          </span>
 
         </a>
 
-      </p>
-
-
-      <p>
 
         <a
-          href="https://www.rockstargames.com/vi/ps5/editions"
-          target="_blank"
-          rel="noopener noreferrer">
+          class="collectible-category-card"
+          href="#catalogo">
 
-          Rockstar Games — GTA VI Editions
+          <span class="collectible-category-number">
+            04
+          </span>
+
+          <h3>
+            Outros
+          </h3>
+
+          <p>
+
+            Sistemas que não se encaixem
+            nas demais categorias.
+
+          </p>
+
+          <span class="collectible-category-status">
+            A verificar
+          </span>
 
         </a>
 
-      </p>
-
+      </div>
 
     </div>
 
-  </div>
+  </section>
 
-</section>
+
+  <!-- =========================================================
+       CATÁLOGO
+  ========================================================== -->
+
+  <section
+    class="catalog-section section"
+    id="catalogo">
+
+    <div class="container collectibles-container">
+
+      <div class="section-heading">
+
+        <span class="eyebrow">
+          CATÁLOGO
+        </span>
+
+        <h2>
+          Colecionáveis identificados
+        </h2>
+
+      </div>
+
+
+      <div class="empty-catalog">
+
+        <strong>
+          Nenhum conjunto individual catalogado ainda
+        </strong>
+
+        <p>
+
+          Quando os primeiros colecionáveis puderem
+          ser identificados de maneira confiável,
+          criaremos aqui os cartões de acesso aos
+          respectivos guias.
+
+          Até lá, esta área permanece propositalmente
+          vazia em vez de ser preenchida com especulação.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       DIFERENÇA ENTRE CONTEÚDOS
+  ========================================================== -->
+
+  <section class="difference-section section">
+
+    <div class="container collectibles-container">
+
+      <div class="difference-panel">
+
+        <span class="eyebrow">
+          ORGANIZAÇÃO DA WIKI
+        </span>
+
+        <h2>
+          Colecionável não é qualquer item que possa ser colecionado
+        </h2>
+
+        <p>
+
+          Essa distinção evita que veículos,
+          armas e objetos de personalização
+          acabem duplicados dentro desta seção.
+
+        </p>
+
+
+        <div class="difference-grid">
+
+          <div class="difference-card">
+
+            <strong>
+              Veículos
+            </strong>
+
+            <p>
+
+              Continuam catalogados em
+              <code>/veiculos/</code>, mesmo quando fazem
+              parte de uma coleção temática.
+
+            </p>
+
+          </div>
+
+
+          <div class="difference-card">
+
+            <strong>
+              Armas e itens
+            </strong>
+
+            <p>
+
+              Equipamentos utilizáveis permanecem
+              em suas respectivas áreas da Wiki.
+
+            </p>
+
+          </div>
+
+
+          <div class="difference-card">
+
+            <strong>
+              Colecionáveis
+            </strong>
+
+            <p>
+
+              Aqui entram sistemas de busca,
+              descoberta ou conjuntos espalhados
+              pelo jogo quando forem confirmados.
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       CLASSIC CAR COLLECTION
+  ========================================================== -->
+
+  <section class="classic-section section">
+
+    <div class="container collectibles-container">
+
+      <div class="classic-panel">
+
+        <div class="classic-copy">
+
+          <span class="eyebrow">
+            EXEMPLO DE CAUTELA
+          </span>
+
+          <h2>
+            E a Classic Car Collection?
+          </h2>
+
+          <p>
+
+            A Rockstar confirmou oficialmente um conteúdo
+            chamado <strong>Classic Car Collection</strong>
+            como parte da Ultimate Edition de GTA VI.
+
+          </p>
+
+          <p>
+
+            A galeria oficial de screenshots também possui
+            seis imagens identificadas como Classic Car
+            Collection 01 até 06.
+
+          </p>
+
+          <p>
+
+            Apesar da palavra “Collection”, isso não é
+            suficiente para classificarmos esse conteúdo
+            como um sistema de colecionáveis da campanha.
+
+            Trataremos esse conteúdo dentro da estrutura
+            de Veículos enquanto aguardamos detalhes
+            adicionais.
+
+          </p>
+
+        </div>
+
+
+        <div class="classic-facts">
+
+          <div class="classic-fact">
+
+            <strong>
+              Nome
+            </strong>
+
+            <p>
+              Classic Car Collection.
+            </p>
+
+          </div>
+
+
+          <div class="classic-fact">
+
+            <strong>
+              Material oficial
+            </strong>
+
+            <p>
+              6 screenshots publicados.
+            </p>
+
+          </div>
+
+
+          <div class="classic-fact">
+
+            <strong>
+              Contexto
+            </strong>
+
+            <p>
+              Conteúdo incluído na Ultimate Edition.
+            </p>
+
+          </div>
+
+
+          <div class="classic-fact">
+
+            <strong>
+              Colecionável da campanha?
+            </strong>
+
+            <p>
+              Não classificamos dessa forma atualmente.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       MAPA
+  ========================================================== -->
+
+  <section class="map-section section">
+
+    <div class="container collectibles-container">
+
+      <div class="map-panel">
+
+        <span class="eyebrow">
+          MAPA INTERATIVO
+        </span>
+
+        <h2>
+          Colecionáveis e mapa poderão trabalhar juntos
+        </h2>
+
+        <p>
+
+          Depois do lançamento, essa poderá ser uma das
+          integrações mais úteis do GTA6Zoone.
+
+          Cada colecionável poderá ter localização,
+          região e ligação direta com o mapa interativo,
+          caso o jogo possua sistemas desse tipo.
+
+        </p>
+
+
+        <div class="map-grid">
+
+          <div class="map-card">
+
+            <strong>
+              Marcadores
+            </strong>
+
+            <span>
+              Pins específicos no mapa.
+            </span>
+
+          </div>
+
+
+          <div class="map-card">
+
+            <strong>
+              Filtros
+            </strong>
+
+            <span>
+              Exibir somente determinado conjunto.
+            </span>
+
+          </div>
+
+
+          <div class="map-card">
+
+            <strong>
+              Regiões
+            </strong>
+
+            <span>
+              Separação por área de Leonida.
+            </span>
+
+          </div>
+
+
+          <div class="map-card">
+
+            <strong>
+              Progresso
+            </strong>
+
+            <span>
+              Estrutura preparada para guias completos.
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       FUTURAS FICHAS
+  ========================================================== -->
+
+  <section class="collectible-pages-section section">
+
+    <div class="container collectibles-container">
+
+      <div class="collectible-pages-panel">
+
+        <div>
+
+          <span class="eyebrow">
+            FUTUROS GUIAS
+          </span>
+
+          <h2>
+            Cada conjunto poderá ter sua própria página
+          </h2>
+
+          <p>
+
+            Não será necessário criar uma página
+            para cada pequeno objeto individual.
+
+            O mais organizado será criar uma ficha
+            para cada conjunto de colecionáveis,
+            caso esse tipo de sistema seja confirmado.
+
+          </p>
+
+          <p>
+
+            Dentro dela poderemos reunir todos os itens,
+            localização, imagens, mapa e progresso.
+
+          </p>
+
+        </div>
+
+
+        <div class="collectible-page-features">
+
+          <div class="collectible-page-feature">
+            <strong>Quantidade</strong>
+            <span>Total de itens do conjunto.</span>
+          </div>
+
+          <div class="collectible-page-feature">
+            <strong>Localizações</strong>
+            <span>Onde encontrar cada item.</span>
+          </div>
+
+          <div class="collectible-page-feature">
+            <strong>Screenshots</strong>
+            <span>Referência visual de cada ponto.</span>
+          </div>
+
+          <div class="collectible-page-feature">
+            <strong>Mapa</strong>
+            <span>Localização ligada ao mapa interativo.</span>
+          </div>
+
+          <div class="collectible-page-feature">
+            <strong>Ordem</strong>
+            <span>Rota eficiente para completar o conjunto.</span>
+          </div>
+
+          <div class="collectible-page-feature">
+            <strong>Recompensa</strong>
+            <span>O que é desbloqueado ao concluir.</span>
+          </div>
+
+          <div class="collectible-page-feature">
+            <strong>Requisitos</strong>
+            <span>Condições necessárias, se houver.</span>
+          </div>
+
+          <div class="collectible-page-feature">
+            <strong>Gameplay</strong>
+            <span>Guia em vídeo do GTA6Zoone.</span>
+          </div>
+
+          <div class="collectible-page-feature">
+            <strong>100%</strong>
+            <span>Relação com a conclusão total do jogo.</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       PROGRESSO
+  ========================================================== -->
+
+  <section class="progress-section section">
+
+    <div class="container collectibles-container">
+
+      <div class="section-heading">
+
+        <span class="eyebrow">
+          DEPOIS DO LANÇAMENTO
+        </span>
+
+        <h2>
+          O que vamos documentar
+        </h2>
+
+        <p>
+
+          Quando os sistemas reais forem conhecidos,
+          a Wiki poderá servir tanto para encontrar
+          um único item quanto para completar 100%.
+
+        </p>
+
+      </div>
+
+
+      <div class="progress-grid">
+
+        <div class="progress-card">
+          <span class="future-status">A VERIFICAR</span>
+          <h3>Total</h3>
+          <p>Quantidade exata por conjunto.</p>
+        </div>
+
+        <div class="progress-card">
+          <span class="future-status">A VERIFICAR</span>
+          <h3>Checklist</h3>
+          <p>Organização para completar todos.</p>
+        </div>
+
+        <div class="progress-card">
+          <span class="future-status">A VERIFICAR</span>
+          <h3>Regiões</h3>
+          <p>Quantidade por área do mapa.</p>
+        </div>
+
+        <div class="progress-card">
+          <span class="future-status">A VERIFICAR</span>
+          <h3>Recompensas</h3>
+          <p>Prêmios por completar conjuntos.</p>
+        </div>
+
+        <div class="progress-card">
+          <span class="future-status">A VERIFICAR</span>
+          <h3>Ordem ideal</h3>
+          <p>Rotas eficientes de coleta.</p>
+        </div>
+
+        <div class="progress-card">
+          <span class="future-status">A VERIFICAR</span>
+          <h3>Vídeos</h3>
+          <p>Guias próprios no YouTube.</p>
+        </div>
+
+        <div class="progress-card">
+          <span class="future-status">A VERIFICAR</span>
+          <h3>Mapa</h3>
+          <p>Pins e filtros específicos.</p>
+        </div>
+
+        <div class="progress-card">
+          <span class="future-status">A VERIFICAR</span>
+          <h3>100%</h3>
+          <p>Impacto na conclusão do jogo.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       ONLINE
+  ========================================================== -->
+
+  <section class="online-section section">
+
+    <div class="container collectibles-container">
+
+      <div class="online-panel">
+
+        <span class="eyebrow">
+          SINGLE-PLAYER
+        </span>
+
+        <h2>
+          Colecionáveis do Online também ficarão separados
+        </h2>
+
+        <p>
+
+          Esta página pertence à Wiki da campanha
+          de GTA VI.
+
+          Se o futuro componente Online possuir
+          colecionáveis exclusivos, desafios temporários
+          ou conjuntos próprios, eles serão organizados
+          separadamente dentro da área Online.
+
+        </p>
+
+        <span class="online-route">
+          /online/colecionaveis/
+        </span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       FONTES
+  ========================================================== -->
+
+  <section class="section">
+
+    <div class="container collectibles-container">
+
+      <div class="sources-box">
+
+        <span class="eyebrow">
+          FONTES OFICIAIS
+        </span>
+
+        <h2>
+          Rockstar Games
+        </h2>
+
+        <p>
+
+          O catálogo permanecerá sem colecionáveis
+          individuais até que existam informações
+          suficientemente confiáveis.
+
+          Conteúdos com palavras como “collection”
+          também não serão automaticamente classificados
+          como sistemas de colecionáveis.
+
+        </p>
+
+        <p>
+
+          <a
+            href="https://www.rockstargames.com/VI"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            Rockstar Games — Grand Theft Auto VI
+
+          </a>
+
+        </p>
+
+        <p>
+
+          <a
+            href="https://www.rockstargames.com/VI/media"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            Rockstar Games — GTA VI Media
+
+          </a>
+
+        </p>
+
+        <p>
+
+          <a
+            href="https://www.rockstargames.com/VI/media/screenshots"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            Rockstar Games — GTA VI Screenshots
+
+          </a>
+
+        </p>
+
+        <p>
+
+          <a
+            href="https://www.rockstargames.com/vi/ps5/editions"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            Rockstar Games — GTA VI Editions
+
+          </a>
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
 
 
 </main>
@@ -2446,15 +2155,13 @@
 
 <!-- =========================================================
      FOOTER
-========================================================= -->
+========================================================== -->
 
 <footer class="site-footer">
 
   <div class="container">
 
-
     <div class="footer-grid">
-
 
       <div>
 
@@ -2463,10 +2170,8 @@
         </strong>
 
         <p class="muted">
-
           Portal e enciclopédia independente em português
           sobre Grand Theft Auto VI.
-
         </p>
 
       </div>
@@ -2541,7 +2246,6 @@
 
       </div>
 
-
     </div>
 
 
@@ -2553,7 +2257,6 @@
 
     </p>
 
-
   </div>
 
 </footer>
@@ -2561,3 +2264,4 @@
 
 </body>
 </html>
+```

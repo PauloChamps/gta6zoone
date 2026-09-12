@@ -10,31 +10,38 @@
 
   <link
     rel="icon"
-    type="image/png"
-    href="../assets/images/branding/favicon.png">
+    type="image/webp"
+    href="../assets/images/branding/favicon.webp">
 
-  <title>Mapa Interativo de GTA 6 | Leonida e Vice City | GTA6Zoone</title>
+  <title>Mapa interativo de GTA 6: Vice City e Leonida | GTA6Zoone</title>
 
   <meta
     name="description"
-    content="Explore o mapa interativo de GTA 6 no GTA6Zoone. Encontre locais, missões, propriedades, atividades, colecionáveis e outros pontos de interesse de Leonida.">
+    content="Explore a estrutura do mapa interativo de GTA 6 no GTA6Zoone e conheça Vice City, Leonida Keys, Port Gellhorn, Ambrosia, Grassrivers e Mount Kalaga.">
+
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large">
 
   <link
     rel="canonical"
     href="https://gta6zoone.com.br/mapa/">
 
 
+
   <!-- OPEN GRAPH -->
 
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="GTA6Zoone">
 
   <meta
     property="og:title"
-    content="Mapa Interativo de GTA 6 | GTA6Zoone">
+    content="Mapa interativo de GTA 6: Vice City e Leonida | GTA6Zoone">
 
   <meta
     property="og:description"
-    content="Mapa interativo de GTA VI preparado para catalogar locais, missões, propriedades, atividades e outros pontos de interesse de Leonida.">
+    content="Explore a estrutura do mapa interativo de GTA VI e as regiões de Leonida oficialmente apresentadas pela Rockstar Games.">
 
   <meta
     property="og:url"
@@ -42,11 +49,35 @@
 
   <meta
     property="og:image"
-    content="https://gta6zoone.com.br/assets/images/branding/banner01.jpg">
+    content="https://gta6zoone.com.br/assets/images/branding/banner01.webp">
+
+  <meta
+    property="og:image:alt"
+    content="GTA6Zoone — mapa interativo de GTA 6">
 
   <meta
     name="twitter:card"
     content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Mapa interativo de GTA 6: Vice City e Leonida | GTA6Zoone">
+
+  <meta
+    name="twitter:description"
+    content="Estrutura do mapa interativo de GTA VI e regiões de Leonida oficialmente apresentadas pela Rockstar Games.">
+
+  <meta
+    name="twitter:image"
+    content="https://gta6zoone.com.br/assets/images/branding/banner01.webp">
+
+  <meta
+    name="twitter:image:alt"
+    content="GTA6Zoone — mapa interativo de GTA 6">
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
+       crossorigin="anonymous"></script>
+
 
 
   <!-- =========================================================
@@ -56,6 +87,7 @@
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/components.css">
   <link rel="stylesheet" href="../assets/css/responsive.css">
+
 
 
   <!-- =========================================================
@@ -87,6 +119,7 @@
     }
 
 
+
     /* =========================================================
        INTRO
     ========================================================= */
@@ -110,6 +143,7 @@
     .map-intro .lede {
       max-width: 820px;
     }
+
 
 
     /* =========================================================
@@ -159,6 +193,7 @@
     }
 
 
+
     /* =========================================================
        MAPA — ÁREA PRINCIPAL
     ========================================================= */
@@ -171,6 +206,7 @@
       width: 100%;
       max-width: 100%;
     }
+
 
 
     /* =========================================================
@@ -208,6 +244,7 @@
     }
 
 
+
     /* =========================================================
        FILTROS
     ========================================================= */
@@ -236,6 +273,7 @@
     }
 
 
+
     /* =========================================================
        MAP LAYOUT
     ========================================================= */
@@ -258,6 +296,7 @@
     .map-pin[hidden] {
       display: none !important;
     }
+
 
 
     /* =========================================================
@@ -360,6 +399,7 @@
     }
 
 
+
     /* =========================================================
        DETALHES
     ========================================================= */
@@ -375,6 +415,7 @@
     .map-detail-status {
       margin-bottom: .75rem;
     }
+
 
 
     /* =========================================================
@@ -422,6 +463,7 @@
     }
 
 
+
     /* =========================================================
        REGIÕES
     ========================================================= */
@@ -465,6 +507,7 @@
 
       margin-top: .5rem;
     }
+
 
 
     /* =========================================================
@@ -525,6 +568,7 @@
     }
 
 
+
     /* =========================================================
        NOTA EDITORIAL
     ========================================================= */
@@ -551,6 +595,7 @@
     .map-editorial p:last-child {
       margin-bottom: 0;
     }
+
 
 
     /* =========================================================
@@ -593,6 +638,7 @@
     }
 
 
+
     /* =========================================================
        TABLET
     ========================================================= */
@@ -617,6 +663,7 @@
     }
 
 
+
     /* =========================================================
        DESKTOP
     ========================================================= */
@@ -637,6 +684,7 @@
   </style>
 
 
+
   <!-- =========================================================
        SCHEMA
   ========================================================= -->
@@ -644,17 +692,68 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Mapa Interativo de GTA 6",
-    "description": "Mapa interativo GTA6Zoone para explorar locais e pontos de interesse de Grand Theft Auto VI.",
-    "url": "https://gta6zoone.com.br/mapa/",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "GTA6Zoone",
-      "url": "https://gta6zoone.com.br/"
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://gta6zoone.com.br/#organization",
+        "name": "GTA6Zoone",
+        "url": "https://gta6zoone.com.br/",
+        "sameAs": [
+          "https://www.instagram.com/gta6zoone/",
+          "https://www.youtube.com/channel/UCR-PxT2Lt8Pte8I_f_zdtDg"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://gta6zoone.com.br/#website",
+        "url": "https://gta6zoone.com.br/",
+        "name": "GTA6Zoone",
+        "inLanguage": "pt-BR",
+        "publisher": {
+          "@id": "https://gta6zoone.com.br/#organization"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://gta6zoone.com.br/mapa/#webpage",
+        "url": "https://gta6zoone.com.br/mapa/",
+        "name": "Mapa interativo de GTA 6: Vice City e Leonida",
+        "description": "Estrutura do mapa interativo GTA6Zoone e regiões de Leonida oficialmente apresentadas em Grand Theft Auto VI.",
+        "inLanguage": "pt-BR",
+        "dateModified": "2026-09-11",
+        "isPartOf": {
+          "@id": "https://gta6zoone.com.br/#website"
+        },
+        "about": {
+          "@type": "VideoGame",
+          "name": "Grand Theft Auto VI"
+        },
+        "breadcrumb": {
+          "@id": "https://gta6zoone.com.br/mapa/#breadcrumb"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://gta6zoone.com.br/mapa/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://gta6zoone.com.br/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Mapa interativo",
+            "item": "https://gta6zoone.com.br/mapa/"
+          }
+        ]
+      }
+    ]
   }
   </script>
+
 
 
   <!-- =========================================================
@@ -668,7 +767,9 @@
 </head>
 
 
+
 <body>
+
 
 
 <a
@@ -678,6 +779,7 @@
   Pular para o conteúdo
 
 </a>
+
 
 
 <!-- =========================================================
@@ -690,10 +792,11 @@
 
   <img
     class="banner-image"
-    src="../assets/images/branding/banner01.jpg"
+    src="../assets/images/branding/banner01.webp"
     alt="">
 
 </div>
+
 
 
 <!-- =========================================================
@@ -703,6 +806,7 @@
 <header class="site-header">
 
   <div class="container header-inner">
+
 
 
     <!-- MARCA -->
@@ -719,6 +823,7 @@
     </a>
 
 
+
     <!-- ==================================================
          MENU DESKTOP
     ================================================== -->
@@ -728,14 +833,17 @@
       aria-label="Navegação principal">
 
 
+
       <a href="../index.html">
         INÍCIO
       </a>
 
 
+
       <a href="../gta-6/index.html">
         GTA 6
       </a>
+
 
 
       <!-- ONLINE -->
@@ -750,6 +858,7 @@
           ONLINE ▾
 
         </button>
+
 
 
         <div class="dropdown-menu">
@@ -799,14 +908,19 @@
       </div>
 
 
+
       <a href="../noticias/index.html">
         NOTÍCIAS
       </a>
 
 
-      <a href="../mapa/index.html">
+
+      <a
+        href="../mapa/index.html"
+        aria-current="page">
         MAPA
       </a>
+
 
 
       <!-- WIKI -->
@@ -821,6 +935,7 @@
           WIKI ▾
 
         </button>
+
 
 
         <div class="dropdown-menu">
@@ -862,6 +977,7 @@
       </div>
 
 
+
       <!-- GUIAS -->
 
       <div class="dropdown">
@@ -874,6 +990,7 @@
           GUIAS ▾
 
         </button>
+
 
 
         <div class="dropdown-menu">
@@ -915,17 +1032,21 @@
       </div>
 
 
+
       <a href="../buscar/index.html">
         PESQUISAR
       </a>
 
 
+
     </nav>
+
 
 
     <!-- BOTÃO MOBILE -->
 
     <button
+      type="button"
       class="menu-button"
       data-menu-open
       aria-controls="mobile-menu"
@@ -937,9 +1058,11 @@
     </button>
 
 
+
   </div>
 
 </header>
+
 
 
 <!-- =========================================================
@@ -949,11 +1072,13 @@
 <div class="mobile-overlay"></div>
 
 
+
 <aside
   class="mobile-menu"
   id="mobile-menu"
   aria-label="Menu mobile"
   aria-hidden="true">
+
 
 
   <div class="mobile-menu-head">
@@ -963,6 +1088,7 @@
     </strong>
 
     <button
+      type="button"
       class="close-menu"
       data-menu-close
       aria-label="Fechar menu">
@@ -974,7 +1100,9 @@
   </div>
 
 
+
   <nav class="mobile-links">
+
 
 
     <a href="../index.html">
@@ -982,14 +1110,17 @@
     </a>
 
 
+
     <a href="../gta-6/index.html">
       GTA 6
     </a>
 
 
+
     <!-- ONLINE MOBILE -->
 
     <button
+      type="button"
       class="submenu-toggle"
       aria-expanded="false"
       aria-controls="mobile-online">
@@ -997,6 +1128,7 @@
       Online +
 
     </button>
+
 
 
     <div
@@ -1046,19 +1178,25 @@
     </div>
 
 
+
     <a href="../noticias/index.html">
       Notícias
     </a>
 
 
-    <a href="../mapa/index.html">
+
+    <a
+      href="../mapa/index.html"
+      aria-current="page">
       Mapa
     </a>
+
 
 
     <!-- WIKI MOBILE -->
 
     <button
+      type="button"
       class="submenu-toggle"
       aria-expanded="false"
       aria-controls="mobile-wiki">
@@ -1066,6 +1204,7 @@
       Wiki +
 
     </button>
+
 
 
     <div
@@ -1107,9 +1246,11 @@
     </div>
 
 
+
     <!-- GUIAS MOBILE -->
 
     <button
+      type="button"
       class="submenu-toggle"
       aria-expanded="false"
       aria-controls="mobile-guias">
@@ -1117,6 +1258,7 @@
       Guias +
 
     </button>
+
 
 
     <div
@@ -1158,12 +1300,15 @@
     </div>
 
 
+
     <a href="../buscar/index.html">
       Buscar
     </a>
 
 
+
   </nav>
+
 
 
   <!-- REDES SOCIAIS MOBILE -->
@@ -1193,7 +1338,9 @@
   </div>
 
 
+
 </aside>
+
 
 
 <!-- =========================================================
@@ -1205,6 +1352,7 @@
   class="map-page">
 
 
+
 <!-- =========================================================
      INTRO
 ========================================================= -->
@@ -1212,6 +1360,7 @@
 <section class="page-intro map-intro">
 
   <div class="container map-block">
+
 
 
     <nav
@@ -1224,9 +1373,12 @@
 
       ›
 
-      Mapa interativo
+      <span aria-current="page">
+        Mapa interativo
+      </span>
 
     </nav>
+
 
 
     <div class="map-intro-content">
@@ -1249,7 +1401,7 @@
 
       <p>
 
-        O mapa do GTA6Zoone será expandido conforme
+        O mapa do GTA6Zoone poderá ser expandido conforme
         novas regiões e informações forem oficialmente
         conhecidas e, principalmente, após o lançamento
         de GTA VI.
@@ -1257,6 +1409,7 @@
       </p>
 
     </div>
+
 
 
     <div class="map-notice">
@@ -1277,9 +1430,11 @@
     </div>
 
 
+
   </div>
 
 </section>
+
 
 
 <!-- =========================================================
@@ -1289,6 +1444,7 @@
 <section class="section interactive-map-section">
 
   <div class="container map-block">
+
 
 
     <div class="map-heading">
@@ -1304,19 +1460,22 @@
       <p class="muted">
 
         Use a pesquisa, filtros e controles de zoom
-        para navegar pelos marcadores disponíveis.
+        para navegar pelos marcadores que estiverem disponíveis.
 
       </p>
 
     </div>
 
 
+
     <div class="interactive-map-shell">
+
 
 
       <!-- TOOLBAR -->
 
       <div class="map-toolbar">
+
 
 
         <div class="map-search">
@@ -1330,6 +1489,7 @@
             autocomplete="off">
 
         </div>
+
 
 
         <div class="map-controls">
@@ -1346,6 +1506,7 @@
           </button>
 
 
+
           <button
             class="btn btn-secondary"
             type="button"
@@ -1356,6 +1517,7 @@
             ＋
 
           </button>
+
 
 
           <button
@@ -1370,6 +1532,7 @@
           </button>
 
 
+
           <button
             class="btn btn-secondary"
             type="button"
@@ -1382,7 +1545,9 @@
         </div>
 
 
+
       </div>
+
 
 
       <!-- FILTROS -->
@@ -1390,6 +1555,7 @@
       <div
         class="map-filters"
         id="map-filters">
+
 
 
         <button
@@ -1403,6 +1569,7 @@
         </button>
 
 
+
         <button
           class="filter"
           type="button"
@@ -1412,6 +1579,7 @@
           Missões
 
         </button>
+
 
 
         <button
@@ -1425,6 +1593,7 @@
         </button>
 
 
+
         <button
           class="filter"
           type="button"
@@ -1434,6 +1603,7 @@
           Armas
 
         </button>
+
 
 
         <button
@@ -1447,6 +1617,7 @@
         </button>
 
 
+
         <button
           class="filter"
           type="button"
@@ -1456,6 +1627,7 @@
           Propriedades
 
         </button>
+
 
 
         <button
@@ -1469,6 +1641,7 @@
         </button>
 
 
+
         <button
           class="filter"
           type="button"
@@ -1478,6 +1651,7 @@
           Colecionáveis
 
         </button>
+
 
 
         <button
@@ -1491,6 +1665,7 @@
         </button>
 
 
+
         <button
           class="filter"
           type="button"
@@ -1502,7 +1677,9 @@
         </button>
 
 
+
       </div>
+
 
 
       <!-- MAPA -->
@@ -1510,18 +1687,23 @@
       <div class="map-layout">
 
 
+
         <div
           class="map-viewport"
           aria-label="Área do mapa interativo de GTA VI">
 
 
+
           <div class="map-canvas">
+
 
 
             <div class="map-placeholder">
 
 
+
               <div class="map-placeholder-content">
+
 
 
                 <div class="map-placeholder-inner">
@@ -1536,8 +1718,8 @@
 
                   <p>
 
-                    A base definitiva do mapa será inserida aqui
-                    sem alterar o sistema de pins, filtros,
+                    A base definitiva do mapa poderá ser inserida aqui
+                    sem exigir mudanças no sistema de pins, filtros,
                     zoom e navegação.
 
                   </p>
@@ -1545,16 +1727,21 @@
                 </div>
 
 
+
               </div>
+
 
 
             </div>
 
 
+
           </div>
 
 
+
         </div>
+
 
 
         <!-- DETALHES -->
@@ -1563,6 +1750,7 @@
           class="map-detail"
           data-map-detail
           aria-live="polite">
+
 
 
           <div class="map-detail-status">
@@ -1574,31 +1762,38 @@
           </div>
 
 
+
           <h2>
             Detalhes
           </h2>
 
 
+
           <p class="muted">
 
             Selecione um marcador no mapa para visualizar
-            suas informações.
+            suas informações, quando houver marcadores disponíveis.
 
           </p>
+
 
 
         </aside>
 
 
+
       </div>
+
 
 
     </div>
 
 
+
   </div>
 
 </section>
+
 
 
 <!-- =========================================================
@@ -1610,6 +1805,7 @@
   <div class="container map-block">
 
 
+
     <div class="map-heading">
 
       <span class="eyebrow">
@@ -1617,7 +1813,7 @@
       </span>
 
       <h2>
-        Como o mapa vai funcionar
+        Como o mapa poderá funcionar
       </h2>
 
       <p class="muted">
@@ -1630,7 +1826,9 @@
     </div>
 
 
+
     <div class="map-feature-grid">
+
 
 
       <article class="map-feature-card">
@@ -1654,6 +1852,7 @@
       </article>
 
 
+
       <article class="map-feature-card">
 
         <span class="eyebrow">
@@ -1673,6 +1872,7 @@
         </p>
 
       </article>
+
 
 
       <article class="map-feature-card">
@@ -1696,12 +1896,15 @@
       </article>
 
 
+
     </div>
+
 
 
   </div>
 
 </section>
+
 
 
 <!-- =========================================================
@@ -1711,6 +1914,7 @@
 <section class="section">
 
   <div class="container map-block">
+
 
 
     <div class="map-heading">
@@ -1734,7 +1938,9 @@
     </div>
 
 
+
     <div class="map-region-grid">
+
 
 
       <!-- VICE CITY -->
@@ -1768,6 +1974,7 @@
       </article>
 
 
+
       <!-- LEONIDA KEYS -->
 
       <article class="map-region-card">
@@ -1799,6 +2006,7 @@
       </article>
 
 
+
       <!-- PORT GELLHORN -->
 
       <article class="map-region-card">
@@ -1813,10 +2021,9 @@
 
         <p>
 
-          Um antigo destino turístico de Leonida,
-          apresentado pela Rockstar como uma região que
-          atualmente vive uma realidade muito diferente
-          de seus tempos de maior movimento.
+          Um dos destinos oficialmente apresentados
+          de Leonida, com material próprio divulgado
+          pela Rockstar Games.
 
         </p>
 
@@ -1829,6 +2036,7 @@
         </a>
 
       </article>
+
 
 
       <!-- AMBROSIA -->
@@ -1862,6 +2070,7 @@
       </article>
 
 
+
       <!-- GRASSRIVERS -->
 
       <article class="map-region-card">
@@ -1876,9 +2085,9 @@
 
         <p>
 
-          Região de wetlands de Leonida apresentada
-          oficialmente pela Rockstar, com manguezais,
-          áreas alagadas e alligators.
+          Um dos destinos de Leonida oficialmente
+          apresentados pela Rockstar Games, com
+          material próprio de divulgação.
 
         </p>
 
@@ -1891,6 +2100,7 @@
         </a>
 
       </article>
+
 
 
       <!-- MOUNT KALAGA -->
@@ -1924,12 +2134,15 @@
       </article>
 
 
+
     </div>
+
 
 
   </div>
 
 </section>
+
 
 
 <!-- =========================================================
@@ -1941,6 +2154,7 @@
   <div class="container map-block">
 
 
+
     <div class="map-heading">
 
       <span class="eyebrow">
@@ -1948,20 +2162,23 @@
       </span>
 
       <h2>
-        O que você encontrará no mapa
+        O que poderá aparecer no mapa
       </h2>
 
       <p class="muted">
 
-        O mapa será conectado às diferentes áreas
-        da enciclopédia GTA6Zoone.
+        O mapa poderá ser conectado às diferentes áreas
+        da enciclopédia GTA6Zoone conforme os dados
+        forem sendo verificados.
 
       </p>
 
     </div>
 
 
+
     <div class="map-category-grid">
+
 
 
       <a
@@ -1983,6 +2200,7 @@
       </a>
 
 
+
       <a
         class="map-category-card"
         href="../missoes/index.html">
@@ -1996,10 +2214,11 @@
         </h3>
 
         <p>
-          Pontos relacionados às missões do jogo.
+          Pontos relacionados às missões, quando puderem ser verificados.
         </p>
 
       </a>
+
 
 
       <a
@@ -2015,10 +2234,11 @@
         </h3>
 
         <p>
-          Casas, negócios e outros imóveis.
+          Casas, negócios e outros imóveis, quando confirmados.
         </p>
 
       </a>
+
 
 
       <a
@@ -2034,10 +2254,11 @@
         </h3>
 
         <p>
-          Eventos, passatempos e atividades pelo mapa.
+          Eventos, passatempos e atividades que puderem ser localizados.
         </p>
 
       </a>
+
 
 
       <a
@@ -2053,10 +2274,11 @@
         </h3>
 
         <p>
-          Itens especiais encontrados durante a exploração.
+          Itens especiais, caso existam e possam ser verificados.
         </p>
 
       </a>
+
 
 
       <a
@@ -2072,10 +2294,11 @@
         </h3>
 
         <p>
-          Referências e descobertas espalhadas pelo mundo.
+          Referências e descobertas que puderem ser confirmadas.
         </p>
 
       </a>
+
 
 
       <a
@@ -2091,10 +2314,11 @@
         </h3>
 
         <p>
-          Locais e descobertas escondidas.
+          Locais e descobertas escondidas que forem verificadas.
         </p>
 
       </a>
+
 
 
       <a
@@ -2110,18 +2334,21 @@
         </h3>
 
         <p>
-          Veículos e pontos relacionados pelo mapa.
+          Veículos e pontos relacionados, quando houver localização verificável.
         </p>
 
       </a>
 
 
+
     </div>
+
 
 
   </div>
 
 </section>
+
 
 
 <!-- =========================================================
@@ -2131,6 +2358,7 @@
 <section class="section">
 
   <div class="container map-block">
+
 
 
     <div class="map-editorial">
@@ -2162,12 +2390,15 @@
     </div>
 
 
+
   </div>
 
 </section>
 
 
+
 </main>
+
 
 
 <!-- =========================================================
@@ -2179,7 +2410,9 @@
   <div class="container">
 
 
+
     <div class="footer-grid">
+
 
 
       <!-- GTA6ZOONE -->
@@ -2192,12 +2425,12 @@
 
         <p class="muted">
 
-          Portal e enciclopédia independente em português
-          sobre Grand Theft Auto VI.
+          Portal e enciclopédia independente em português sobre Grand Theft Auto VI.
 
         </p>
 
       </div>
+
 
 
       <!-- EXPLORAR -->
@@ -2214,7 +2447,9 @@
             GTA 6
           </a>
 
-          <a href="../mapa/index.html">
+          <a
+            href="../mapa/index.html"
+            aria-current="page">
             Mapa
           </a>
 
@@ -2233,6 +2468,7 @@
         </div>
 
       </div>
+
 
 
       <!-- COMUNIDADE -->
@@ -2266,6 +2502,7 @@
         </div>
 
       </div>
+
 
 
       <!-- INSTITUCIONAL -->
@@ -2307,7 +2544,9 @@
       </div>
 
 
+
     </div>
+
 
 
     <p class="legal">
@@ -2319,9 +2558,11 @@
     </p>
 
 
+
   </div>
 
 </footer>
+
 
 
 </body>

@@ -10,7 +10,11 @@
 
   <meta
     name="description"
-    content="Ferramentas gratuitas para acompanhar seu progresso em GTA VI. Checklist 100%, colecionáveis, troféus PlayStation e conquistas Xbox com salvamento no navegador.">
+    content="Crie checklists personalizados para acompanhar objetivos, colecionáveis, troféus e conquistas de GTA VI, com progresso salvo no navegador.">
+
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large">
 
   <link
     rel="canonical"
@@ -23,8 +27,8 @@
 
   <link
     rel="icon"
-    type="image/png"
-    href="../assets/images/branding/favicon.png">
+    type="image/webp"
+    href="../assets/images/branding/favicon.webp">
 
 
   <!-- =========================================================
@@ -33,13 +37,17 @@
 
   <meta property="og:type" content="website">
 
+  <meta property="og:locale" content="pt_BR">
+
+  <meta property="og:site_name" content="GTA6Zoone">
+
   <meta
     property="og:title"
     content="Ferramentas de GTA VI | GTA6Zoone">
 
   <meta
     property="og:description"
-    content="Checklists e ferramentas para acompanhar seu progresso em Grand Theft Auto VI.">
+    content="Crie checklists personalizados para acompanhar objetivos, colecionáveis, troféus e conquistas de Grand Theft Auto VI.">
 
   <meta
     property="og:url"
@@ -47,11 +55,36 @@
 
   <meta
     property="og:image"
-    content="https://gta6zoone.com.br/assets/images/branding/banner01.jpg">
+    content="https://gta6zoone.com.br/assets/images/branding/banner01.webp">
+
+  <meta
+    property="og:image:alt"
+    content="GTA6Zoone — portal e enciclopédia sobre Grand Theft Auto VI">
 
   <meta
     name="twitter:card"
     content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Ferramentas de GTA VI | GTA6Zoone">
+
+  <meta
+    name="twitter:description"
+    content="Crie checklists personalizados para acompanhar objetivos, colecionáveis, troféus e conquistas de Grand Theft Auto VI.">
+
+  <meta
+    name="twitter:image"
+    content="https://gta6zoone.com.br/assets/images/branding/banner01.webp">
+
+  <meta
+    name="twitter:image:alt"
+    content="GTA6Zoone — portal e enciclopédia sobre Grand Theft Auto VI">
+
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
+    crossorigin="anonymous"></script>
 
 
   <!-- =========================================================
@@ -1246,15 +1279,57 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Ferramentas de GTA VI",
-    "description": "Checklists e ferramentas para acompanhar o progresso em Grand Theft Auto VI.",
-    "url": "https://gta6zoone.com.br/ferramentas/",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "GTA6Zoone",
-      "url": "https://gta6zoone.com.br/"
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://gta6zoone.com.br/#organization",
+        "name": "GTA6Zoone",
+        "url": "https://gta6zoone.com.br/"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://gta6zoone.com.br/#website",
+        "url": "https://gta6zoone.com.br/",
+        "name": "GTA6Zoone",
+        "publisher": {
+          "@id": "https://gta6zoone.com.br/#organization"
+        },
+        "inLanguage": "pt-BR"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://gta6zoone.com.br/ferramentas/#webpage",
+        "url": "https://gta6zoone.com.br/ferramentas/",
+        "name": "Ferramentas de GTA VI: checklists e progresso | GTA6Zoone",
+        "description": "Crie checklists personalizados para acompanhar objetivos, colecionáveis, troféus e conquistas de GTA VI, com progresso salvo no navegador.",
+        "isPartOf": {
+          "@id": "https://gta6zoone.com.br/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://gta6zoone.com.br/ferramentas/#breadcrumb"
+        },
+        "dateModified": "2026-09-11",
+        "inLanguage": "pt-BR"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://gta6zoone.com.br/ferramentas/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://gta6zoone.com.br/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ferramentas",
+            "item": "https://gta6zoone.com.br/ferramentas/"
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -1289,8 +1364,9 @@
 
   <img
     class="banner-image"
-    src="../assets/images/branding/banner01.jpg"
-    alt="Banner GTA6Zoone">
+    src="../assets/images/branding/banner01.webp"
+    alt=""
+    decoding="async">
 
 </div>
 
@@ -1447,6 +1523,7 @@
 
     <button
       class="menu-button"
+      type="button"
       data-menu-open
       aria-controls="mobile-menu"
       aria-expanded="false"
@@ -1484,6 +1561,7 @@
 
     <button
       class="close-menu"
+      type="button"
       data-menu-close
       aria-label="Fechar menu">
 
@@ -1508,6 +1586,7 @@
 
     <button
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-online">
 
@@ -1545,6 +1624,7 @@
 
     <button
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-wiki">
 
@@ -1571,6 +1651,7 @@
 
     <button
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-guias">
 
@@ -1659,7 +1740,9 @@
 
       ›
 
-      Ferramentas
+      <span aria-current="page">
+        Ferramentas
+      </span>
 
     </nav>
 
@@ -1682,9 +1765,9 @@
 
         <p class="lede">
 
-          Checklists simples para organizar
-          sua jornada em GTA VI e saber
-          exatamente quanto ainda falta.
+          Crie checklists personalizados para organizar
+          sua jornada em GTA VI e acompanhar
+          quanto ainda falta nas suas próprias listas.
 
         </p>
 
@@ -1695,8 +1778,8 @@
           acompanhe colecionáveis
           e controle troféus e conquistas.
 
-          Seu progresso é atualizado
-          automaticamente conforme você joga.
+          Seu progresso é atualizado e salvo
+          conforme você marca os itens no navegador.
 
         </p>
 
@@ -2550,8 +2633,8 @@
 
         <p class="muted">
 
-          Portal e enciclopédia independente
-          em português sobre GTA VI.
+          Portal e enciclopédia independente em português
+          sobre Grand Theft Auto VI.
 
         </p>
 
