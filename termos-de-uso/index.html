@@ -4,13 +4,25 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1">
+
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large">
+
+
+  <!-- =========================================================
+       SEO PRINCIPAL
+  ========================================================= -->
 
   <title>Termos de Uso | GTA6Zoone</title>
 
   <meta
     name="description"
-    content="Consulte os Termos de Uso do GTA6Zoone e saiba as regras para utilização do portal, Wiki, guias, ferramentas, vídeos e demais conteúdos sobre GTA VI.">
+    content="Consulte os Termos de Uso do GTA6Zoone e conheça as condições aplicáveis ao acesso ao portal, Wiki, guias, ferramentas e demais conteúdos sobre GTA VI.">
 
   <link
     rel="canonical"
@@ -23,15 +35,25 @@
 
   <link
     rel="icon"
-    type="image/png"
-    href="../assets/images/branding/favicon.png">
+    type="image/webp"
+    href="../assets/images/branding/favicon.webp">
 
 
   <!-- =========================================================
        OPEN GRAPH
   ========================================================= -->
 
-  <meta property="og:type" content="website">
+  <meta
+    property="og:type"
+    content="website">
+
+  <meta
+    property="og:locale"
+    content="pt_BR">
+
+  <meta
+    property="og:site_name"
+    content="GTA6Zoone">
 
   <meta
     property="og:title"
@@ -39,7 +61,7 @@
 
   <meta
     property="og:description"
-    content="Conheça as condições aplicáveis ao acesso e utilização do GTA6Zoone.">
+    content="Conheça as condições aplicáveis ao acesso e à utilização do GTA6Zoone, seus conteúdos e ferramentas.">
 
   <meta
     property="og:url"
@@ -47,11 +69,45 @@
 
   <meta
     property="og:image"
-    content="https://gta6zoone.com.br/assets/images/branding/banner01.jpg">
+    content="https://gta6zoone.com.br/assets/images/branding/banner01.webp">
+
+  <meta
+    property="og:image:alt"
+    content="GTA6Zoone">
+
+
+  <!-- =========================================================
+       TWITTER / X
+  ========================================================= -->
 
   <meta
     name="twitter:card"
     content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Termos de Uso | GTA6Zoone">
+
+  <meta
+    name="twitter:description"
+    content="Conheça as condições aplicáveis ao acesso e à utilização do GTA6Zoone.">
+
+  <meta
+    name="twitter:image"
+    content="https://gta6zoone.com.br/assets/images/branding/banner01.webp">
+
+
+  <!-- =========================================================
+       ADSENSE
+       Apenas carregamento global.
+       Nenhum bloco de anúncio é inserido nesta página.
+  ========================================================= -->
+
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
+    crossorigin="anonymous">
+  </script>
 
 
   <!-- =========================================================
@@ -542,22 +598,71 @@
 
 
   <!-- =========================================================
-       SCHEMA
+       DADOS ESTRUTURADOS
   ========================================================= -->
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Termos de Uso do GTA6Zoone",
-    "description": "Termos aplicáveis ao acesso e utilização do portal GTA6Zoone.",
-    "url": "https://gta6zoone.com.br/termos-de-uso/",
-    "inLanguage": "pt-BR",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "GTA6Zoone",
-      "url": "https://gta6zoone.com.br/"
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://gta6zoone.com.br/#organization",
+        "name": "GTA6Zoone",
+        "url": "https://gta6zoone.com.br/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://gta6zoone.com.br/assets/images/branding/favicon.webp"
+        },
+        "sameAs": [
+          "https://www.instagram.com/gta6zoone/",
+          "https://www.youtube.com/channel/UCR-PxT2Lt8Pte8I_f_zdtDg"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://gta6zoone.com.br/#website",
+        "url": "https://gta6zoone.com.br/",
+        "name": "GTA6Zoone",
+        "inLanguage": "pt-BR",
+        "publisher": {
+          "@id": "https://gta6zoone.com.br/#organization"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://gta6zoone.com.br/termos-de-uso/#webpage",
+        "url": "https://gta6zoone.com.br/termos-de-uso/",
+        "name": "Termos de Uso | GTA6Zoone",
+        "description": "Termos aplicáveis ao acesso e à utilização do portal GTA6Zoone, seus conteúdos e ferramentas.",
+        "inLanguage": "pt-BR",
+        "dateModified": "2026-09-11",
+        "isPartOf": {
+          "@id": "https://gta6zoone.com.br/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://gta6zoone.com.br/termos-de-uso/#breadcrumb"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://gta6zoone.com.br/termos-de-uso/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://gta6zoone.com.br/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Termos de Uso",
+            "item": "https://gta6zoone.com.br/termos-de-uso/"
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -592,7 +697,7 @@
 
   <img
     class="banner-image"
-    src="../assets/images/branding/banner01.jpg"
+    src="../assets/images/branding/banner01.webp"
     alt="">
 
 </div>
@@ -638,8 +743,6 @@
       </a>
 
 
-      <!-- ONLINE -->
-
       <div class="dropdown">
 
         <button
@@ -680,8 +783,6 @@
       </a>
 
 
-      <!-- WIKI -->
-
       <div class="dropdown">
 
         <button
@@ -696,21 +797,42 @@
 
         <div class="dropdown-menu">
 
-          <a href="../personagens/index.html">Personagens</a>
-          <a href="../veiculos/index.html">Veículos</a>
-          <a href="../armas/index.html">Armas</a>
-          <a href="../missoes/index.html">Missões</a>
-          <a href="../locais/index.html">Locais</a>
-          <a href="../propriedades/index.html">Propriedades</a>
-          <a href="../atividades/index.html">Atividades</a>
-          <a href="../colecionaveis/index.html">Colecionáveis</a>
+          <a href="../personagens/index.html">
+            Personagens
+          </a>
+
+          <a href="../veiculos/index.html">
+            Veículos
+          </a>
+
+          <a href="../armas/index.html">
+            Armas
+          </a>
+
+          <a href="../missoes/index.html">
+            Missões
+          </a>
+
+          <a href="../locais/index.html">
+            Locais
+          </a>
+
+          <a href="../propriedades/index.html">
+            Propriedades
+          </a>
+
+          <a href="../atividades/index.html">
+            Atividades
+          </a>
+
+          <a href="../colecionaveis/index.html">
+            Colecionáveis
+          </a>
 
         </div>
 
       </div>
 
-
-      <!-- GUIAS -->
 
       <div class="dropdown">
 
@@ -726,14 +848,37 @@
 
         <div class="dropdown-menu">
 
-          <a href="../guias/iniciantes/index.html">Iniciantes</a>
-          <a href="../guias/dinheiro/index.html">Dinheiro</a>
-          <a href="../guias/missoes/index.html">Missões</a>
-          <a href="../guias/veiculos/index.html">Veículos</a>
-          <a href="../guias/armas/index.html">Armas</a>
-          <a href="../guias/segredos/index.html">Segredos</a>
-          <a href="../guias/easter-eggs/index.html">Easter Eggs</a>
-          <a href="../guias/guia-100/index.html">Guia 100%</a>
+          <a href="../guias/iniciantes/index.html">
+            Iniciantes
+          </a>
+
+          <a href="../guias/dinheiro/index.html">
+            Dinheiro
+          </a>
+
+          <a href="../guias/missoes/index.html">
+            Missões
+          </a>
+
+          <a href="../guias/veiculos/index.html">
+            Veículos
+          </a>
+
+          <a href="../guias/armas/index.html">
+            Armas
+          </a>
+
+          <a href="../guias/segredos/index.html">
+            Segredos
+          </a>
+
+          <a href="../guias/easter-eggs/index.html">
+            Easter Eggs
+          </a>
+
+          <a href="../guias/guia-100/index.html">
+            Guia 100%
+          </a>
 
         </div>
 
@@ -750,6 +895,7 @@
 
     <button
       class="menu-button"
+      type="button"
       data-menu-open
       aria-controls="mobile-menu"
       aria-expanded="false"
@@ -788,6 +934,7 @@
 
     <button
       class="close-menu"
+      type="button"
       data-menu-close
       aria-label="Fechar menu">
 
@@ -811,10 +958,9 @@
     </a>
 
 
-    <!-- ONLINE -->
-
     <button
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-online">
 
@@ -851,10 +997,9 @@
     </a>
 
 
-    <!-- WIKI -->
-
     <button
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-wiki">
 
@@ -867,22 +1012,44 @@
       class="mobile-submenu"
       id="mobile-wiki">
 
-      <a href="../personagens/index.html">Personagens</a>
-      <a href="../veiculos/index.html">Veículos</a>
-      <a href="../armas/index.html">Armas</a>
-      <a href="../missoes/index.html">Missões</a>
-      <a href="../locais/index.html">Locais</a>
-      <a href="../propriedades/index.html">Propriedades</a>
-      <a href="../atividades/index.html">Atividades</a>
-      <a href="../colecionaveis/index.html">Colecionáveis</a>
+      <a href="../personagens/index.html">
+        Personagens
+      </a>
+
+      <a href="../veiculos/index.html">
+        Veículos
+      </a>
+
+      <a href="../armas/index.html">
+        Armas
+      </a>
+
+      <a href="../missoes/index.html">
+        Missões
+      </a>
+
+      <a href="../locais/index.html">
+        Locais
+      </a>
+
+      <a href="../propriedades/index.html">
+        Propriedades
+      </a>
+
+      <a href="../atividades/index.html">
+        Atividades
+      </a>
+
+      <a href="../colecionaveis/index.html">
+        Colecionáveis
+      </a>
 
     </div>
 
 
-    <!-- GUIAS -->
-
     <button
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-guias">
 
@@ -895,14 +1062,37 @@
       class="mobile-submenu"
       id="mobile-guias">
 
-      <a href="../guias/iniciantes/index.html">Iniciantes</a>
-      <a href="../guias/dinheiro/index.html">Dinheiro</a>
-      <a href="../guias/missoes/index.html">Missões</a>
-      <a href="../guias/veiculos/index.html">Veículos</a>
-      <a href="../guias/armas/index.html">Armas</a>
-      <a href="../guias/segredos/index.html">Segredos</a>
-      <a href="../guias/easter-eggs/index.html">Easter Eggs</a>
-      <a href="../guias/guia-100/index.html">Guia 100%</a>
+      <a href="../guias/iniciantes/index.html">
+        Iniciantes
+      </a>
+
+      <a href="../guias/dinheiro/index.html">
+        Dinheiro
+      </a>
+
+      <a href="../guias/missoes/index.html">
+        Missões
+      </a>
+
+      <a href="../guias/veiculos/index.html">
+        Veículos
+      </a>
+
+      <a href="../guias/armas/index.html">
+        Armas
+      </a>
+
+      <a href="../guias/segredos/index.html">
+        Segredos
+      </a>
+
+      <a href="../guias/easter-eggs/index.html">
+        Easter Eggs
+      </a>
+
+      <a href="../guias/guia-100/index.html">
+        Guia 100%
+      </a>
 
     </div>
 
@@ -975,7 +1165,9 @@
 
       ›
 
-      Termos de Uso
+      <span aria-current="page">
+        Termos de Uso
+      </span>
 
     </nav>
 
@@ -995,9 +1187,9 @@
 
       <p class="lede">
 
-        Estes Termos de Uso estabelecem
+        Estes Termos de Uso apresentam
         as condições aplicáveis ao acesso
-        e utilização do GTA6Zoone,
+        e à utilização do GTA6Zoone,
         incluindo suas páginas, Wiki,
         guias, ferramentas e demais conteúdos.
 
@@ -1005,7 +1197,12 @@
 
 
       <span class="terms-updated">
-        Última atualização: 6 de setembro de 2026
+
+        Última atualização:
+        <time datetime="2026-09-11">
+          11 de setembro de 2026
+        </time>
+
       </span>
 
 
@@ -1033,19 +1230,18 @@
 
         Ao acessar ou utilizar o
         <strong>GTA6Zoone</strong>,
-        você concorda em utilizar o portal
-        de forma responsável e de acordo
-        com estes Termos de Uso.
+        aplicam-se as condições descritas
+        nestes Termos de Uso.
 
       </p>
 
 
       <p>
 
-        Caso não concorde com alguma
-        das condições apresentadas,
-        recomendamos que interrompa
-        a utilização do site.
+        Se você não concordar com alguma
+        dessas condições, poderá optar
+        por não utilizar o site
+        ou os recursos correspondentes.
 
       </p>
 
@@ -1076,7 +1272,9 @@
   <div class="container terms-container">
 
 
-    <div class="terms-nav">
+    <nav
+      class="terms-nav"
+      aria-label="Índice dos Termos de Uso">
 
 
       <strong>
@@ -1088,7 +1286,7 @@
 
 
         <a href="#aceitacao">
-          1. Aceitação
+          1. Aplicação dos Termos
         </a>
 
 
@@ -1170,7 +1368,7 @@
       </div>
 
 
-    </div>
+    </nav>
 
 
   </div>
@@ -1179,7 +1377,7 @@
 
 
 <!-- =========================================================
-     1. ACEITAÇÃO
+     1. APLICAÇÃO DOS TERMOS
 ========================================================= -->
 
 <section
@@ -1197,14 +1395,14 @@
 
 
       <h2>
-        Aceitação dos Termos
+        Aplicação destes Termos
       </h2>
 
 
       <p>
 
         Estes Termos de Uso aplicam-se
-        ao acesso e utilização do GTA6Zoone
+        ao acesso e à utilização do GTA6Zoone
         e de seus recursos públicos.
 
       </p>
@@ -1212,10 +1410,8 @@
 
       <p>
 
-        A utilização do site representa
-        a concordância do visitante
-        com as condições aqui descritas,
-        bem como com nossa
+        O uso do site também deve ser considerado
+        em conjunto com nossa
         <a href="../politica-de-privacidade/index.html">
           Política de Privacidade
         </a>
@@ -1271,8 +1467,8 @@
 
       <p>
 
-        O site poderá disponibilizar notícias,
-        informações de personagens, veículos,
+        O site pode disponibilizar notícias,
+        informações sobre personagens, veículos,
         armas, missões, locais, propriedades,
         atividades, colecionáveis, mapa,
         guias, troféus, conquistas,
@@ -1284,9 +1480,9 @@
       <p>
 
         O objetivo do portal é oferecer
-        conteúdo informativo e editorial
-        para jogadores e interessados
-        no universo de GTA VI.
+        conteúdo informativo, editorial
+        e útil para jogadores e pessoas
+        interessadas em GTA VI.
 
       </p>
 
@@ -1324,22 +1520,22 @@
       <p>
 
         O GTA6Zoone procura apresentar
-        informações de forma organizada
-        e atualizar seus conteúdos
-        à medida que novos dados
-        se tornam disponíveis.
+        informações de forma clara,
+        organizada e atualizada conforme
+        novos dados confiáveis se tornam disponíveis.
 
       </p>
 
 
       <p>
 
-        Entretanto, conteúdos relacionados
-        a jogos em desenvolvimento ou em constante
-        atualização podem mudar ao longo do tempo.
+        Conteúdos relacionados a jogos
+        ainda não lançados, em desenvolvimento
+        ou sujeitos a atualizações podem mudar
+        ao longo do tempo.
 
-        Informações anteriormente corretas
-        também podem tornar-se desatualizadas.
+        Por esse motivo, informações anteriormente
+        corretas também podem se tornar desatualizadas.
 
       </p>
 
@@ -1355,11 +1551,12 @@
         <p>
 
           O GTA6Zoone procura diferenciar
-          informações confirmadas de rumores,
+          fatos confirmados de rumores,
           teorias e interpretações.
 
-          Conteúdos não confirmados não devem
-          ser entendidos como informações oficiais.
+          Conteúdos classificados como rumor
+          ou teoria não devem ser entendidos
+          como informações oficiais.
 
         </p>
 
@@ -1433,8 +1630,8 @@
           <p>
 
             Você pode acessar e consultar
-            livremente as páginas públicas
-            disponibilizadas no portal.
+            as páginas públicas disponibilizadas
+            no portal.
 
           </p>
 
@@ -1484,8 +1681,9 @@
           <p>
 
             Pequenos trechos podem ser citados
-            quando permitido pela legislação aplicável
-            e acompanhados de referência ao GTA6Zoone.
+            quando permitido pela legislação aplicável,
+            preferencialmente com referência
+            à página original do GTA6Zoone.
 
           </p>
 
@@ -1548,8 +1746,9 @@
 
         <li>
           utilizar scripts, automações
-          ou métodos destinados a causar
-          carga excessiva ou indisponibilidade;
+          ou outros métodos com o objetivo
+          de causar carga excessiva,
+          degradação ou indisponibilidade;
         </li>
 
         <li>
@@ -1558,15 +1757,15 @@
         </li>
 
         <li>
-          reproduzir integralmente o conteúdo
-          editorial do GTA6Zoone
+          reproduzir integralmente conteúdo
+          editorial original do GTA6Zoone
           para criação de cópias ou sites espelho;
         </li>
 
         <li>
           apresentar conteúdo do GTA6Zoone
           de maneira enganosa como se fosse
-          material próprio ou oficial
+          material próprio ou conteúdo oficial
           da Rockstar Games;
         </li>
 
@@ -1626,7 +1825,8 @@
       <p>
 
         A disponibilização pública do site
-        não representa autorização para copiar,
+        não representa, por si só,
+        autorização para copiar,
         republicar ou redistribuir integralmente
         seus conteúdos originais.
 
@@ -1708,10 +1908,11 @@
 
       <p>
 
-        A referência a produtos, jogos,
-        personagens, locais ou marcas
-        de terceiros é feita no contexto
-        editorial e informativo do portal.
+        A referência a jogos,
+        personagens, locais, produtos
+        ou marcas de terceiros é feita
+        no contexto editorial,
+        informativo e de fã do portal.
 
       </p>
 
@@ -1758,11 +1959,10 @@
 
       <p>
 
-        Ao enviar informações,
-        o usuário declara possuir o direito
-        de compartilhá-las e compromete-se
-        a não enviar conteúdo ilícito,
-        fraudulento, ofensivo,
+        Ao enviar materiais ou informações,
+        o usuário deve possuir o direito
+        de compartilhá-los e não deve enviar
+        conteúdo ilícito, fraudulento,
         malicioso ou que viole direitos
         de terceiros.
 
@@ -1771,11 +1971,11 @@
 
       <p>
 
-        O envio de uma sugestão
-        não cria automaticamente obrigação
-        de publicação, resposta,
-        remuneração ou implementação
-        pelo GTA6Zoone.
+        O envio de uma mensagem,
+        sugestão ou proposta não cria,
+        por si só, obrigação de publicação,
+        resposta, remuneração
+        ou implementação pelo GTA6Zoone.
 
       </p>
 
@@ -1837,16 +2037,19 @@
 
 
         <strong>
-          Recomenda-se utilizar o recurso de backup
+          Faça backup quando o recurso estiver disponível
         </strong>
 
 
         <p>
 
-          Dados salvos no navegador podem ser perdidos
-          caso o usuário limpe os dados do site,
+          Dados mantidos apenas no navegador
+          podem ser perdidos caso o usuário
+          limpe os dados do site,
           utilize navegação privada,
-          troque de navegador ou dispositivo.
+          troque de navegador,
+          redefina o dispositivo
+          ou utilize outro aparelho.
 
           Quando disponível,
           o recurso de exportação pode ser utilizado
@@ -1934,9 +2137,10 @@
 
       <p>
 
-        A presença de um link externo
+        A presença de um link,
+        vídeo ou recurso externo
         não representa necessariamente
-        recomendação, parceria ou endosso.
+        parceria, recomendação ou endosso.
 
       </p>
 
@@ -1973,36 +2177,45 @@
 
       <p>
 
-        O GTA6Zoone poderá,
-        no futuro, exibir publicidade
-        fornecida por terceiros,
-        incluindo serviços como
-        o Google AdSense.
+        O GTA6Zoone pode utilizar
+        serviços de publicidade de terceiros,
+        incluindo o Google AdSense,
+        para viabilizar a monetização do portal.
 
       </p>
 
 
       <p>
 
-        A exibição de um anúncio
+        A presença de publicidade
         não significa que o GTA6Zoone
         endosse, recomende ou garanta
-        produtos, serviços ou empresas
-        anunciados.
+        produtos, serviços ou empresas anunciados.
 
       </p>
 
 
       <p>
 
-        Quando publicidade ou tecnologias
-        relacionadas forem utilizadas,
-        seu funcionamento também estará sujeito
-        à nossa
+        Tecnologias utilizadas para publicidade,
+        medição ou personalização podem estar
+        sujeitas às escolhas de consentimento
+        do visitante e às práticas dos respectivos
+        fornecedores.
+
+      </p>
+
+
+      <p>
+
+        Informações adicionais sobre
+        cookies, armazenamento e tratamento
+        de dados relacionados a esses serviços
+        estão disponíveis na
         <a href="../politica-de-privacidade/index.html">
           Política de Privacidade
         </a>
-        e
+        e na
         <a href="../politica-de-cookies/index.html">
           Política de Cookies
         </a>.
@@ -2044,16 +2257,15 @@
 
         O GTA6Zoone busca manter
         suas páginas e funcionalidades disponíveis,
-        mas não garante funcionamento contínuo
-        e ininterrupto.
+        mas podem ocorrer períodos
+        de indisponibilidade ou funcionamento limitado.
 
       </p>
 
 
       <p>
 
-        O portal pode ficar temporariamente
-        indisponível devido a manutenção,
+        Isso pode acontecer devido a manutenção,
         atualizações, problemas técnicos,
         serviços de hospedagem,
         falhas externas ou outros fatores.
@@ -2098,7 +2310,7 @@
 
 
       <h2>
-        Limitação de responsabilidade
+        Responsabilidade e uso das informações
       </h2>
 
 
@@ -2113,35 +2325,41 @@
 
       <p>
 
-        Embora procuremos manter
-        as informações corretas e atualizadas,
-        não é possível garantir
-        que todo conteúdo esteja livre
-        de erros, omissões
-        ou informações que se tornaram
-        desatualizadas.
+        Embora o portal procure manter
+        suas informações corretas e atualizadas,
+        podem ocorrer erros, omissões
+        ou conteúdos que se tornem desatualizados.
 
       </p>
 
 
       <p>
 
-        O visitante é responsável
-        pelas decisões tomadas
-        com base nas informações consultadas
-        no portal e pela utilização
-        de serviços externos acessados
-        através de links ou incorporações.
+        O visitante deve avaliar
+        as informações consultadas
+        antes de utilizá-las como base
+        para decisões próprias.
 
       </p>
 
 
       <p>
 
-        Nenhuma disposição destes Termos
-        pretende excluir direitos
-        que não possam ser legalmente
-        excluídos ou limitados.
+        O GTA6Zoone também não controla
+        serviços externos acessados
+        através de links,
+        vídeos incorporados
+        ou outros recursos de terceiros.
+
+      </p>
+
+
+      <p>
+
+        Nada nestes Termos pretende
+        afastar direitos ou responsabilidades
+        que não possam ser excluídos
+        ou limitados pela legislação aplicável.
 
       </p>
 
@@ -2189,18 +2407,19 @@
 
       <p>
 
-        Quando houver alterações relevantes,
+        Quando houver alterações,
         a data de atualização apresentada
-        no início desta página será modificada.
+        no início desta página
+        poderá ser modificada.
 
       </p>
 
 
       <p>
 
-        A versão publicada nesta página
-        representa os Termos vigentes
-        para utilização do portal.
+        A versão disponível nesta página
+        corresponde aos Termos atualmente
+        publicados pelo GTA6Zoone.
 
       </p>
 
@@ -2239,14 +2458,13 @@
 
         A utilização do GTA6Zoone
         e estes Termos de Uso
-        estão sujeitos à legislação
+        devem observar a legislação
         aplicável em cada situação,
-        incluindo normas relacionadas
-        a proteção de dados,
+        incluindo, quando pertinente,
+        normas relacionadas a proteção de dados,
         propriedade intelectual,
         direitos do consumidor
-        e serviços digitais,
-        quando pertinentes.
+        e serviços digitais.
 
       </p>
 
@@ -2254,9 +2472,9 @@
       <p>
 
         Nenhuma disposição destes Termos
-        limita direitos obrigatórios
+        pretende limitar direitos obrigatórios
         assegurados ao usuário
-        pela legislação que seja aplicável.
+        pela legislação aplicável.
 
       </p>
 
@@ -2291,16 +2509,16 @@
 
 
         <h2>
-          Dúvidas?
+          Dúvidas sobre estes Termos?
         </h2>
 
 
         <p>
 
-          Para dúvidas relacionadas
+          Para questões relacionadas
           a estes Termos de Uso,
           entre em contato com o GTA6Zoone
-          através do endereço
+          pelo endereço
           suporte@gta6zoone.com.br.
 
         </p>
@@ -2349,8 +2567,8 @@
 
         <p class="muted">
 
-          Portal e enciclopédia independente
-          em português sobre GTA VI.
+          Portal e enciclopédia independente em português
+          sobre Grand Theft Auto VI.
 
         </p>
 
@@ -2446,7 +2664,9 @@
             Cookies
           </a>
 
-          <a href="../termos-de-uso/index.html">
+          <a
+            href="../termos-de-uso/index.html"
+            aria-current="page">
             Termos
           </a>
 

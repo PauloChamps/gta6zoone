@@ -6,30 +6,36 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large">
+
   <link
     rel="icon"
-    type="image/png"
-    href="../assets/images/branding/favicon.png">
+    type="image/webp"
+    href="../assets/images/branding/favicon.webp">
 
-  <title>Propriedades de GTA VI: casas, garagens e estabelecimentos | GTA6Zoone</title>
+  <title>Propriedades de GTA 6: casas, garagens e lojas | GTA6Zoone</title>
 
   <meta
     name="description"
-    content="Explore propriedades, casas seguras, garagens, oficinas, lojas e estabelecimentos de GTA VI com informações verificadas e futuras fichas completas no GTA6Zoone.">
+    content="Veja casas seguras, garagens, oficinas, lojas e outros locais ligados a GTA 6, separando o que já foi confirmado do que ainda precisa ser verificado.">
 
   <link
     rel="canonical"
     href="https://gta6zoone.com.br/propriedades/">
 
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="GTA6Zoone">
 
   <meta
     property="og:title"
-    content="Propriedades de GTA VI | GTA6Zoone">
+    content="Propriedades de GTA 6: casas, garagens e lojas | GTA6Zoone">
 
   <meta
     property="og:description"
-    content="Casas seguras, garagens, oficinas, lojas e estabelecimentos confirmados em Grand Theft Auto VI.">
+    content="Casas seguras, garagens, oficinas, lojas e outros locais de GTA 6, com separação clara entre informações confirmadas e dados ainda não verificados.">
 
   <meta
     property="og:url"
@@ -37,9 +43,28 @@
 
   <meta
     property="og:image"
-    content="https://gta6zoone.com.br/assets/images/branding/banner01.jpg">
+    content="https://gta6zoone.com.br/assets/images/branding/banner01.webp">
+
+  <meta
+    property="og:image:alt"
+    content="GTA6Zoone">
 
   <meta name="twitter:card" content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Propriedades de GTA 6: casas, garagens e lojas | GTA6Zoone">
+
+  <meta
+    name="twitter:description"
+    content="Casas seguras, garagens, oficinas, lojas e outros locais de GTA 6, com informações confirmadas separadas do que ainda precisa ser verificado.">
+
+  <meta
+    name="twitter:image"
+    content="https://gta6zoone.com.br/assets/images/branding/banner01.webp">
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
+       crossorigin="anonymous"></script>
 
 
   <!-- =========================================================
@@ -706,16 +731,62 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "Propriedades de GTA VI",
-    "description": "Índice de propriedades, casas seguras, garagens e estabelecimentos de Grand Theft Auto VI.",
-    "url": "https://gta6zoone.com.br/propriedades/",
-    "dateModified": "2026-09-06",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "GTA6Zoone",
-      "url": "https://gta6zoone.com.br/"
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://gta6zoone.com.br/#organization",
+        "name": "GTA6Zoone",
+        "url": "https://gta6zoone.com.br/",
+        "description": "Portal e enciclopédia independente em português sobre Grand Theft Auto VI."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://gta6zoone.com.br/#website",
+        "url": "https://gta6zoone.com.br/",
+        "name": "GTA6Zoone",
+        "inLanguage": "pt-BR",
+        "publisher": {
+          "@id": "https://gta6zoone.com.br/#organization"
+        }
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://gta6zoone.com.br/propriedades/#webpage",
+        "url": "https://gta6zoone.com.br/propriedades/",
+        "name": "Propriedades de GTA 6: casas, garagens e lojas",
+        "description": "Índice de casas seguras, garagens, oficinas, lojas e outros locais ligados a Grand Theft Auto VI, distinguindo informações confirmadas de dados ainda não verificados.",
+        "inLanguage": "pt-BR",
+        "dateModified": "2026-09-11",
+        "isPartOf": {
+          "@id": "https://gta6zoone.com.br/#website"
+        },
+        "about": {
+          "@type": "VideoGame",
+          "name": "Grand Theft Auto VI"
+        },
+        "breadcrumb": {
+          "@id": "https://gta6zoone.com.br/propriedades/#breadcrumb"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://gta6zoone.com.br/propriedades/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://gta6zoone.com.br/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Propriedades",
+            "item": "https://gta6zoone.com.br/propriedades/"
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -744,7 +815,7 @@
 
   <img
     class="banner-image"
-    src="../assets/images/branding/banner01.jpg"
+    src="../assets/images/branding/banner01.webp"
     alt="">
 
 </div>
@@ -899,7 +970,7 @@
         Locais
       </a>
 
-      <a href="../propriedades/index.html">
+      <a href="../propriedades/index.html" aria-current="page">
         Propriedades
       </a>
 
@@ -980,6 +1051,7 @@
 <!-- BOTÃO MOBILE -->
 
 <button
+      type="button"
   class="menu-button"
   data-menu-open
   aria-controls="mobile-menu"
@@ -1017,6 +1089,7 @@
     </strong>
 
     <button
+      type="button"
       class="close-menu"
       data-menu-close
       aria-label="Fechar menu">
@@ -1044,6 +1117,7 @@
     <!-- ONLINE MOBILE -->
 
     <button
+      type="button"
       class="submenu-toggle"
       aria-expanded="false"
       aria-controls="mobile-online">
@@ -1113,6 +1187,7 @@
     <!-- WIKI MOBILE -->
 
     <button
+      type="button"
       class="submenu-toggle"
       aria-expanded="false"
       aria-controls="mobile-wiki">
@@ -1146,7 +1221,7 @@
         Locais
       </a>
 
-      <a href="../propriedades/index.html">
+      <a href="../propriedades/index.html" aria-current="page">
         Propriedades
       </a>
 
@@ -1164,6 +1239,7 @@
     <!-- GUIAS MOBILE -->
 
     <button
+      type="button"
       class="submenu-toggle"
       aria-expanded="false"
       aria-controls="mobile-guias">
@@ -1274,7 +1350,9 @@
 
       ›
 
-      Propriedades
+      <span aria-current="page">
+        Propriedades
+      </span>
 
     </nav>
 
@@ -1294,22 +1372,22 @@
       <p class="lede">
 
         Casas seguras, residências, garagens,
-        oficinas, lojas e outros estabelecimentos
-        ligados ao mundo de Grand Theft Auto VI.
+        oficinas, lojas e outros locais já associados
+        ao universo de Grand Theft Auto VI.
 
       </p>
 
 
       <p>
 
-        Nem todo lugar apresentado pela Rockstar
+        Nem todo local apresentado pela Rockstar
         será necessariamente uma propriedade comprável
-        pelo jogador.
+        ou administrável pelo jogador.
 
-        Por isso, esta Wiki separa propriedades,
-        benefícios, estabelecimentos e imóveis ligados
-        aos personagens sem transformar uma coisa
-        automaticamente na outra.
+        Por isso, esta página separa residências,
+        garagens, benefícios, estabelecimentos
+        e imóveis ligados aos personagens sem tratar
+        categorias diferentes como se fossem a mesma coisa.
 
       </p>
 
@@ -1361,9 +1439,9 @@
 
       <p>
 
-        A divisão evita misturar casas pessoais,
-        garagens e estabelecimentos comerciais
-        em uma única lista.
+        A divisão ajuda a separar residências,
+        garagens e estabelecimentos comerciais,
+        preservando o contexto de cada referência.
 
       </p>
 
@@ -1507,10 +1585,10 @@
 
       <p>
 
-        Ainda não temos uma lista tradicional de
-        propriedades compráveis, mas já existem
-        referências suficientes para começar
-        a organizar esta parte da Wiki.
+        Ainda não existe uma lista confirmada
+        de propriedades compráveis, mas os materiais
+        oficiais já trazem referências suficientes
+        para organizar esta parte da Wiki com cautela.
 
       </p>
 
@@ -2312,15 +2390,16 @@
 
 
         <h2>
-          Cada propriedade poderá ganhar sua página
+          Locais importantes poderão ganhar fichas próprias
         </h2>
 
 
         <p>
 
-          Quando tivermos informação suficiente,
-          casas, garagens e estabelecimentos
-          importantes poderão receber fichas próprias.
+          Quando houver informação suficiente,
+          casas, garagens e estabelecimentos relevantes
+          poderão receber páginas próprias com dados
+          realmente úteis para consulta.
 
         </p>
 

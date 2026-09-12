@@ -2,7 +2,6 @@
 <html lang="pt-BR" data-root="../">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -10,28 +9,24 @@
 
   <meta
     name="description"
-    content="Consulte a Política de Privacidade do GTA6Zoone e saiba como dados, cookies, armazenamento local, serviços de terceiros e futuras tecnologias de publicidade podem ser utilizados.">
+    content="Saiba como o GTA6Zoone trata dados, armazenamento local, cookies, serviços de terceiros, YouTube e Google AdSense em sua Política de Privacidade.">
+
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large">
 
   <link
     rel="canonical"
     href="https://gta6zoone.com.br/politica-de-privacidade/">
 
-
-  <!-- =========================================================
-       FAVICON
-  ========================================================= -->
-
   <link
     rel="icon"
-    type="image/png"
-    href="../assets/images/branding/favicon.png">
-
-
-  <!-- =========================================================
-       OPEN GRAPH
-  ========================================================= -->
+    type="image/webp"
+    href="../assets/images/branding/favicon.webp">
 
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="GTA6Zoone">
 
   <meta
     property="og:title"
@@ -39,7 +34,7 @@
 
   <meta
     property="og:description"
-    content="Saiba como o GTA6Zoone trata privacidade, dados, armazenamento local, cookies e serviços de terceiros.">
+    content="Entenda como o GTA6Zoone trata dados, armazenamento local, cookies, serviços de terceiros, YouTube e publicidade.">
 
   <meta
     property="og:url"
@@ -47,67 +42,63 @@
 
   <meta
     property="og:image"
-    content="https://gta6zoone.com.br/assets/images/branding/banner01.jpg">
+    content="https://gta6zoone.com.br/assets/images/branding/banner01.webp">
+
+  <meta
+    property="og:image:alt"
+    content="GTA6Zoone — portal e enciclopédia independente sobre Grand Theft Auto VI">
 
   <meta
     name="twitter:card"
     content="summary_large_image">
 
+  <meta
+    name="twitter:title"
+    content="Política de Privacidade | GTA6Zoone">
 
-  <!-- =========================================================
-       CSS GLOBAL
-  ========================================================= -->
+  <meta
+    name="twitter:description"
+    content="Entenda como o GTA6Zoone trata dados, armazenamento local, cookies, serviços de terceiros, YouTube e publicidade.">
+
+  <meta
+    name="twitter:image"
+    content="https://gta6zoone.com.br/assets/images/branding/banner01.webp">
+
+  <meta
+    name="twitter:image:alt"
+    content="GTA6Zoone — portal e enciclopédia independente sobre Grand Theft Auto VI">
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
+       crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/components.css">
   <link rel="stylesheet" href="../assets/css/responsive.css">
 
-
-  <!-- =========================================================
-       CSS EXCLUSIVO — POLÍTICA DE PRIVACIDADE
-  ========================================================= -->
-
   <style>
-
     .privacy-page {
       overflow: hidden;
     }
-
 
     .privacy-container {
       max-width: 1080px;
       margin-inline: auto;
     }
 
-
-    /* =========================================================
-       HERO
-    ========================================================= */
-
     .privacy-hero {
-
       padding-top: 3rem;
       padding-bottom: 4rem;
-
       position: relative;
-
     }
 
-
     .privacy-hero::before {
-
       content: "";
-
       width: 650px;
       height: 650px;
-
       position: absolute;
-
       top: -300px;
       right: -260px;
-
       border-radius: 50%;
-
       background:
         radial-gradient(
           circle,
@@ -115,299 +106,150 @@
           rgba(124,84,255,.05) 45%,
           transparent 70%
         );
-
       pointer-events: none;
-
     }
-
 
     .privacy-hero-copy {
-
       max-width: 900px;
-
       position: relative;
       z-index: 1;
-
     }
-
 
     .privacy-hero h1 {
-
-      margin:
-        .45rem 0 1rem;
-
-      font-size:
-        clamp(2.8rem, 8vw, 5rem);
-
+      margin: .45rem 0 1rem;
+      font-size: clamp(2.8rem, 8vw, 5rem);
       line-height: .96;
-
     }
-
 
     .privacy-hero .lede {
-
       max-width: 850px;
-
       font-size: 1.08rem;
       line-height: 1.75;
-
     }
-
 
     .privacy-updated {
-
       display: inline-flex;
-
       margin-top: 1rem;
-
-      padding:
-        .4rem .65rem;
-
-      border:
-        1px solid var(--color-border);
-
+      padding: .4rem .65rem;
+      border: 1px solid var(--color-border);
       border-radius: 999px;
-
-      background:
-        var(--color-surface);
-
-      color:
-        var(--color-text-muted);
-
+      background: var(--color-surface);
+      color: var(--color-text-muted);
       font-size: .78rem;
       font-weight: 800;
-
     }
-
-
-    /* =========================================================
-       INTRO
-    ========================================================= */
 
     .privacy-intro {
-
       padding-top: 4rem;
       padding-bottom: 4rem;
-
     }
 
-
     .privacy-intro-card {
-
       padding: 1.4rem;
-
-      border-left:
-        4px solid #ff4fa3;
-
+      border-left: 4px solid #ff4fa3;
       border-radius:
         0
         var(--radius-medium)
         var(--radius-medium)
         0;
-
-      background:
-        var(--color-surface);
-
+      background: var(--color-surface);
     }
-
 
     .privacy-intro-card p {
-
-      margin:
-        0 0 1rem;
-
-      color:
-        var(--color-text-muted);
-
+      margin: 0 0 1rem;
+      color: var(--color-text-muted);
       line-height: 1.8;
-
     }
-
 
     .privacy-intro-card p:last-child {
       margin-bottom: 0;
     }
 
-
-    /* =========================================================
-       NAVEGAÇÃO
-    ========================================================= */
-
     .privacy-nav-section {
-
       padding-top: 4rem;
       padding-bottom: 4rem;
-
     }
-
 
     .privacy-nav {
-
       padding: 1.2rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-medium);
-
-      background:
-        var(--color-surface);
-
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-medium);
+      background: var(--color-surface);
     }
-
 
     .privacy-nav strong {
-
       display: block;
-
       margin-bottom: .8rem;
-
     }
-
 
     .privacy-nav-grid {
-
       display: grid;
-
       grid-template-columns: 1fr;
-
       gap: .5rem;
-
     }
-
 
     .privacy-nav a {
-
       display: block;
-
       padding: .7rem .8rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-small);
-
-      background:
-        rgba(255,255,255,.015);
-
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-small);
+      background: rgba(255,255,255,.015);
       color: inherit;
       text-decoration: none;
-
       font-size: .88rem;
-
     }
-
 
     .privacy-nav a:hover {
-
-      border-color:
-        rgba(255,79,163,.35);
-
+      border-color: rgba(255,79,163,.35);
       color: #ff73bd;
-
     }
-
-
-    /* =========================================================
-       SEÇÕES
-    ========================================================= */
 
     .privacy-section {
-
       padding-top: 4rem;
       padding-bottom: 4rem;
-
       scroll-margin-top: 100px;
-
     }
-
 
     .privacy-content {
-
       max-width: 920px;
-
     }
-
 
     .privacy-content h2 {
-
-      margin:
-        .4rem 0 1rem;
-
-      font-size:
-        clamp(1.9rem, 5vw, 2.9rem);
-
+      margin: .4rem 0 1rem;
+      font-size: clamp(1.9rem, 5vw, 2.9rem);
     }
-
 
     .privacy-content h3 {
-
-      margin:
-        1.8rem 0 .65rem;
-
-      font-size:
-        clamp(1.15rem, 3vw, 1.4rem);
-
+      margin: 1.8rem 0 .65rem;
+      font-size: clamp(1.15rem, 3vw, 1.4rem);
     }
-
 
     .privacy-content p {
-
-      margin:
-        0 0 1.1rem;
-
-      color:
-        var(--color-text-muted);
-
+      margin: 0 0 1.1rem;
+      color: var(--color-text-muted);
       line-height: 1.85;
-
     }
-
 
     .privacy-content ul {
-
-      margin:
-        .7rem 0 1.3rem;
-
+      margin: .7rem 0 1.3rem;
       padding-left: 1.3rem;
-
-      color:
-        var(--color-text-muted);
-
+      color: var(--color-text-muted);
       line-height: 1.8;
-
     }
-
 
     .privacy-content li {
       margin-bottom: .45rem;
     }
 
-
     .privacy-content a {
       color: #ff73bd;
     }
 
-
-    /* =========================================================
-       CARDS DE DESTAQUE
-    ========================================================= */
-
     .privacy-highlight {
-
-      margin:
-        1.4rem 0;
-
+      margin: 1.4rem 0;
       padding: 1.2rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-medium);
-
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-medium);
       background:
         linear-gradient(
           135deg,
@@ -415,82 +257,43 @@
           transparent 50%
         ),
         var(--color-surface);
-
     }
-
 
     .privacy-highlight strong {
-
       display: block;
-
       margin-bottom: .45rem;
-
     }
 
-
     .privacy-highlight p {
-
       margin: 0;
     }
 
-
-    /* =========================================================
-       LOCALSTORAGE
-    ========================================================= */
-
     .privacy-storage-card {
-
-      margin:
-        1.4rem 0;
-
+      margin: 1.4rem 0;
       padding: 1.2rem;
-
-      border-left:
-        4px solid #63d676;
-
+      border-left: 4px solid #63d676;
       border-radius:
         0
         var(--radius-medium)
         var(--radius-medium)
         0;
-
-      background:
-        var(--color-surface);
-
+      background: var(--color-surface);
     }
-
 
     .privacy-storage-card strong {
-
       display: block;
-
       margin-bottom: .45rem;
-
     }
-
 
     .privacy-storage-card p {
       margin: 0;
     }
 
-
-    /* =========================================================
-       ADS
-    ========================================================= */
-
     .privacy-ads-card {
-
-      margin:
-        1.4rem 0;
-
+      margin: 1.4rem 0;
       padding: 1.2rem;
-
-      border:
-        1px solid rgba(255,181,71,.28);
-
-      border-radius:
-        var(--radius-medium);
-
+      border: 1px solid rgba(255,181,71,.28);
+      border-radius: var(--radius-medium);
       background:
         linear-gradient(
           135deg,
@@ -498,264 +301,175 @@
           transparent 50%
         ),
         var(--color-surface);
-
     }
-
 
     .privacy-ads-card strong {
-
       display: block;
-
       margin-bottom: .45rem;
-
     }
-
 
     .privacy-ads-card p:last-child {
       margin-bottom: 0;
     }
 
-
-    /* =========================================================
-       CONTATO FINAL
-    ========================================================= */
-
     .privacy-contact-section {
-
       padding-top: 4rem;
       padding-bottom: 4rem;
-
     }
-
 
     .privacy-contact {
-
       display: grid;
-
       grid-template-columns: 1fr;
-
       gap: 1.2rem;
-
       align-items: center;
-
       padding: 1.4rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-medium);
-
-      background:
-        var(--color-surface);
-
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-medium);
+      background: var(--color-surface);
     }
-
 
     .privacy-contact h2 {
-
-      margin:
-        .4rem 0 .6rem;
-
-      font-size:
-        clamp(1.9rem, 5vw, 2.8rem);
-
+      margin: .4rem 0 .6rem;
+      font-size: clamp(1.9rem, 5vw, 2.8rem);
     }
-
 
     .privacy-contact p {
-
       max-width: 800px;
-
       margin: 0;
-
-      color:
-        var(--color-text-muted);
-
+      color: var(--color-text-muted);
       line-height: 1.7;
-
     }
-
-
-    /* =========================================================
-       TABLET
-    ========================================================= */
 
     @media (min-width: 700px) {
-
-
       .privacy-nav-grid {
-
-        grid-template-columns:
-          repeat(2, minmax(0, 1fr));
-
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
-
 
       .privacy-contact {
-
-        grid-template-columns:
-          1fr auto;
-
+        grid-template-columns: 1fr auto;
       }
-
     }
-
-
-    /* =========================================================
-       DESKTOP
-    ========================================================= */
 
     @media (min-width: 960px) {
-
-
       .privacy-nav-grid {
-
-        grid-template-columns:
-          repeat(3, minmax(0, 1fr));
-
+        grid-template-columns: repeat(3, minmax(0, 1fr));
       }
-
     }
 
-
-    /* =========================================================
-       MOBILE
-    ========================================================= */
-
     @media (max-width: 699px) {
-
-
       .privacy-container {
-
         width: 100%;
         max-width: 100%;
-
       }
-
 
       .privacy-contact .btn {
         width: 100%;
       }
-
     }
-
   </style>
-
-
-  <!-- =========================================================
-       SCHEMA
-  ========================================================= -->
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Política de Privacidade do GTA6Zoone",
-    "description": "Política de Privacidade do GTA6Zoone sobre dados, armazenamento local, cookies, serviços de terceiros e publicidade.",
-    "url": "https://gta6zoone.com.br/politica-de-privacidade/",
-    "inLanguage": "pt-BR",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "GTA6Zoone",
-      "url": "https://gta6zoone.com.br/"
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://gta6zoone.com.br/#organization",
+        "name": "GTA6Zoone",
+        "url": "https://gta6zoone.com.br/",
+        "sameAs": [
+          "https://www.instagram.com/gta6zoone/",
+          "https://www.youtube.com/channel/UCR-PxT2Lt8Pte8I_f_zdtDg"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://gta6zoone.com.br/#website",
+        "url": "https://gta6zoone.com.br/",
+        "name": "GTA6Zoone",
+        "inLanguage": "pt-BR",
+        "publisher": {
+          "@id": "https://gta6zoone.com.br/#organization"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://gta6zoone.com.br/politica-de-privacidade/#webpage",
+        "url": "https://gta6zoone.com.br/politica-de-privacidade/",
+        "name": "Política de Privacidade | GTA6Zoone",
+        "description": "Política de Privacidade do GTA6Zoone sobre dados, armazenamento local, cookies, serviços de terceiros, YouTube e publicidade.",
+        "inLanguage": "pt-BR",
+        "dateModified": "2026-09-11",
+        "isPartOf": {
+          "@id": "https://gta6zoone.com.br/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://gta6zoone.com.br/politica-de-privacidade/#breadcrumb"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://gta6zoone.com.br/politica-de-privacidade/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://gta6zoone.com.br/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Política de Privacidade",
+            "item": "https://gta6zoone.com.br/politica-de-privacidade/"
+          }
+        ]
+      }
+    ]
   }
   </script>
 
-
-  <!-- =========================================================
-       JS GLOBAL
-  ========================================================= -->
-
   <script src="../assets/js/menu.js" defer></script>
   <script src="../assets/js/main.js" defer></script>
-
 </head>
-
 
 <body>
 
-
-<a
-  class="skip-link"
-  href="#conteudo">
-
+<a class="skip-link" href="#conteudo">
   Pular para o conteúdo
-
 </a>
 
-
-<!-- =========================================================
-     BANNER
-========================================================= -->
-
 <div class="global-banner">
-
   <img
     class="banner-image"
-    src="../assets/images/branding/banner01.jpg"
+    src="../assets/images/branding/banner01.webp"
     alt="">
-
 </div>
 
-
-<!-- =========================================================
-     HEADER
-========================================================= -->
-
 <header class="site-header">
-
   <div class="container header-inner">
-
 
     <a
       class="brand"
       href="../index.html"
       aria-label="GTA6Zoone — início">
-
-      <span class="brand-text">
-        GTA6ZOONE
-      </span>
-
+      <span class="brand-text">GTA6ZOONE</span>
     </a>
 
+    <nav class="desktop-nav" aria-label="Navegação principal">
 
-    <!-- ==================================================
-         MENU DESKTOP
-    ================================================== -->
-
-    <nav
-      class="desktop-nav"
-      aria-label="Navegação principal">
-
-
-      <a href="../index.html">
-        INÍCIO
-      </a>
-
-
-      <a href="../gta-6/index.html">
-        GTA 6
-      </a>
-
-
-      <!-- ONLINE -->
+      <a href="../index.html">INÍCIO</a>
+      <a href="../gta-6/index.html">GTA 6</a>
 
       <div class="dropdown">
-
         <button
           type="button"
           aria-haspopup="true"
           aria-expanded="false">
-
           ONLINE ▾
-
         </button>
 
-
         <div class="dropdown-menu">
-
           <a href="#">Hub Online</a>
           <a href="#">Missões Online</a>
           <a href="#">Veículos Online</a>
@@ -766,159 +480,68 @@
           <a href="#">Eventos</a>
           <a href="#">Atualizações</a>
           <a href="#">Guias Online</a>
-
         </div>
-
       </div>
 
-
-      <a href="../noticias/index.html">
-        NOTÍCIAS
-      </a>
-
-
-      <a href="../mapa/index.html">
-        MAPA
-      </a>
-
-
-      <!-- WIKI -->
+      <a href="../noticias/index.html">NOTÍCIAS</a>
+      <a href="../mapa/index.html">MAPA</a>
 
       <div class="dropdown">
-
         <button
           type="button"
           aria-haspopup="true"
           aria-expanded="false">
-
           WIKI ▾
-
         </button>
 
-
         <div class="dropdown-menu">
-
-          <a href="../personagens/index.html">
-            Personagens
-          </a>
-
-          <a href="../veiculos/index.html">
-            Veículos
-          </a>
-
-          <a href="../armas/index.html">
-            Armas
-          </a>
-
-          <a href="../missoes/index.html">
-            Missões
-          </a>
-
-          <a href="../locais/index.html">
-            Locais
-          </a>
-
-          <a href="../propriedades/index.html">
-            Propriedades
-          </a>
-
-          <a href="../atividades/index.html">
-            Atividades
-          </a>
-
-          <a href="../colecionaveis/index.html">
-            Colecionáveis
-          </a>
-
+          <a href="../personagens/index.html">Personagens</a>
+          <a href="../veiculos/index.html">Veículos</a>
+          <a href="../armas/index.html">Armas</a>
+          <a href="../missoes/index.html">Missões</a>
+          <a href="../locais/index.html">Locais</a>
+          <a href="../propriedades/index.html">Propriedades</a>
+          <a href="../atividades/index.html">Atividades</a>
+          <a href="../colecionaveis/index.html">Colecionáveis</a>
         </div>
-
       </div>
 
-
-      <!-- GUIAS -->
-
       <div class="dropdown">
-
         <button
           type="button"
           aria-haspopup="true"
           aria-expanded="false">
-
           GUIAS ▾
-
         </button>
 
-
         <div class="dropdown-menu">
-
-          <a href="../guias/iniciantes/index.html">
-            Iniciantes
-          </a>
-
-          <a href="../guias/dinheiro/index.html">
-            Dinheiro
-          </a>
-
-          <a href="../guias/missoes/index.html">
-            Missões
-          </a>
-
-          <a href="../guias/veiculos/index.html">
-            Veículos
-          </a>
-
-          <a href="../guias/armas/index.html">
-            Armas
-          </a>
-
-          <a href="../guias/segredos/index.html">
-            Segredos
-          </a>
-
-          <a href="../guias/easter-eggs/index.html">
-            Easter Eggs
-          </a>
-
-          <a href="../guias/guia-100/index.html">
-            Guia 100%
-          </a>
-
+          <a href="../guias/iniciantes/index.html">Iniciantes</a>
+          <a href="../guias/dinheiro/index.html">Dinheiro</a>
+          <a href="../guias/missoes/index.html">Missões</a>
+          <a href="../guias/veiculos/index.html">Veículos</a>
+          <a href="../guias/armas/index.html">Armas</a>
+          <a href="../guias/segredos/index.html">Segredos</a>
+          <a href="../guias/easter-eggs/index.html">Easter Eggs</a>
+          <a href="../guias/guia-100/index.html">Guia 100%</a>
         </div>
-
       </div>
 
-
-      <a href="../buscar/index.html">
-        PESQUISAR
-      </a>
-
-
+      <a href="../buscar/index.html">PESQUISAR</a>
     </nav>
 
-
     <button
+      type="button"
       class="menu-button"
       data-menu-open
       aria-controls="mobile-menu"
       aria-expanded="false"
       aria-label="Abrir menu">
-
       ☰
-
     </button>
-
-
   </div>
-
 </header>
 
-
-<!-- =========================================================
-     MENU MOBILE
-========================================================= -->
-
 <div class="mobile-overlay"></div>
-
 
 <aside
   class="mobile-menu"
@@ -926,55 +549,32 @@
   aria-label="Menu mobile"
   aria-hidden="true">
 
-
   <div class="mobile-menu-head">
-
-    <strong>
-      GTA6ZOONE
-    </strong>
-
+    <strong>GTA6ZOONE</strong>
 
     <button
+      type="button"
       class="close-menu"
       data-menu-close
       aria-label="Fechar menu">
-
       ×
-
     </button>
-
   </div>
-
 
   <nav class="mobile-links">
 
-
-    <a href="../index.html">
-      Início
-    </a>
-
-
-    <a href="../gta-6/index.html">
-      GTA 6
-    </a>
-
-
-    <!-- ONLINE -->
+    <a href="../index.html">Início</a>
+    <a href="../gta-6/index.html">GTA 6</a>
 
     <button
+      type="button"
       class="submenu-toggle"
       aria-expanded="false"
       aria-controls="mobile-online">
-
       Online +
-
     </button>
 
-
-    <div
-      class="mobile-submenu"
-      id="mobile-online">
-
+    <div class="mobile-submenu" id="mobile-online">
       <a href="#">Hub Online</a>
       <a href="#">Missões Online</a>
       <a href="#">Veículos Online</a>
@@ -985,1343 +585,634 @@
       <a href="#">Eventos</a>
       <a href="#">Atualizações</a>
       <a href="#">Guias Online</a>
-
     </div>
 
-
-    <a href="../noticias/index.html">
-      Notícias
-    </a>
-
-
-    <a href="../mapa/index.html">
-      Mapa
-    </a>
-
-
-    <!-- WIKI -->
+    <a href="../noticias/index.html">Notícias</a>
+    <a href="../mapa/index.html">Mapa</a>
 
     <button
+      type="button"
       class="submenu-toggle"
       aria-expanded="false"
       aria-controls="mobile-wiki">
-
       Wiki +
-
     </button>
 
-
-    <div
-      class="mobile-submenu"
-      id="mobile-wiki">
-
-      <a href="../personagens/index.html">
-        Personagens
-      </a>
-
-      <a href="../veiculos/index.html">
-        Veículos
-      </a>
-
-      <a href="../armas/index.html">
-        Armas
-      </a>
-
-      <a href="../missoes/index.html">
-        Missões
-      </a>
-
-      <a href="../locais/index.html">
-        Locais
-      </a>
-
-      <a href="../propriedades/index.html">
-        Propriedades
-      </a>
-
-      <a href="../atividades/index.html">
-        Atividades
-      </a>
-
-      <a href="../colecionaveis/index.html">
-        Colecionáveis
-      </a>
-
+    <div class="mobile-submenu" id="mobile-wiki">
+      <a href="../personagens/index.html">Personagens</a>
+      <a href="../veiculos/index.html">Veículos</a>
+      <a href="../armas/index.html">Armas</a>
+      <a href="../missoes/index.html">Missões</a>
+      <a href="../locais/index.html">Locais</a>
+      <a href="../propriedades/index.html">Propriedades</a>
+      <a href="../atividades/index.html">Atividades</a>
+      <a href="../colecionaveis/index.html">Colecionáveis</a>
     </div>
 
-
-    <!-- GUIAS -->
-
     <button
+      type="button"
       class="submenu-toggle"
       aria-expanded="false"
       aria-controls="mobile-guias">
-
       Guias +
-
     </button>
 
-
-    <div
-      class="mobile-submenu"
-      id="mobile-guias">
-
-      <a href="../guias/iniciantes/index.html">
-        Iniciantes
-      </a>
-
-      <a href="../guias/dinheiro/index.html">
-        Dinheiro
-      </a>
-
-      <a href="../guias/missoes/index.html">
-        Missões
-      </a>
-
-      <a href="../guias/veiculos/index.html">
-        Veículos
-      </a>
-
-      <a href="../guias/armas/index.html">
-        Armas
-      </a>
-
-      <a href="../guias/segredos/index.html">
-        Segredos
-      </a>
-
-      <a href="../guias/easter-eggs/index.html">
-        Easter Eggs
-      </a>
-
-      <a href="../guias/guia-100/index.html">
-        Guia 100%
-      </a>
-
+    <div class="mobile-submenu" id="mobile-guias">
+      <a href="../guias/iniciantes/index.html">Iniciantes</a>
+      <a href="../guias/dinheiro/index.html">Dinheiro</a>
+      <a href="../guias/missoes/index.html">Missões</a>
+      <a href="../guias/veiculos/index.html">Veículos</a>
+      <a href="../guias/armas/index.html">Armas</a>
+      <a href="../guias/segredos/index.html">Segredos</a>
+      <a href="../guias/easter-eggs/index.html">Easter Eggs</a>
+      <a href="../guias/guia-100/index.html">Guia 100%</a>
     </div>
 
-
-    <a href="../buscar/index.html">
-      Buscar
-    </a>
-
-
+    <a href="../buscar/index.html">Buscar</a>
   </nav>
 
-
-  <!-- ==================================================
-       REDES SOCIAIS
-  ================================================== -->
-
   <div class="social-placeholders">
-
-
     <a
       href="https://www.instagram.com/gta6zoone/"
       target="_blank"
       rel="noopener noreferrer">
-
       Instagram
-
     </a>
-
-
     ·
-
-
     <a
       href="https://www.youtube.com/channel/UCR-PxT2Lt8Pte8I_f_zdtDg"
       target="_blank"
       rel="noopener noreferrer">
-
       YouTube
-
     </a>
-
-
   </div>
-
-
 </aside>
 
-
-<!-- =========================================================
-     CONTEÚDO
-========================================================= -->
-
-<main
-  id="conteudo"
-  class="privacy-page">
-
-
-<!-- =========================================================
-     HERO
-========================================================= -->
+<main id="conteudo" class="privacy-page">
 
 <section class="privacy-hero">
-
   <div class="container privacy-container">
 
-
-    <nav
-      class="breadcrumb"
-      aria-label="Breadcrumb">
-
-      <a href="../index.html">
-        Início
-      </a>
-
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Início</a>
       ›
-
-      Política de Privacidade
-
+      <span aria-current="page">Política de Privacidade</span>
     </nav>
-
 
     <div class="privacy-hero-copy">
 
+      <span class="eyebrow">PRIVACIDADE</span>
 
-      <span class="eyebrow">
-        PRIVACIDADE
-      </span>
-
-
-      <h1>
-        Política de Privacidade
-      </h1>
-
+      <h1>Política de Privacidade</h1>
 
       <p class="lede">
-
-        Esta Política de Privacidade explica
-        como o GTA6Zoone trata informações,
-        tecnologias de armazenamento,
-        serviços de terceiros e outros recursos
-        utilizados durante a navegação pelo site.
-
+        Esta Política de Privacidade explica como o GTA6Zoone
+        trata informações, armazenamento local, cookies,
+        serviços de terceiros, conteúdo incorporado e
+        tecnologias relacionadas à publicidade.
       </p>
-
 
       <span class="privacy-updated">
-        Última atualização: 6 de setembro de 2026
+        Última atualização: 11 de setembro de 2026
       </span>
-
-
     </div>
-
-
   </div>
-
 </section>
-
-
-<!-- =========================================================
-     INTRODUÇÃO
-========================================================= -->
 
 <section class="privacy-intro section section-alt">
-
   <div class="container privacy-container">
-
 
     <div class="privacy-intro-card">
-
-
       <p>
-
         O <strong>GTA6Zoone</strong> é um portal independente
         dedicado a conteúdos sobre Grand Theft Auto VI.
-
-        Respeitamos a privacidade dos visitantes e buscamos
-        limitar a coleta de informações ao necessário
-        para disponibilizar e melhorar os recursos do site.
-
+        Buscamos limitar o tratamento de informações ao que
+        é necessário para disponibilizar, proteger e melhorar
+        os recursos do site.
       </p>
-
 
       <p>
-
-        Ao utilizar o GTA6Zoone, você poderá acessar
-        páginas informativas, ferramentas interativas,
-        vídeos incorporados, links externos e outros recursos.
-
-        Alguns desses serviços podem utilizar tecnologias
-        próprias ou de terceiros, conforme explicado abaixo.
-
+        Ao navegar pelo portal, você poderá utilizar páginas
+        informativas, ferramentas interativas, vídeos incorporados,
+        links externos e recursos fornecidos por terceiros.
+        Algumas dessas tecnologias podem tratar dados técnicos ou
+        utilizar armazenamento no navegador, conforme explicado
+        nesta política.
       </p>
-
-
     </div>
-
-
   </div>
-
 </section>
-
-
-<!-- =========================================================
-     ÍNDICE
-========================================================= -->
 
 <section class="privacy-nav-section section">
-
   <div class="container privacy-container">
-
 
     <div class="privacy-nav">
-
-
-      <strong>
-        Nesta política
-      </strong>
-
+      <strong>Nesta política</strong>
 
       <div class="privacy-nav-grid">
-
-
-        <a href="#dados">
-          1. Informações e dados
-        </a>
-
-        <a href="#contato">
-          2. Contato por e-mail
-        </a>
-
-        <a href="#localstorage">
-          3. Armazenamento local
-        </a>
-
-        <a href="#cookies">
-          4. Cookies
-        </a>
-
-        <a href="#terceiros">
-          5. Serviços de terceiros
-        </a>
-
-        <a href="#youtube">
-          6. YouTube
-        </a>
-
-        <a href="#publicidade">
-          7. Publicidade e Google AdSense
-        </a>
-
-        <a href="#links">
-          8. Links externos
-        </a>
-
-        <a href="#direitos">
-          9. Escolhas e direitos
-        </a>
-
-        <a href="#seguranca">
-          10. Segurança
-        </a>
-
-        <a href="#alteracoes">
-          11. Alterações desta política
-        </a>
-
-        <a href="#fale-conosco">
-          12. Fale conosco
-        </a>
-
-
+        <a href="#dados">1. Informações e dados</a>
+        <a href="#contato">2. Contato por e-mail</a>
+        <a href="#localstorage">3. Armazenamento local</a>
+        <a href="#cookies">4. Cookies</a>
+        <a href="#terceiros">5. Serviços de terceiros</a>
+        <a href="#youtube">6. YouTube</a>
+        <a href="#publicidade">7. Publicidade e Google AdSense</a>
+        <a href="#links">8. Links externos</a>
+        <a href="#direitos">9. Escolhas e direitos</a>
+        <a href="#seguranca">10. Segurança</a>
+        <a href="#alteracoes">11. Alterações desta política</a>
+        <a href="#fale-conosco">12. Fale conosco</a>
       </div>
-
-
     </div>
-
-
   </div>
-
 </section>
 
-
-<!-- =========================================================
-     1. DADOS
-========================================================= -->
-
-<section
-  class="privacy-section section section-alt"
-  id="dados">
-
+<section class="privacy-section section section-alt" id="dados">
   <div class="container privacy-container">
-
     <div class="privacy-content">
 
+      <span class="eyebrow">01</span>
 
-      <span class="eyebrow">
-        01
-      </span>
-
-
-      <h2>
-        Informações e dados
-      </h2>
-
+      <h2>Informações e dados</h2>
 
       <p>
-
-        O GTA6Zoone não exige a criação de uma conta
-        para acessar suas páginas, consultar a Wiki,
-        ler notícias, utilizar guias ou navegar pelas
-        áreas públicas do portal.
-
+        O GTA6Zoone não exige a criação de uma conta para
+        acessar suas páginas, consultar a Wiki, ler notícias,
+        utilizar guias ou navegar pelas áreas públicas do portal.
       </p>
-
 
       <p>
-
-        O site poderá receber determinadas informações
-        quando você as fornece voluntariamente,
-        por exemplo ao entrar em contato por e-mail.
-
+        O site pode receber informações quando você as fornece
+        voluntariamente, por exemplo ao entrar em contato por e-mail.
       </p>
-
 
       <p>
-
-        Além disso, provedores técnicos responsáveis
-        pela hospedagem, entrega ou segurança do site
-        podem processar informações técnicas necessárias
-        ao funcionamento da página, como endereço IP,
-        tipo de navegador, dispositivo, data e horário
-        de acesso e informações semelhantes.
-
+        Provedores técnicos utilizados para hospedagem, entrega,
+        segurança ou funcionamento do site também podem processar
+        dados técnicos necessários à prestação desses serviços,
+        como endereço IP, informações do navegador e dispositivo,
+        data e horário de acesso e registros semelhantes.
       </p>
-
 
       <div class="privacy-highlight">
-
-
-        <strong>
-          Não vendemos dados pessoais
-        </strong>
-
-
+        <strong>Não vendemos listas de dados pessoais</strong>
         <p>
-
-          O GTA6Zoone não comercializa listas
-          de dados pessoais de seus visitantes.
-
+          O GTA6Zoone não comercializa listas de dados pessoais
+          de seus visitantes.
         </p>
-
-
       </div>
-
-
     </div>
-
   </div>
-
 </section>
 
-
-<!-- =========================================================
-     2. CONTATO
-========================================================= -->
-
-<section
-  class="privacy-section section"
-  id="contato">
-
+<section class="privacy-section section" id="contato">
   <div class="container privacy-container">
-
     <div class="privacy-content">
 
+      <span class="eyebrow">02</span>
 
-      <span class="eyebrow">
-        02
-      </span>
-
-
-      <h2>
-        Contato por e-mail
-      </h2>
-
+      <h2>Contato por e-mail</h2>
 
       <p>
-
-        A página de contato do GTA6Zoone utiliza
-        o aplicativo ou serviço de e-mail do próprio
-        usuário para preparar e enviar mensagens.
-
+        A página de contato do GTA6Zoone utiliza o aplicativo
+        ou serviço de e-mail do próprio usuário para preparar
+        e enviar mensagens.
       </p>
-
 
       <p>
-
-        O formulário disponível nessa página não possui
-        banco de dados próprio destinado a armazenar
-        as mensagens digitadas.
-
-        Ao enviar uma mensagem, as informações passam
-        a ser tratadas pelos serviços de e-mail envolvidos
-        na comunicação.
-
+        O formulário disponível nessa página não utiliza um
+        banco de dados próprio para armazenar o texto digitado.
+        Ao enviar a mensagem, as informações passam a ser tratadas
+        pelos serviços de e-mail envolvidos na comunicação.
       </p>
-
 
       <p>
-
-        Informações enviadas voluntariamente poderão
-        ser utilizadas para responder dúvidas,
-        receber sugestões, analisar correções,
-        avaliar propostas ou tratar do assunto
-        indicado pelo usuário.
-
+        Informações enviadas voluntariamente podem ser utilizadas
+        para responder dúvidas, receber sugestões, analisar correções,
+        avaliar propostas ou tratar do assunto indicado pelo usuário.
       </p>
-
-
     </div>
-
   </div>
-
 </section>
 
-
-<!-- =========================================================
-     3. LOCALSTORAGE
-========================================================= -->
-
-<section
-  class="privacy-section section section-alt"
-  id="localstorage">
-
+<section class="privacy-section section section-alt" id="localstorage">
   <div class="container privacy-container">
-
     <div class="privacy-content">
 
+      <span class="eyebrow">03</span>
 
-      <span class="eyebrow">
-        03
-      </span>
-
-
-      <h2>
-        Armazenamento local das Ferramentas
-      </h2>
-
+      <h2>Armazenamento local das Ferramentas</h2>
 
       <p>
-
-        Algumas ferramentas do GTA6Zoone permitem
-        acompanhar progresso, marcar objetivos,
-        colecionáveis, troféus e conquistas.
-
+        Algumas ferramentas do GTA6Zoone permitem acompanhar
+        progresso, marcar objetivos, colecionáveis, troféus,
+        conquistas e outros itens.
       </p>
-
 
       <div class="privacy-storage-card">
-
-
-        <strong>
-          Seu progresso fica armazenado no navegador
-        </strong>
-
+        <strong>Seu progresso fica armazenado no navegador</strong>
 
         <p>
-
-          Essas informações utilizam o recurso
-          <strong>localStorage</strong> do navegador.
-
-          Os dados permanecem no dispositivo utilizado
-          e são recuperados quando o visitante retorna
-          às Ferramentas utilizando o mesmo navegador.
-
+          Esses recursos podem utilizar
+          <strong>localStorage</strong>. Os dados permanecem
+          no dispositivo e no navegador utilizados e podem ser
+          recuperados quando o visitante retorna às Ferramentas
+          no mesmo ambiente.
         </p>
-
-
       </div>
 
-
       <p>
-
-        O GTA6Zoone não precisa receber esse progresso
-        em um banco de dados para que o recurso funcione.
-
+        Esse funcionamento não exige que o GTA6Zoone receba o
+        progresso em um banco de dados próprio.
       </p>
 
-
       <p>
-
-        O usuário pode apagar o progresso diretamente
-        pelas Ferramentas ou removendo os dados armazenados
-        pelo navegador.
-
-        Também é possível exportar um arquivo de backup
+        O usuário pode remover o progresso pelas próprias
+        Ferramentas ou apagando os dados armazenados pelo navegador.
+        Quando disponível, também pode exportar um arquivo de backup
         e importá-lo posteriormente.
-
       </p>
-
 
       <p>
-
-        Se o usuário limpar os dados do navegador,
-        utilizar navegação privada ou trocar de dispositivo
-        sem realizar um backup, o progresso local
-        poderá ser perdido.
-
+        Se os dados do navegador forem apagados, se a navegação
+        privada for utilizada ou se houver troca de navegador
+        ou dispositivo sem backup, o progresso local poderá ser perdido.
       </p>
-
-
     </div>
-
   </div>
-
 </section>
 
-
-<!-- =========================================================
-     4. COOKIES
-========================================================= -->
-
-<section
-  class="privacy-section section"
-  id="cookies">
-
+<section class="privacy-section section" id="cookies">
   <div class="container privacy-container">
-
     <div class="privacy-content">
 
+      <span class="eyebrow">04</span>
 
-      <span class="eyebrow">
-        04
-      </span>
-
-
-      <h2>
-        Cookies e tecnologias semelhantes
-      </h2>
-
+      <h2>Cookies e tecnologias semelhantes</h2>
 
       <p>
-
-        Cookies são pequenos arquivos ou identificadores
-        utilizados por sites e serviços para permitir
-        funcionalidades, lembrar preferências,
-        medir utilização e, em determinados casos,
-        oferecer conteúdo ou publicidade.
-
+        Cookies são pequenos arquivos ou identificadores utilizados
+        por sites e serviços para permitir funcionalidades, lembrar
+        preferências, medir utilização e, em determinados casos,
+        fornecer conteúdo ou publicidade.
       </p>
 
-
       <p>
-
-        O GTA6Zoone e serviços integrados ao portal
-        poderão utilizar cookies ou tecnologias semelhantes
-        quando necessários para funcionalidades,
-        segurança, estatísticas, conteúdo incorporado
-        ou outros recursos.
-
+        O GTA6Zoone e serviços integrados ao portal podem utilizar
+        cookies ou tecnologias semelhantes para funcionalidades,
+        segurança, conteúdo incorporado, medição e publicidade,
+        de acordo com a configuração de cada serviço.
       </p>
 
-
       <p>
-
-        Quando tecnologias dependerem do consentimento
-        do usuário conforme a legislação aplicável,
-        poderão ser disponibilizados mecanismos
-        para que essa escolha seja realizada antes
-        de sua ativação.
-
+        Quando uma tecnologia depender de consentimento segundo
+        a legislação aplicável, sua utilização deverá respeitar
+        as escolhas registradas pelo visitante no mecanismo de
+        consentimento disponibilizado pelo site, quando esse
+        mecanismo for aplicável.
       </p>
 
-
       <p>
-
-        Informações mais específicas serão apresentadas
-        na nossa
+        Informações mais específicas estão disponíveis na nossa
         <a href="../politica-de-cookies/index.html">
           Política de Cookies
         </a>.
-
       </p>
-
-
     </div>
-
   </div>
-
 </section>
 
-
-<!-- =========================================================
-     5. TERCEIROS
-========================================================= -->
-
-<section
-  class="privacy-section section section-alt"
-  id="terceiros">
-
+<section class="privacy-section section section-alt" id="terceiros">
   <div class="container privacy-container">
-
     <div class="privacy-content">
 
+      <span class="eyebrow">05</span>
 
-      <span class="eyebrow">
-        05
-      </span>
-
-
-      <h2>
-        Serviços de terceiros
-      </h2>
-
+      <h2>Serviços de terceiros</h2>
 
       <p>
-
-        Algumas funcionalidades do GTA6Zoone
-        podem depender de serviços fornecidos
-        por outras empresas.
-
+        Algumas funcionalidades do GTA6Zoone dependem ou podem
+        depender de serviços fornecidos por outras empresas.
       </p>
-
 
       <p>
-
-        Esses serviços podem possuir suas próprias
-        políticas de privacidade, condições de uso
-        e tecnologias de armazenamento.
-
+        Esses serviços possuem suas próprias políticas de privacidade,
+        condições de uso e tecnologias de armazenamento.
       </p>
-
 
       <p>
-
-        Dependendo dos recursos utilizados,
-        terceiros poderão processar informações
-        técnicas necessárias para fornecer
-        seus respectivos serviços.
-
+        Dependendo do recurso utilizado, terceiros podem processar
+        informações técnicas necessárias para prestar seus serviços.
       </p>
-
 
       <p>
-
-        Recomendamos que os visitantes também consultem
-        as políticas de privacidade dos serviços externos
-        com os quais interagirem.
-
+        Recomendamos que os visitantes também consultem as políticas
+        dos serviços externos com os quais interagirem.
       </p>
-
-
     </div>
-
   </div>
-
 </section>
 
-
-<!-- =========================================================
-     6. YOUTUBE
-========================================================= -->
-
-<section
-  class="privacy-section section"
-  id="youtube">
-
+<section class="privacy-section section" id="youtube">
   <div class="container privacy-container">
-
     <div class="privacy-content">
 
+      <span class="eyebrow">06</span>
 
-      <span class="eyebrow">
-        06
-      </span>
-
-
-      <h2>
-        Conteúdo incorporado do YouTube
-      </h2>
-
+      <h2>Conteúdo incorporado do YouTube</h2>
 
       <p>
-
-        O GTA6Zoone pode incorporar vídeos do YouTube
-        diretamente em páginas do portal, incluindo
-        notícias, guias, troféus e outros conteúdos.
-
+        O GTA6Zoone pode incorporar vídeos do YouTube em páginas
+        como notícias, guias, troféus e outros conteúdos.
       </p>
-
 
       <p>
-
-        Ao interagir com um vídeo incorporado,
-        o YouTube e seus provedores relacionados
-        podem processar informações conforme
-        suas próprias políticas e configurações,
-        incluindo informações técnicas e tecnologias
-        de armazenamento.
-
+        Ao carregar ou interagir com um vídeo incorporado,
+        o YouTube e seus provedores relacionados podem processar
+        informações conforme suas próprias políticas e configurações,
+        incluindo dados técnicos e tecnologias de armazenamento.
       </p>
-
 
       <p>
-
-        O GTA6Zoone também possui links para seu canal
-        no YouTube. Ao acessar a plataforma,
-        o visitante passa a estar sujeito às políticas
-        e condições aplicáveis ao serviço externo.
-
+        O GTA6Zoone também possui links para seu canal no YouTube.
+        Ao acessar a plataforma, o visitante passa a utilizar
+        um serviço externo sujeito às políticas e condições
+        aplicáveis ao YouTube.
       </p>
-
-
     </div>
-
   </div>
-
 </section>
 
-
-<!-- =========================================================
-     7. PUBLICIDADE / ADSENSE
-========================================================= -->
-
-<section
-  class="privacy-section section section-alt"
-  id="publicidade">
-
+<section class="privacy-section section section-alt" id="publicidade">
   <div class="container privacy-container">
-
     <div class="privacy-content">
 
+      <span class="eyebrow">07</span>
 
-      <span class="eyebrow">
-        07
-      </span>
-
-
-      <h2>
-        Publicidade e Google AdSense
-      </h2>
-
+      <h2>Publicidade e Google AdSense</h2>
 
       <div class="privacy-ads-card">
-
-
-        <strong>
-          Publicidade poderá ser utilizada futuramente
-        </strong>
-
+        <strong>O Google AdSense está integrado tecnicamente ao portal</strong>
 
         <p>
-
-          O GTA6Zoone poderá utilizar serviços
-          de publicidade de terceiros,
-          incluindo o Google AdSense,
-          para exibir anúncios no portal.
-
+          O GTA6Zoone inclui o código do Google AdSense para viabilizar
+          a monetização do site. A presença desse código não significa
+          que anúncios estejam sendo exibidos em todas as páginas ou
+          para todos os visitantes.
         </p>
-
-
       </div>
 
-
       <p>
-
-        Caso esses serviços sejam ativados,
-        fornecedores terceiros, incluindo o Google,
-        poderão utilizar cookies, identificadores
-        ou tecnologias semelhantes para fornecer anúncios,
-        medir seu desempenho, prevenir abusos e realizar
-        outras funções relacionadas à publicidade.
-
+        Quando a publicidade estiver ativa, o Google e seus parceiros
+        podem utilizar cookies, identificadores e outras tecnologias
+        para fornecer anúncios, medir desempenho, limitar fraude e abuso
+        e executar funções relacionadas à publicidade.
       </p>
 
-
       <p>
-
-        Quando permitido pela legislação aplicável
-        e pelas escolhas realizadas pelo usuário,
-        determinadas tecnologias também poderão
-        ser utilizadas para personalização de anúncios.
-
+        Dependendo da configuração do serviço e das escolhas do usuário,
+        esse tratamento pode envolver informações como endereço IP,
+        características do navegador e dispositivo e interações
+        relacionadas à publicidade.
       </p>
 
-
       <p>
-
-        Quando necessário, o GTA6Zoone poderá apresentar
-        mecanismos de consentimento ou gerenciamento
-        de preferências antes da utilização de tecnologias
-        publicitárias que dependam desse consentimento.
-
+        Tecnologias utilizadas para publicidade personalizada ou outros
+        tratamentos que dependam de consentimento deverão respeitar
+        as escolhas do visitante quando esse consentimento for exigido
+        pela legislação aplicável.
       </p>
 
-
       <p>
-
-        Esta seção não significa que anúncios estejam
-        necessariamente ativos em todas as páginas
-        ou em todos os momentos.
-
+        O GTA6Zoone pode utilizar uma plataforma de gestão de consentimento
+        ou outros controles para permitir escolhas relacionadas a cookies
+        e publicidade quando isso for necessário.
       </p>
 
-
+      <p>
+        A disponibilidade, o formato e a personalização dos anúncios
+        podem variar conforme a configuração do AdSense, a região,
+        as preferências registradas e outros critérios aplicáveis.
+      </p>
     </div>
-
   </div>
-
 </section>
 
-
-<!-- =========================================================
-     8. LINKS EXTERNOS
-========================================================= -->
-
-<section
-  class="privacy-section section"
-  id="links">
-
+<section class="privacy-section section" id="links">
   <div class="container privacy-container">
-
     <div class="privacy-content">
 
+      <span class="eyebrow">08</span>
 
-      <span class="eyebrow">
-        08
-      </span>
-
-
-      <h2>
-        Links para sites externos
-      </h2>
-
+      <h2>Links para sites externos</h2>
 
       <p>
-
-        O GTA6Zoone pode apresentar links para sites,
-        redes sociais, vídeos e serviços externos.
-
+        O GTA6Zoone pode apresentar links para sites, redes sociais,
+        vídeos e outros serviços externos.
       </p>
-
 
       <p>
-
-        Ao acessar um desses links, o usuário deixa
-        o ambiente controlado pelo GTA6Zoone e passa
-        a utilizar um serviço sujeito às suas próprias
-        práticas de privacidade e condições.
-
+        Ao acessar um desses links, o visitante passa a utilizar
+        um serviço que possui suas próprias práticas de privacidade
+        e condições de uso.
       </p>
-
 
       <p>
-
-        Esta Política de Privacidade aplica-se
-        ao GTA6Zoone e não substitui as políticas
-        dos serviços externos acessados pelo visitante.
-
+        Esta Política de Privacidade aplica-se ao GTA6Zoone e não
+        substitui as políticas dos serviços externos acessados.
       </p>
-
-
     </div>
-
   </div>
-
 </section>
 
-
-<!-- =========================================================
-     9. DIREITOS
-========================================================= -->
-
-<section
-  class="privacy-section section section-alt"
-  id="direitos">
-
+<section class="privacy-section section section-alt" id="direitos">
   <div class="container privacy-container">
-
     <div class="privacy-content">
 
+      <span class="eyebrow">09</span>
 
-      <span class="eyebrow">
-        09
-      </span>
-
-
-      <h2>
-        Escolhas e direitos do usuário
-      </h2>
-
+      <h2>Escolhas e direitos do usuário</h2>
 
       <p>
-
-        Dependendo da legislação aplicável
-        e da forma como determinados dados forem tratados,
-        o usuário poderá possuir direitos relacionados
-        à sua informação pessoal.
-
+        Dependendo da legislação aplicável e da forma como determinados
+        dados forem tratados, o usuário pode possuir direitos relacionados
+        às suas informações pessoais.
       </p>
-
 
       <p>
-
-        Esses direitos podem incluir, conforme aplicável,
-        solicitar informações sobre o tratamento,
-        correção, exclusão, limitação, oposição
-        ou outras medidas previstas pela legislação.
-
+        Esses direitos podem incluir, quando aplicável, acesso,
+        correção, exclusão, limitação, oposição e outras medidas
+        previstas em lei.
       </p>
-
 
       <p>
-
-        Preferências relacionadas a cookies
-        e armazenamento também podem ser gerenciadas
-        através das configurações do navegador
-        ou dos mecanismos de consentimento disponibilizados
-        pelo site quando aplicável.
-
+        Preferências relacionadas a cookies e tecnologias semelhantes
+        também podem ser gerenciadas nas configurações do navegador
+        e, quando disponível, pelos mecanismos de consentimento
+        apresentados pelo site.
       </p>
-
 
       <p>
-
-        O progresso armazenado nas Ferramentas
-        pode ser removido diretamente pelo próprio usuário.
-
+        O progresso armazenado localmente nas Ferramentas pode ser
+        removido diretamente pelo próprio usuário.
       </p>
-
-
     </div>
-
   </div>
-
 </section>
 
-
-<!-- =========================================================
-     10. SEGURANÇA
-========================================================= -->
-
-<section
-  class="privacy-section section"
-  id="seguranca">
-
+<section class="privacy-section section" id="seguranca">
   <div class="container privacy-container">
-
     <div class="privacy-content">
 
+      <span class="eyebrow">10</span>
 
-      <span class="eyebrow">
-        10
-      </span>
-
-
-      <h2>
-        Segurança
-      </h2>
-
+      <h2>Segurança</h2>
 
       <p>
-
-        Buscamos manter o site e seus recursos
-        organizados de maneira compatível com boas
-        práticas de segurança e privacidade.
-
+        Buscamos manter o site e seus recursos de forma compatível
+        com boas práticas de segurança e privacidade.
       </p>
-
 
       <p>
-
-        No entanto, nenhum sistema conectado à internet
-        pode oferecer garantia absoluta contra falhas,
-        acessos não autorizados ou outros incidentes.
-
+        Nenhum sistema conectado à internet, porém, pode oferecer
+        garantia absoluta contra falhas, acessos não autorizados
+        ou outros incidentes.
       </p>
-
 
       <p>
-
-        Por isso, recomendamos que os visitantes
-        também adotem boas práticas de segurança
-        em seus próprios dispositivos e contas.
-
+        Recomendamos que os visitantes também adotem boas práticas
+        de segurança em seus próprios dispositivos e contas.
       </p>
-
-
     </div>
-
   </div>
-
 </section>
 
-
-<!-- =========================================================
-     11. ALTERAÇÕES
-========================================================= -->
-
-<section
-  class="privacy-section section section-alt"
-  id="alteracoes">
-
+<section class="privacy-section section section-alt" id="alteracoes">
   <div class="container privacy-container">
-
     <div class="privacy-content">
 
+      <span class="eyebrow">11</span>
 
-      <span class="eyebrow">
-        11
-      </span>
-
-
-      <h2>
-        Alterações desta Política de Privacidade
-      </h2>
-
+      <h2>Alterações desta Política de Privacidade</h2>
 
       <p>
-
-        Esta Política de Privacidade poderá ser atualizada
-        conforme o GTA6Zoone adicionar novas funcionalidades,
-        serviços, integrações ou tecnologias.
-
+        Esta Política de Privacidade pode ser atualizada conforme
+        o GTA6Zoone adicionar funcionalidades, serviços, integrações
+        ou tecnologias.
       </p>
 
-
       <p>
-
         Alterações relevantes serão refletidas nesta página,
-        juntamente com a indicação da data de atualização.
-
+        juntamente com a atualização da data indicada no início.
       </p>
-
 
       <p>
-
-        Recomendamos que os visitantes consultem esta página
-        periodicamente para acompanhar eventuais mudanças.
-
+        A versão publicada nesta página representa a política
+        vigente do portal.
       </p>
-
-
     </div>
-
   </div>
-
 </section>
 
-
-<!-- =========================================================
-     12. CONTATO
-========================================================= -->
-
-<section
-  class="privacy-contact-section section"
-  id="fale-conosco">
-
+<section class="privacy-contact-section section" id="fale-conosco">
   <div class="container privacy-container">
-
 
     <div class="privacy-contact">
 
-
       <div>
+        <span class="eyebrow">PRIVACIDADE</span>
 
-
-        <span class="eyebrow">
-          PRIVACIDADE
-        </span>
-
-
-        <h2>
-          Fale conosco
-        </h2>
-
+        <h2>Fale conosco</h2>
 
         <p>
-
-          Para dúvidas relacionadas a esta Política
-          de Privacidade ou ao tratamento de informações
-          no GTA6Zoone, entre em contato pelo endereço
-          suporte@gta6zoone.com.br.
-
+          Para dúvidas relacionadas a esta Política de Privacidade
+          ou ao tratamento de informações no GTA6Zoone,
+          entre em contato pelo endereço suporte@gta6zoone.com.br.
         </p>
-
-
       </div>
-
 
       <a
         class="btn"
         href="mailto:suporte@gta6zoone.com.br">
-
         Enviar e-mail
-
       </a>
-
-
     </div>
-
-
   </div>
-
 </section>
-
 
 </main>
 
-
-<!-- =========================================================
-     FOOTER
-========================================================= -->
-
 <footer class="site-footer">
-
   <div class="container">
-
 
     <div class="footer-grid">
 
-
-      <!-- GTA6ZOONE -->
-
       <div>
-
-        <strong class="brand-text">
-          GTA6ZOONE
-        </strong>
+        <strong class="brand-text">GTA6ZOONE</strong>
 
         <p class="muted">
-
-          Portal e enciclopédia independente
-          em português sobre GTA VI.
-
+          Portal e enciclopédia independente em português sobre Grand Theft Auto VI.
         </p>
-
       </div>
 
-
-      <!-- EXPLORAR -->
-
       <div>
-
-        <h3>
-          Explorar
-        </h3>
+        <h3>Explorar</h3>
 
         <div class="footer-links">
-
-          <a href="../gta-6/index.html">
-            GTA 6
-          </a>
-
-          <a href="../mapa/index.html">
-            Mapa
-          </a>
-
-          <a href="../wiki/index.html">
-            Wiki
-          </a>
-
-          <a href="../guias/index.html">
-            Guias
-          </a>
-
-          <a href="../noticias/index.html">
-            Notícias
-          </a>
-
+          <a href="../gta-6/index.html">GTA 6</a>
+          <a href="../mapa/index.html">Mapa</a>
+          <a href="../wiki/index.html">Wiki</a>
+          <a href="../guias/index.html">Guias</a>
+          <a href="../noticias/index.html">Notícias</a>
         </div>
-
       </div>
 
-
-      <!-- COMUNIDADE -->
-
       <div>
-
-        <h3>
-          Comunidade
-        </h3>
+        <h3>Comunidade</h3>
 
         <div class="footer-links">
-
-
           <a
             href="https://www.youtube.com/channel/UCR-PxT2Lt8Pte8I_f_zdtDg"
             target="_blank"
             rel="noopener noreferrer">
-
             YouTube
-
           </a>
-
 
           <a
             href="https://www.instagram.com/gta6zoone/"
             target="_blank"
             rel="noopener noreferrer">
-
             Instagram
-
           </a>
-
-
         </div>
-
       </div>
-
-
-      <!-- INSTITUCIONAL -->
 
       <div>
-
-        <h3>
-          Institucional
-        </h3>
+        <h3>Institucional</h3>
 
         <div class="footer-links">
-
-          <a href="../sobre/index.html">
-            Sobre
-          </a>
-
-          <a href="../contato/index.html">
-            Contato
-          </a>
-
-          <a href="../politica-de-privacidade/index.html">
+          <a href="../sobre/index.html">Sobre</a>
+          <a href="../contato/index.html">Contato</a>
+          <a
+            href="../politica-de-privacidade/index.html"
+            aria-current="page">
             Privacidade
           </a>
-
-          <a href="../politica-de-cookies/index.html">
-            Cookies
-          </a>
-
-          <a href="../termos-de-uso/index.html">
-            Termos
-          </a>
-
-          <a href="../aviso-legal/index.html">
-            Aviso legal
-          </a>
-
+          <a href="../politica-de-cookies/index.html">Cookies</a>
+          <a href="../termos-de-uso/index.html">Termos</a>
+          <a href="../aviso-legal/index.html">Aviso legal</a>
         </div>
-
       </div>
-
 
     </div>
 
-
     <p class="legal">
-
       Este é um site independente criado por fãs.
       GTA6Zoone não é afiliado, patrocinado ou endossado
       pela Rockstar Games ou pela Take-Two Interactive.
-
     </p>
-
-
   </div>
-
 </footer>
-
 
 </body>
 </html>

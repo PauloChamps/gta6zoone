@@ -4,13 +4,25 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>GTA6Zoone no YouTube: vídeos, guias e GTA VI | GTA6Zoone</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1">
+
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large">
+
+
+  <!-- =========================================================
+       SEO PRINCIPAL
+  ========================================================= -->
+
+  <title>Vídeos de GTA 6 no YouTube | GTA6Zoone</title>
 
   <meta
     name="description"
-    content="Assista aos vídeos do GTA6Zoone sobre GTA VI, incluindo guias, exploração, troféus, segredos, Easter Eggs, veículos, missões e muito mais.">
+    content="Acompanhe o GTA6Zoone no YouTube com análises, novidades, exploração e futuros guias em vídeo sobre GTA 6, conectados ao conteúdo do portal.">
 
   <link
     rel="canonical"
@@ -23,23 +35,33 @@
 
   <link
     rel="icon"
-    type="image/png"
-    href="../assets/images/branding/favicon.png">
+    type="image/webp"
+    href="../assets/images/branding/favicon.webp">
 
 
   <!-- =========================================================
        OPEN GRAPH
   ========================================================= -->
 
-  <meta property="og:type" content="website">
+  <meta
+    property="og:type"
+    content="website">
+
+  <meta
+    property="og:locale"
+    content="pt_BR">
+
+  <meta
+    property="og:site_name"
+    content="GTA6Zoone">
 
   <meta
     property="og:title"
-    content="GTA6Zoone no YouTube | Vídeos de GTA VI">
+    content="Vídeos de GTA 6 no YouTube | GTA6Zoone">
 
   <meta
     property="og:description"
-    content="Vídeos, guias, exploração e conteúdos de GTA VI no canal GTA6Zoone.">
+    content="Conheça o canal do GTA6Zoone com vídeos, análises, novidades e futuros guias sobre Grand Theft Auto VI.">
 
   <meta
     property="og:url"
@@ -47,11 +69,45 @@
 
   <meta
     property="og:image"
-    content="https://gta6zoone.com.br/assets/images/branding/banner01.jpg">
+    content="https://gta6zoone.com.br/assets/images/branding/banner01.webp">
+
+  <meta
+    property="og:image:alt"
+    content="GTA6Zoone — conteúdo sobre Grand Theft Auto VI">
+
+
+  <!-- =========================================================
+       TWITTER / X
+  ========================================================= -->
 
   <meta
     name="twitter:card"
     content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Vídeos de GTA 6 no YouTube | GTA6Zoone">
+
+  <meta
+    name="twitter:description"
+    content="Análises, novidades, exploração e futuros guias em vídeo sobre GTA 6 no canal GTA6Zoone.">
+
+  <meta
+    name="twitter:image"
+    content="https://gta6zoone.com.br/assets/images/branding/banner01.webp">
+
+
+  <!-- =========================================================
+       ADSENSE
+       Apenas carregamento global.
+       Nenhum bloco de anúncio é inserido nesta página.
+  ========================================================= -->
+
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
+    crossorigin="anonymous">
+  </script>
 
 
   <!-- =========================================================
@@ -603,7 +659,7 @@
 
 
     /* =========================================================
-       ÚLTIMOS VÍDEOS
+       CONTEÚDOS DO CANAL
     ========================================================= */
 
     .youtube-latest-section {
@@ -1124,23 +1180,73 @@
 
 
   <!-- =========================================================
-       SCHEMA
+       DADOS ESTRUTURADOS
   ========================================================= -->
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "GTA6Zoone no YouTube",
-    "description": "Central de vídeos do GTA6Zoone sobre Grand Theft Auto VI.",
-    "url": "https://gta6zoone.com.br/youtube/",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "GTA6Zoone",
-      "url": "https://gta6zoone.com.br/"
-    },
-    "sameAs": [
-      "https://www.youtube.com/channel/UCR-PxT2Lt8Pte8I_f_zdtDg"
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://gta6zoone.com.br/#organization",
+        "name": "GTA6Zoone",
+        "url": "https://gta6zoone.com.br/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://gta6zoone.com.br/assets/images/branding/favicon.webp"
+        },
+        "sameAs": [
+          "https://www.instagram.com/gta6zoone/",
+          "https://www.youtube.com/channel/UCR-PxT2Lt8Pte8I_f_zdtDg"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://gta6zoone.com.br/#website",
+        "url": "https://gta6zoone.com.br/",
+        "name": "GTA6Zoone",
+        "inLanguage": "pt-BR",
+        "publisher": {
+          "@id": "https://gta6zoone.com.br/#organization"
+        }
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://gta6zoone.com.br/youtube/#webpage",
+        "url": "https://gta6zoone.com.br/youtube/",
+        "name": "Vídeos de GTA 6 no YouTube | GTA6Zoone",
+        "description": "Página do canal GTA6Zoone no YouTube, com análises, novidades e futuros guias em vídeo sobre Grand Theft Auto VI.",
+        "inLanguage": "pt-BR",
+        "isPartOf": {
+          "@id": "https://gta6zoone.com.br/#website"
+        },
+        "about": {
+          "@type": "VideoGame",
+          "name": "Grand Theft Auto VI"
+        },
+        "breadcrumb": {
+          "@id": "https://gta6zoone.com.br/youtube/#breadcrumb"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://gta6zoone.com.br/youtube/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://gta6zoone.com.br/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "YouTube",
+            "item": "https://gta6zoone.com.br/youtube/"
+          }
+        ]
+      }
     ]
   }
   </script>
@@ -1176,8 +1282,8 @@
 
   <img
     class="banner-image"
-    src="../assets/images/branding/banner01.jpg"
-    alt="Banner GTA6Zoone">
+    src="../assets/images/branding/banner01.webp"
+    alt="">
 
 </div>
 
@@ -1411,6 +1517,7 @@
 
     <button
       class="menu-button"
+      type="button"
       data-menu-open
       aria-controls="mobile-menu"
       aria-expanded="false"
@@ -1449,6 +1556,7 @@
 
     <button
       class="close-menu"
+      type="button"
       data-menu-close
       aria-label="Fechar menu">
 
@@ -1476,6 +1584,7 @@
 
     <button
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-online">
 
@@ -1545,6 +1654,7 @@
 
     <button
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-wiki">
 
@@ -1596,6 +1706,7 @@
 
     <button
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-guias">
 
@@ -1709,7 +1820,9 @@
 
       ›
 
-      YouTube
+      <span aria-current="page">
+        YouTube
+      </span>
 
     </nav>
 
@@ -1726,26 +1839,26 @@
 
 
         <h1>
-          GTA VI em vídeo
+          GTA6Zoone no YouTube
         </h1>
 
 
         <p class="lede">
 
-          Guias, exploração, descobertas
-          e conteúdos de GTA VI também
-          em vídeo no GTA6Zoone.
+          O GTA6Zoone também tem seu espaço em vídeo,
+          criado para complementar as notícias, páginas
+          da Wiki, descobertas e guias publicados no portal.
 
         </p>
 
 
         <p>
 
-          O canal complementa as páginas
-          do portal com demonstrações visuais,
-          gameplays, tutoriais, análises
-          e conteúdos produzidos para quem
-          prefere acompanhar GTA VI em vídeo.
+          Antes do lançamento, o canal acompanha materiais
+          oficiais, novidades e detalhes de Grand Theft Auto VI.
+          Depois que o jogo estiver disponível, a ideia é ampliar
+          esse conteúdo com gameplay próprio, tutoriais,
+          exploração e guias práticos.
 
         </p>
 
@@ -1772,7 +1885,9 @@
 
       <!-- VISUAL -->
 
-      <div class="youtube-hero-media">
+      <div
+        class="youtube-hero-media"
+        aria-hidden="true">
 
 
         <div>
@@ -1809,7 +1924,7 @@
 
 
 <!-- =========================================================
-     VÍDEO EM DESTAQUE
+     DESTAQUE
 ========================================================= -->
 
 <section class="youtube-featured-section section section-alt">
@@ -1820,24 +1935,17 @@
     <div class="youtube-featured-grid">
 
 
-      <!-- =====================================================
-           VÍDEO
-
-           Quando escolher o destaque, substitua o placeholder
-           pelo iframe do vídeo.
-      ====================================================== -->
-
       <div class="youtube-featured-video">
 
 
         <div class="youtube-video-placeholder">
 
           <strong>
-            Vídeo em destaque
+            Destaque do canal
           </strong>
 
           <span>
-            Conteúdo em vídeo do GTA6Zoone
+            O próximo vídeo em destaque aparecerá aqui.
           </span>
 
         </div>
@@ -1850,29 +1958,32 @@
 
 
         <span class="eyebrow youtube-eyebrow">
-          EM DESTAQUE
+          SITE + VÍDEO
         </span>
 
 
         <h2>
-          Vídeos conectados ao portal
+          Mais contexto para o que você encontra no portal
         </h2>
 
 
         <p>
 
-          Os conteúdos em vídeo poderão complementar
-          guias, troféus, missões, veículos,
-          segredos e outras páginas do GTA6Zoone.
+          Nem todo assunto funciona da mesma forma em texto
+          e em vídeo. Uma página pode reunir detalhes,
+          referências e links, enquanto o vídeo ajuda
+          a mostrar cenas, caminhos e comparações
+          de maneira mais direta.
 
         </p>
 
 
         <p>
 
-          Assim, você poderá consultar a informação
-          escrita e também acompanhar visualmente
-          cada descoberta ou passo a passo.
+          Por isso, quando um conteúdo do canal estiver
+          relacionado a uma notícia, guia ou página da Wiki,
+          os dois poderão ser conectados para que você escolha
+          a forma mais prática de acompanhar o assunto.
 
         </p>
 
@@ -1906,14 +2017,15 @@
 
 
       <h2>
-        O que você encontrará no canal
+        O que queremos levar para o canal
       </h2>
 
 
       <p>
 
-        Os vídeos poderão acompanhar
-        as principais áreas do GTA6Zoone.
+        A proposta é transformar os principais assuntos
+        do GTA6Zoone em vídeos que realmente acrescentem
+        algo ao conteúdo publicado no site.
 
       </p>
 
@@ -1935,8 +2047,8 @@
         </h3>
 
         <p>
-          Tutoriais e passo a passo
-          para diferentes conteúdos.
+          Passo a passo visual para conteúdos
+          que ficam mais fáceis de entender vendo na prática.
         </p>
 
       </div>
@@ -1949,12 +2061,12 @@
         </span>
 
         <h3>
-          Troféus
+          Troféus e conquistas
         </h3>
 
         <p>
-          Vídeos para ajudar com troféus
-          e conquistas específicas.
+          Ajuda visual para requisitos específicos
+          de PlayStation e Xbox quando as listas estiverem disponíveis.
         </p>
 
       </div>
@@ -1971,8 +2083,8 @@
         </h3>
 
         <p>
-          Gameplay e ajuda para avançar
-          pelas missões.
+          Estratégias, caminhos e soluções para missões
+          conforme avançarmos pela campanha.
         </p>
 
       </div>
@@ -1989,8 +2101,8 @@
         </h3>
 
         <p>
-          Localização, obtenção
-          e demonstrações de veículos.
+          Demonstrações, localizações e detalhes
+          dos veículos encontrados no jogo.
         </p>
 
       </div>
@@ -2007,8 +2119,8 @@
         </h3>
 
         <p>
-          Mistérios, descobertas
-          e locais escondidos.
+          Descobertas curiosas, lugares escondidos
+          e detalhes que merecem uma investigação mais próxima.
         </p>
 
       </div>
@@ -2025,8 +2137,8 @@
         </h3>
 
         <p>
-          Referências e detalhes encontrados
-          durante a exploração.
+          Referências, homenagens e pequenos detalhes
+          encontrados durante a exploração.
         </p>
 
       </div>
@@ -2039,12 +2151,12 @@
         </span>
 
         <h3>
-          Mapa
+          Mapa e exploração
         </h3>
 
         <p>
-          Exploração de regiões
-          e futuras localizações.
+          Passeios por Vice City, Leonida
+          e outras regiões conhecidas do jogo.
         </p>
 
       </div>
@@ -2061,8 +2173,8 @@
         </h3>
 
         <p>
-          Momentos e conteúdos capturados
-          diretamente durante o jogo.
+          Momentos capturados diretamente durante o jogo
+          quando GTA VI estiver disponível.
         </p>
 
       </div>
@@ -2075,12 +2187,12 @@
         </span>
 
         <h3>
-          Notícias
+          Notícias e análises
         </h3>
 
         <p>
-          Vídeos sobre novidades relevantes
-          de GTA VI.
+          Novidades importantes comentadas com contexto,
+          sem transformar rumor em informação confirmada.
         </p>
 
       </div>
@@ -2095,7 +2207,7 @@
 
 
 <!-- =========================================================
-     ÚLTIMOS VÍDEOS
+     CONTEÚDOS DO CANAL
 ========================================================= -->
 
 <section class="youtube-latest-section section section-alt">
@@ -2107,20 +2219,20 @@
 
 
       <span class="eyebrow youtube-eyebrow">
-        VÍDEOS
+        EM PRODUÇÃO
       </span>
 
 
       <h2>
-        Últimos vídeos
+        Três frentes para acompanhar GTA VI
       </h2>
 
 
       <p>
 
-        Os vídeos publicados pelo GTA6Zoone
-        poderão ser destacados aqui e conectados
-        às páginas correspondentes do site.
+        Enquanto a biblioteca do canal cresce,
+        estes são os formatos que vão orientar
+        o conteúdo em vídeo do GTA6Zoone.
 
       </p>
 
@@ -2131,7 +2243,7 @@
     <div class="youtube-latest-grid">
 
 
-      <!-- CARD 1 -->
+      <!-- GUIAS -->
 
       <div class="youtube-video-card">
 
@@ -2146,15 +2258,19 @@
         <div class="youtube-card-content">
 
           <span class="eyebrow youtube-eyebrow">
-            GTA6ZOONE
+            GUIAS
           </span>
 
           <h3>
-            Vídeo do canal
+            Passo a passo sem enrolação
           </h3>
 
           <p>
-            Conteúdo publicado pelo GTA6Zoone.
+
+            Vídeos pensados para mostrar diretamente
+            onde ir, o que fazer e como concluir
+            objetivos específicos.
+
           </p>
 
         </div>
@@ -2163,7 +2279,7 @@
       </div>
 
 
-      <!-- CARD 2 -->
+      <!-- EXPLORAÇÃO -->
 
       <div class="youtube-video-card">
 
@@ -2178,15 +2294,19 @@
         <div class="youtube-card-content">
 
           <span class="eyebrow youtube-eyebrow">
-            GTA6ZOONE
+            EXPLORAÇÃO
           </span>
 
           <h3>
-            Vídeo do canal
+            Descobrindo Leonida
           </h3>
 
           <p>
-            Conteúdo publicado pelo GTA6Zoone.
+
+            Regiões, locais interessantes, veículos,
+            segredos e detalhes encontrados enquanto
+            exploramos o mundo do jogo.
+
           </p>
 
         </div>
@@ -2195,7 +2315,7 @@
       </div>
 
 
-      <!-- CARD 3 -->
+      <!-- NOTÍCIAS -->
 
       <div class="youtube-video-card">
 
@@ -2210,15 +2330,19 @@
         <div class="youtube-card-content">
 
           <span class="eyebrow youtube-eyebrow">
-            GTA6ZOONE
+            NOVIDADES
           </span>
 
           <h3>
-            Vídeo do canal
+            GTA VI com contexto
           </h3>
 
           <p>
-            Conteúdo publicado pelo GTA6Zoone.
+
+            Materiais oficiais, anúncios e novidades
+            comentados de forma clara, separando
+            confirmação, rumor e interpretação.
+
           </p>
 
         </div>
@@ -2253,16 +2377,17 @@
 
 
       <h2>
-        Um conteúdo complementa o outro
+        Um formato ajuda a completar o outro
       </h2>
 
 
       <p>
 
-        Os vídeos podem ser incorporados diretamente
-        às páginas do portal, permitindo que cada guia
-        tenha também uma versão visual quando houver
-        conteúdo produzido para ele.
+        No GTA6Zoone, a intenção não é repetir em vídeo
+        exatamente o que já está escrito. O site organiza
+        informações, imagens, referências e links;
+        o canal entra quando mostrar algo visualmente
+        torna o conteúdo mais fácil de acompanhar.
 
       </p>
 
@@ -2277,7 +2402,7 @@
           </strong>
 
           <span>
-            Informação rápida e detalhada.
+            Informações organizadas para consulta rápida.
           </span>
 
         </div>
@@ -2286,11 +2411,11 @@
         <div class="youtube-integration-card">
 
           <strong>
-            Screenshots
+            Imagens
           </strong>
 
           <span>
-            Identificação visual dos passos.
+            Apoio visual para personagens, locais e descobertas.
           </span>
 
         </div>
@@ -2303,7 +2428,7 @@
           </strong>
 
           <span>
-            Demonstração completa em gameplay.
+            Demonstração prática quando realmente ajudar.
           </span>
 
         </div>
@@ -2316,7 +2441,7 @@
           </strong>
 
           <span>
-            Navegação entre vídeo e conteúdo relacionado.
+            Conexão direta com a página relacionada no portal.
           </span>
 
         </div>
@@ -2354,14 +2479,14 @@
 
 
         <h2>
-          Acompanhe o GTA6Zoone
+          Acompanhe o GTA6Zoone no YouTube
         </h2>
 
 
         <p>
 
-          Acesse o canal para acompanhar
-          os vídeos publicados sobre GTA VI.
+          Visite o canal para acompanhar os próximos
+          vídeos e seguir o projeto também fora do site.
 
         </p>
 
@@ -2410,6 +2535,15 @@
       </h2>
 
 
+      <p>
+
+        Prefere pesquisar pelo site?
+        Estas áreas concentram alguns dos conteúdos
+        que também poderão ganhar versões em vídeo.
+
+      </p>
+
+
     </div>
 
 
@@ -2425,7 +2559,7 @@
         </strong>
 
         <span>
-          Tutoriais e ajuda para GTA VI.
+          Tutoriais e estratégias organizados por tema.
         </span>
 
       </a>
@@ -2440,7 +2574,7 @@
         </strong>
 
         <span>
-          PlayStation e Xbox.
+          Área dedicada ao PlayStation e Xbox.
         </span>
 
       </a>
@@ -2455,7 +2589,7 @@
         </strong>
 
         <span>
-          Acompanhe as novidades de GTA VI.
+          Acompanhe anúncios e novidades de GTA VI.
         </span>
 
       </a>
@@ -2470,7 +2604,7 @@
         </strong>
 
         <span>
-          Explore o mundo de GTA VI.
+          Explore Vice City, Leonida e outros locais.
         </span>
 
       </a>
@@ -2499,6 +2633,8 @@
     <div class="footer-grid">
 
 
+      <!-- GTA6ZOONE -->
+
       <div>
 
         <strong class="brand-text">
@@ -2507,13 +2643,15 @@
 
         <p class="muted">
 
-          Portal e enciclopédia independente
-          em português sobre GTA VI.
+          Portal e enciclopédia independente em português
+          sobre Grand Theft Auto VI.
 
         </p>
 
       </div>
 
+
+      <!-- EXPLORAR -->
 
       <div>
 
@@ -2548,6 +2686,8 @@
       </div>
 
 
+      <!-- COMUNIDADE -->
+
       <div>
 
         <h3>
@@ -2565,6 +2705,7 @@
 
           </a>
 
+
           <a
             href="https://www.instagram.com/gta6zoone/"
             target="_blank"
@@ -2578,6 +2719,8 @@
 
       </div>
 
+
+      <!-- INSTITUCIONAL -->
 
       <div>
 

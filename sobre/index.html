@@ -4,13 +4,25 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Sobre o GTA6Zoone | Portal e Wiki de GTA VI em Português</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1">
+
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large">
+
+
+  <!-- =========================================================
+       SEO PRINCIPAL
+  ========================================================= -->
+
+  <title>Sobre o GTA6Zoone | Portal e Wiki de GTA 6</title>
 
   <meta
     name="description"
-    content="Conheça o GTA6Zoone, portal independente em português dedicado a GTA VI, com Wiki, guias, notícias, personagens, veículos, mapa, missões, troféus e ferramentas.">
+    content="Conheça o GTA6Zoone, projeto independente em português criado para reunir informações, Wiki, guias, notícias, mapa e outros conteúdos sobre GTA VI.">
 
   <link
     rel="canonical"
@@ -23,23 +35,33 @@
 
   <link
     rel="icon"
-    type="image/png"
-    href="../assets/images/branding/favicon.png">
+    type="image/webp"
+    href="../assets/images/branding/favicon.webp">
 
 
   <!-- =========================================================
        OPEN GRAPH
   ========================================================= -->
 
-  <meta property="og:type" content="website">
+  <meta
+    property="og:type"
+    content="website">
+
+  <meta
+    property="og:locale"
+    content="pt_BR">
+
+  <meta
+    property="og:site_name"
+    content="GTA6Zoone">
 
   <meta
     property="og:title"
-    content="Sobre o GTA6Zoone | Portal de GTA VI em Português">
+    content="Sobre o GTA6Zoone | Portal e Wiki de GTA 6">
 
   <meta
     property="og:description"
-    content="Conheça o GTA6Zoone, portal independente dedicado a organizar informações, guias e conteúdos de GTA VI em português.">
+    content="Conheça o GTA6Zoone, projeto independente em português dedicado a organizar informações, Wiki, guias e conteúdos sobre GTA VI.">
 
   <meta
     property="og:url"
@@ -47,11 +69,45 @@
 
   <meta
     property="og:image"
-    content="https://gta6zoone.com.br/assets/images/branding/banner01.jpg">
+    content="https://gta6zoone.com.br/assets/images/branding/banner01.webp">
+
+  <meta
+    property="og:image:alt"
+    content="GTA6Zoone">
+
+
+  <!-- =========================================================
+       TWITTER / X
+  ========================================================= -->
 
   <meta
     name="twitter:card"
     content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Sobre o GTA6Zoone | Portal e Wiki de GTA 6">
+
+  <meta
+    name="twitter:description"
+    content="Conheça o projeto independente GTA6Zoone e a proposta de organizar conteúdos de Grand Theft Auto VI em português.">
+
+  <meta
+    name="twitter:image"
+    content="https://gta6zoone.com.br/assets/images/branding/banner01.webp">
+
+
+  <!-- =========================================================
+       ADSENSE
+       Apenas carregamento global.
+       Nenhum bloco de anúncio é inserido nesta página.
+  ========================================================= -->
+
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
+    crossorigin="anonymous">
+  </script>
 
 
   <!-- =========================================================
@@ -572,13 +628,18 @@
 
     .about-independence p {
 
-      margin: 0;
+      margin: 0 0 1rem;
 
       color:
         var(--color-text-muted);
 
       line-height: 1.8;
 
+    }
+
+
+    .about-independence p:last-child {
+      margin-bottom: 0;
     }
 
 
@@ -920,36 +981,83 @@
 
 
   <!-- =========================================================
-       SCHEMA
+       DADOS ESTRUTURADOS
   ========================================================= -->
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "AboutPage",
-    "name": "Sobre o GTA6Zoone",
-    "description": "Conheça o GTA6Zoone, portal independente em português dedicado a Grand Theft Auto VI.",
-    "url": "https://gta6zoone.com.br/sobre/",
-    "inLanguage": "pt-BR",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "GTA6Zoone",
-      "url": "https://gta6zoone.com.br/"
-    },
-    "about": {
-      "@type": "VideoGame",
-      "name": "Grand Theft Auto VI"
-    },
-    "mainEntity": {
-      "@type": "Organization",
-      "name": "GTA6Zoone",
-      "url": "https://gta6zoone.com.br/",
-      "description": "Portal independente em português dedicado a notícias, Wiki, guias e conteúdos sobre Grand Theft Auto VI.",
-      "sameAs": [
-        "https://www.instagram.com/gta6zoone/",
-        "https://www.youtube.com/channel/UCR-PxT2Lt8Pte8I_f_zdtDg"
-      ]
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://gta6zoone.com.br/#organization",
+        "name": "GTA6Zoone",
+        "url": "https://gta6zoone.com.br/",
+        "description": "Portal e enciclopédia independente em português sobre Grand Theft Auto VI.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://gta6zoone.com.br/assets/images/branding/favicon.webp"
+        },
+        "founder": {
+          "@type": "Person",
+          "name": "Paulo Campos"
+        },
+        "sameAs": [
+          "https://www.instagram.com/gta6zoone/",
+          "https://www.youtube.com/channel/UCR-PxT2Lt8Pte8I_f_zdtDg"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://gta6zoone.com.br/#website",
+        "url": "https://gta6zoone.com.br/",
+        "name": "GTA6Zoone",
+        "inLanguage": "pt-BR",
+        "publisher": {
+          "@id": "https://gta6zoone.com.br/#organization"
+        }
+      },
+      {
+        "@type": "AboutPage",
+        "@id": "https://gta6zoone.com.br/sobre/#webpage",
+        "url": "https://gta6zoone.com.br/sobre/",
+        "name": "Sobre o GTA6Zoone | Portal e Wiki de GTA 6",
+        "description": "Conheça o GTA6Zoone, projeto independente em português dedicado a organizar informações e conteúdos sobre Grand Theft Auto VI.",
+        "inLanguage": "pt-BR",
+        "dateModified": "2026-09-11",
+        "isPartOf": {
+          "@id": "https://gta6zoone.com.br/#website"
+        },
+        "mainEntity": {
+          "@id": "https://gta6zoone.com.br/#organization"
+        },
+        "about": {
+          "@type": "VideoGame",
+          "name": "Grand Theft Auto VI"
+        },
+        "breadcrumb": {
+          "@id": "https://gta6zoone.com.br/sobre/#breadcrumb"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://gta6zoone.com.br/sobre/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://gta6zoone.com.br/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Sobre",
+            "item": "https://gta6zoone.com.br/sobre/"
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -984,7 +1092,7 @@
 
   <img
     class="banner-image"
-    src="../assets/images/branding/banner01.jpg"
+    src="../assets/images/branding/banner01.webp"
     alt="">
 
 </div>
@@ -1030,8 +1138,6 @@
       </a>
 
 
-      <!-- ONLINE -->
-
       <div class="dropdown">
 
         <button
@@ -1071,8 +1177,6 @@
         MAPA
       </a>
 
-
-      <!-- WIKI -->
 
       <div class="dropdown">
 
@@ -1124,8 +1228,6 @@
 
       </div>
 
-
-      <!-- GUIAS -->
 
       <div class="dropdown">
 
@@ -1188,6 +1290,7 @@
 
     <button
       class="menu-button"
+      type="button"
       data-menu-open
       aria-controls="mobile-menu"
       aria-expanded="false"
@@ -1225,6 +1328,7 @@
 
     <button
       class="close-menu"
+      type="button"
       data-menu-close
       aria-label="Fechar menu">
 
@@ -1248,10 +1352,9 @@
     </a>
 
 
-    <!-- ONLINE -->
-
     <button
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-online">
 
@@ -1288,10 +1391,9 @@
     </a>
 
 
-    <!-- WIKI -->
-
     <button
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-wiki">
 
@@ -1339,10 +1441,9 @@
     </div>
 
 
-    <!-- GUIAS -->
-
     <button
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-guias">
 
@@ -1397,10 +1498,6 @@
 
   </nav>
 
-
-  <!-- ==================================================
-       REDES SOCIAIS
-  ================================================== -->
 
   <div class="social-placeholders">
 
@@ -1462,7 +1559,9 @@
 
       ›
 
-      Sobre
+      <span aria-current="page">
+        Sobre
+      </span>
 
     </nav>
 
@@ -1495,11 +1594,11 @@
 
         <p>
 
-          Nosso objetivo é construir uma referência
-          para jogadores que procuram notícias,
-          informações oficiais, Wiki, guias,
-          personagens, veículos, armas, missões,
-          locais, mapa, troféus, colecionáveis
+          A proposta é construir uma referência útil
+          para quem procura informações oficiais,
+          notícias, Wiki, guias, personagens,
+          veículos, armas, missões, locais,
+          mapa, troféus, colecionáveis
           e outros conteúdos relacionados a GTA VI.
 
         </p>
@@ -1565,46 +1664,61 @@
 
       <p>
 
-        O <strong>GTA6Zoone</strong> nasceu com a proposta
-        de criar um espaço organizado para acompanhar
-        <strong>Grand Theft Auto VI</strong>, também conhecido
-        como GTA VI ou GTA 6, desde as informações divulgadas
-        antes do lançamento até a construção de uma
-        enciclopédia cada vez mais completa sobre o jogo.
+        O <strong>GTA6Zoone</strong> é um projeto independente
+        criado e mantido por <strong>Paulo Campos</strong>,
+        dedicado a reunir informações, guias e conteúdos
+        sobre <strong>Grand Theft Auto VI</strong> em português.
 
       </p>
 
 
       <p>
 
-        Em vez de reunir tudo em uma sequência de notícias,
-        o portal é estruturado para que cada tipo de informação
-        tenha seu próprio lugar. Personagens possuem suas páginas,
-        veículos formam um catálogo próprio, regiões e locais
-        podem ser explorados separadamente, enquanto missões,
-        armas, propriedades, atividades e colecionáveis
-        são organizados dentro da Wiki.
+        O projeto nasceu da ideia de acompanhar GTA VI
+        desde as informações divulgadas antes do lançamento
+        e, com o tempo, construir uma enciclopédia
+        cada vez mais completa sobre o jogo.
 
       </p>
 
 
       <p>
 
-        Os <strong>guias de GTA VI</strong> têm uma função
-        diferente da enciclopédia: enquanto a Wiki explica
-        o que cada elemento é, os guias são pensados para ajudar
-        o jogador a realizar objetivos, encontrar itens,
-        entender sistemas e avançar pelo jogo.
+        Em vez de concentrar tudo em uma sequência
+        de notícias, o site organiza diferentes tipos
+        de informação em áreas próprias.
+
+        Personagens possuem suas páginas,
+        veículos formam um catálogo,
+        regiões e locais podem ser explorados
+        separadamente e outros elementos do jogo
+        ficam reunidos dentro da Wiki.
 
       </p>
 
 
       <p>
 
-        O site também reúne áreas dedicadas ao
-        <strong>mapa de GTA VI</strong>, troféus do PlayStation,
-        conquistas do Xbox, vídeos e ferramentas interativas
-        para acompanhamento de progresso.
+        Os <strong>guias de GTA VI</strong> cumprem
+        uma função diferente da enciclopédia.
+
+        Enquanto a Wiki procura explicar e catalogar
+        elementos do jogo, os guias são pensados
+        para ajudar o jogador a cumprir objetivos,
+        encontrar itens, entender sistemas
+        e avançar pelo conteúdo.
+
+      </p>
+
+
+      <p>
+
+        O GTA6Zoone também possui áreas dedicadas
+        ao <strong>mapa de GTA VI</strong>,
+        troféus do PlayStation,
+        conquistas do Xbox,
+        vídeos e ferramentas para acompanhamento
+        de progresso.
 
       </p>
 
@@ -1641,8 +1755,8 @@
 
       <p>
 
-        O portal foi dividido em áreas para facilitar
-        a pesquisa e permitir que o conteúdo cresça
+        O portal é dividido em áreas para facilitar
+        a navegação e permitir que o conteúdo cresça
         de maneira organizada conforme novas informações
         sobre GTA VI se tornam disponíveis.
 
@@ -1694,7 +1808,7 @@
         </strong>
 
         <span>
-          Informações sobre personagens de Grand Theft Auto VI.
+          Perfis e informações dos personagens de Grand Theft Auto VI.
         </span>
 
       </a>
@@ -1754,7 +1868,7 @@
         </strong>
 
         <span>
-          Organização das missões conforme o conteúdo disponível.
+          Catálogo das missões conforme informações verificadas estiverem disponíveis.
         </span>
 
       </a>
@@ -1769,7 +1883,7 @@
         </strong>
 
         <span>
-          Tutoriais e conteúdos para ajudar durante o jogo.
+          Conteúdos práticos para ajudar durante o jogo.
         </span>
 
       </a>
@@ -1780,11 +1894,11 @@
         href="../trofeus/index.html">
 
         <strong>
-          Troféus
+          Troféus e Conquistas
         </strong>
 
         <span>
-          Áreas separadas para PlayStation e Xbox.
+          Áreas dedicadas ao PlayStation e ao Xbox.
         </span>
 
       </a>
@@ -1814,7 +1928,7 @@
         </strong>
 
         <span>
-          Conteúdos em vídeo publicados pelo GTA6Zoone.
+          Conteúdos em vídeo produzidos para o projeto.
         </span>
 
       </a>
@@ -1829,7 +1943,7 @@
         </strong>
 
         <span>
-          Busque conteúdos em diferentes áreas do portal.
+          Busca integrada entre diferentes áreas do portal.
         </span>
 
       </a>
@@ -1867,15 +1981,18 @@
 
       <p>
 
-        GTA VI desperta enorme interesse e, naturalmente,
-        também gera rumores, teorias e informações não confirmadas.
-        Por isso, o GTA6Zoone procura diferenciar claramente
-        informações confirmadas de conteúdos ainda incertos.
+        GTA VI desperta muito interesse e,
+        naturalmente, também gera rumores,
+        teorias e interpretações.
 
-        Nosso objetivo não é preencher páginas apenas para aumentar
-        a quantidade de conteúdo, mas construir uma base útil
-        que possa ser atualizada conforme informações confiáveis
-        sobre o jogo se tornem disponíveis.
+        Por isso, o GTA6Zoone procura separar
+        claramente aquilo que está confirmado
+        daquilo que ainda não possui confirmação.
+
+        A prioridade não é preencher páginas
+        apenas para aumentar a quantidade de conteúdo,
+        mas construir uma base útil que possa crescer
+        conforme surgem informações confiáveis.
 
       </p>
 
@@ -1892,7 +2009,7 @@
           <p>
 
             Informações sustentadas por materiais oficiais
-            ou fontes que permitam verificação adequada.
+            ou por fontes que permitam verificação adequada.
 
           </p>
 
@@ -1907,8 +2024,9 @@
 
           <p>
 
-            Conteúdo ainda não confirmado é identificado
-            como rumor e não apresentado como fato.
+            Informações ainda não confirmadas
+            são identificadas como rumor
+            e não apresentadas como fato.
 
           </p>
 
@@ -1923,8 +2041,9 @@
 
           <p>
 
-            Interpretações e hipóteses são tratadas
-            como teoria quando não existe confirmação.
+            Interpretações e hipóteses
+            são apresentadas como teoria
+            quando não existe confirmação.
 
           </p>
 
@@ -1961,13 +2080,19 @@
 
       <p>
 
-        O GTA6Zoone é um site independente criado por fãs
-        e não possui afiliação, patrocínio ou endosso
-        da Rockstar Games ou da Take-Two Interactive.
+        O GTA6Zoone é um projeto criado por fãs
+        e desenvolvido de forma independente,
+        sem vínculo editorial ou comercial oficial
+        com a Rockstar Games ou a Take-Two Interactive.
 
-        Grand Theft Auto, GTA e demais marcas,
-        nomes e propriedades relacionados pertencem
-        aos seus respectivos titulares.
+      </p>
+
+
+      <p>
+
+        Este é um site independente criado por fãs.
+        GTA6Zoone não é afiliado, patrocinado ou endossado
+        pela Rockstar Games ou pela Take-Two Interactive.
 
       </p>
 
@@ -2007,7 +2132,7 @@
 
         <p>
 
-          O GTA6Zoone foi desenvolvido para leitores
+          O GTA6Zoone foi pensado para leitores
           de língua portuguesa que desejam encontrar
           informações sobre GTA VI de maneira rápida,
           navegável e organizada.
@@ -2017,13 +2142,16 @@
 
         <p>
 
-          À medida que o universo de Grand Theft Auto VI
-          crescer, novas informações poderão ser conectadas
-          entre páginas de personagens, veículos, locais,
-          missões, propriedades, atividades, colecionáveis,
-          guias e mapa, criando uma estrutura que facilita
-          tanto a descoberta quanto a pesquisa de informações
-          específicas.
+          Conforme o universo de Grand Theft Auto VI
+          cresce, diferentes páginas podem ser conectadas
+          entre si: personagens, veículos, locais,
+          missões, propriedades, atividades,
+          colecionáveis, guias e mapa.
+
+          A ideia é permitir que cada assunto
+          leve naturalmente ao próximo
+          sem transformar o portal
+          em uma sequência de páginas isoladas.
 
         </p>
 
@@ -2046,10 +2174,10 @@
 
         <p>
 
-          A estrutura do portal foi pensada para que
-          uma informação leve naturalmente à próxima:
-          do personagem ao local, do veículo ao guia,
-          da missão ao mapa e do troféu ao vídeo.
+          A estrutura do portal foi planejada
+          para facilitar tanto a descoberta
+          de novos conteúdos quanto a busca
+          por uma informação específica.
 
         </p>
 
@@ -2089,9 +2217,10 @@
 
       <p>
 
-        O projeto também está presente em outras plataformas,
-        onde publicamos e compartilhamos conteúdos relacionados
-        a GTA VI.
+        O GTA6Zoone também está presente
+        no YouTube e no Instagram,
+        além de manter um canal direto
+        para contato com o projeto.
 
       </p>
 
@@ -2113,7 +2242,7 @@
         </strong>
 
         <span>
-          Vídeos, guias e conteúdos do GTA6Zoone.
+          Vídeos, guias e outros conteúdos do GTA6Zoone.
         </span>
 
       </a>
@@ -2130,7 +2259,7 @@
         </strong>
 
         <span>
-          Novidades e conteúdos do projeto.
+          Novidades e publicações relacionadas ao projeto.
         </span>
 
       </a>
@@ -2145,7 +2274,7 @@
         </strong>
 
         <span>
-          Entre em contato com o GTA6Zoone.
+          Sugestões, correções, dúvidas e contato com o GTA6Zoone.
         </span>
 
       </a>
@@ -2180,15 +2309,15 @@
 
 
         <h2>
-          Comece a explorar GTA VI
+          Comece pela Wiki de GTA VI
         </h2>
 
 
         <p>
 
-          Acesse a Wiki do GTA6Zoone e navegue
-          pelas principais categorias do universo
-          de Grand Theft Auto VI.
+          Navegue pelas principais categorias
+          e explore as informações já organizadas
+          no GTA6Zoone.
 
         </p>
 
@@ -2228,8 +2357,6 @@
     <div class="footer-grid">
 
 
-      <!-- GTA6ZOONE -->
-
       <div>
 
         <strong class="brand-text">
@@ -2238,15 +2365,13 @@
 
         <p class="muted">
 
-          Portal e enciclopédia independente
-          em português sobre GTA VI.
+          Portal e enciclopédia independente em português
+          sobre Grand Theft Auto VI.
 
         </p>
 
       </div>
 
-
-      <!-- EXPLORAR -->
 
       <div>
 
@@ -2281,8 +2406,6 @@
       </div>
 
 
-      <!-- COMUNIDADE -->
-
       <div>
 
         <h3>
@@ -2315,8 +2438,6 @@
       </div>
 
 
-      <!-- INSTITUCIONAL -->
-
       <div>
 
         <h3>
@@ -2325,7 +2446,9 @@
 
         <div class="footer-links">
 
-          <a href="../sobre/index.html">
+          <a
+            href="../sobre/index.html"
+            aria-current="page">
             Sobre
           </a>
 

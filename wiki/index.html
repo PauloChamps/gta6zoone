@@ -4,34 +4,64 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FAVICON -->
-  <link
-    rel="icon"
-    type="image/png"
-    href="../assets/images/branding/favicon.png">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1">
 
-  <title>Wiki GTA 6 | Enciclopédia de GTA VI | GTA6Zoone</title>
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large">
+
+
+  <!-- =========================================================
+       SEO PRINCIPAL
+  ========================================================= -->
+
+  <title>Wiki GTA 6: personagens, veículos, armas e mais | GTA6Zoone</title>
 
   <meta
     name="description"
-    content="Explore a Wiki GTA 6 do GTA6Zoone: personagens, veículos, armas, missões, locais, propriedades, atividades e colecionáveis de Grand Theft Auto VI.">
+    content="Explore a Wiki GTA 6 do GTA6Zoone com personagens, locais, veículos, armas e outras áreas de Grand Theft Auto VI, separando fatos, rumores e teorias.">
 
   <link
     rel="canonical"
     href="https://gta6zoone.com.br/wiki/">
 
-  <!-- OPEN GRAPH -->
-  <meta property="og:type" content="website">
+
+  <!-- =========================================================
+       FAVICON
+  ========================================================= -->
+
+  <link
+    rel="icon"
+    type="image/webp"
+    href="../assets/images/branding/favicon.webp">
+
+
+  <!-- =========================================================
+       OPEN GRAPH
+  ========================================================= -->
+
+  <meta
+    property="og:type"
+    content="website">
+
+  <meta
+    property="og:locale"
+    content="pt_BR">
+
+  <meta
+    property="og:site_name"
+    content="GTA6Zoone">
 
   <meta
     property="og:title"
-    content="Wiki GTA 6 | Enciclopédia de GTA VI | GTA6Zoone">
+    content="Wiki GTA 6: enciclopédia de GTA VI | GTA6Zoone">
 
   <meta
     property="og:description"
-    content="A central da enciclopédia GTA6Zoone. Explore personagens, veículos, armas, missões, locais e muito mais sobre Grand Theft Auto VI.">
+    content="Personagens, locais, veículos, armas e outras áreas de Grand Theft Auto VI organizadas na Wiki GTA6Zoone.">
 
   <meta
     property="og:url"
@@ -39,12 +69,51 @@
 
   <meta
     property="og:image"
-    content="https://gta6zoone.com.br/assets/images/branding/banner01.jpg">
+    content="https://gta6zoone.com.br/assets/images/branding/banner01.webp">
 
-  <meta name="twitter:card" content="summary_large_image">
+  <meta
+    property="og:image:alt"
+    content="GTA6Zoone — enciclopédia independente sobre Grand Theft Auto VI">
 
 
-  <!-- CSS GLOBAL -->
+  <!-- =========================================================
+       TWITTER / X
+  ========================================================= -->
+
+  <meta
+    name="twitter:card"
+    content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Wiki GTA 6: enciclopédia de GTA VI | GTA6Zoone">
+
+  <meta
+    name="twitter:description"
+    content="Explore personagens, locais, veículos, armas e outras áreas da Wiki GTA6Zoone.">
+
+  <meta
+    name="twitter:image"
+    content="https://gta6zoone.com.br/assets/images/branding/banner01.webp">
+
+
+  <!-- =========================================================
+       ADSENSE
+       Apenas carregamento global.
+       Nenhum bloco de anúncio é inserido nesta página.
+  ========================================================= -->
+
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
+    crossorigin="anonymous">
+  </script>
+
+
+  <!-- =========================================================
+       CSS GLOBAL
+  ========================================================= -->
+
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/components.css">
   <link rel="stylesheet" href="../assets/css/responsive.css">
@@ -405,22 +474,83 @@
   </style>
 
 
-  <!-- SCHEMA -->
+  <!-- =========================================================
+       DADOS ESTRUTURADOS
+  ========================================================= -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "Wiki GTA 6",
-    "description": "Central da enciclopédia GTA6Zoone sobre Grand Theft Auto VI.",
-    "url": "https://gta6zoone.com.br/wiki/",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "GTA6Zoone",
-      "url": "https://gta6zoone.com.br/"
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://gta6zoone.com.br/#organization",
+        "name": "GTA6Zoone",
+        "url": "https://gta6zoone.com.br/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://gta6zoone.com.br/assets/images/branding/favicon.webp"
+        },
+        "sameAs": [
+          "https://www.instagram.com/gta6zoone/",
+          "https://www.youtube.com/channel/UCR-PxT2Lt8Pte8I_f_zdtDg"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://gta6zoone.com.br/#website",
+        "url": "https://gta6zoone.com.br/",
+        "name": "GTA6Zoone",
+        "description": "Portal e enciclopédia independente em português sobre Grand Theft Auto VI.",
+        "inLanguage": "pt-BR",
+        "publisher": {
+          "@id": "https://gta6zoone.com.br/#organization"
+        }
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://gta6zoone.com.br/wiki/#webpage",
+        "url": "https://gta6zoone.com.br/wiki/",
+        "name": "Wiki GTA 6: personagens, veículos, armas e mais | GTA6Zoone",
+        "description": "Enciclopédia em português sobre Grand Theft Auto VI com personagens, locais, veículos, armas e outras áreas organizadas pelo GTA6Zoone.",
+        "inLanguage": "pt-BR",
+        "isPartOf": {
+          "@id": "https://gta6zoone.com.br/#website"
+        },
+        "about": {
+          "@type": "VideoGame",
+          "name": "Grand Theft Auto VI"
+        },
+        "breadcrumb": {
+          "@id": "https://gta6zoone.com.br/wiki/#breadcrumb"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://gta6zoone.com.br/wiki/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://gta6zoone.com.br/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Wiki",
+            "item": "https://gta6zoone.com.br/wiki/"
+          }
+        ]
+      }
+    ]
   }
   </script>
 
+
+  <!-- =========================================================
+       JS
+  ========================================================= -->
 
   <script src="../assets/js/menu.js" defer></script>
   <script src="../assets/js/main.js" defer></script>
@@ -430,8 +560,13 @@
 
 <body>
 
-<a class="skip-link" href="#conteudo">
+
+<a
+  class="skip-link"
+  href="#conteudo">
+
   Pular para o conteúdo
+
 </a>
 
 
@@ -441,13 +576,11 @@
 
 <div class="global-banner">
 
-  <div class="banner-fallback">
-    
-  </div>
+  <div class="banner-fallback"></div>
 
   <img
     class="banner-image"
-    src="../assets/images/branding/banner01.jpg"
+    src="../assets/images/branding/banner01.webp"
     alt="">
 
 </div>
@@ -476,225 +609,226 @@
     </a>
 
 
-<!-- ==================================================
-     MENU DESKTOP
-================================================== -->
+    <!-- ==================================================
+         MENU DESKTOP
+    ================================================== -->
 
-<nav
-  class="desktop-nav"
-  aria-label="Navegação principal">
-
-
-  <a href="../index.html">
-    INÍCIO
-  </a>
+    <nav
+      class="desktop-nav"
+      aria-label="Navegação principal">
 
 
-  <a href="../gta-6/index.html">
-    GTA 6
-  </a>
+      <a href="../index.html">
+        INÍCIO
+      </a>
 
 
-  <!-- ONLINE -->
+      <a href="../gta-6/index.html">
+        GTA 6
+      </a>
 
-  <div class="dropdown">
+
+      <!-- ONLINE -->
+
+      <div class="dropdown">
+
+        <button
+          type="button"
+          aria-haspopup="true"
+          aria-expanded="false">
+
+          ONLINE ▾
+
+        </button>
+
+
+        <div class="dropdown-menu">
+
+          <a href="#">
+            Hub Online
+          </a>
+
+          <a href="#">
+            Missões Online
+          </a>
+
+          <a href="#">
+            Veículos Online
+          </a>
+
+          <a href="#">
+            Armas Online
+          </a>
+
+          <a href="#">
+            Propriedades Online
+          </a>
+
+          <a href="#">
+            Negócios
+          </a>
+
+          <a href="#">
+            Atividades Online
+          </a>
+
+          <a href="#">
+            Eventos
+          </a>
+
+          <a href="#">
+            Atualizações
+          </a>
+
+          <a href="#">
+            Guias Online
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <a href="../noticias/index.html">
+        NOTÍCIAS
+      </a>
+
+
+      <a href="../mapa/index.html">
+        MAPA
+      </a>
+
+
+      <!-- WIKI -->
+
+      <div class="dropdown">
+
+        <button
+          type="button"
+          aria-haspopup="true"
+          aria-expanded="false">
+
+          WIKI ▾
+
+        </button>
+
+
+        <div class="dropdown-menu">
+
+          <a href="../personagens/index.html">
+            Personagens
+          </a>
+
+          <a href="../veiculos/index.html">
+            Veículos
+          </a>
+
+          <a href="../armas/index.html">
+            Armas
+          </a>
+
+          <a href="../missoes/index.html">
+            Missões
+          </a>
+
+          <a href="../locais/index.html">
+            Locais
+          </a>
+
+          <a href="../propriedades/index.html">
+            Propriedades
+          </a>
+
+          <a href="../atividades/index.html">
+            Atividades
+          </a>
+
+          <a href="../colecionaveis/index.html">
+            Colecionáveis
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- GUIAS -->
+
+      <div class="dropdown">
+
+        <button
+          type="button"
+          aria-haspopup="true"
+          aria-expanded="false">
+
+          GUIAS ▾
+
+        </button>
+
+
+        <div class="dropdown-menu">
+
+          <a href="../guias/iniciantes/index.html">
+            Iniciantes
+          </a>
+
+          <a href="../guias/dinheiro/index.html">
+            Dinheiro
+          </a>
+
+          <a href="../guias/missoes/index.html">
+            Missões
+          </a>
+
+          <a href="../guias/veiculos/index.html">
+            Veículos
+          </a>
+
+          <a href="../guias/armas/index.html">
+            Armas
+          </a>
+
+          <a href="../guias/segredos/index.html">
+            Segredos
+          </a>
+
+          <a href="../guias/easter-eggs/index.html">
+            Easter Eggs
+          </a>
+
+          <a href="../guias/guia-100/index.html">
+            Guia 100%
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <a href="../buscar/index.html">
+        PESQUISAR
+      </a>
+
+
+    </nav>
+
+
+    <!-- BOTÃO MOBILE -->
 
     <button
+      class="menu-button"
       type="button"
-      aria-haspopup="true"
-      aria-expanded="false">
+      data-menu-open
+      aria-controls="mobile-menu"
+      aria-expanded="false"
+      aria-label="Abrir menu">
 
-      ONLINE ▾
+      ☰
 
     </button>
 
 
-    <div class="dropdown-menu">
-
-      <a href="#">
-        Hub Online
-      </a>
-
-      <a href="#">
-        Missões Online
-      </a>
-
-      <a href="#">
-        Veículos Online
-      </a>
-
-      <a href="#">
-        Armas Online
-      </a>
-
-      <a href="#">
-        Propriedades Online
-      </a>
-
-      <a href="#">
-        Negócios
-      </a>
-
-      <a href="#">
-        Atividades Online
-      </a>
-
-      <a href="#">
-        Eventos
-      </a>
-
-      <a href="#">
-        Atualizações
-      </a>
-
-      <a href="#">
-        Guias Online
-      </a>
-
-    </div>
-
   </div>
-
-
-  <a href="../noticias/index.html">
-    NOTÍCIAS
-  </a>
-
-
-  <a href="../mapa/index.html">
-    MAPA
-  </a>
-
-
-  <!-- WIKI -->
-
-  <div class="dropdown">
-
-    <button
-      type="button"
-      aria-haspopup="true"
-      aria-expanded="false">
-
-      WIKI ▾
-
-    </button>
-
-
-    <div class="dropdown-menu">
-
-      <a href="../personagens/index.html">
-        Personagens
-      </a>
-
-      <a href="../veiculos/index.html">
-        Veículos
-      </a>
-
-      <a href="../armas/index.html">
-        Armas
-      </a>
-
-      <a href="../missoes/index.html">
-        Missões
-      </a>
-
-      <a href="../locais/index.html">
-        Locais
-      </a>
-
-      <a href="../propriedades/index.html">
-        Propriedades
-      </a>
-
-      <a href="../atividades/index.html">
-        Atividades
-      </a>
-
-      <a href="../colecionaveis/index.html">
-        Colecionáveis
-      </a>
-
-    </div>
-
-  </div>
-
-
-  <!-- GUIAS -->
-
-  <div class="dropdown">
-
-    <button
-      type="button"
-      aria-haspopup="true"
-      aria-expanded="false">
-
-      GUIAS ▾
-
-    </button>
-
-
-    <div class="dropdown-menu">
-
-      <a href="../guias/iniciantes/index.html">
-        Iniciantes
-      </a>
-
-      <a href="../guias/dinheiro/index.html">
-        Dinheiro
-      </a>
-
-      <a href="../guias/missoes/index.html">
-        Missões
-      </a>
-
-      <a href="../guias/veiculos/index.html">
-        Veículos
-      </a>
-
-      <a href="../guias/armas/index.html">
-        Armas
-      </a>
-
-      <a href="../guias/segredos/index.html">
-        Segredos
-      </a>
-
-      <a href="../guias/easter-eggs/index.html">
-        Easter Eggs
-      </a>
-
-      <a href="../guias/guia-100/index.html">
-        Guia 100%
-      </a>
-
-    </div>
-
-  </div>
-
-
-  <a href="../buscar/index.html">
-    PESQUISAR
-  </a>
-
-
-</nav>
-
-
-<!-- BOTÃO MOBILE -->
-
-<button
-  class="menu-button"
-  data-menu-open
-  aria-controls="mobile-menu"
-  aria-expanded="false"
-  aria-label="Abrir menu">
-
-  ☰
-
-</button>
-
-
-</div>
 
 </header>
 
@@ -721,6 +855,7 @@
 
     <button
       class="close-menu"
+      type="button"
       data-menu-close
       aria-label="Fechar menu">
 
@@ -748,6 +883,7 @@
 
     <button
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-online">
 
@@ -817,6 +953,7 @@
 
     <button
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-wiki">
 
@@ -868,6 +1005,7 @@
 
     <button
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-guias">
 
@@ -957,7 +1095,9 @@
      CONTEÚDO
 ========================================================= -->
 
-<main id="conteudo" class="wiki-page">
+<main
+  id="conteudo"
+  class="wiki-page">
 
 
 <!-- =========================================================
@@ -968,50 +1108,68 @@
 
   <div class="container wiki-block">
 
-    <nav class="breadcrumb" aria-label="Breadcrumb">
 
-      <a href="../index.html">Início</a>
+    <nav
+      class="breadcrumb"
+      aria-label="Breadcrumb">
+
+      <a href="../index.html">
+        Início
+      </a>
+
       ›
-      Wiki
+
+      <span aria-current="page">
+        Wiki
+      </span>
 
     </nav>
 
 
     <div class="wiki-intro-content">
 
+
       <span class="eyebrow">
         ENCICLOPÉDIA GTA VI
       </span>
+
 
       <h1>
         Wiki GTA 6
       </h1>
 
+
       <p class="lede">
 
-        Explore personagens, veículos, armas, missões,
-        locais e tudo o que forma o universo de
-        Grand Theft Auto VI.
+        Personagens, lugares, veículos, armas e outros
+        elementos de Grand Theft Auto VI organizados
+        em uma enciclopédia feita para consulta rápida.
 
       </p>
+
 
       <p>
 
-        A Wiki GTA6Zoone reúne as informações do jogo
-        em uma estrutura simples de navegar e preparada
-        para crescer conforme novos detalhes oficiais
-        forem revelados.
+        A Wiki GTA6Zoone reúne em um só lugar aquilo
+        que já podemos verificar sobre o jogo.
+        Conforme novas informações oficiais aparecem,
+        as páginas são ampliadas e conectadas para facilitar
+        a navegação entre personagens, regiões e outros temas.
 
       </p>
+
 
     </div>
 
 
-    <!-- PESQUISA -->
+    <!-- =====================================================
+         PESQUISA
+    ====================================================== -->
 
     <div class="wiki-search">
 
       <div class="wiki-search-content">
+
 
         <div class="wiki-search-text">
 
@@ -1020,13 +1178,14 @@
           </span>
 
           <h2>
-            Pesquise na GTA6Zoone
+            Encontre uma página da Wiki
           </h2>
 
           <p class="muted">
 
-            Encontre personagens, locais, veículos
-            e outros conteúdos da enciclopédia.
+            Use a pesquisa para localizar personagens,
+            lugares, veículos e outros conteúdos
+            já catalogados no GTA6Zoone.
 
           </p>
 
@@ -1037,13 +1196,15 @@
           class="btn btn-primary"
           href="../buscar/index.html">
 
-          Pesquisar na Wiki
+          Pesquisar no GTA6Zoone
 
         </a>
+
 
       </div>
 
     </div>
+
 
   </div>
 
@@ -1058,6 +1219,7 @@
 
   <div class="container wiki-block">
 
+
     <div class="wiki-heading">
 
       <span class="eyebrow">
@@ -1065,13 +1227,13 @@
       </span>
 
       <h2>
-        Explore a Wiki
+        Explore a Wiki por categoria
       </h2>
 
       <p class="muted">
 
-        Escolha uma categoria para começar a explorar
-        o mundo de GTA VI.
+        Cada área reúne um tipo diferente de informação
+        e cresce conforme novos detalhes podem ser verificados.
 
       </p>
 
@@ -1097,8 +1259,8 @@
 
         <p>
 
-          Conheça Jason, Lucia e os demais personagens
-          oficialmente apresentados para Grand Theft Auto VI.
+          Conheça Jason, Lucia e os outros personagens
+          apresentados oficialmente para Grand Theft Auto VI.
 
         </p>
 
@@ -1125,8 +1287,9 @@
 
         <p>
 
-          Carros, motos, barcos, aeronaves e outros
-          veículos encontrados no mundo de GTA VI.
+          Veja os veículos que já podem ser identificados
+          nos materiais de GTA VI e acompanhe a expansão
+          do catálogo.
 
         </p>
 
@@ -1153,8 +1316,9 @@
 
         <p>
 
-          Catálogo de armas, equipamentos e itens
-          relacionados ao combate em GTA VI.
+          Consulte armas e equipamentos identificados
+          até agora e acompanhe as novas entradas
+          conforme o jogo for melhor conhecido.
 
         </p>
 
@@ -1181,8 +1345,9 @@
 
         <p>
 
-          Missões da história, atividades narrativas
-          e objetivos conhecidos de GTA VI.
+          Área dedicada à campanha e às missões
+          de GTA VI, preparada para receber
+          informações verificadas sobre cada objetivo.
 
         </p>
 
@@ -1209,8 +1374,9 @@
 
         <p>
 
-          Vice City, Leonida Keys e outras regiões,
-          cidades e pontos de interesse do jogo.
+          Conheça Vice City, Leonida Keys
+          e as outras regiões já apresentadas
+          para o mundo de GTA VI.
 
         </p>
 
@@ -1237,8 +1403,9 @@
 
         <p>
 
-          Casas, negócios, estabelecimentos e outras
-          propriedades encontradas pelo mapa.
+          Espaço para organizar casas, negócios
+          e outras propriedades conforme suas funções
+          no jogo puderem ser verificadas.
 
         </p>
 
@@ -1265,8 +1432,9 @@
 
         <p>
 
-          Passatempos, eventos e atividades disponíveis
-          pelo estado de Leonida.
+          Acompanhe atividades, passatempos
+          e outras possibilidades de interação
+          conhecidas pelo estado de Leonida.
 
         </p>
 
@@ -1293,8 +1461,9 @@
 
         <p>
 
-          Itens especiais e conteúdos colecionáveis
-          descobertos durante a exploração de GTA VI.
+          Área preparada para catalogar conjuntos,
+          itens e suas localizações quando os
+          colecionáveis de GTA VI forem conhecidos.
 
         </p>
 
@@ -1320,6 +1489,7 @@
 
   <div class="container wiki-block">
 
+
     <div class="wiki-heading">
 
       <span class="eyebrow">
@@ -1327,13 +1497,14 @@
       </span>
 
       <h2>
-        Personagens de GTA VI
+        Conheça alguns personagens de GTA VI
       </h2>
 
       <p class="muted">
 
-        A seção de personagens já reúne os protagonistas
-        e o elenco oficialmente apresentado para o jogo.
+        Os protagonistas e outros nomes apresentados
+        oficialmente já possuem páginas próprias
+        dentro da enciclopédia.
 
       </p>
 
@@ -1352,9 +1523,10 @@
         <div class="wiki-character-image">
 
           <img
-            src="../assets/images/personagens/jason-duval/jason-duval.jpg"
+            src="../assets/images/personagens/jason-duval/jason-duval.webp"
             alt="Jason Duval em Grand Theft Auto VI"
-            loading="lazy">
+            loading="lazy"
+            decoding="async">
 
         </div>
 
@@ -1369,7 +1541,7 @@
           </h3>
 
           <p>
-            Conheça um dos protagonistas de GTA VI.
+            Conheça a história e as relações de um dos protagonistas de GTA VI.
           </p>
 
         </div>
@@ -1386,9 +1558,10 @@
         <div class="wiki-character-image">
 
           <img
-            src="../assets/images/personagens/lucia-caminos/lucia-caminos.jpg"
+            src="../assets/images/personagens/lucia-caminos/lucia-caminos.webp"
             alt="Lucia Caminos em Grand Theft Auto VI"
-            loading="lazy">
+            loading="lazy"
+            decoding="async">
 
         </div>
 
@@ -1403,7 +1576,7 @@
           </h3>
 
           <p>
-            Conheça a protagonista que divide a história com Jason.
+            Conheça Lucia e sua parceria com Jason no centro da história.
           </p>
 
         </div>
@@ -1420,9 +1593,10 @@
         <div class="wiki-character-image">
 
           <img
-            src="../assets/images/personagens/cal-hampton/cal-hampton.jpg"
+            src="../assets/images/personagens/cal-hampton/cal-hampton.webp"
             alt="Cal Hampton em Grand Theft Auto VI"
-            loading="lazy">
+            loading="lazy"
+            decoding="async">
 
         </div>
 
@@ -1437,7 +1611,7 @@
           </h3>
 
           <p>
-            Amigo de Jason e associado de Brian Heder.
+            Amigo de Jason e associado de Brian Heder nas Leonida Keys.
           </p>
 
         </div>
@@ -1454,9 +1628,10 @@
         <div class="wiki-character-image">
 
           <img
-            src="../assets/images/personagens/boobie-ike/boobie-ike.jpg"
+            src="../assets/images/personagens/boobie-ike/boobie-ike.webp"
             alt="Boobie Ike em Grand Theft Auto VI"
-            loading="lazy">
+            loading="lazy"
+            decoding="async">
 
         </div>
 
@@ -1471,7 +1646,7 @@
           </h3>
 
           <p>
-            Empresário ligado à vida noturna e à música de Vice City.
+            Empresário de Vice City ligado à vida noturna e ao mercado musical.
           </p>
 
         </div>
@@ -1494,6 +1669,7 @@
 
     </div>
 
+
   </div>
 
 </section>
@@ -1507,6 +1683,7 @@
 
   <div class="container wiki-block">
 
+
     <div class="wiki-heading">
 
       <span class="eyebrow">
@@ -1514,14 +1691,15 @@
       </span>
 
       <h2>
-        Uma enciclopédia em construção
+        Uma enciclopédia que cresce com GTA VI
       </h2>
 
       <p class="muted">
 
-        GTA VI ainda está recebendo novas informações.
-        A Wiki cresce junto com as revelações oficiais
-        e, futuramente, com o lançamento do jogo.
+        A Wiki é atualizada à medida que novas informações
+        podem ser verificadas. Depois do lançamento,
+        o próprio jogo também passará a ser uma fonte
+        importante para ampliar o conteúdo.
 
       </p>
 
@@ -1538,13 +1716,15 @@
         </span>
 
         <h3>
-          Informação verificada
+          Informação antes de quantidade
         </h3>
 
         <p>
 
-          Conteúdo factual é separado de rumores e teorias,
-          priorizando informações oficialmente confirmadas.
+          Preferimos deixar uma área incompleta
+          a preencher a página com informação incerta.
+          Quando algo é apresentado como fato,
+          buscamos uma base verificável para isso.
 
         </p>
 
@@ -1558,14 +1738,15 @@
         </span>
 
         <h3>
-          Conteúdo conectado
+          Páginas que conversam entre si
         </h3>
 
         <p>
 
-          Personagens, locais, veículos e outros elementos
-          são conectados para facilitar a navegação
-          pela enciclopédia.
+          Personagens, locais, veículos e outros temas
+          são ligados entre si para que você possa
+          continuar pesquisando sem depender apenas
+          do menu principal.
 
         </p>
 
@@ -1575,17 +1756,19 @@
       <article class="wiki-info-card">
 
         <span class="eyebrow">
-          EXPANSÃO
+          ATUALIZAÇÃO
         </span>
 
         <h3>
-          Atualização contínua
+          Conteúdo revisado conforme o jogo evolui
         </h3>
 
         <p>
 
-          Novas páginas poderão ser adicionadas conforme
-          mais conteúdo de GTA VI se tornar conhecido.
+          Novas páginas e informações entram na Wiki
+          quando fazem sentido, e conteúdos antigos
+          podem ser revisados quando surgirem
+          detalhes mais completos.
 
         </p>
 
@@ -1607,6 +1790,7 @@
 
   <div class="container wiki-block">
 
+
     <div class="wiki-heading">
 
       <span class="eyebrow">
@@ -1614,13 +1798,15 @@
       </span>
 
       <h2>
-        Entenda os status da GTA6Zoone
+        Confirmado, rumor ou teoria?
       </h2>
 
       <p class="muted">
 
-        As etiquetas ajudam a diferenciar fatos oficiais
-        de informações ainda não confirmadas.
+        Nem toda informação sobre GTA VI tem o mesmo peso.
+        Por isso usamos etiquetas para deixar claro
+        o que está confirmado e o que ainda precisa
+        ser tratado com cautela.
 
       </p>
 
@@ -1637,13 +1823,14 @@
         </span>
 
         <h3>
-          Informação oficial
+          Informação verificável
         </h3>
 
         <p>
 
-          Informação apresentada oficialmente pela Rockstar Games
-          ou diretamente observável em material oficial.
+          Usamos este status para informações apresentadas
+          oficialmente ou que podem ser observadas
+          diretamente em materiais oficiais.
 
         </p>
 
@@ -1657,13 +1844,14 @@
         </span>
 
         <h3>
-          Não confirmado
+          Ainda sem confirmação
         </h3>
 
         <p>
 
-          Informação que circula publicamente, mas que ainda
-          não possui confirmação oficial.
+          Indica uma informação que circula publicamente,
+          mas que ainda não possui confirmação suficiente
+          para ser tratada como fato.
 
         </p>
 
@@ -1677,13 +1865,14 @@
         </span>
 
         <h3>
-          Análise da comunidade
+          Interpretação, não fato
         </h3>
 
         <p>
 
-          Interpretação ou hipótese baseada em materiais
-          conhecidos, sem ser apresentada como fato.
+          É usada para hipóteses e interpretações baseadas
+          no que já conhecemos, deixando claro que se trata
+          de análise e não de informação oficial.
 
         </p>
 
@@ -1705,6 +1894,7 @@
 
   <div class="container wiki-block">
 
+
     <div class="wiki-cta">
 
       <span class="eyebrow">
@@ -1712,13 +1902,14 @@
       </span>
 
       <h2>
-        Descubra o mundo de GTA VI
+        Por onde começar?
       </h2>
 
       <p class="muted">
 
-        Comece pelos personagens já catalogados ou explore
-        o mapa e as demais áreas do GTA6Zoone.
+        Você pode conhecer o elenco já apresentado,
+        explorar as regiões de Leonida ou consultar
+        nossa página principal sobre GTA VI.
 
       </p>
 
@@ -1751,6 +1942,7 @@
 
       </div>
 
+
     </div>
 
   </div>
@@ -1769,8 +1961,11 @@
 
   <div class="container">
 
+
     <div class="footer-grid">
 
+
+      <!-- GTA6ZOONE -->
 
       <div>
 
@@ -1788,6 +1983,8 @@
       </div>
 
 
+      <!-- EXPLORAR -->
+
       <div>
 
         <h3>
@@ -1796,16 +1993,36 @@
 
         <div class="footer-links">
 
-          <a href="../gta-6/index.html">GTA 6</a>
-          <a href="../mapa/index.html">Mapa</a>
-          <a href="../wiki/index.html">Wiki</a>
-          <a href="../guias/index.html">Guias</a>
-          <a href="../noticias/index.html">Notícias</a>
+          <a href="../gta-6/index.html">
+            GTA 6
+          </a>
+
+          <a href="../mapa/index.html">
+            Mapa
+          </a>
+
+          <a
+            href="../wiki/index.html"
+            aria-current="page">
+
+            Wiki
+
+          </a>
+
+          <a href="../guias/index.html">
+            Guias
+          </a>
+
+          <a href="../noticias/index.html">
+            Notícias
+          </a>
 
         </div>
 
       </div>
 
+
+      <!-- COMUNIDADE -->
 
       <div>
 
@@ -1838,6 +2055,8 @@
       </div>
 
 
+      <!-- INSTITUCIONAL -->
+
       <div>
 
         <h3>
@@ -1846,12 +2065,29 @@
 
         <div class="footer-links">
 
-          <a href="../sobre/index.html">Sobre</a>
-          <a href="../contato/index.html">Contato</a>
-          <a href="../politica-de-privacidade/index.html">Privacidade</a>
-          <a href="../politica-de-cookies/index.html">Cookies</a>
-          <a href="../termos-de-uso/index.html">Termos</a>
-          <a href="../aviso-legal/index.html">Aviso legal</a>
+          <a href="../sobre/index.html">
+            Sobre
+          </a>
+
+          <a href="../contato/index.html">
+            Contato
+          </a>
+
+          <a href="../politica-de-privacidade/index.html">
+            Privacidade
+          </a>
+
+          <a href="../politica-de-cookies/index.html">
+            Cookies
+          </a>
+
+          <a href="../termos-de-uso/index.html">
+            Termos
+          </a>
+
+          <a href="../aviso-legal/index.html">
+            Aviso legal
+          </a>
 
         </div>
 
@@ -1868,6 +2104,7 @@
       pela Rockstar Games ou pela Take-Two Interactive.
 
     </p>
+
 
   </div>
 

@@ -4,13 +4,25 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Troféus e Conquistas de GTA VI | PlayStation e Xbox | GTA6Zoone</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1">
+
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large">
+
+
+  <!-- =========================================================
+       SEO PRINCIPAL
+  ========================================================= -->
+
+  <title>Troféus e Conquistas de GTA 6: PlayStation e Xbox | GTA6Zoone</title>
 
   <meta
     name="description"
-    content="Central de troféus e conquistas de GTA VI. Consulte as listas e guias de PlayStation e Xbox no GTA6Zoone.">
+    content="Central de troféus e conquistas de GTA 6 no GTA6Zoone, com áreas separadas para PlayStation e Xbox e informações publicadas somente após verificação.">
 
   <link
     rel="canonical"
@@ -23,23 +35,33 @@
 
   <link
     rel="icon"
-    type="image/png"
-    href="../assets/images/branding/favicon.png">
+    type="image/webp"
+    href="../assets/images/branding/favicon.webp">
 
 
   <!-- =========================================================
        OPEN GRAPH
   ========================================================= -->
 
-  <meta property="og:type" content="website">
+  <meta
+    property="og:type"
+    content="website">
+
+  <meta
+    property="og:locale"
+    content="pt_BR">
+
+  <meta
+    property="og:site_name"
+    content="GTA6Zoone">
 
   <meta
     property="og:title"
-    content="Troféus e Conquistas de GTA VI | GTA6Zoone">
+    content="Troféus e Conquistas de GTA 6 | GTA6Zoone">
 
   <meta
     property="og:description"
-    content="Central de troféus e conquistas de Grand Theft Auto VI para PlayStation e Xbox.">
+    content="Central dedicada aos troféus de GTA VI no PlayStation e às conquistas no Xbox.">
 
   <meta
     property="og:url"
@@ -47,11 +69,45 @@
 
   <meta
     property="og:image"
-    content="https://gta6zoone.com.br/assets/images/branding/banner01.jpg">
+    content="https://gta6zoone.com.br/assets/images/branding/banner01.webp">
+
+  <meta
+    property="og:image:alt"
+    content="GTA6Zoone — portal e enciclopédia sobre Grand Theft Auto VI">
+
+
+  <!-- =========================================================
+       TWITTER / X
+  ========================================================= -->
 
   <meta
     name="twitter:card"
     content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Troféus e Conquistas de GTA 6 | GTA6Zoone">
+
+  <meta
+    name="twitter:description"
+    content="Acesse as áreas de troféus de GTA VI no PlayStation e conquistas no Xbox.">
+
+  <meta
+    name="twitter:image"
+    content="https://gta6zoone.com.br/assets/images/branding/banner01.webp">
+
+
+  <!-- =========================================================
+       ADSENSE
+       Apenas carregamento global.
+       Nenhum bloco de anúncio é inserido nesta página.
+  ========================================================= -->
+
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
+    crossorigin="anonymous">
+  </script>
 
 
   <!-- =========================================================
@@ -94,23 +150,18 @@
 
     .trophies-hero h1 {
       margin: .45rem 0 1rem;
-
-      font-size:
-        clamp(2.8rem, 8vw, 5.3rem);
-
+      font-size: clamp(2.8rem, 8vw, 5.3rem);
       line-height: .96;
     }
 
     .trophies-hero .lede {
       max-width: 850px;
-
       font-size: 1.08rem;
       line-height: 1.75;
     }
 
     .trophies-hero p {
       max-width: 850px;
-
       line-height: 1.75;
     }
 
@@ -121,27 +172,19 @@
 
     .trophies-notice {
       margin-top: 1.5rem;
-
       max-width: 900px;
-
       padding: 1.2rem;
-
-      border-left:
-        4px solid #ff3d9a;
-
+      border-left: 4px solid #ff3d9a;
       border-radius:
         0
         var(--radius-medium)
         var(--radius-medium)
         0;
-
-      background:
-        var(--color-surface);
+      background: var(--color-surface);
     }
 
     .trophies-notice p {
       margin: 0;
-
       line-height: 1.7;
     }
 
@@ -157,23 +200,17 @@
 
     .platform-section-head {
       max-width: 850px;
-
       margin-bottom: 1.7rem;
     }
 
     .platform-section-head h2 {
       margin: .4rem 0 .7rem;
-
-      font-size:
-        clamp(2rem, 5vw, 3.2rem);
+      font-size: clamp(2rem, 5vw, 3.2rem);
     }
 
     .platform-section-head p {
       margin: 0;
-
-      color:
-        var(--color-text-muted);
-
+      color: var(--color-text-muted);
       line-height: 1.7;
     }
 
@@ -184,10 +221,7 @@
 
     .platform-grid {
       display: grid;
-
-      grid-template-columns:
-        1fr;
-
+      grid-template-columns: 1fr;
       gap: 1rem;
     }
 
@@ -198,25 +232,14 @@
 
     .platform-card {
       display: block;
-
       position: relative;
-
       min-height: 520px;
-
       overflow: hidden;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-medium);
-
-      background:
-        #0b0914;
-
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-medium);
+      background: #0b0914;
       color: #fff;
       text-decoration: none;
-
       transition:
         transform .25s ease,
         border-color .25s ease,
@@ -224,15 +247,9 @@
     }
 
     .platform-card:hover {
-      transform:
-        translateY(-4px);
-
-      border-color:
-        rgba(255,255,255,.30);
-
-      box-shadow:
-        0 18px 50px rgba(0,0,0,.28);
-
+      transform: translateY(-4px);
+      border-color: rgba(255,255,255,.30);
+      box-shadow: 0 18px 50px rgba(0,0,0,.28);
       color: #fff;
     }
 
@@ -243,23 +260,17 @@
 
     .platform-card-image {
       display: block;
-
       width: 100%;
       max-width: 100%;
       height: 100%;
-
       position: absolute;
       inset: 0;
-
       object-fit: cover;
-
-      transition:
-        transform .5s ease;
+      transition: transform .5s ease;
     }
 
     .platform-card:hover .platform-card-image {
-      transform:
-        scale(1.035);
+      transform: scale(1.035);
     }
 
 
@@ -269,10 +280,8 @@
 
     .platform-card::after {
       content: "";
-
       position: absolute;
       inset: 0;
-
       background:
         linear-gradient(
           180deg,
@@ -280,7 +289,6 @@
           rgba(5,5,12,.26) 45%,
           rgba(5,5,12,.92) 100%
         );
-
       pointer-events: none;
     }
 
@@ -291,70 +299,44 @@
 
     .platform-card-content {
       width: 100%;
-
       position: absolute;
       z-index: 2;
-
       left: 0;
       bottom: 0;
-
       padding: 2rem;
     }
 
     .platform-label {
       display: inline-block;
-
       margin-bottom: .75rem;
-
-      padding:
-        .35rem .6rem;
-
-      border:
-        1px solid rgba(255,255,255,.22);
-
-      border-radius:
-        999px;
-
-      background:
-        rgba(8,7,20,.58);
-
-      backdrop-filter:
-        blur(8px);
-
+      padding: .35rem .6rem;
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 999px;
+      background: rgba(8,7,20,.58);
+      backdrop-filter: blur(8px);
       font-size: .72rem;
       font-weight: 900;
-
       letter-spacing: .08em;
     }
 
-    .platform-card h2 {
+    .platform-card h3 {
       margin: 0 0 .65rem;
-
-      font-size:
-        clamp(2rem, 5vw, 3.1rem);
-
+      font-size: clamp(2rem, 5vw, 3.1rem);
       line-height: 1;
     }
 
     .platform-card p {
       max-width: 540px;
-
       margin: 0;
-
-      color:
-        rgba(255,255,255,.82);
-
+      color: rgba(255,255,255,.82);
       line-height: 1.65;
     }
 
     .platform-card-action {
       display: inline-flex;
       align-items: center;
-
       margin-top: 1rem;
-
       color: #fff;
-
       font-weight: 900;
     }
 
@@ -390,31 +372,24 @@
 
 
     /* =========================================================
-       SEM IMAGEM — FALLBACK VISUAL
+       FALLBACK VISUAL
     ========================================================= */
 
     .platform-image-fallback {
       width: 100%;
       height: 100%;
-
       position: absolute;
       inset: 0;
-
       display: flex;
       align-items: center;
       justify-content: center;
-
       padding: 2rem;
-
       text-align: center;
     }
 
     .platform-image-fallback strong {
-      font-size:
-        clamp(2rem, 7vw, 4.2rem);
-
+      font-size: clamp(2rem, 7vw, 4.2rem);
       opacity: .14;
-
       letter-spacing: .04em;
     }
 
@@ -430,65 +405,46 @@
 
     .trophies-info-head {
       max-width: 850px;
-
       margin-bottom: 1.5rem;
     }
 
     .trophies-info-head h2 {
       margin: .4rem 0 .7rem;
-
-      font-size:
-        clamp(2rem, 5vw, 3rem);
+      font-size: clamp(2rem, 5vw, 3rem);
     }
 
     .trophies-info-head p {
       margin: 0;
-
-      color:
-        var(--color-text-muted);
-
+      color: var(--color-text-muted);
       line-height: 1.7;
     }
 
     .trophies-info-grid {
       display: grid;
-
-      grid-template-columns:
-        1fr;
-
+      grid-template-columns: 1fr;
       gap: .8rem;
     }
 
     .trophies-info-card {
       padding: 1.2rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-medium);
-
-      background:
-        var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-medium);
+      background: var(--color-surface);
     }
 
     .trophies-info-card h3 {
-      margin:
-        .2rem 0 .5rem;
+      margin: .2rem 0 .5rem;
     }
 
     .trophies-info-card p {
       margin: 0;
-
-      color:
-        var(--color-text-muted);
-
+      color: var(--color-text-muted);
       line-height: 1.65;
     }
 
 
     /* =========================================================
-       GUIAS FUTUROS
+       GUIAS
     ========================================================= */
 
     .trophies-guides-section {
@@ -498,30 +454,19 @@
 
     .trophies-guides-panel {
       padding: 1.4rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-medium);
-
-      background:
-        var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-medium);
+      background: var(--color-surface);
     }
 
     .trophies-guides-panel h2 {
       margin: .4rem 0 .7rem;
-
-      font-size:
-        clamp(1.9rem, 5vw, 2.8rem);
+      font-size: clamp(1.9rem, 5vw, 2.8rem);
     }
 
     .trophies-guides-panel p {
       max-width: 900px;
-
-      color:
-        var(--color-text-muted);
-
+      color: var(--color-text-muted);
       line-height: 1.75;
     }
 
@@ -537,55 +482,36 @@
 
     .trophies-related-grid {
       display: grid;
-
-      grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: .8rem;
     }
 
     .trophies-related-card {
       display: block;
-
       padding: 1rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-small);
-
-      background:
-        var(--color-surface);
-
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-small);
+      background: var(--color-surface);
       color: inherit;
       text-decoration: none;
-
       transition:
         transform .2s ease,
         border-color .2s ease;
     }
 
     .trophies-related-card:hover {
-      transform:
-        translateY(-2px);
-
-      border-color:
-        rgba(255,255,255,.22);
-
+      transform: translateY(-2px);
+      border-color: rgba(255,255,255,.22);
       color: inherit;
     }
 
     .trophies-related-card strong {
       display: block;
-
       margin-bottom: .3rem;
     }
 
     .trophies-related-card span {
-      color:
-        var(--color-text-muted);
-
+      color: var(--color-text-muted);
       font-size: .85rem;
       line-height: 1.45;
     }
@@ -602,15 +528,9 @@
 
     .trophies-search-panel {
       padding: 1.4rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-medium);
-
-      background:
-        var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-medium);
+      background: var(--color-surface);
     }
 
     .trophies-search-panel h2 {
@@ -619,41 +539,25 @@
 
     .trophies-search-panel p {
       max-width: 820px;
-
-      color:
-        var(--color-text-muted);
-
+      color: var(--color-text-muted);
       line-height: 1.7;
     }
 
     .trophies-search-form {
       display: grid;
-
       grid-template-columns: 1fr;
-
       gap: .7rem;
-
       max-width: 760px;
-
       margin-top: 1rem;
     }
 
     .trophies-search-form input {
       width: 100%;
-
       padding: .9rem 1rem;
-
-      border:
-        1px solid var(--color-border);
-
-      border-radius:
-        var(--radius-small);
-
-      background:
-        rgba(255,255,255,.025);
-
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-small);
+      background: rgba(255,255,255,.025);
       color: inherit;
-
       font: inherit;
     }
 
@@ -665,8 +569,7 @@
     @media (min-width: 700px) {
 
       .platform-grid {
-        grid-template-columns:
-          repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
       .platform-card {
@@ -674,18 +577,15 @@
       }
 
       .trophies-info-grid {
-        grid-template-columns:
-          repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
       .trophies-related-grid {
-        grid-template-columns:
-          repeat(4, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
       }
 
       .trophies-search-form {
-        grid-template-columns:
-          1fr auto;
+        grid-template-columns: 1fr auto;
       }
 
     }
@@ -733,21 +633,83 @@
 
 
   <!-- =========================================================
-       SCHEMA
+       DADOS ESTRUTURADOS
   ========================================================= -->
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "Troféus e Conquistas de GTA VI",
-    "description": "Central de troféus e conquistas de Grand Theft Auto VI para PlayStation e Xbox.",
-    "url": "https://gta6zoone.com.br/trofeus/",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "GTA6Zoone",
-      "url": "https://gta6zoone.com.br/"
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://gta6zoone.com.br/#organization",
+        "name": "GTA6Zoone",
+        "url": "https://gta6zoone.com.br/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://gta6zoone.com.br/assets/images/branding/favicon.webp"
+        },
+        "sameAs": [
+          "https://www.instagram.com/gta6zoone/",
+          "https://www.youtube.com/channel/UCR-PxT2Lt8Pte8I_f_zdtDg"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://gta6zoone.com.br/#website",
+        "url": "https://gta6zoone.com.br/",
+        "name": "GTA6Zoone",
+        "inLanguage": "pt-BR",
+        "publisher": {
+          "@id": "https://gta6zoone.com.br/#organization"
+        }
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://gta6zoone.com.br/trofeus/#webpage",
+        "url": "https://gta6zoone.com.br/trofeus/",
+        "name": "Troféus e Conquistas de GTA 6: PlayStation e Xbox | GTA6Zoone",
+        "description": "Central de troféus e conquistas de Grand Theft Auto VI com áreas separadas para PlayStation e Xbox.",
+        "inLanguage": "pt-BR",
+        "dateModified": "2026-09-11",
+        "isPartOf": {
+          "@id": "https://gta6zoone.com.br/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://gta6zoone.com.br/trofeus/#breadcrumb"
+        },
+        "hasPart": [
+          {
+            "@type": "WebPage",
+            "name": "Troféus de GTA VI no PlayStation",
+            "url": "https://gta6zoone.com.br/trofeus/playstation/"
+          },
+          {
+            "@type": "WebPage",
+            "name": "Conquistas de GTA VI no Xbox",
+            "url": "https://gta6zoone.com.br/trofeus/xbox/"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://gta6zoone.com.br/trofeus/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://gta6zoone.com.br/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Troféus e Conquistas",
+            "item": "https://gta6zoone.com.br/trofeus/"
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -782,8 +744,8 @@
 
   <img
     class="banner-image"
-    src="../assets/images/branding/banner01.jpg"
-    alt="Banner GTA6Zoone">
+    src="../assets/images/branding/banner01.webp"
+    alt="">
 
 </div>
 
@@ -828,8 +790,6 @@
       </a>
 
 
-      <!-- ONLINE -->
-
       <div class="dropdown">
 
         <button
@@ -844,45 +804,16 @@
 
         <div class="dropdown-menu">
 
-          <a href="#">
-            Hub Online
-          </a>
-
-          <a href="#">
-            Missões Online
-          </a>
-
-          <a href="#">
-            Veículos Online
-          </a>
-
-          <a href="#">
-            Armas Online
-          </a>
-
-          <a href="#">
-            Propriedades Online
-          </a>
-
-          <a href="#">
-            Negócios
-          </a>
-
-          <a href="#">
-            Atividades Online
-          </a>
-
-          <a href="#">
-            Eventos
-          </a>
-
-          <a href="#">
-            Atualizações
-          </a>
-
-          <a href="#">
-            Guias Online
-          </a>
+          <a href="#">Hub Online</a>
+          <a href="#">Missões Online</a>
+          <a href="#">Veículos Online</a>
+          <a href="#">Armas Online</a>
+          <a href="#">Propriedades Online</a>
+          <a href="#">Negócios</a>
+          <a href="#">Atividades Online</a>
+          <a href="#">Eventos</a>
+          <a href="#">Atualizações</a>
+          <a href="#">Guias Online</a>
 
         </div>
 
@@ -898,8 +829,6 @@
         MAPA
       </a>
 
-
-      <!-- WIKI -->
 
       <div class="dropdown">
 
@@ -951,8 +880,6 @@
 
       </div>
 
-
-      <!-- GUIAS -->
 
       <div class="dropdown">
 
@@ -1013,12 +940,9 @@
     </nav>
 
 
-    <!-- ==================================================
-         BOTÃO MOBILE
-    ================================================== -->
-
     <button
       class="menu-button"
+      type="button"
       data-menu-open
       aria-controls="mobile-menu"
       aria-expanded="false"
@@ -1056,6 +980,7 @@
 
     <button
       class="close-menu"
+      type="button"
       data-menu-close
       aria-label="Fechar menu">
 
@@ -1079,10 +1004,9 @@
     </a>
 
 
-    <!-- ONLINE MOBILE -->
-
     <button
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-online">
 
@@ -1095,45 +1019,16 @@
       class="mobile-submenu"
       id="mobile-online">
 
-      <a href="#">
-        Hub Online
-      </a>
-
-      <a href="#">
-        Missões Online
-      </a>
-
-      <a href="#">
-        Veículos Online
-      </a>
-
-      <a href="#">
-        Armas Online
-      </a>
-
-      <a href="#">
-        Propriedades Online
-      </a>
-
-      <a href="#">
-        Negócios
-      </a>
-
-      <a href="#">
-        Atividades Online
-      </a>
-
-      <a href="#">
-        Eventos
-      </a>
-
-      <a href="#">
-        Atualizações
-      </a>
-
-      <a href="#">
-        Guias Online
-      </a>
+      <a href="#">Hub Online</a>
+      <a href="#">Missões Online</a>
+      <a href="#">Veículos Online</a>
+      <a href="#">Armas Online</a>
+      <a href="#">Propriedades Online</a>
+      <a href="#">Negócios</a>
+      <a href="#">Atividades Online</a>
+      <a href="#">Eventos</a>
+      <a href="#">Atualizações</a>
+      <a href="#">Guias Online</a>
 
     </div>
 
@@ -1148,10 +1043,9 @@
     </a>
 
 
-    <!-- WIKI MOBILE -->
-
     <button
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-wiki">
 
@@ -1199,10 +1093,9 @@
     </div>
 
 
-    <!-- GUIAS MOBILE -->
-
     <button
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-guias">
 
@@ -1257,10 +1150,6 @@
 
   </nav>
 
-
-  <!-- ==================================================
-       REDES SOCIAIS MOBILE
-  ================================================== -->
 
   <div class="social-placeholders">
 
@@ -1318,7 +1207,9 @@
 
       ›
 
-      Troféus
+      <span aria-current="page">
+        Troféus e Conquistas
+      </span>
 
     </nav>
 
@@ -1327,29 +1218,32 @@
 
 
       <span class="eyebrow">
-        GTA VI · TROFÉUS & CONQUISTAS
+        GTA VI · TROFÉUS &amp; CONQUISTAS
       </span>
 
 
       <h1>
-        Troféus de GTA VI
+        Troféus e conquistas de GTA VI
       </h1>
 
 
       <p class="lede">
 
-        Escolha sua plataforma para consultar
-        os troféus e conquistas de GTA VI.
+        Escolha sua plataforma para acessar
+        a área de troféus do PlayStation
+        ou de conquistas do Xbox.
 
       </p>
 
 
       <p>
 
-        O GTA6Zoone terá áreas separadas para
-        PlayStation e Xbox, permitindo organizar
-        corretamente listas, requisitos e futuros
-        guias específicos de cada plataforma.
+        O GTA6Zoone mantém páginas separadas
+        para cada plataforma, evitando misturar
+        terminologia, requisitos ou pontuações.
+
+        As informações serão publicadas somente
+        quando houver base suficiente para verificá-las.
 
       </p>
 
@@ -1358,10 +1252,10 @@
 
         <p>
 
-          <strong>LISTAS SERÃO ADICIONADAS QUANDO FOREM VERIFICADAS:</strong>
-          não vamos publicar nomes, descrições,
-          requisitos ou pontuações de conquistas
-          sem confirmação suficiente.
+          <strong>LISTAS AINDA NÃO VERIFICADAS:</strong>
+          nomes, descrições, requisitos, pontuações
+          e condições de desbloqueio só serão adicionados
+          quando puderem ser confirmados com segurança.
 
         </p>
 
@@ -1399,9 +1293,8 @@
 
       <p>
 
-        Cada plataforma possui sua própria página.
-        Clique em uma das imagens para abrir
-        a seção correspondente.
+        Cada sistema possui uma área própria.
+        Escolha abaixo a plataforma que deseja consultar.
 
       </p>
 
@@ -1418,20 +1311,20 @@
       <a
         class="platform-card platform-card-playstation"
         href="./playstation/index.html"
-        aria-label="Ver troféus de GTA VI no PlayStation">
+        aria-label="Acessar a área de troféus de GTA VI no PlayStation">
 
-
-        
-        
 
         <img
           class="platform-card-image"
-          src="../assets/images/trofeus/playstation.jpg"
-          alt="Troféus de GTA VI no PlayStation">
-        
+          src="../assets/images/trofeus/playstation.webp"
+          alt="Área de troféus de GTA VI no PlayStation"
+          loading="lazy"
+          decoding="async">
 
 
-        <div class="platform-image-fallback">
+        <div
+          class="platform-image-fallback"
+          aria-hidden="true">
 
           <strong>
             PLAYSTATION
@@ -1448,23 +1341,22 @@
           </span>
 
 
-          <h2>
+          <h3>
             Troféus
-          </h2>
+          </h3>
 
 
           <p>
 
-            Consulte a área dedicada aos
-            troféus de GTA VI no PlayStation,
-            incluindo requisitos e futuros
-            guias relacionados.
+            Acesse a seção dedicada aos troféus
+            de GTA VI no PlayStation e acompanhe
+            as informações verificadas para a plataforma.
 
           </p>
 
 
           <span class="platform-card-action">
-            Ver troféus PlayStation →
+            Ver área PlayStation →
           </span>
 
 
@@ -1481,19 +1373,20 @@
       <a
         class="platform-card platform-card-xbox"
         href="./xbox/index.html"
-        aria-label="Ver conquistas de GTA VI no Xbox">
+        aria-label="Acessar a área de conquistas de GTA VI no Xbox">
 
-
-       
 
         <img
           class="platform-card-image"
-          src="../assets/images/trofeus/xbox.jpg"
-          alt="Conquistas de GTA VI no Xbox">
-        
+          src="../assets/images/trofeus/xbox.webp"
+          alt="Área de conquistas de GTA VI no Xbox"
+          loading="lazy"
+          decoding="async">
 
 
-        <div class="platform-image-fallback">
+        <div
+          class="platform-image-fallback"
+          aria-hidden="true">
 
           <strong>
             XBOX
@@ -1510,23 +1403,22 @@
           </span>
 
 
-          <h2>
+          <h3>
             Conquistas
-          </h2>
+          </h3>
 
 
           <p>
 
-            Consulte a área dedicada às
-            conquistas de GTA VI no Xbox,
-            com requisitos, pontuação
-            e futuros guias relacionados.
+            Acesse a seção dedicada às conquistas
+            de GTA VI no Xbox e acompanhe
+            as informações verificadas para a plataforma.
 
           </p>
 
 
           <span class="platform-card-action">
-            Ver conquistas Xbox →
+            Ver área Xbox →
           </span>
 
 
@@ -1561,16 +1453,15 @@
 
 
       <h2>
-        Duas listas, uma central
+        Duas plataformas, uma central
       </h2>
 
 
       <p>
 
-        Separar PlayStation e Xbox permite
-        apresentar cada sistema de forma clara,
-        sem misturar nomes, pontuações
-        ou informações específicas de plataforma.
+        Separar PlayStation e Xbox deixa a consulta
+        mais clara e evita misturar sistemas
+        que usam nomenclaturas e estruturas diferentes.
 
       </p>
 
@@ -1592,10 +1483,10 @@
 
         <p>
 
-          A página PlayStation reunirá
-          a lista correspondente da plataforma,
-          além de informações e futuros
-          guias quando necessário.
+          A página do PlayStation será usada
+          para reunir os troféus confirmados,
+          seus requisitos e orientações úteis
+          quando essas informações estiverem disponíveis.
 
         </p>
 
@@ -1614,10 +1505,10 @@
 
         <p>
 
-          A página Xbox reunirá
-          as conquistas e informações
-          correspondentes ao sistema
-          da plataforma.
+          A página do Xbox será usada
+          para reunir as conquistas confirmadas,
+          seus requisitos e a pontuação correspondente
+          quando esses dados puderem ser verificados.
 
         </p>
 
@@ -1633,7 +1524,7 @@
 
 
 <!-- =========================================================
-     GUIAS FUTUROS
+     GUIAS
 ========================================================= -->
 
 <section class="trophies-guides-section section section-alt">
@@ -1645,27 +1536,29 @@
 
 
       <span class="eyebrow">
-        GUIAS FUTUROS
+        GUIAS
       </span>
 
 
       <h2>
-        Troféu difícil? Terá guia próprio
+        Quando um desafio precisar de mais explicação
       </h2>
 
 
       <p>
 
-        A lista principal permanecerá organizada
-        nas páginas PlayStation e Xbox.
+        As páginas principais poderão reunir
+        as listas de cada plataforma sem transformar
+        cada item automaticamente em uma página separada.
 
-        Quando algum troféu ou conquista exigir
-        uma explicação maior, poderemos criar
-        um guia específico com passo a passo,
-        imagens, mapa e vídeo.
+        Quando um troféu ou conquista realmente exigir
+        ajuda adicional, o GTA6Zoone poderá preparar
+        um guia específico com explicação,
+        imagens, referências de mapa ou vídeo.
 
-        Dessa forma evitamos criar dezenas
-        de páginas pequenas sem necessidade.
+        Assim, cada página existe porque tem algo útil
+        para acrescentar, e não apenas para aumentar
+        a quantidade de conteúdo do site.
 
       </p>
 
@@ -1714,7 +1607,7 @@
         </strong>
 
         <span>
-          Acompanhe a estrutura para completar GTA VI.
+          Organize seu progresso para completar GTA VI.
         </span>
 
       </a>
@@ -1729,7 +1622,7 @@
         </strong>
 
         <span>
-          Consulte a área da campanha.
+          Acompanhe a área dedicada à campanha.
         </span>
 
       </a>
@@ -1744,7 +1637,7 @@
         </strong>
 
         <span>
-          Explore conteúdos do mundo aberto.
+          Consulte atividades e conteúdos do mundo de Leonida.
         </span>
 
       </a>
@@ -1759,7 +1652,7 @@
         </strong>
 
         <span>
-          Consulte conjuntos e descobertas.
+          Acompanhe itens e conjuntos catalogados na Wiki.
         </span>
 
       </a>
@@ -1791,15 +1684,15 @@
 
 
       <h2>
-        Procurando algum conteúdo?
+        Procurando outro conteúdo?
       </h2>
 
 
       <p>
 
-        Use a pesquisa geral do GTA6Zoone
-        para encontrar personagens, veículos,
-        armas, locais, missões e outros conteúdos.
+        Use a pesquisa do GTA6Zoone para encontrar
+        personagens, veículos, armas, locais,
+        missões, guias e outras páginas do portal.
 
       </p>
 
@@ -1813,7 +1706,7 @@
           class="hidden"
           for="trophies-search">
 
-          Pesquisar
+          Pesquisar no GTA6Zoone
 
         </label>
 
@@ -1860,8 +1753,6 @@
     <div class="footer-grid">
 
 
-      <!-- GTA6ZOONE -->
-
       <div>
 
         <strong class="brand-text">
@@ -1870,15 +1761,13 @@
 
         <p class="muted">
 
-          Portal e enciclopédia independente
-          em português sobre GTA VI.
+          Portal e enciclopédia independente em português
+          sobre Grand Theft Auto VI.
 
         </p>
 
       </div>
 
-
-      <!-- EXPLORAR -->
 
       <div>
 
@@ -1913,8 +1802,6 @@
       </div>
 
 
-      <!-- COMUNIDADE -->
-
       <div>
 
         <h3>
@@ -1946,8 +1833,6 @@
 
       </div>
 
-
-      <!-- INSTITUCIONAL -->
 
       <div>
 

@@ -4,13 +4,25 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Troféus de GTA VI no PlayStation: informações e guias | GTA6Zoone</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1">
+
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large">
+
+
+  <!-- =========================================================
+       SEO PRINCIPAL
+  ========================================================= -->
+
+  <title>Troféus de GTA 6 no PlayStation | GTA6Zoone</title>
 
   <meta
     name="description"
-    content="Central de troféus de GTA VI no PlayStation. A lista será adicionada quando puder ser verificada, com requisitos, descrições, imagens e guias do GTA6Zoone.">
+    content="Central de troféus de GTA 6 no PlayStation. Acompanhe informações verificadas sobre Platina, Ouro, Prata, Bronze e requisitos quando a lista estiver disponível.">
 
   <link
     rel="canonical"
@@ -23,23 +35,33 @@
 
   <link
     rel="icon"
-    type="image/png"
-    href="../../assets/images/branding/favicon.png">
+    type="image/webp"
+    href="../../assets/images/branding/favicon.webp">
 
 
   <!-- =========================================================
        OPEN GRAPH
   ========================================================= -->
 
-  <meta property="og:type" content="website">
+  <meta
+    property="og:type"
+    content="website">
+
+  <meta
+    property="og:locale"
+    content="pt_BR">
+
+  <meta
+    property="og:site_name"
+    content="GTA6Zoone">
 
   <meta
     property="og:title"
-    content="Troféus de GTA VI no PlayStation | GTA6Zoone">
+    content="Troféus de GTA 6 no PlayStation | GTA6Zoone">
 
   <meta
     property="og:description"
-    content="Central preparada para acompanhar os troféus de GTA VI no PlayStation, com requisitos, imagens e guias quando a lista puder ser verificada.">
+    content="Área dedicada aos troféus de GTA VI no PlayStation, com requisitos e informações verificadas quando a lista estiver disponível.">
 
   <meta
     property="og:url"
@@ -47,11 +69,45 @@
 
   <meta
     property="og:image"
-    content="https://gta6zoone.com.br/assets/images/trofeus/playstation.jpg">
+    content="https://gta6zoone.com.br/assets/images/trofeus/playstation.webp">
+
+  <meta
+    property="og:image:alt"
+    content="Troféus de GTA VI no PlayStation">
+
+
+  <!-- =========================================================
+       TWITTER / X
+  ========================================================= -->
 
   <meta
     name="twitter:card"
     content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Troféus de GTA 6 no PlayStation | GTA6Zoone">
+
+  <meta
+    name="twitter:description"
+    content="Acompanhe os troféus de GTA VI no PlayStation e seus requisitos quando as informações puderem ser verificadas.">
+
+  <meta
+    name="twitter:image"
+    content="https://gta6zoone.com.br/assets/images/trofeus/playstation.webp">
+
+
+  <!-- =========================================================
+       ADSENSE
+       Apenas carregamento global.
+       Nenhum bloco de anúncio é inserido nesta página.
+  ========================================================= -->
+
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
+    crossorigin="anonymous">
+  </script>
 
 
   <!-- =========================================================
@@ -94,14 +150,17 @@
     ========================================================= */
 
     .playstation-hero {
+
       padding-top: 2.5rem;
       padding-bottom: 2.5rem;
 
       position: relative;
+
     }
 
 
     .playstation-hero-grid {
+
       display: grid;
 
       grid-template-columns: 1fr;
@@ -109,6 +168,7 @@
       gap: 2rem;
 
       align-items: center;
+
     }
 
 
@@ -547,7 +607,7 @@
     }
 
 
-    .trophy-entry h2 {
+    .trophy-entry h3 {
 
       margin: 0 0 .6rem;
 
@@ -593,7 +653,7 @@
 
 
     /* =========================================================
-       GALERIA 3 IMAGENS
+       GALERIA
     ========================================================= */
 
     .trophy-gallery {
@@ -1110,21 +1170,81 @@
 
 
   <!-- =========================================================
-       SCHEMA
+       DADOS ESTRUTURADOS
   ========================================================= -->
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "Troféus de GTA VI no PlayStation",
-    "description": "Central preparada para acompanhar os troféus de Grand Theft Auto VI no PlayStation e adicionar requisitos e guias quando a lista puder ser verificada.",
-    "url": "https://gta6zoone.com.br/trofeus/playstation/",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "GTA6Zoone",
-      "url": "https://gta6zoone.com.br/"
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://gta6zoone.com.br/#organization",
+        "name": "GTA6Zoone",
+        "url": "https://gta6zoone.com.br/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://gta6zoone.com.br/assets/images/branding/favicon.webp"
+        },
+        "sameAs": [
+          "https://www.instagram.com/gta6zoone/",
+          "https://www.youtube.com/channel/UCR-PxT2Lt8Pte8I_f_zdtDg"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://gta6zoone.com.br/#website",
+        "url": "https://gta6zoone.com.br/",
+        "name": "GTA6Zoone",
+        "inLanguage": "pt-BR",
+        "publisher": {
+          "@id": "https://gta6zoone.com.br/#organization"
+        }
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://gta6zoone.com.br/trofeus/playstation/#webpage",
+        "url": "https://gta6zoone.com.br/trofeus/playstation/",
+        "name": "Troféus de GTA 6 no PlayStation | GTA6Zoone",
+        "description": "Área dedicada aos troféus de Grand Theft Auto VI no PlayStation, com categorias, requisitos e informações verificadas quando disponíveis.",
+        "inLanguage": "pt-BR",
+        "dateModified": "2026-09-11",
+        "isPartOf": {
+          "@id": "https://gta6zoone.com.br/#website"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://gta6zoone.com.br/assets/images/trofeus/playstation.webp"
+        },
+        "breadcrumb": {
+          "@id": "https://gta6zoone.com.br/trofeus/playstation/#breadcrumb"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://gta6zoone.com.br/trofeus/playstation/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://gta6zoone.com.br/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Troféus e Conquistas",
+            "item": "https://gta6zoone.com.br/trofeus/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "PlayStation",
+            "item": "https://gta6zoone.com.br/trofeus/playstation/"
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -1159,8 +1279,8 @@
 
   <img
     class="banner-image"
-    src="../../assets/images/branding/banner01.jpg"
-    alt="Banner GTA6Zoone">
+    src="../../assets/images/branding/banner01.webp"
+    alt="">
 
 </div>
 
@@ -1205,8 +1325,6 @@
       </a>
 
 
-      <!-- ONLINE -->
-
       <div class="dropdown">
 
         <button
@@ -1221,45 +1339,16 @@
 
         <div class="dropdown-menu">
 
-          <a href="#">
-            Hub Online
-          </a>
-
-          <a href="#">
-            Missões Online
-          </a>
-
-          <a href="#">
-            Veículos Online
-          </a>
-
-          <a href="#">
-            Armas Online
-          </a>
-
-          <a href="#">
-            Propriedades Online
-          </a>
-
-          <a href="#">
-            Negócios
-          </a>
-
-          <a href="#">
-            Atividades Online
-          </a>
-
-          <a href="#">
-            Eventos
-          </a>
-
-          <a href="#">
-            Atualizações
-          </a>
-
-          <a href="#">
-            Guias Online
-          </a>
+          <a href="#">Hub Online</a>
+          <a href="#">Missões Online</a>
+          <a href="#">Veículos Online</a>
+          <a href="#">Armas Online</a>
+          <a href="#">Propriedades Online</a>
+          <a href="#">Negócios</a>
+          <a href="#">Atividades Online</a>
+          <a href="#">Eventos</a>
+          <a href="#">Atualizações</a>
+          <a href="#">Guias Online</a>
 
         </div>
 
@@ -1275,8 +1364,6 @@
         MAPA
       </a>
 
-
-      <!-- WIKI -->
 
       <div class="dropdown">
 
@@ -1328,8 +1415,6 @@
 
       </div>
 
-
-      <!-- GUIAS -->
 
       <div class="dropdown">
 
@@ -1390,12 +1475,9 @@
     </nav>
 
 
-    <!-- ==================================================
-         BOTÃO MOBILE
-    ================================================== -->
-
     <button
       class="menu-button"
+      type="button"
       data-menu-open
       aria-controls="mobile-menu"
       aria-expanded="false"
@@ -1433,6 +1515,7 @@
 
     <button
       class="close-menu"
+      type="button"
       data-menu-close
       aria-label="Fechar menu">
 
@@ -1456,10 +1539,9 @@
     </a>
 
 
-    <!-- ONLINE -->
-
     <button
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-online">
 
@@ -1472,45 +1554,16 @@
       class="mobile-submenu"
       id="mobile-online">
 
-      <a href="#">
-        Hub Online
-      </a>
-
-      <a href="#">
-        Missões Online
-      </a>
-
-      <a href="#">
-        Veículos Online
-      </a>
-
-      <a href="#">
-        Armas Online
-      </a>
-
-      <a href="#">
-        Propriedades Online
-      </a>
-
-      <a href="#">
-        Negócios
-      </a>
-
-      <a href="#">
-        Atividades Online
-      </a>
-
-      <a href="#">
-        Eventos
-      </a>
-
-      <a href="#">
-        Atualizações
-      </a>
-
-      <a href="#">
-        Guias Online
-      </a>
+      <a href="#">Hub Online</a>
+      <a href="#">Missões Online</a>
+      <a href="#">Veículos Online</a>
+      <a href="#">Armas Online</a>
+      <a href="#">Propriedades Online</a>
+      <a href="#">Negócios</a>
+      <a href="#">Atividades Online</a>
+      <a href="#">Eventos</a>
+      <a href="#">Atualizações</a>
+      <a href="#">Guias Online</a>
 
     </div>
 
@@ -1525,10 +1578,9 @@
     </a>
 
 
-    <!-- WIKI -->
-
     <button
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-wiki">
 
@@ -1576,10 +1628,9 @@
     </div>
 
 
-    <!-- GUIAS -->
-
     <button
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-guias">
 
@@ -1634,10 +1685,6 @@
 
   </nav>
 
-
-  <!-- ==================================================
-       REDES
-  ================================================== -->
 
   <div class="social-placeholders">
 
@@ -1696,12 +1743,14 @@
       ›
 
       <a href="../index.html">
-        Troféus
+        Troféus e Conquistas
       </a>
 
       ›
 
-      PlayStation
+      <span aria-current="page">
+        PlayStation
+      </span>
 
     </nav>
 
@@ -1718,26 +1767,28 @@
 
 
         <h1>
-          Troféus de GTA VI
+          Troféus de GTA VI no PlayStation
         </h1>
 
 
         <p class="lede">
 
-          Central preparada para acompanhar
-          os troféus de GTA VI no PlayStation.
-          A lista será adicionada assim que
-          puder ser verificada.
+          Esta é a área do GTA6Zoone dedicada
+          aos troféus de Grand Theft Auto VI
+          no PlayStation.
+
+          A lista será publicada quando houver
+          informações que possam ser verificadas.
 
         </p>
 
 
         <p>
 
-          Cada troféu poderá ter sua descrição,
-          requisitos, imagens e um vídeo próprio
-          do GTA6Zoone para ajudar você
-          a conquistá-lo.
+          Quando esses dados estiverem disponíveis,
+          você poderá consultar aqui os nomes,
+          raridades, requisitos e orientações
+          úteis para cada troféu.
 
         </p>
 
@@ -1746,7 +1797,7 @@
           class="trophies-back"
           href="../index.html">
 
-          ← Voltar para Troféus
+          ← Voltar para Troféus e Conquistas
 
         </a>
 
@@ -1755,11 +1806,11 @@
 
           <p>
 
-            <strong>LISTA AINDA NÃO DISPONÍVEL:</strong>
-            os nomes, quantidades e requisitos
-            serão adicionados somente quando
-            pudermos verificar a lista de
-            troféus do PlayStation.
+            <strong>LISTA AINDA NÃO VERIFICADA:</strong>
+            não adicionamos nomes, quantidades,
+            raridades ou requisitos provisórios.
+            Essas informações só entrarão na página
+            quando houver base suficiente para confirmá-las.
 
           </p>
 
@@ -1769,15 +1820,14 @@
       </div>
 
 
-      <!-- =====================================================
-           IMAGEM PLAYSTATION
-      ====================================================== -->
-
       <div class="playstation-hero-media">
 
         <img
-          src="../../assets/images/trofeus/playstation.jpg"
-          alt="Troféus de GTA VI no PlayStation">
+          src="../../assets/images/trofeus/playstation.webp"
+          alt="Área de troféus de GTA VI no PlayStation"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async">
 
       </div>
 
@@ -1813,9 +1863,9 @@
 
       <p>
 
-        Assim que a lista puder ser
-        verificada, os totais serão atualizados
-        nesta área.
+        A divisão entre Platina, Ouro, Prata
+        e Bronze será preenchida quando
+        a lista de troféus puder ser confirmada.
 
       </p>
 
@@ -1824,8 +1874,6 @@
 
     <div class="trophy-summary-grid">
 
-
-      <!-- PLATINA -->
 
       <div class="trophy-summary-card">
 
@@ -1848,8 +1896,6 @@
       </div>
 
 
-      <!-- OURO -->
-
       <div class="trophy-summary-card">
 
         <span class="trophy-summary-type">
@@ -1871,8 +1917,6 @@
       </div>
 
 
-      <!-- PRATA -->
-
       <div class="trophy-summary-card">
 
         <span class="trophy-summary-type">
@@ -1893,8 +1937,6 @@
 
       </div>
 
-
-      <!-- BRONZE -->
 
       <div class="trophy-summary-card">
 
@@ -1942,37 +1984,36 @@
 
 
       <h2>
-        Todos os troféus de GTA VI
+        Troféus de GTA VI no PlayStation
       </h2>
 
 
       <p>
 
-        Quando estiver disponível e puder ser
-        verificada, a lista será apresentada
-        na ordem utilizada pelo PlayStation.
+        Quando a lista estiver disponível
+        e puder ser verificada, cada troféu
+        será apresentado aqui com suas
+        informações correspondentes.
 
       </p>
 
     </div>
 
-
-    <!-- =====================================================
-         ENQUANTO A LISTA NÃO EXISTE
-    ====================================================== -->
 
     <div class="trophy-empty-state">
 
       <strong>
-        Aguardando a lista de troféus
+        A lista ainda não foi publicada no GTA6Zoone
       </strong>
 
       <p>
 
-        Os nomes, quantidades e requisitos
-        ainda não foram adicionados.
-        Esta área será atualizada quando
-        essas informações puderem ser verificadas.
+        Não adicionamos nomes, quantidades,
+        raridades ou requisitos provisórios.
+
+        Esta seção será preenchida quando houver
+        informações confiáveis o suficiente
+        para catalogar os troféus corretamente.
 
       </p>
 
@@ -1980,34 +2021,23 @@
 
 
     <!-- =====================================================
-         LISTA
+         MODELO PARA TROFÉUS FUTUROS
 
-         QUANDO OS TROFÉUS FOREM DIVULGADOS:
+         O conteúdo permanece dentro de <template>
+         e não é exibido na página.
 
-         1. Apague o bloco trophy-empty-state acima.
-         2. Copie o modelo de TROFÉU abaixo.
-         3. Duplique na mesma ordem do PlayStation.
+         Substitua todos os dados de exemplo
+         antes de inserir um troféu real.
     ====================================================== -->
 
     <div class="trophy-list">
 
-
-      <!-- =====================================================
-           MODELO DE TROFÉU
-
-           NÃO ESTÁ SENDO EXIBIDO AGORA.
-
-           Quando tivermos o primeiro troféu,
-           copie este bloco para fora do <template>.
-      ====================================================== -->
 
       <template id="trophy-template">
 
 
         <article class="trophy-entry">
 
-
-          <!-- CABEÇALHO -->
 
           <div class="trophy-entry-header">
 
@@ -2016,27 +2046,27 @@
 
 
               <span class="trophy-number">
-                TROFÉU #01
+                TROFÉU #00
               </span>
 
 
               <span class="trophy-rarity">
-                BRONZE
+                RARIDADE
               </span>
 
 
             </div>
 
 
-            <h2>
-              Nome do Troféu
-            </h2>
+            <h3>
+              Nome do troféu
+            </h3>
 
 
             <p class="trophy-description">
 
-              Descrição oficial ou explicação
-              do requisito do troféu.
+              Descrição e requisito verificados
+              do troféu.
 
             </p>
 
@@ -2044,18 +2074,12 @@
           </div>
 
 
-          <!-- CONTEÚDO -->
-
           <div class="trophy-entry-content">
 
 
-            <!-- =================================================
-                 GALERIA
-            ================================================== -->
-
-            <h3 class="trophy-subtitle">
+            <h4 class="trophy-subtitle">
               Galeria
-            </h3>
+            </h4>
 
 
             <div class="trophy-gallery">
@@ -2063,30 +2087,36 @@
 
               <div class="trophy-gallery-item">
 
-                <img
-                  class="js-zoomable-image"
-                  src="../../assets/images/trofeus/playstation/nome-do-trofeu-01.jpg"
-                  alt="Nome do troféu de GTA VI no PlayStation">
+                <div class="trophy-image-placeholder">
+
+                  Adicionar imagem verificada
+                  relacionada ao troféu
+
+                </div>
 
               </div>
 
 
               <div class="trophy-gallery-item">
 
-                <img
-                  class="js-zoomable-image"
-                  src="../../assets/images/trofeus/playstation/nome-do-trofeu-02.jpg"
-                  alt="Como conseguir o troféu em GTA VI">
+                <div class="trophy-image-placeholder">
+
+                  Adicionar imagem do requisito
+                  ou localização
+
+                </div>
 
               </div>
 
 
               <div class="trophy-gallery-item">
 
-                <img
-                  class="js-zoomable-image"
-                  src="../../assets/images/trofeus/playstation/nome-do-trofeu-03.jpg"
-                  alt="Guia do troféu de GTA VI">
+                <div class="trophy-image-placeholder">
+
+                  Adicionar imagem complementar
+                  do guia
+
+                </div>
 
               </div>
 
@@ -2094,25 +2124,19 @@
             </div>
 
 
-            <!-- =================================================
-                 VÍDEO
-            ================================================== -->
-
-            <h3 class="trophy-subtitle">
+            <h4 class="trophy-subtitle">
               Vídeo
-            </h3>
+            </h4>
 
 
             <div class="trophy-video">
 
-              <iframe
-                src="https://www.youtube.com/embed/ID_DO_VIDEO"
-                title="Como conseguir o troféu Nome do Troféu em GTA VI"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
+              <div class="trophy-video-placeholder">
 
-              </iframe>
+                Adicionar vídeo somente
+                quando houver um guia publicado.
+
+              </div>
 
             </div>
 
@@ -2152,19 +2176,21 @@
 
 
       <h2>
-        Mesma ordem do PlayStation
+        Uma lista fácil de comparar com o console
       </h2>
 
 
       <p>
 
-        Não vamos reorganizar os troféus
-        por dificuldade, raridade ou preferência.
+        Quando os troféus forem catalogados,
+        o objetivo é manter a ordem apresentada
+        pela própria plataforma, em vez de
+        reorganizar a lista por preferência
+        ou dificuldade.
 
-        A página principal seguirá a ordem
-        apresentada pelo PlayStation para facilitar
-        a comparação entre sua lista no console
-        e a lista do GTA6Zoone.
+        Isso facilita a comparação entre
+        o progresso no console e as informações
+        disponíveis no GTA6Zoone.
 
       </p>
 
@@ -2209,11 +2235,11 @@
         href="../index.html">
 
         <strong>
-          Troféus
+          Troféus e Conquistas
         </strong>
 
         <span>
-          Voltar para PlayStation e Xbox.
+          Volte à central de PlayStation e Xbox.
         </span>
 
       </a>
@@ -2228,7 +2254,7 @@
         </strong>
 
         <span>
-          Acompanhe o progresso geral de GTA VI.
+          Organize o progresso geral em GTA VI.
         </span>
 
       </a>
@@ -2243,7 +2269,7 @@
         </strong>
 
         <span>
-          Consulte a área dedicada à campanha.
+          Acompanhe a área dedicada à campanha.
         </span>
 
       </a>
@@ -2258,7 +2284,7 @@
         </strong>
 
         <span>
-          Consulte os conjuntos catalogados.
+          Consulte itens e conjuntos catalogados na Wiki.
         </span>
 
       </a>
@@ -2290,15 +2316,15 @@
 
 
       <h2>
-        Procurando algum conteúdo?
+        Pesquise no GTA6Zoone
       </h2>
 
 
       <p>
 
-        Use a pesquisa do GTA6Zoone
-        para localizar missões, veículos,
-        armas, locais e outros conteúdos.
+        Encontre personagens, veículos,
+        armas, locais, missões, guias
+        e outros conteúdos de GTA VI.
 
       </p>
 
@@ -2312,7 +2338,7 @@
           class="hidden"
           for="playstation-search">
 
-          Pesquisar
+          Pesquisar no GTA6Zoone
 
         </label>
 
@@ -2359,8 +2385,6 @@
     <div class="footer-grid">
 
 
-      <!-- GTA6ZOONE -->
-
       <div>
 
         <strong class="brand-text">
@@ -2369,15 +2393,13 @@
 
         <p class="muted">
 
-          Portal e enciclopédia independente
-          em português sobre GTA VI.
+          Portal e enciclopédia independente em português
+          sobre Grand Theft Auto VI.
 
         </p>
 
       </div>
 
-
-      <!-- EXPLORAR -->
 
       <div>
 
@@ -2412,8 +2434,6 @@
       </div>
 
 
-      <!-- COMUNIDADE -->
-
       <div>
 
         <h3>
@@ -2445,8 +2465,6 @@
 
       </div>
 
-
-      <!-- INSTITUCIONAL -->
 
       <div>
 

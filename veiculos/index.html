@@ -4,32 +4,55 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1">
 
-  <link
-    rel="icon"
-    type="image/png"
-    href="../assets/images/branding/favicon.png">
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large">
 
-  <title>Veículos de GTA VI: carros, motos, barcos e mais | GTA6Zoone</title>
+
+  <!-- =========================================================
+       SEO PRINCIPAL
+  ========================================================= -->
+
+  <title>Veículos de GTA 6: carros, motos e barcos | GTA6Zoone</title>
 
   <meta
     name="description"
-    content="Explore os veículos de GTA VI no GTA6Zoone. Carros, motos, embarcações, off-road e futuras aeronaves, com screenshots oficiais, gameplays, personalização e informações verificadas.">
+    content="Veja os veículos já catalogados de GTA 6: carros, motos, barcos e off-road, com imagens oficiais, fichas individuais e informações verificadas no GTA6Zoone.">
 
   <link
     rel="canonical"
     href="https://gta6zoone.com.br/veiculos/">
 
+
+  <!-- =========================================================
+       FAVICON
+  ========================================================= -->
+
+  <link
+    rel="icon"
+    type="image/webp"
+    href="../assets/images/branding/favicon.webp">
+
+
+  <!-- =========================================================
+       OPEN GRAPH
+  ========================================================= -->
+
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="GTA6Zoone">
 
   <meta
     property="og:title"
-    content="Veículos de GTA VI | GTA6Zoone">
+    content="Veículos de GTA 6: carros, motos e barcos | GTA6Zoone">
 
   <meta
     property="og:description"
-    content="Enciclopédia de veículos de GTA VI com carros, motos, embarcações, screenshots, gameplays e informações verificadas.">
+    content="Explore o catálogo de veículos de GTA VI com carros, motos, embarcações, off-road e fichas baseadas em informações verificadas.">
 
   <meta
     property="og:url"
@@ -37,9 +60,45 @@
 
   <meta
     property="og:image"
-    content="https://gta6zoone.com.br/assets/images/veiculos/grotti-cheetah/grotti-cheetah-01.jpg">
+    content="https://gta6zoone.com.br/assets/images/veiculos/grotti-cheetah/grotti-cheetah-01.webp">
 
-  <meta name="twitter:card" content="summary_large_image">
+  <meta
+    property="og:image:alt"
+    content="’95 Grotti Cheetah, um dos veículos catalogados de Grand Theft Auto VI">
+
+
+  <!-- =========================================================
+       TWITTER / X
+  ========================================================= -->
+
+  <meta
+    name="twitter:card"
+    content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Veículos de GTA 6: carros, motos e barcos | GTA6Zoone">
+
+  <meta
+    name="twitter:description"
+    content="Veja carros, motos, embarcações e outros veículos já catalogados de Grand Theft Auto VI.">
+
+  <meta
+    name="twitter:image"
+    content="https://gta6zoone.com.br/assets/images/veiculos/grotti-cheetah/grotti-cheetah-01.webp">
+
+
+  <!-- =========================================================
+       ADSENSE
+       Apenas carregamento global.
+       Nenhum bloco de anúncio é inserido nesta página.
+  ========================================================= -->
+
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
+    crossorigin="anonymous">
+  </script>
 
 
   <!-- =========================================================
@@ -635,25 +694,142 @@
 
 
   <!-- =========================================================
-       SCHEMA
+       DADOS ESTRUTURADOS
   ========================================================= -->
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "Veículos de GTA VI",
-    "description": "Índice de veículos de Grand Theft Auto VI organizado por categorias.",
-    "url": "https://gta6zoone.com.br/veiculos/",
-    "dateModified": "2026-09-05",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "GTA6Zoone",
-      "url": "https://gta6zoone.com.br/"
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://gta6zoone.com.br/#organization",
+        "name": "GTA6Zoone",
+        "url": "https://gta6zoone.com.br/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://gta6zoone.com.br/assets/images/branding/favicon.webp"
+        },
+        "sameAs": [
+          "https://www.instagram.com/gta6zoone/",
+          "https://www.youtube.com/channel/UCR-PxT2Lt8Pte8I_f_zdtDg"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://gta6zoone.com.br/#website",
+        "url": "https://gta6zoone.com.br/",
+        "name": "GTA6Zoone",
+        "description": "Portal e enciclopédia independente em português sobre Grand Theft Auto VI.",
+        "inLanguage": "pt-BR",
+        "publisher": {
+          "@id": "https://gta6zoone.com.br/#organization"
+        }
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://gta6zoone.com.br/veiculos/#webpage",
+        "url": "https://gta6zoone.com.br/veiculos/",
+        "name": "Veículos de GTA 6: carros, motos e barcos | GTA6Zoone",
+        "description": "Catálogo de veículos de Grand Theft Auto VI com carros, motos, embarcações e off-road organizados em fichas individuais.",
+        "inLanguage": "pt-BR",
+        "dateModified": "2026-09-11",
+        "isPartOf": {
+          "@id": "https://gta6zoone.com.br/#website"
+        },
+        "about": {
+          "@type": "VideoGame",
+          "name": "Grand Theft Auto VI"
+        },
+        "breadcrumb": {
+          "@id": "https://gta6zoone.com.br/veiculos/#breadcrumb"
+        },
+        "mainEntity": {
+          "@id": "https://gta6zoone.com.br/veiculos/#catalogo"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://gta6zoone.com.br/veiculos/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://gta6zoone.com.br/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Wiki",
+            "item": "https://gta6zoone.com.br/wiki/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Veículos",
+            "item": "https://gta6zoone.com.br/veiculos/"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://gta6zoone.com.br/veiculos/#catalogo",
+        "name": "Veículos catalogados de GTA VI",
+        "numberOfItems": 7,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "’95 Grotti Cheetah",
+            "url": "https://gta6zoone.com.br/veiculos/grotti-cheetah/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ganado Retro Build",
+            "url": "https://gta6zoone.com.br/veiculos/ganado-retro/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "’55 Vapid Stanier",
+            "url": "https://gta6zoone.com.br/veiculos/vapid-stanier/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Dinka Enduro Motorcycle",
+            "url": "https://gta6zoone.com.br/veiculos/dinka-enduro/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Shitzu Squalo",
+            "url": "https://gta6zoone.com.br/veiculos/shitzu-squalo/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Crest Kayak",
+            "url": "https://gta6zoone.com.br/veiculos/crest-kayak/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "’67 Vapid Dominator Buggy",
+            "url": "https://gta6zoone.com.br/veiculos/vapid-dominator-buggy/"
+          }
+        ]
+      }
+    ]
   }
   </script>
 
+
+  <!-- =========================================================
+       JS
+  ========================================================= -->
 
   <script src="../assets/js/menu.js" defer></script>
   <script src="../assets/js/main.js" defer></script>
@@ -679,7 +855,7 @@
 
   <img
     class="banner-image"
-    src="../assets/images/branding/banner01.jpg"
+    src="../assets/images/branding/banner01.webp"
     alt="">
 
 </div>
@@ -818,7 +994,9 @@
         Personagens
       </a>
 
-      <a href="../veiculos/index.html">
+      <a
+        href="../veiculos/index.html"
+        aria-current="page">
         Veículos
       </a>
 
@@ -916,6 +1094,7 @@
 
 <button
   class="menu-button"
+  type="button"
   data-menu-open
   aria-controls="mobile-menu"
   aria-expanded="false"
@@ -953,6 +1132,7 @@
 
     <button
       class="close-menu"
+      type="button"
       data-menu-close
       aria-label="Fechar menu">
 
@@ -980,6 +1160,7 @@
 
     <button
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-online">
 
@@ -1049,6 +1230,7 @@
 
     <button
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-wiki">
 
@@ -1065,7 +1247,9 @@
         Personagens
       </a>
 
-      <a href="../veiculos/index.html">
+      <a
+        href="../veiculos/index.html"
+        aria-current="page">
         Veículos
       </a>
 
@@ -1100,6 +1284,7 @@
 
     <button
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-guias">
 
@@ -1201,7 +1386,9 @@
   <div class="container vehicles-container">
 
 
-    <nav class="breadcrumb" aria-label="Breadcrumb">
+    <nav
+      class="breadcrumb"
+      aria-label="Breadcrumb">
 
       <a href="../index.html">
         Início
@@ -1209,7 +1396,15 @@
 
       ›
 
-      Veículos
+      <a href="../wiki/index.html">
+        Wiki
+      </a>
+
+      ›
+
+      <span aria-current="page">
+        Veículos
+      </span>
 
     </nav>
 
@@ -1226,22 +1421,20 @@
 
       <p class="lede">
 
-        Explore carros, motos, embarcações, veículos
-        off-road e, futuramente, aeronaves e outros meios
-        de transporte encontrados em Grand Theft Auto VI.
+        Conheça os veículos de Grand Theft Auto VI que já
+        conseguimos catalogar, de esportivos e sedãs a motos,
+        embarcações e modelos preparados para sair do asfalto.
 
       </p>
 
       <p>
 
-        O catálogo do GTA6Zoone separa os veículos por
-        categoria para facilitar a navegação.
-
-        Cada modelo poderá ter sua própria ficha com
-        screenshots, galeria de cores e variações,
-        personalização, gameplay no canal GTA6Zoone,
-        desempenho, localização e outras informações
-        verificadas diretamente no jogo.
+        O catálogo é organizado por categoria e cada modelo
+        já catalogado possui uma ficha própria. Antes do lançamento,
+        usamos nomes e imagens que podem ser verificados em materiais
+        oficiais. Depois que GTA VI estiver disponível, essas fichas
+        poderão crescer com dados observados diretamente no jogo,
+        como desempenho, localização, personalização e variações.
 
       </p>
 
@@ -1253,13 +1446,11 @@
       <p>
 
         <strong>TRANSPARÊNCIA:</strong>
-        somente nomes publicados oficialmente pela Rockstar
-        ou informações verificadas diretamente em GTA VI
-        serão tratadas como confirmadas.
-
-        Veículos reconhecidos apenas pela comunidade
-        não receberão nomes oficiais nesta Wiki sem
-        confirmação suficiente.
+        tratamos como confirmado apenas o que pode ser sustentado
+        por material oficial ou, após o lançamento, verificado
+        diretamente no jogo. Se um veículo puder ser reconhecido
+        visualmente, mas seu nome ainda não estiver confirmado,
+        não vamos apresentar uma identificação da comunidade como fato.
 
       </p>
 
@@ -1292,9 +1483,9 @@
 
       <p>
 
-        Vá diretamente para a categoria que procura.
-        Esta estrutura será ampliada conforme novos
-        veículos forem identificados.
+        Use os atalhos abaixo para ir direto ao tipo de veículo
+        que você quer consultar. O catálogo será ampliado sem pressa,
+        conforme novos modelos puderem ser identificados com segurança.
 
       </p>
 
@@ -1459,8 +1650,8 @@
 
       <p>
 
-        Pesquise pelo nome ou filtre o catálogo
-        pela categoria desejada.
+        Digite parte do nome de um veículo ou escolha
+        uma categoria para reduzir a lista.
 
       </p>
 
@@ -1472,25 +1663,33 @@
 
       <div class="vehicle-search">
 
+        <label
+          class="hidden"
+          for="vehicle-search">
+          Pesquisar veículo no catálogo
+        </label>
+
         <input
           id="vehicle-search"
           class="control"
           type="search"
-          placeholder="Pesquisar veículo..."
-          aria-label="Pesquisar veículo">
+          autocomplete="off"
+          placeholder="Pesquisar veículo...">
 
       </div>
 
 
       <div
         class="vehicle-filters"
+        role="group"
         aria-label="Filtrar veículos por categoria">
 
 
         <button
           class="btn btn-secondary vehicle-filter-button is-active"
           type="button"
-          data-vehicle-filter="all">
+          data-vehicle-filter="all"
+          aria-pressed="true">
 
           Todos
 
@@ -1500,7 +1699,8 @@
         <button
           class="btn btn-secondary vehicle-filter-button"
           type="button"
-          data-vehicle-filter="carros">
+          data-vehicle-filter="carros"
+          aria-pressed="false">
 
           Carros
 
@@ -1510,7 +1710,8 @@
         <button
           class="btn btn-secondary vehicle-filter-button"
           type="button"
-          data-vehicle-filter="motos">
+          data-vehicle-filter="motos"
+          aria-pressed="false">
 
           Motos
 
@@ -1520,7 +1721,8 @@
         <button
           class="btn btn-secondary vehicle-filter-button"
           type="button"
-          data-vehicle-filter="embarcacoes">
+          data-vehicle-filter="embarcacoes"
+          aria-pressed="false">
 
           Embarcações
 
@@ -1530,7 +1732,8 @@
         <button
           class="btn btn-secondary vehicle-filter-button"
           type="button"
-          data-vehicle-filter="off-road">
+          data-vehicle-filter="off-road"
+          aria-pressed="false">
 
           Off-road
 
@@ -1540,7 +1743,8 @@
         <button
           class="btn btn-secondary vehicle-filter-button"
           type="button"
-          data-vehicle-filter="aeronaves">
+          data-vehicle-filter="aeronaves"
+          aria-pressed="false">
 
           Aeronaves
 
@@ -1565,7 +1769,9 @@
 
     <div
       class="no-results"
-      id="vehicle-no-results">
+      id="vehicle-no-results"
+      role="status"
+      aria-live="polite">
 
       Nenhum veículo encontrado com esses filtros.
 
@@ -1601,8 +1807,8 @@
 
       <p>
 
-        Automóveis com nomes ou materiais oficialmente
-        publicados pela Rockstar.
+        Carros com nomes ou imagens que já podem ser ligados
+        com segurança aos materiais oficiais disponíveis.
 
       </p>
 
@@ -1625,9 +1831,10 @@
         <div class="vehicle-card-image">
 
           <img
-            src="../assets/images/veiculos/grotti-cheetah/grotti-cheetah-01.jpg"
+            src="../assets/images/veiculos/grotti-cheetah/grotti-cheetah-01.webp"
             alt="’95 Grotti Cheetah em GTA VI"
-            loading="lazy">
+            loading="lazy"
+            decoding="async">
 
         </div>
 
@@ -1655,10 +1862,9 @@
 
           <p>
 
-            Veículo oficialmente listado entre os
-            benefícios do Ultimate Edition Upgrade,
-            com quatro screenshots dedicados publicados
-            pela Rockstar.
+            O ’95 Grotti Cheetah aparece oficialmente entre
+            os benefícios do Ultimate Edition Upgrade e recebeu
+            quatro imagens próprias na divulgação da Rockstar.
 
           </p>
 
@@ -1670,11 +1876,11 @@
             </span>
 
             <span class="vehicle-card-feature">
-              Gameplay
+              Ficha individual
             </span>
 
             <span class="vehicle-card-feature">
-              Personalização
+              Informações verificadas
             </span>
 
           </div>
@@ -1703,9 +1909,10 @@
         <div class="vehicle-card-image">
 
           <img
-            src="../assets/images/veiculos/ganado-retro/ganado-retro.jpg"
+            src="../assets/images/veiculos/ganado-retro/ganado-retro.webp"
             alt="Ganado Retro Build em GTA VI"
-            loading="lazy">
+            loading="lazy"
+            decoding="async">
 
         </div>
 
@@ -1733,8 +1940,8 @@
 
           <p>
 
-            Conteúdo oficialmente nomeado entre os
-            benefícios do Ultimate Edition Upgrade.
+            O Ganado Retro Build foi nomeado oficialmente
+            entre os conteúdos do Ultimate Edition Upgrade.
 
           </p>
 
@@ -1746,11 +1953,11 @@
             </span>
 
             <span class="vehicle-card-feature">
-              Gameplay
+              Ficha individual
             </span>
 
             <span class="vehicle-card-feature">
-              Personalização
+              Informações verificadas
             </span>
 
           </div>
@@ -1779,9 +1986,10 @@
         <div class="vehicle-card-image">
 
           <img
-            src="../assets/images/veiculos/vapid-stanier/vapid-stanier-01.jpg"
+            src="../assets/images/veiculos/vapid-stanier/vapid-stanier-01.webp"
             alt="’55 Vapid Stanier em GTA VI"
-            loading="lazy">
+            loading="lazy"
+            decoding="async">
 
         </div>
 
@@ -1809,8 +2017,8 @@
 
           <p>
 
-            Sedan oficialmente incluído no Vintage
-            Vice City Pack, acompanhado de uma garagem.
+            O ’55 Vapid Stanier integra oficialmente o Vintage
+            Vice City Pack, que também inclui uma garagem.
 
           </p>
 
@@ -1822,11 +2030,11 @@
             </span>
 
             <span class="vehicle-card-feature">
-              Gameplay
+              Ficha individual
             </span>
 
             <span class="vehicle-card-feature">
-              Cores
+              Vintage Pack
             </span>
 
           </div>
@@ -1873,8 +2081,8 @@
 
       <p>
 
-        Motocicletas oficialmente nomeadas nos
-        materiais publicados pela Rockstar.
+        Motos que já aparecem identificadas nos materiais
+        oficiais usados como referência pelo catálogo.
 
       </p>
 
@@ -1895,9 +2103,10 @@
         <div class="vehicle-card-image">
 
           <img
-            src="../assets/images/veiculos/dinka-enduro/dinka-enduro.jpg"
+            src="../assets/images/veiculos/dinka-enduro/dinka-enduro.webp"
             alt="Dinka Enduro Motorcycle em GTA VI"
-            loading="lazy">
+            loading="lazy"
+            decoding="async">
 
         </div>
 
@@ -1921,8 +2130,8 @@
 
           <p>
 
-            Motocicleta identificada nominalmente
-            na biblioteca oficial de mídia de GTA VI.
+            A Dinka Enduro Motorcycle aparece identificada
+            pelo nome na biblioteca oficial de mídia de GTA VI.
 
           </p>
 
@@ -1934,11 +2143,11 @@
             </span>
 
             <span class="vehicle-card-feature">
-              Gameplay
+              Ficha individual
             </span>
 
             <span class="vehicle-card-feature">
-              Personalização
+              Informações verificadas
             </span>
 
           </div>
@@ -1985,8 +2194,8 @@
 
       <p>
 
-        Barcos e outros meios de transporte aquático
-        já identificados oficialmente.
+        Embarcações que já podem ser identificadas por nome
+        nos materiais oficiais de GTA VI.
 
       </p>
 
@@ -2009,9 +2218,10 @@
         <div class="vehicle-card-image">
 
           <img
-            src="../assets/images/veiculos/shitzu-squalo/shitzu-squalo-01.jpg"
+            src="../assets/images/veiculos/shitzu-squalo/shitzu-squalo-01.webp"
             alt="Shitzu Squalo em GTA VI"
-            loading="lazy">
+            loading="lazy"
+            decoding="async">
 
         </div>
 
@@ -2039,7 +2249,7 @@
 
           <p>
 
-            Embarcação oficialmente incluída entre
+            A Shitzu Squalo aparece oficialmente entre
             os benefícios do Ultimate Edition Upgrade.
 
           </p>
@@ -2052,11 +2262,11 @@
             </span>
 
             <span class="vehicle-card-feature">
-              Gameplay
+              Ficha individual
             </span>
 
             <span class="vehicle-card-feature">
-              Personalização
+              Informações verificadas
             </span>
 
           </div>
@@ -2085,9 +2295,10 @@
         <div class="vehicle-card-image">
 
           <img
-            src="../assets/images/veiculos/crest-kayak/crest-kayak.jpg"
+            src="../assets/images/veiculos/crest-kayak/crest-kayak.webp"
             alt="Crest Kayak em GTA VI"
-            loading="lazy">
+            loading="lazy"
+            decoding="async">
 
         </div>
 
@@ -2111,8 +2322,8 @@
 
           <p>
 
-            Transporte aquático identificado nominalmente
-            na galeria oficial de GTA VI.
+            O Crest Kayak aparece identificado pelo nome
+            na galeria oficial de mídia de GTA VI.
 
           </p>
 
@@ -2124,7 +2335,7 @@
             </span>
 
             <span class="vehicle-card-feature">
-              Gameplay
+              Ficha individual
             </span>
 
           </div>
@@ -2171,8 +2382,8 @@
 
       <p>
 
-        Veículos associados a terrenos irregulares
-        dentro do catálogo atual.
+        Modelos do catálogo atual ligados a terrenos irregulares
+        e condução fora do asfalto.
 
       </p>
 
@@ -2193,9 +2404,10 @@
         <div class="vehicle-card-image">
 
           <img
-            src="../assets/images/veiculos/vapid-dominator-buggy/vapid-dominator-buggy-01.jpg"
+            src="../assets/images/veiculos/vapid-dominator-buggy/vapid-dominator-buggy-01.webp"
             alt="’67 Vapid Dominator Buggy em GTA VI"
-            loading="lazy">
+            loading="lazy"
+            decoding="async">
 
         </div>
 
@@ -2223,9 +2435,9 @@
 
           <p>
 
-            Veículo oficialmente listado entre os
-            benefícios do Ultimate Edition Upgrade,
-            acompanhado de garagem.
+            O ’67 Vapid Dominator Buggy foi listado oficialmente
+            entre os benefícios do Ultimate Edition Upgrade,
+            acompanhado de uma garagem.
 
           </p>
 
@@ -2237,11 +2449,11 @@
             </span>
 
             <span class="vehicle-card-feature">
-              Gameplay
+              Ficha individual
             </span>
 
             <span class="vehicle-card-feature">
-              Personalização
+              Informações verificadas
             </span>
 
           </div>
@@ -2288,9 +2500,9 @@
 
       <p>
 
-        Aviões, helicópteros e outros veículos aéreos
-        serão adicionados conforme puderem ser
-        catalogados com segurança.
+        Aviões e helicópteros já aparecem em materiais oficiais,
+        mas as fichas individuais só entram no catálogo quando
+        houver identificação suficiente para nomeá-los com segurança.
 
       </p>
 
@@ -2305,10 +2517,9 @@
 
       <p>
 
-        GTA VI já possui aeronaves visíveis em materiais
-        oficiais, mas ainda não adicionamos uma ficha
-        individual nesta categoria usando nomes não
-        confirmados pela Rockstar.
+        Há aeronaves visíveis em materiais oficiais de GTA VI,
+        mas ainda não temos uma identificação nominal segura
+        para publicar fichas individuais nesta categoria.
 
       </p>
 
@@ -2343,9 +2554,9 @@
 
       <p>
 
-        A estrutura está preparada para incluir novas
-        formas de transporte sem misturar tudo em uma
-        única lista.
+        Se aparecer um tipo de transporte que não combine
+        com as categorias atuais, ele poderá ganhar uma área própria
+        sem transformar o catálogo em uma lista confusa.
 
       </p>
 
@@ -2398,16 +2609,17 @@
 
         <p>
 
-          Cada veículo terá uma página própria preparada
-          para crescer após o lançamento de GTA VI.
+          Os veículos já catalogados recebem uma página própria,
+          e essas fichas poderão ganhar novas informações
+          depois que GTA VI estiver disponível.
 
         </p>
 
         <p>
 
-          Assim, o índice continua rápido e organizado,
-          enquanto cada modelo pode receber uma quantidade
-          muito maior de informações.
+          Dessa forma, este índice continua simples de consultar,
+          enquanto cada modelo pode concentrar imagens,
+          contexto e dados específicos sem sobrecarregar a lista.
 
         </p>
 
@@ -2566,8 +2778,9 @@
 
       <p>
 
-        Os filtros poderão evoluir conforme o GTA6Zoone
-        confirmar novos dados diretamente no jogo.
+        Depois do lançamento, novos dados poderão tornar
+        a pesquisa mais útil e permitir filtros que hoje
+        ainda não fariam sentido preencher.
 
       </p>
 
@@ -2742,11 +2955,10 @@
 
       <p>
 
-        Os nomes e classificações editoriais desta página
-        utilizam materiais publicados oficialmente pela
-        Rockstar Games. Informações não divulgadas ainda
-        permanecem sem preenchimento até que possam ser
-        confirmadas.
+        Antes do lançamento, os nomes e referências desta página
+        são baseados nos materiais oficiais usados pelo GTA6Zoone.
+        Quando uma informação ainda não pode ser sustentada com segurança,
+        preferimos deixar o campo em aberto em vez de completar por suposição.
 
       </p>
 
@@ -2951,7 +3163,7 @@
 
     function normalizeText(value) {
 
-      return value
+      return String(value || "")
         .toLowerCase()
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "");
