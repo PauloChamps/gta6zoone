@@ -1,51 +1,71 @@
 <!doctype html>
-
-<html lang="pt-BR" data-root="../">
+<html lang="pt-BR" data-root="./">
 
 <head>
 
   <meta charset="utf-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Notícias de GTA 6: anúncios, trailers e lançamento | GTA6Zoone</title>
-
   <meta
-    name="description"
-    content="Acompanhe as notícias de GTA 6 em ordem cronológica: anúncios oficiais, rádios, músicas, trailers, pré-venda, lançamento e novidades verificadas da Rockstar Games.">
+    name="viewport"
+    content="width=device-width, initial-scale=1">
 
   <meta
     name="robots"
     content="index, follow, max-image-preview:large">
 
+
+  <!-- ==================================================
+       SEO PRINCIPAL
+  ================================================== -->
+
+  <title>GTA 6 (GTA VI): notícias, mapa e guias | GTA6Zoone</title>
+
+  <meta
+    name="description"
+    content="Acompanhe GTA 6 no GTA6Zoone: notícias, personagens, locais, veículos, guias, mapa interativo e conteúdo em português com informações verificadas.">
+
   <link
     rel="canonical"
-    href="https://gta6zoone.com.br/noticias/">
+    href="https://gta6zoone.com.br/">
+
+
+  <!-- ==================================================
+       FAVICON
+  ================================================== -->
 
   <link
     rel="icon"
-    type="image/png"
-    href="../assets/images/branding/favicon.png">
+    type="image/webp"
+    href="./assets/images/branding/favicon.webp">
 
-  <!-- =========================================================
+
+  <!-- ==================================================
        OPEN GRAPH
-  ========================================================== -->
+  ================================================== -->
 
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="pt_BR">
-  <meta property="og:site_name" content="GTA6Zoone">
+  <meta
+    property="og:type"
+    content="website">
+
+  <meta
+    property="og:locale"
+    content="pt_BR">
+
+  <meta
+    property="og:site_name"
+    content="GTA6Zoone">
 
   <meta
     property="og:title"
-    content="Notícias de GTA 6: anúncios, trailers e lançamento | GTA6Zoone">
+    content="GTA 6: notícias, mapa, personagens e guias | GTA6Zoone">
 
   <meta
     property="og:description"
-    content="Notícias verificadas de GTA 6 em ordem cronológica, com anúncios, rádios, músicas, trailers, lançamento e novidades da Rockstar Games.">
+    content="Notícias, personagens, locais, veículos, guias, mapa interativo e informações verificadas sobre Grand Theft Auto VI em português.">
 
   <meta
     property="og:url"
-    content="https://gta6zoone.com.br/noticias/">
+    content="https://gta6zoone.com.br/">
 
   <meta
     property="og:image"
@@ -53,11 +73,12 @@
 
   <meta
     property="og:image:alt"
-    content="GTA6Zoone — notícias verificadas sobre Grand Theft Auto VI">
+    content="GTA6Zoone — portal independente sobre Grand Theft Auto VI">
 
-  <!-- =========================================================
+
+  <!-- ==================================================
        TWITTER / X
-  ========================================================== -->
+  ================================================== -->
 
   <meta
     name="twitter:card"
@@ -65,23 +86,22 @@
 
   <meta
     name="twitter:title"
-    content="Notícias de GTA 6: anúncios, trailers e lançamento | GTA6Zoone">
+    content="GTA 6: notícias, mapa, personagens e guias | GTA6Zoone">
 
   <meta
     name="twitter:description"
-    content="Notícias verificadas de GTA 6 com anúncios, rádios, músicas, trailers, lançamento e novidades da Rockstar Games.">
+    content="Acompanhe notícias, personagens, locais, veículos, guias e o mapa de Grand Theft Auto VI no GTA6Zoone.">
 
   <meta
     name="twitter:image"
     content="https://gta6zoone.com.br/assets/images/branding/banner01.webp">
 
-  <meta
-    name="twitter:image:alt"
-    content="GTA6Zoone — notícias verificadas sobre Grand Theft Auto VI">
 
-  <!-- =========================================================
-       GOOGLE ADSENSE
-  ========================================================== -->
+  <!-- ==================================================
+       ADSENSE
+       Apenas carregamento global.
+       Nenhum bloco de anúncio é inserido nesta página.
+  ================================================== -->
 
   <script
     async
@@ -89,476 +109,27 @@
     crossorigin="anonymous">
   </script>
 
-  <!-- =========================================================
-       CSS GLOBAL
-  ========================================================== -->
+
+  <!-- ==================================================
+       CSS
+  ================================================== -->
 
   <link
     rel="stylesheet"
-    href="../assets/css/style.css">
+    href="./assets/css/style.css">
 
   <link
     rel="stylesheet"
-    href="../assets/css/components.css">
+    href="./assets/css/components.css">
 
   <link
     rel="stylesheet"
-    href="../assets/css/responsive.css">
+    href="./assets/css/responsive.css">
 
-  <!-- =========================================================
-       CSS EXCLUSIVO — NOTÍCIAS
-  ========================================================== -->
 
-  <style>
-
-    .news-page {
-      overflow: hidden;
-    }
-
-    .news-page .news-container {
-      max-width: 1180px;
-      margin-inline: auto;
-    }
-
-    /* =========================================================
-       INTRODUÇÃO
-    ========================================================== */
-
-    .news-intro {
-      padding-top: 2rem;
-      padding-bottom: 1rem;
-    }
-
-    .news-intro .breadcrumb {
-      margin-bottom: 1.5rem;
-    }
-
-    .news-intro-content {
-      max-width: 900px;
-    }
-
-    .news-intro h1 {
-      margin: .4rem 0 .9rem;
-      font-size: clamp(2.7rem, 8vw, 5.2rem);
-      line-height: .98;
-    }
-
-    .news-intro .lede {
-      max-width: 820px;
-      font-size: 1.08rem;
-      line-height: 1.75;
-    }
-
-    .news-intro-description {
-      max-width: 850px;
-      line-height: 1.75;
-    }
-
-    .news-update {
-      margin-top: 1.1rem;
-      color: var(--color-text-muted);
-      font-size: .9rem;
-      line-height: 1.6;
-    }
-
-    .news-update a {
-      color: #ff73bd;
-      font-weight: 800;
-      text-decoration: none;
-    }
-
-    .news-update a:hover {
-      text-decoration: underline;
-    }
-
-    /* =========================================================
-       INFORMAÇÕES DA PÁGINA
-    ========================================================== */
-
-    .news-overview {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: .8rem;
-      margin-top: 1.5rem;
-    }
-
-    .news-overview-card {
-      padding: 1rem;
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-medium);
-      background: var(--color-surface);
-    }
-
-    .news-overview-card span {
-      display: block;
-      margin-bottom: .3rem;
-      color: #ff73bd;
-      font-size: .7rem;
-      font-weight: 900;
-      letter-spacing: .06em;
-    }
-
-    .news-overview-card strong {
-      display: block;
-      line-height: 1.4;
-    }
-
-    /* =========================================================
-       FILTROS
-    ========================================================== */
-
-    .news-filters-head {
-      max-width: 820px;
-      margin-bottom: 1.25rem;
-    }
-
-    .news-filters-head h2 {
-      margin: .4rem 0 .6rem;
-      font-size: clamp(1.8rem, 4vw, 2.6rem);
-    }
-
-    .news-filters-head p {
-      margin: 0;
-      color: var(--color-text-muted);
-      line-height: 1.7;
-    }
-
-    .news-filters {
-      display: flex;
-      flex-wrap: wrap;
-      gap: .55rem;
-      margin-bottom: 1rem;
-    }
-
-    .news-filter {
-      padding: .65rem 1rem;
-      border: 1px solid var(--color-border);
-      border-radius: 999px;
-      background: var(--color-surface);
-      color: inherit;
-      font: inherit;
-      font-weight: 800;
-      cursor: pointer;
-      transition:
-        border-color .2s ease,
-        transform .2s ease,
-        background .2s ease;
-    }
-
-    .news-filter:hover {
-      transform: translateY(-1px);
-      border-color: rgba(255,255,255,.24);
-    }
-
-    .news-filter:focus-visible {
-      outline: 2px solid #ff73bd;
-      outline-offset: 3px;
-    }
-
-    .news-filter.active {
-      border-color: transparent;
-      background: var(--gradient-sunset);
-      color: #fff;
-    }
-
-    .news-results-status {
-      min-height: 1.5rem;
-      margin: 0 0 1.5rem;
-      color: var(--color-text-muted);
-      font-size: .88rem;
-    }
-
-    /* =========================================================
-       AVISO HISTÓRICO
-    ========================================================== */
-
-    .news-history-note {
-      margin-bottom: 2rem;
-      padding: 1rem 1.1rem;
-      border-left: 4px solid #ff3d9a;
-      border-radius:
-        0
-        var(--radius-small)
-        var(--radius-small)
-        0;
-      background: var(--color-surface);
-    }
-
-    .news-history-note p {
-      margin: 0;
-      color: var(--color-text-muted);
-      line-height: 1.65;
-    }
-
-    .news-history-note strong {
-      color: inherit;
-    }
-
-    /* =========================================================
-       CARDS
-    ========================================================== */
-
-    .news-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.25rem;
-    }
-
-    .news-card {
-      display: flex;
-      flex-direction: column;
-      min-width: 0;
-      overflow: hidden;
-      position: relative;
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-medium);
-      background: var(--color-surface);
-      transition:
-        transform .2s ease,
-        border-color .2s ease;
-    }
-
-    .news-card:hover {
-      transform: translateY(-2px);
-      border-color: rgba(255,61,154,.35);
-    }
-
-    .news-card[hidden] {
-      display: none;
-    }
-
-    .news-card-image {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      overflow: hidden;
-      background:
-        radial-gradient(
-          circle at 20% 20%,
-          rgba(255,61,154,.16),
-          transparent 40%
-        ),
-        radial-gradient(
-          circle at 80% 75%,
-          rgba(128,75,255,.16),
-          transparent 45%
-        ),
-        rgba(255,255,255,.03);
-    }
-
-    .news-card-image img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform .3s ease;
-    }
-
-    .news-card:hover .news-card-image img {
-      transform: scale(1.015);
-    }
-
-    .news-card-body {
-      display: flex;
-      flex: 1;
-      flex-direction: column;
-      padding: 1.25rem;
-    }
-
-    .news-card-top {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: .6rem;
-      margin-bottom: .8rem;
-    }
-
-    .news-card .meta {
-      margin: 0;
-      color: var(--color-text-muted);
-      font-size: .84rem;
-    }
-
-    .news-card h2 {
-      margin: 0 0 .65rem;
-      font-size: 1.3rem;
-      line-height: 1.3;
-    }
-
-    .news-card-description {
-      flex: 1;
-      margin: 0;
-      color: var(--color-text-muted);
-      line-height: 1.65;
-    }
-
-    .news-card-link {
-      align-self: flex-start;
-      margin-top: 1rem;
-    }
-
-    .news-card-link::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-    }
-
-    .news-card-link:focus-visible {
-      outline: 2px solid #ff73bd;
-      outline-offset: 3px;
-    }
-
-    .news-card-featured {
-      grid-column: 1 / -1;
-    }
-
-    .news-card-featured .news-card-body {
-      padding: 1.4rem;
-    }
-
-    .news-card-featured h2 {
-      font-size: clamp(1.45rem, 4vw, 2rem);
-    }
-
-    /* =========================================================
-       SEM RESULTADOS
-    ========================================================== */
-
-    .news-empty {
-      display: none;
-      grid-column: 1 / -1;
-      padding: 1.3rem;
-      border: 1px dashed var(--color-border);
-      border-radius: var(--radius-medium);
-      background: rgba(255,255,255,.015);
-    }
-
-    .news-empty.is-visible {
-      display: block;
-    }
-
-    .news-empty strong {
-      display: block;
-      margin-bottom: .35rem;
-    }
-
-    .news-empty p {
-      margin: 0;
-      color: var(--color-text-muted);
-      line-height: 1.65;
-    }
-
-    /* =========================================================
-       POLÍTICA EDITORIAL
-    ========================================================== */
-
-    .news-policy-section {
-      border-top: 1px solid rgba(255,255,255,.04);
-      background: rgba(255,255,255,.012);
-    }
-
-    .news-policy {
-      max-width: 920px;
-      padding: 1.35rem;
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-medium);
-      background: var(--color-surface);
-    }
-
-    .news-policy h2 {
-      margin: .4rem 0 .7rem;
-      font-size: clamp(1.75rem, 4vw, 2.5rem);
-    }
-
-    .news-policy p {
-      line-height: 1.75;
-    }
-
-    .news-policy p:last-child {
-      margin-bottom: 0;
-    }
-
-    .news-policy a {
-      color: #ff73bd;
-      font-weight: 800;
-    }
-
-    .news-status-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: .55rem;
-      margin: 1rem 0;
-    }
-
-    /* =========================================================
-       RESPONSIVO
-    ========================================================== */
-
-    @media (min-width: 700px) {
-
-      .news-overview {
-        grid-template-columns:
-          repeat(3, minmax(0, 1fr));
-      }
-
-      .news-grid {
-        grid-template-columns:
-          repeat(2, minmax(0, 1fr));
-      }
-
-    }
-
-    @media (min-width: 960px) {
-
-      .news-grid {
-        grid-template-columns:
-          repeat(3, minmax(0, 1fr));
-      }
-
-      .news-card-featured {
-        display: grid;
-        grid-template-columns:
-          minmax(0, 1.35fr)
-          minmax(320px, .65fr);
-      }
-
-      .news-card-featured .news-card-image {
-        min-height: 380px;
-        height: 100%;
-        aspect-ratio: auto;
-      }
-
-      .news-card-featured .news-card-body {
-        justify-content: center;
-      }
-
-    }
-
-    @media (max-width: 699px) {
-
-      .news-page .news-container {
-        width: 100%;
-        max-width: 100%;
-      }
-
-      .news-card,
-      .news-card-image,
-      .news-card-image img {
-        width: 100%;
-        max-width: 100%;
-      }
-
-      .news-filter {
-        flex: 1 1 auto;
-      }
-
-    }
-
-  </style>
-
-
-  <!-- =========================================================
+  <!-- ==================================================
        DADOS ESTRUTURADOS
-  ========================================================== -->
+  ================================================== -->
 
   <script type="application/ld+json">
   {
@@ -571,10 +142,7 @@
         "url": "https://gta6zoone.com.br/",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gta6zoone.com.br/assets/images/branding/favicon.png"
-        },
-        "founder": {
-          "@id": "https://gta6zoone.com.br/sobre/#paulo-campos"
+          "url": "https://gta6zoone.com.br/assets/images/branding/favicon.webp"
         },
         "sameAs": [
           "https://www.instagram.com/gta6zoone/",
@@ -582,185 +150,99 @@
         ]
       },
       {
-        "@type": "Person",
-        "@id": "https://gta6zoone.com.br/sobre/#paulo-campos",
-        "name": "Paulo Campos",
-        "url": "https://gta6zoone.com.br/sobre/#paulo-campos",
-        "worksFor": {
-          "@id": "https://gta6zoone.com.br/#organization"
-        }
-      },
-      {
         "@type": "WebSite",
         "@id": "https://gta6zoone.com.br/#website",
         "url": "https://gta6zoone.com.br/",
         "name": "GTA6Zoone",
+        "description": "Portal e enciclopédia independente em português sobre Grand Theft Auto VI.",
         "inLanguage": "pt-BR",
         "publisher": {
           "@id": "https://gta6zoone.com.br/#organization"
         }
       },
       {
-        "@type": "CollectionPage",
-        "@id": "https://gta6zoone.com.br/noticias/#webpage",
-        "url": "https://gta6zoone.com.br/noticias/",
-        "name": "Notícias de GTA 6: anúncios, trailers e lançamento",
-        "description": "Notícias verificadas de GTA 6 em ordem cronológica, incluindo anúncios, rádios, músicas, trailers, pré-venda e lançamento.",
+        "@type": "WebPage",
+        "@id": "https://gta6zoone.com.br/#webpage",
+        "url": "https://gta6zoone.com.br/",
+        "name": "GTA 6 (GTA VI): notícias, mapa e guias | GTA6Zoone",
+        "description": "Notícias, personagens, locais, veículos, guias, mapa interativo e informações verificadas sobre Grand Theft Auto VI em português.",
         "inLanguage": "pt-BR",
-        "dateModified": "2026-10-15",
-        "isPartOf": {
-          "@id": "https://gta6zoone.com.br/#website"
-        },
+"dateModified": "2026-10-15",
+"isPartOf": {
+  "@id": "https://gta6zoone.com.br/#website"
+},
         "about": {
           "@type": "VideoGame",
           "name": "Grand Theft Auto VI"
         },
-        "breadcrumb": {
-          "@id": "https://gta6zoone.com.br/noticias/#breadcrumb"
-        },
-        "mainEntity": {
-          "@id": "https://gta6zoone.com.br/noticias/#lista"
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://gta6zoone.com.br/assets/images/branding/banner01.webp"
         }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://gta6zoone.com.br/noticias/#breadcrumb",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Início",
-            "item": "https://gta6zoone.com.br/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Notícias",
-            "item": "https://gta6zoone.com.br/noticias/"
-          }
-        ]
-      },
-      {
-        "@type": "ItemList",
-        "@id": "https://gta6zoone.com.br/noticias/#lista",
-        "name": "Notícias de Grand Theft Auto VI",
-        "numberOfItems": 11,
-        "itemListOrder": "https://schema.org/ItemListOrderDescending",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "GTA VI ganha trailer de lançamento com novas cenas de Leonida",
-            "url": "https://gta6zoone.com.br/noticias/gta-vi-trailer-de-lancamento/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "GTA VI revela rádios com Bad Bunny, Lana Del Rey e mais artistas",
-            "url": "https://gta6zoone.com.br/noticias/gta-vi-radios-apresentadores/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Rockstar anuncia a Vice City Collection de GTA VI",
-            "url": "https://gta6zoone.com.br/noticias/gta-vi-vice-city-collection/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "GTA VI terá álbum oficial com 34 faixas originais",
-            "url": "https://gta6zoone.com.br/noticias/gta-vi-album-34-faixas/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 5,
-            "name": "GTA VI ganha apresentação estendida com imagens do jogo",
-            "url": "https://gta6zoone.com.br/noticias/gta-vi-apresentacao-estendida/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 6,
-            "name": "Pré-venda de GTA VI confirma Ultimate Edition e bônus",
-            "url": "https://gta6zoone.com.br/noticias/gta-vi-pre-venda-ultimate-edition/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 7,
-            "name": "GTA VI será lançado em 19 de novembro de 2026",
-            "url": "https://gta6zoone.com.br/noticias/gta-vi-lancamento-19-novembro-2026/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 8,
-            "name": "Trailer 2 de GTA VI apresenta Jason, Lucia e Leonida",
-            "url": "https://gta6zoone.com.br/noticias/gta-vi-trailer-2/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 9,
-            "name": "GTA VI é adiado e recebe data para maio de 2026",
-            "url": "https://gta6zoone.com.br/noticias/gta-vi-adiado-maio-2026/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 10,
-            "name": "Take-Two estreita lançamento de GTA VI para o outono de 2025",
-            "url": "https://gta6zoone.com.br/noticias/gta-vi-lancamento-outono-2025/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 11,
-            "name": "Trailer 1 revela oficialmente GTA VI, Lucia e Vice City",
-            "url": "https://gta6zoone.com.br/noticias/gta-vi-trailer-1/"
-          }
-        ]
       }
     ]
   }
   </script>
 
-  <!-- =========================================================
-       JAVASCRIPT GLOBAL
-  ========================================================== -->
 
-  <script src="../assets/js/menu.js" defer></script>
-  <script src="../assets/js/main.js" defer></script>
+  <!-- ==================================================
+       JS
+  ================================================== -->
+
+  <script
+    src="./assets/js/menu.js"
+    defer>
+  </script>
+
+  <script
+    src="./assets/js/main.js"
+    defer>
+  </script>
 
 </head>
 
+
 <body>
 
-<a class="skip-link" href="#conteudo">
+
+<a
+  class="skip-link"
+  href="#conteudo">
+
   Pular para o conteúdo
+
 </a>
 
-<!-- =========================================================
-     BANNER
-========================================================== -->
+
+<!-- ==================================================
+     BANNER GTA6ZOONE
+================================================== -->
 
 <div class="global-banner">
 
-  <div class="banner-fallback"></div>
-
   <img
     class="banner-image"
-    src="../assets/images/branding/banner01.webp"
+    src="./assets/images/branding/banner01.webp"
     alt=""
-    decoding="async">
+    fetchpriority="high">
 
 </div>
 
-<!-- =========================================================
+
+<!-- ==================================================
      HEADER
-========================================================== -->
+================================================== -->
 
 <header class="site-header">
 
   <div class="container header-inner">
 
+
+    <!-- MARCA -->
+
     <a
       class="brand"
-      href="../index.html"
+      href="./index.html"
       aria-label="GTA6Zoone — início">
 
       <span class="brand-text">
@@ -769,17 +251,29 @@
 
     </a>
 
+
+    <!-- ==================================================
+         MENU DESKTOP
+    ================================================== -->
+
     <nav
       class="desktop-nav"
       aria-label="Navegação principal">
 
-      <a href="../index.html">
+
+      <a
+        href="./index.html"
+        aria-current="page">
+
         INÍCIO
+
       </a>
 
-      <a href="../gta-6/index.html">
+
+      <a href="./gta-6/index.html">
         GTA 6
       </a>
+
 
       <!-- ONLINE -->
 
@@ -793,6 +287,7 @@
           ONLINE ▾
 
         </button>
+
 
         <div class="dropdown-menu">
 
@@ -840,17 +335,16 @@
 
       </div>
 
-      <a
-        href="../noticias/index.html"
-        aria-current="page">
 
+      <a href="./noticias/index.html">
         NOTÍCIAS
-
       </a>
 
-      <a href="../mapa/index.html">
+
+      <a href="./mapa/index.html">
         MAPA
       </a>
+
 
       <!-- WIKI -->
 
@@ -865,43 +359,45 @@
 
         </button>
 
+
         <div class="dropdown-menu">
 
-          <a href="../personagens/index.html">
+          <a href="./personagens/index.html">
             Personagens
           </a>
 
-          <a href="../veiculos/index.html">
+          <a href="./veiculos/index.html">
             Veículos
           </a>
 
-          <a href="../armas/index.html">
+          <a href="./armas/index.html">
             Armas
           </a>
 
-          <a href="../missoes/index.html">
+          <a href="./missoes/index.html">
             Missões
           </a>
 
-          <a href="../locais/index.html">
+          <a href="./locais/index.html">
             Locais
           </a>
 
-          <a href="../propriedades/index.html">
+          <a href="./propriedades/index.html">
             Propriedades
           </a>
 
-          <a href="../atividades/index.html">
+          <a href="./atividades/index.html">
             Atividades
           </a>
 
-          <a href="../colecionaveis/index.html">
+          <a href="./colecionaveis/index.html">
             Colecionáveis
           </a>
 
         </div>
 
       </div>
+
 
       <!-- GUIAS -->
 
@@ -916,37 +412,38 @@
 
         </button>
 
+
         <div class="dropdown-menu">
 
-          <a href="../guias/iniciantes/index.html">
+          <a href="./guias/iniciantes/index.html">
             Iniciantes
           </a>
 
-          <a href="../guias/dinheiro/index.html">
+          <a href="./guias/dinheiro/index.html">
             Dinheiro
           </a>
 
-          <a href="../guias/missoes/index.html">
+          <a href="./guias/missoes/index.html">
             Missões
           </a>
 
-          <a href="../guias/veiculos/index.html">
+          <a href="./guias/veiculos/index.html">
             Veículos
           </a>
 
-          <a href="../guias/armas/index.html">
+          <a href="./guias/armas/index.html">
             Armas
           </a>
 
-          <a href="../guias/segredos/index.html">
+          <a href="./guias/segredos/index.html">
             Segredos
           </a>
 
-          <a href="../guias/easter-eggs/index.html">
+          <a href="./guias/easter-eggs/index.html">
             Easter Eggs
           </a>
 
-          <a href="../guias/guia-100/index.html">
+          <a href="./guias/guia-100/index.html">
             Guia 100%
           </a>
 
@@ -954,15 +451,22 @@
 
       </div>
 
-      <a href="../buscar/index.html">
+
+      <a href="./buscar/index.html">
         PESQUISAR
       </a>
 
+
     </nav>
 
+
+    <!-- ==================================================
+         BOTÃO MOBILE
+    ================================================== -->
+
     <button
-      type="button"
       class="menu-button"
+      type="button"
       data-menu-open
       aria-controls="mobile-menu"
       aria-expanded="false"
@@ -972,21 +476,25 @@
 
     </button>
 
+
   </div>
 
 </header>
 
-<!-- =========================================================
+
+<!-- ==================================================
      MENU MOBILE
-========================================================== -->
+================================================== -->
 
 <div class="mobile-overlay"></div>
+
 
 <aside
   class="mobile-menu"
   id="mobile-menu"
   aria-label="Menu mobile"
   aria-hidden="true">
+
 
   <div class="mobile-menu-head">
 
@@ -995,8 +503,8 @@
     </strong>
 
     <button
-      type="button"
       class="close-menu"
+      type="button"
       data-menu-close
       aria-label="Fechar menu">
 
@@ -1006,27 +514,36 @@
 
   </div>
 
+
   <nav class="mobile-links">
 
-    <a href="../index.html">
+
+    <a
+      href="./index.html"
+      aria-current="page">
+
       Início
+
     </a>
 
-    <a href="../gta-6/index.html">
+
+    <a href="./gta-6/index.html">
       GTA 6
     </a>
+
 
     <!-- ONLINE MOBILE -->
 
     <button
-      type="button"
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-online">
 
       Online +
 
     </button>
+
 
     <div
       class="mobile-submenu"
@@ -1074,23 +591,22 @@
 
     </div>
 
-    <a
-      href="../noticias/index.html"
-      aria-current="page">
 
+    <a href="./noticias/index.html">
       Notícias
-
     </a>
 
-    <a href="../mapa/index.html">
+
+    <a href="./mapa/index.html">
       Mapa
     </a>
+
 
     <!-- WIKI MOBILE -->
 
     <button
-      type="button"
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-wiki">
 
@@ -1098,49 +614,51 @@
 
     </button>
 
+
     <div
       class="mobile-submenu"
       id="mobile-wiki">
 
-      <a href="../personagens/index.html">
+      <a href="./personagens/index.html">
         Personagens
       </a>
 
-      <a href="../veiculos/index.html">
+      <a href="./veiculos/index.html">
         Veículos
       </a>
 
-      <a href="../armas/index.html">
+      <a href="./armas/index.html">
         Armas
       </a>
 
-      <a href="../missoes/index.html">
+      <a href="./missoes/index.html">
         Missões
       </a>
 
-      <a href="../locais/index.html">
+      <a href="./locais/index.html">
         Locais
       </a>
 
-      <a href="../propriedades/index.html">
+      <a href="./propriedades/index.html">
         Propriedades
       </a>
 
-      <a href="../atividades/index.html">
+      <a href="./atividades/index.html">
         Atividades
       </a>
 
-      <a href="../colecionaveis/index.html">
+      <a href="./colecionaveis/index.html">
         Colecionáveis
       </a>
 
     </div>
 
+
     <!-- GUIAS MOBILE -->
 
     <button
-      type="button"
       class="submenu-toggle"
+      type="button"
       aria-expanded="false"
       aria-controls="mobile-guias">
 
@@ -1148,49 +666,55 @@
 
     </button>
 
+
     <div
       class="mobile-submenu"
       id="mobile-guias">
 
-      <a href="../guias/iniciantes/index.html">
+      <a href="./guias/iniciantes/index.html">
         Iniciantes
       </a>
 
-      <a href="../guias/dinheiro/index.html">
+      <a href="./guias/dinheiro/index.html">
         Dinheiro
       </a>
 
-      <a href="../guias/missoes/index.html">
+      <a href="./guias/missoes/index.html">
         Missões
       </a>
 
-      <a href="../guias/veiculos/index.html">
+      <a href="./guias/veiculos/index.html">
         Veículos
       </a>
 
-      <a href="../guias/armas/index.html">
+      <a href="./guias/armas/index.html">
         Armas
       </a>
 
-      <a href="../guias/segredos/index.html">
+      <a href="./guias/segredos/index.html">
         Segredos
       </a>
 
-      <a href="../guias/easter-eggs/index.html">
+      <a href="./guias/easter-eggs/index.html">
         Easter Eggs
       </a>
 
-      <a href="../guias/guia-100/index.html">
+      <a href="./guias/guia-100/index.html">
         Guia 100%
       </a>
 
     </div>
 
-    <a href="../buscar/index.html">
+
+    <a href="./buscar/index.html">
       Buscar
     </a>
 
+
   </nav>
+
+
+  <!-- REDES SOCIAIS MOBILE -->
 
   <div class="social-placeholders">
 
@@ -1216,124 +740,166 @@
 
   </div>
 
+
 </aside>
 
-<!-- =========================================================
-     CONTEÚDO
-========================================================== -->
 
-<main
-  id="conteudo"
-  class="news-page">
+<!-- ==================================================
+     CONTEÚDO PRINCIPAL
+================================================== -->
 
-<!-- =========================================================
-     INTRODUÇÃO
-========================================================== -->
+<main id="conteudo">
 
-<section class="page-intro news-intro">
 
-  <div class="container news-container">
+<!-- ==================================================
+     DESTAQUE PRINCIPAL
+================================================== -->
 
-    <nav
-      class="breadcrumb"
-      aria-label="Breadcrumb">
+<section class="section">
 
-      <a href="../index.html">
-        Início
-      </a>
+  <div class="container editorial">
 
-      ›
 
-      <span aria-current="page">
-        Notícias
-      </span>
+    <!-- DESTAQUE PRINCIPAL GTA VI -->
 
-    </nav>
+    <article class="card feature-main">
 
-    <div class="news-intro-content">
 
-      <span class="eyebrow">
-        NOTÍCIAS · GTA VI
-      </span>
+      <img
+        class="feature-bg"
+        src="./assets/images/home/gta6-lancamento.webp"
+        alt="Jason Duval e Lucia Caminos em Grand Theft Auto VI"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async">
 
-      <h1>
-        Notícias de GTA 6
-      </h1>
 
-      <p class="lede">
+      <div class="feature-overlay"></div>
 
-        Acompanhe os anúncios, rádios, músicas,
-        trailers, mudanças de lançamento, pré-venda
-        e as principais novidades oficiais de
-        Grand Theft Auto VI.
 
-      </p>
+      <div class="card-body feature-content">
 
-      <p class="news-intro-description">
 
-        As notícias são organizadas pela data original
-        de cada acontecimento. Informações confirmadas,
-        registros históricos e possíveis rumores recebem
-        identificações diferentes para que você saiba
-        exatamente o que já foi anunciado pela Rockstar.
+        <span class="badge">
+          GTA VI
+        </span>
 
-      </p>
 
-      <p class="news-update">
+        <h1>
+          Grand Theft Auto VI chega em 19 de novembro de 2026
+        </h1>
 
-        Página atualizada em
 
-        <time datetime="2026-10-15">
-          15 de outubro de 2026
-        </time>
+        <p>
 
-        · Conteúdo revisado por
+          Jason e Lucia estão no centro da nova história
+          criminal da Rockstar Games. A jornada passa por
+          Vice City, pelas Leonida Keys e por outros destinos
+          do estado de Leonida.
 
-        <a href="../sobre/index.html#paulo-campos">
-          Paulo Campos
+        </p>
+
+
+        <p class="meta">
+          PlayStation 5 · Xbox Series X|S
+        </p>
+
+
+        <a
+          class="btn"
+          href="./gta-6/index.html">
+
+          Tudo sobre GTA VI
+
         </a>
 
-      </p>
-
-      <div class="news-overview">
-
-        <div class="news-overview-card">
-
-          <span>
-            PUBLICAÇÕES
-          </span>
-
-          <strong>
-            11 notícias disponíveis
-          </strong>
-
-        </div>
-
-        <div class="news-overview-card">
-
-          <span>
-            ORGANIZAÇÃO
-          </span>
-
-          <strong>
-            Da mais recente para a mais antiga
-          </strong>
-
-        </div>
-
-        <div class="news-overview-card">
-
-          <span>
-            FONTES
-          </span>
-
-          <strong>
-            Rockstar Games e Take-Two
-          </strong>
-
-        </div>
 
       </div>
+
+    </article>
+
+
+    <!-- DESTAQUES LATERAIS -->
+
+    <div class="feature-side">
+
+
+      <!-- PERSONAGENS -->
+
+      <a
+        class="card feature-side-card"
+        href="./personagens/index.html">
+
+
+        <img
+          class="feature-side-image"
+          src="./assets/images/home/Jason_and_Lucia_03.webp"
+          alt="Jason Duval e Lucia Caminos juntos em Grand Theft Auto VI"
+          loading="lazy"
+          decoding="async">
+
+
+        <div class="card-body">
+
+          <span class="eyebrow">
+            Personagens
+          </span>
+
+          <h2>
+            Conheça Jason, Lucia e os outros personagens
+          </h2>
+
+          <p class="muted">
+
+            Veja quem já foi apresentado oficialmente
+            e como cada personagem se conecta ao mundo
+            de GTA VI.
+
+          </p>
+
+        </div>
+
+
+      </a>
+
+
+      <!-- MAPA -->
+
+      <a
+        class="card feature-side-card"
+        href="./mapa/index.html">
+
+
+        <img
+          class="feature-side-image"
+          src="./assets/images/home/vice-city.webp"
+          alt="Vice City, um dos principais destinos de Grand Theft Auto VI"
+          loading="lazy"
+          decoding="async">
+
+
+        <div class="card-body">
+
+          <span class="eyebrow">
+            Leonida
+          </span>
+
+          <h2>
+            Explore o mundo de GTA VI
+          </h2>
+
+          <p class="muted">
+
+            Conheça Vice City, Leonida Keys e as demais
+            regiões já apresentadas pela Rockstar Games.
+
+          </p>
+
+        </div>
+
+
+      </a>
+
 
     </div>
 
@@ -1341,302 +907,131 @@
 
 </section>
 
-<!-- =========================================================
-     NOTÍCIAS
-========================================================== -->
+
+<!-- ==================================================
+     PESQUISA
+================================================== -->
+
+<section class="section section-alt">
+
+  <div class="container">
+
+
+    <div class="section-head">
+
+      <div>
+
+        <span class="eyebrow">
+          Pesquisa
+        </span>
+
+        <h2>
+          O que você procura?
+        </h2>
+
+      </div>
+
+    </div>
+
+
+    <form
+      class="search-bar"
+      action="./buscar/index.html">
+
+
+      <label
+        class="hidden"
+        for="home-q">
+
+        Pesquisar no GTA6Zoone
+
+      </label>
+
+
+      <input
+        id="home-q"
+        class="control"
+        name="q"
+        type="search"
+        autocomplete="off"
+        placeholder="Personagens, locais, veículos, notícias...">
+
+
+      <button
+        class="btn"
+        type="submit">
+
+        Pesquisar
+
+      </button>
+
+
+    </form>
+
+
+  </div>
+
+</section>
+
+
+<!-- ==================================================
+     ÚLTIMAS NOTÍCIAS E DESTAQUES
+================================================== -->
 
 <section class="section">
 
-  <div class="container news-container">
+  <div class="container">
 
-    <div class="news-filters-head">
+    <div class="section-head">
 
-      <span class="eyebrow">
-        ARQUIVO DE NOTÍCIAS
-      </span>
+      <div>
 
-      <h2>
-        Encontre as últimas informações
-      </h2>
+        <span class="eyebrow">
+          Notícias
+        </span>
 
-      <p>
+        <h2>
+          Últimas notícias e destaques de GTA VI
+        </h2>
 
-        Use os filtros para consultar anúncios gerais,
-        trailers, informações de lançamento, música
-        ou registros importantes da cronologia de GTA VI.
+      </div>
 
-      </p>
-
-    </div>
-
-    <div
-      class="news-filters"
-      aria-label="Filtrar notícias por categoria">
-
-      <button
-        class="news-filter active"
-        type="button"
-        data-news-filter="all"
-        aria-pressed="true">
-
-        Todas
-
-      </button>
-
-      <button
-        class="news-filter"
-        type="button"
-        data-news-filter="gta6"
-        aria-pressed="false">
-
-        GTA 6
-
-      </button>
-
-      <button
-        class="news-filter"
-        type="button"
-        data-news-filter="rockstar"
-        aria-pressed="false">
-
-        Rockstar
-
-      </button>
-
-      <button
-        class="news-filter"
-        type="button"
-        data-news-filter="trailers"
-        aria-pressed="false">
-
-        Trailers
-
-      </button>
-
-      <button
-        class="news-filter"
-        type="button"
-        data-news-filter="lancamento"
-        aria-pressed="false">
-
-        Lançamento
-
-      </button>
-
-      <button
-        class="news-filter"
-        type="button"
-        data-news-filter="musica"
-        aria-pressed="false">
-
-        Música
-
-      </button>
-
-      <button
-        class="news-filter"
-        type="button"
-        data-news-filter="historico"
-        aria-pressed="false">
-
-        Histórico
-
-      </button>
+      <a href="./noticias/index.html">
+        Ver todas
+      </a>
 
     </div>
 
-    <p
-      class="news-results-status"
-      id="news-results-status"
-      role="status"
-      aria-live="polite">
+    <div class="grid grid-3">
 
-      Exibindo 11 notícias.
+      <!-- NOTÍCIA 1 — VICE CITY COLLECTION -->
 
-    </p>
+      <article class="card">
 
-    <div class="news-history-note">
+        <a
+          href="./noticias/gta-vi-vice-city-collection/index.html"
+          class="card-full-link"
+          aria-label="Ler notícia: conheça a Vice City Collection de GTA VI">
 
-      <p>
+          <div class="card-image">
 
-        <strong>Sobre as datas:</strong>
-        algumas notícias registram previsões de lançamento
-        que foram posteriormente alteradas. Esses artigos
-        permanecem disponíveis como parte da cronologia
-        de GTA VI e indicam claramente quando uma informação
-        deixou de ser a previsão atual.
-
-      </p>
-
-    </div>
-
-    <div class="news-grid">
-
-      <!-- =====================================================
-           01 — TRAILER DE LANÇAMENTO
-      ====================================================== -->
-
-      <article
-        class="news-card news-card-featured"
-        data-news-category="gta6 rockstar trailers lancamento">
-
-        <div class="news-card-image">
-
-          <img
-            src="../assets/images/home/gta6-trailer-lancamento.webp"
-            alt="Trailer de lançamento de Grand Theft Auto VI"
-            width="1600"
-            height="900"
-            loading="eager"
-            decoding="async"
-            fetchpriority="high">
-
-        </div>
-
-        <div class="news-card-body">
-
-          <div class="news-card-top">
-
-            <span class="badge badge-confirmado">
-              NOVO · OFICIAL
-            </span>
-
-            <p class="meta">
-
-              Rockstar Games ·
-
-              <time datetime="2026-10-15">
-                15/10/2026
-              </time>
-
-            </p>
+            <img
+              src="./assets/images/home/gta6-lancamento.webp"
+              alt="Arte oficial de Grand Theft Auto VI"
+              loading="lazy"
+              decoding="async">
 
           </div>
 
-          <h2>
-            GTA VI ganha trailer de lançamento
-            com novas cenas de Leonida
-          </h2>
+          <div class="card-body">
 
-          <p class="news-card-description">
-
-            A Rockstar publicou o trailer de lançamento de GTA VI,
-            com Jason, Lucia e novas imagens de Leonida ao som de
-            “Flower in a Hurricane”.
-
-          </p>
-
-          <a
-            class="btn btn-secondary news-card-link"
-            href="./gta-vi-trailer-de-lancamento/index.html"
-            aria-label="Ler notícia sobre o trailer de lançamento de GTA VI">
-
-            Ler notícia
-
-          </a>
-
-        </div>
-
-      </article>
-
-      <!-- =====================================================
-           02 — RÁDIOS E APRESENTADORES
-      ====================================================== -->
-
-      <article
-        class="news-card"
-        data-news-category="gta6 rockstar musica">
-
-        <div class="news-card-image">
-
-          <img
-            src="../assets/images/noticias/gta-vi-radios-apresentadores.webp"
-            alt="Rádios e apresentadores musicais de Grand Theft Auto VI"
-            width="1600"
-            height="900"
-            loading="lazy"
-            decoding="async">
-
-        </div>
-
-        <div class="news-card-body">
-
-          <div class="news-card-top">
-
-            <span class="badge badge-confirmado">
-              CONFIRMADO
+            <span class="badge">
+              OFICIAL
             </span>
 
             <p class="meta">
 
-              Rockstar Games ·
-
-              <time datetime="2026-10-08">
-                08/10/2026
-              </time>
-
-            </p>
-
-          </div>
-
-          <h2>
-            GTA VI revela rádios com Bad Bunny,
-            Lana Del Rey e mais artistas
-          </h2>
-
-          <p class="news-card-description">
-
-            A Rockstar apresentou seis estações de rádio,
-            incluindo o retorno da Flash FM e programas
-            comandados por Bad Bunny, Lana Del Rey,
-            Burna Boy, Robyn e integrantes do Slayer.
-
-          </p>
-
-          <a
-            class="btn btn-secondary news-card-link"
-            href="./gta-vi-radios-apresentadores/index.html"
-            aria-label="Ler notícia sobre as rádios e os apresentadores de GTA VI">
-
-            Ler notícia
-
-          </a>
-
-        </div>
-
-      </article>
-
-      <!-- =====================================================
-           03 — VICE CITY COLLECTION
-      ====================================================== -->
-
-      <article
-        class="news-card"
-        data-news-category="gta6 rockstar">
-
-        <div class="news-card-image">
-
-          <img
-            src="../assets/images/home/gta6-lancamento.webp"
-            alt="Arte oficial de Grand Theft Auto VI"
-            width="1600"
-            height="900"
-            loading="lazy"
-            decoding="async">
-
-        </div>
-
-        <div class="news-card-body">
-
-          <div class="news-card-top">
-
-            <span class="badge badge-confirmado">
-              CONFIRMADO
-            </span>
-
-            <p class="meta">
-
-              Rockstar Games ·
+              Colecionáveis ·
 
               <time datetime="2026-09-24">
                 24/09/2026
@@ -1644,64 +1039,56 @@
 
             </p>
 
+            <h3>
+              Vice City Collection de GTA VI: preço e conteúdo da caixa
+            </h3>
+
+            <p class="muted">
+
+              A coleção limitada reúne acessórios e objetos
+              inspirados em Leonida, mas não inclui uma cópia
+              de Grand Theft Auto VI.
+
+            </p>
+
+            <span class="card-action">
+              Ler notícia →
+            </span>
+
           </div>
 
-          <h2>
-            Rockstar anuncia a Vice City Collection de GTA VI
-          </h2>
-
-          <p class="news-card-description">
-
-            A caixa de colecionador inspirada no programa
-            fictício Macca the Gator reúne itens temáticos
-            de Leonida. O jogo é vendido separadamente.
-
-          </p>
-
-          <a
-            class="btn btn-secondary news-card-link"
-            href="./gta-vi-vice-city-collection/index.html"
-            aria-label="Ler notícia sobre a Vice City Collection de GTA VI">
-
-            Ler notícia
-
-          </a>
-
-        </div>
+        </a>
 
       </article>
 
-      <!-- =====================================================
-           04 — ÁLBUM
-      ====================================================== -->
+      <!-- NOTÍCIA 2 — ÁLBUM -->
 
-      <article
-        class="news-card"
-        data-news-category="gta6 rockstar musica">
+      <article class="card">
 
-        <div class="news-card-image">
+        <a
+          href="./noticias/gta-vi-album-34-faixas/index.html"
+          class="card-full-link"
+          aria-label="Ler notícia: álbum de GTA VI terá 34 músicas originais">
 
-          <img
-            src="../assets/images/home/Jason_and_Lucia_Robbery_With_Logo_landscape.webp"
-            alt="Jason e Lucia em arte oficial de Grand Theft Auto VI"
-            width="1600"
-            height="900"
-            loading="lazy"
-            decoding="async">
+          <div class="card-image">
 
-        </div>
+            <img
+              src="./assets/images/home/Jason_and_Lucia_Robbery_With_Logo_landscape.webp"
+              alt="Jason e Lucia em arte oficial de Grand Theft Auto VI"
+              loading="lazy"
+              decoding="async">
 
-        <div class="news-card-body">
+          </div>
 
-          <div class="news-card-top">
+          <div class="card-body">
 
-            <span class="badge badge-confirmado">
-              CONFIRMADO
+            <span class="badge">
+              OFICIAL
             </span>
 
             <p class="meta">
 
-              Rockstar Games ·
+              Música ·
 
               <time datetime="2026-09-17">
                 17/09/2026
@@ -1709,59 +1096,51 @@
 
             </p>
 
+            <h3>
+              Álbum de GTA VI terá 34 músicas originais
+            </h3>
+
+            <p class="muted">
+
+              Grand Theft Auto VI: The Album terá versões
+              digitais, em CD e em vinil e será lançado
+              junto com o jogo.
+
+            </p>
+
+            <span class="card-action">
+              Ler notícia →
+            </span>
+
           </div>
 
-          <h2>
-            GTA VI terá álbum oficial com 34 faixas originais
-          </h2>
-
-          <p class="news-card-description">
-
-            Grand Theft Auto VI: The Album será lançado
-            junto com o jogo e terá versões digitais,
-            em CD e em vinil.
-
-          </p>
-
-          <a
-            class="btn btn-secondary news-card-link"
-            href="./gta-vi-album-34-faixas/index.html"
-            aria-label="Ler notícia sobre o álbum oficial de GTA VI">
-
-            Ler notícia
-
-          </a>
-
-        </div>
+        </a>
 
       </article>
 
-      <!-- =====================================================
-           05 — APRESENTAÇÃO ESTENDIDA
-      ====================================================== -->
+      <!-- NOTÍCIA 3 — APRESENTAÇÃO ESTENDIDA -->
 
-      <article
-        class="news-card"
-        data-news-category="gta6 rockstar trailers">
+      <article class="card">
 
-        <div class="news-card-image">
+        <a
+          href="./noticias/gta-vi-apresentacao-estendida/index.html"
+          class="card-full-link"
+          aria-label="Ler notícia: GTA VI ganha apresentação estendida">
 
-          <img
-            src="../assets/images/home/extended-look.webp"
-            alt="Apresentação estendida de Grand Theft Auto VI"
-            width="1600"
-            height="900"
-            loading="lazy"
-            decoding="async">
+          <div class="card-image">
 
-        </div>
+            <img
+              src="./assets/images/home/extended-look.webp"
+              alt="Cena da apresentação estendida de Grand Theft Auto VI"
+              loading="lazy"
+              decoding="async">
 
-        <div class="news-card-body">
+          </div>
 
-          <div class="news-card-top">
+          <div class="card-body">
 
-            <span class="badge badge-confirmado">
-              CONFIRMADO
+            <span class="badge">
+              OFICIAL
             </span>
 
             <p class="meta">
@@ -1774,550 +1153,634 @@
 
             </p>
 
+            <h3>
+              GTA VI ganha apresentação estendida de 26 minutos
+            </h3>
+
+            <p class="muted">
+
+              A Rockstar publicou novas imagens do jogo
+              capturadas inteiramente no PlayStation 5.
+
+            </p>
+
+            <span class="card-action">
+              Ler notícia →
+            </span>
+
           </div>
 
-          <h2>
-            GTA VI ganha apresentação estendida
-            com imagens do jogo
-          </h2>
-
-          <p class="news-card-description">
-
-            A Rockstar publicou uma apresentação de quase
-            27 minutos, capturada inteiramente dentro do jogo
-            no PlayStation 5.
-
-          </p>
-
-          <a
-            class="btn btn-secondary news-card-link"
-            href="./gta-vi-apresentacao-estendida/index.html"
-            aria-label="Ler notícia sobre a apresentação estendida de GTA VI">
-
-            Ler notícia
-
-          </a>
-
-        </div>
+        </a>
 
       </article>
 
-      <!-- =====================================================
-           06 — PRÉ-VENDA
-      ====================================================== -->
+    </div>
 
-      <article
-        class="news-card"
-        data-news-category="gta6 rockstar lancamento">
+  </div>
 
-        <div class="news-card-image">
+</section>
+
+
+<!-- ==================================================
+     EXPLORE GTA VI
+================================================== -->
+
+<section class="section section-alt">
+
+  <div class="container">
+
+
+    <div class="section-head">
+
+      <div>
+
+        <span class="eyebrow">
+          Wiki GTA6Zoone
+        </span>
+
+        <h2>
+          Explore GTA VI
+        </h2>
+
+      </div>
+
+    </div>
+
+
+    <div class="grid grid-4">
+
+
+      <a
+        class="card explore-card"
+        href="./personagens/index.html">
+
+        <span class="eyebrow">
+          Wiki
+        </span>
+
+        <h3>
+          ♙ Personagens
+        </h3>
+
+        <p class="muted">
+
+          Jason, Lucia e os outros personagens
+          já apresentados para GTA VI.
+
+        </p>
+
+      </a>
+
+
+      <a
+        class="card explore-card"
+        href="./locais/index.html">
+
+        <span class="eyebrow">
+          Wiki
+        </span>
+
+        <h3>
+          ⌂ Locais
+        </h3>
+
+        <p class="muted">
+
+          Vice City, Leonida Keys e os demais
+          destinos conhecidos do jogo.
+
+        </p>
+
+      </a>
+
+
+      <a
+        class="card explore-card"
+        href="./veiculos/index.html">
+
+        <span class="eyebrow">
+          Wiki
+        </span>
+
+        <h3>
+          ◇ Veículos
+        </h3>
+
+        <p class="muted">
+
+          Carros e outros veículos identificados
+          nos materiais divulgados de GTA VI.
+
+        </p>
+
+      </a>
+
+
+      <a
+        class="card explore-card"
+        href="./armas/index.html">
+
+        <span class="eyebrow">
+          Wiki
+        </span>
+
+        <h3>
+          ✦ Armas
+        </h3>
+
+        <p class="muted">
+
+          Armas e equipamentos que já podem
+          ser identificados nos materiais do jogo.
+
+        </p>
+
+      </a>
+
+
+      <a
+        class="card explore-card"
+        href="./missoes/index.html">
+
+        <span class="eyebrow">
+          Wiki
+        </span>
+
+        <h3>
+          ✓ Missões
+        </h3>
+
+        <p class="muted">
+
+          A área dedicada à campanha e às missões
+          de GTA VI conforme elas forem conhecidas.
+
+        </p>
+
+      </a>
+
+
+      <a
+        class="card explore-card"
+        href="./propriedades/index.html">
+
+        <span class="eyebrow">
+          Wiki
+        </span>
+
+        <h3>
+          ▣ Propriedades
+        </h3>
+
+        <p class="muted">
+
+          Casas, negócios e outras propriedades
+          relacionadas ao mundo de GTA VI.
+
+        </p>
+
+      </a>
+
+
+      <a
+        class="card explore-card"
+        href="./atividades/index.html">
+
+        <span class="eyebrow">
+          Wiki
+        </span>
+
+        <h3>
+          ★ Atividades
+        </h3>
+
+        <p class="muted">
+
+          Atividades e possibilidades de exploração
+          pelo estado de Leonida.
+
+        </p>
+
+      </a>
+
+
+      <a
+        class="card explore-card"
+        href="./colecionaveis/index.html">
+
+        <span class="eyebrow">
+          Wiki
+        </span>
+
+        <h3>
+          ◆ Colecionáveis
+        </h3>
+
+        <p class="muted">
+
+          Área preparada para organizar colecionáveis,
+          localizações e informações relacionadas.
+
+        </p>
+
+      </a>
+
+
+      <a
+        class="card explore-card"
+        href="./guias/segredos/index.html">
+
+        <span class="eyebrow">
+          Descobertas
+        </span>
+
+        <h3>
+          ? Segredos
+        </h3>
+
+        <p class="muted">
+
+          Segredos, referências e descobertas
+          encontradas no mundo de GTA VI.
+
+        </p>
+
+      </a>
+
+
+      <a
+        class="card explore-card"
+        href="./guias/index.html">
+
+        <span class="eyebrow">
+          Guias
+        </span>
+
+        <h3>
+          ✓ Guias
+        </h3>
+
+        <p class="muted">
+
+          Tutoriais e estratégias organizados
+          para ajudar durante sua jornada em GTA VI.
+
+        </p>
+
+      </a>
+
+
+      <!-- ==================================================
+           TROFÉUS & CONQUISTAS
+      ================================================== -->
+
+      <a
+        class="card explore-card"
+        href="./trofeus/index.html">
+
+        <span class="eyebrow">
+          PlayStation e Xbox
+        </span>
+
+        <h3>
+          🏆 Troféus
+        </h3>
+
+        <p class="muted">
+
+          Área preparada para os troféus do PlayStation
+          e as conquistas do Xbox de GTA VI.
+
+        </p>
+
+      </a>
+
+
+      <a
+        class="card explore-card"
+        href="./ferramentas/index.html">
+
+        <span class="eyebrow">
+          Progresso
+        </span>
+
+        <h3>
+          🛠 Ferramentas
+        </h3>
+
+        <p class="muted">
+
+          Checklists e ferramentas para organizar
+          seu progresso, colecionáveis, troféus
+          e conquistas.
+
+        </p>
+
+      </a>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ==================================================
+     JASON & LUCIA
+================================================== -->
+
+<section class="section">
+
+  <div class="container">
+
+
+    <div class="section-head">
+
+      <div>
+
+        <span class="eyebrow">
+          Personagens
+        </span>
+
+        <h2>
+          Jason &amp; Lucia
+        </h2>
+
+      </div>
+
+
+      <a href="./personagens/index.html">
+        Ver todos
+      </a>
+
+    </div>
+
+
+    <div class="grid grid-2">
+
+
+      <!-- JASON DUVAL -->
+
+      <article class="card">
+
+
+        <div class="card-image">
 
           <img
-            src="../assets/images/home/gta6-lancamento.webp"
-            alt="Arte oficial de Grand Theft Auto VI"
-            width="1600"
-            height="900"
+            src="./assets/images/home/jason-duval.webp"
+            alt="Jason Duval em Grand Theft Auto VI"
             loading="lazy"
             decoding="async">
 
         </div>
 
-        <div class="news-card-body">
 
-          <div class="news-card-top">
+        <div class="card-body">
 
-            <span class="badge badge-confirmado">
-              CONFIRMADO
-            </span>
+          <span class="badge badge-confirmado">
+            CONFIRMADO
+          </span>
 
-            <p class="meta">
+          <h3>
+            Jason Duval
+          </h3>
 
-              Rockstar Games ·
+          <p class="muted">
 
-              <time datetime="2026-06-24">
-                24/06/2026
-              </time>
-
-            </p>
-
-          </div>
-
-          <h2>
-            Pré-venda de GTA VI confirma
-            Ultimate Edition e bônus
-          </h2>
-
-          <p class="news-card-description">
-
-            A Rockstar apresentou a Ultimate Edition,
-            o Vintage Vice City Pack e o pré-carregamento
-            programado para começar em 12 de novembro.
+            Depois de uma adolescência complicada
+            e de uma passagem pelo Exército,
+            Jason acabou nas Leonida Keys trabalhando
+            para traficantes locais.
 
           </p>
 
           <a
-            class="btn btn-secondary news-card-link"
-            href="./gta-vi-pre-venda-ultimate-edition/index.html"
-            aria-label="Ler notícia sobre a pré-venda e a Ultimate Edition de GTA VI">
+            class="btn btn-secondary"
+            href="./personagens/jason-duval/index.html">
 
-            Ler notícia
+            Conhecer Jason
 
           </a>
 
         </div>
 
+
       </article>
 
-      <!-- =====================================================
-           07 — NOVA DATA
-      ====================================================== -->
 
-      <article
-        class="news-card"
-        data-news-category="gta6 rockstar lancamento">
+      <!-- LUCIA CAMINOS -->
 
-        <div class="news-card-image">
+      <article class="card">
+
+
+        <div class="card-image">
 
           <img
-            src="../assets/images/home/gta6-lancamento.webp"
-            alt="Grand Theft Auto VI"
-            width="1600"
-            height="900"
+            src="./assets/images/home/lucia-caminos.webp"
+            alt="Lucia Caminos em Grand Theft Auto VI"
             loading="lazy"
             decoding="async">
 
         </div>
 
-        <div class="news-card-body">
 
-          <div class="news-card-top">
+        <div class="card-body">
 
-            <span class="badge badge-confirmado">
-              CONFIRMADO
-            </span>
+          <span class="badge badge-confirmado">
+            CONFIRMADO
+          </span>
 
-            <p class="meta">
+          <h3>
+            Lucia Caminos
+          </h3>
 
-              Rockstar Games ·
+          <p class="muted">
 
-              <time datetime="2025-11-06">
-                06/11/2025
-              </time>
-
-            </p>
-
-          </div>
-
-          <h2>
-            GTA VI será lançado em 19 de novembro de 2026
-          </h2>
-
-          <p class="news-card-description">
-
-            A Rockstar anunciou uma nova data para GTA VI
-            e afirmou que o tempo adicional seria usado
-            para alcançar o nível de acabamento esperado.
+            Depois de deixar a Leonida Penitentiary,
+            Lucia está determinada a mudar sua sorte
+            e construir a vida que deseja ao lado de Jason.
 
           </p>
 
           <a
-            class="btn btn-secondary news-card-link"
-            href="./gta-vi-lancamento-19-novembro-2026/index.html"
-            aria-label="Ler notícia sobre a data de lançamento de GTA VI">
+            class="btn btn-secondary"
+            href="./personagens/lucia-caminos/index.html">
 
-            Ler notícia
+            Conhecer Lucia
 
           </a>
 
         </div>
 
-      </article>
-
-      <!-- =====================================================
-           08 — TRAILER 2
-      ====================================================== -->
-
-      <article
-        class="news-card"
-        data-news-category="gta6 rockstar trailers">
-
-        <div class="news-card-image">
-
-          <img
-            src="../assets/images/home/Jason_and_Lucia_03.webp"
-            alt="Jason Duval e Lucia Caminos em Grand Theft Auto VI"
-            width="1600"
-            height="900"
-            loading="lazy"
-            decoding="async">
-
-        </div>
-
-        <div class="news-card-body">
-
-          <div class="news-card-top">
-
-            <span class="badge badge-confirmado">
-              CONFIRMADO
-            </span>
-
-            <p class="meta">
-
-              Rockstar Games ·
-
-              <time datetime="2025-05-06">
-                06/05/2025
-              </time>
-
-            </p>
-
-          </div>
-
-          <h2>
-            Trailer 2 de GTA VI apresenta
-            Jason, Lucia e Leonida
-          </h2>
-
-          <p class="news-card-description">
-
-            O segundo trailer aprofundou a história dos
-            protagonistas e foi acompanhado por novas imagens,
-            personagens e regiões oficiais do jogo.
-
-          </p>
-
-          <a
-            class="btn btn-secondary news-card-link"
-            href="./gta-vi-trailer-2/index.html"
-            aria-label="Ler notícia sobre o Trailer 2 de GTA VI">
-
-            Ler notícia
-
-          </a>
-
-        </div>
 
       </article>
 
-      <!-- =====================================================
-           09 — PRIMEIRO ADIAMENTO
-      ====================================================== -->
 
-      <article
-        class="news-card"
-        data-news-category="gta6 rockstar lancamento historico">
+    </div>
 
-        <div class="news-card-image">
+  </div>
 
-          <img
-            src="../assets/images/home/Jason_and_Lucia_10.webp"
-            alt="Jason e Lucia em Grand Theft Auto VI"
-            width="1600"
-            height="900"
-            loading="lazy"
-            decoding="async">
+</section>
 
-        </div>
 
-        <div class="news-card-body">
+<!-- ==================================================
+     YOUTUBE — JOGADAS DA SEMANA
+================================================== -->
 
-          <div class="news-card-top">
+<section class="section section-alt">
 
-            <span class="badge">
-              HISTÓRICO
-            </span>
+  <div class="container">
 
-            <p class="meta">
 
-              Rockstar Games ·
+    <div class="section-head">
 
-              <time datetime="2025-05-02">
-                02/05/2025
-              </time>
+      <div>
 
-            </p>
+        <span class="eyebrow">
+          YouTube · GTA6Zoone
+        </span>
 
-          </div>
+        <h2>
+          Jogadas da Semana
+        </h2>
 
-          <h2>
-            GTA VI é adiado e recebe data para maio de 2026
-          </h2>
+      </div>
 
-          <p class="news-card-description">
 
-            Em maio de 2025, a Rockstar transferiu o
-            lançamento para 26 de maio de 2026.
-            Essa previsão foi posteriormente substituída
-            por 19 de novembro de 2026.
+      <a href="./youtube/index.html">
+        Ver vídeos
+      </a>
 
-          </p>
+    </div>
 
-          <a
-            class="btn btn-secondary news-card-link"
-            href="./gta-vi-adiado-maio-2026/index.html"
-            aria-label="Relembrar o anúncio do adiamento de GTA VI para maio de 2026">
 
-            Relembrar anúncio
+    <p class="muted">
 
-          </a>
+      O canal do GTA6Zoone reúne vídeos, novidades,
+      análises e, depois do lançamento, também será
+      espaço para os melhores momentos da comunidade.
 
-        </div>
+    </p>
 
-      </article>
 
-      <!-- =====================================================
-           10 — OUTONO DE 2025
-      ====================================================== -->
+    <!--
+      Quando houver um vídeo da semana,
+      este bloco poderá ser substituído pelo iframe.
+    -->
 
-      <article
-        class="news-card"
-        data-news-category="gta6 lancamento historico">
 
-        <div class="news-card-image">
+    <div class="video-shell">
 
-          <img
-            src="../assets/images/home/Vice_City_10.webp"
-            alt="Vice City em Grand Theft Auto VI"
-            width="1600"
-            height="900"
-            loading="lazy"
-            decoding="async">
-
-        </div>
-
-        <div class="news-card-body">
-
-          <div class="news-card-top">
-
-            <span class="badge">
-              HISTÓRICO
-            </span>
-
-            <p class="meta">
-
-              Take-Two ·
-
-              <time datetime="2024-05-16">
-                16/05/2024
-              </time>
-
-            </p>
-
-          </div>
-
-          <h2>
-            Take-Two estreita lançamento de GTA VI
-            para o outono de 2025
-          </h2>
-
-          <p class="news-card-description">
-
-            A antiga previsão de 2025 foi reduzida
-            para o outono daquele ano. Essa janela
-            foi substituída pelos adiamentos
-            anunciados posteriormente.
-
-          </p>
-
-          <a
-            class="btn btn-secondary news-card-link"
-            href="./gta-vi-lancamento-outono-2025/index.html"
-            aria-label="Relembrar a antiga previsão de lançamento de GTA VI para o outono de 2025">
-
-            Relembrar anúncio
-
-          </a>
-
-        </div>
-
-      </article>
-
-      <!-- =====================================================
-           11 — TRAILER 1
-      ====================================================== -->
-
-      <article
-        class="news-card"
-        data-news-category="gta6 rockstar trailers historico">
-
-        <div class="news-card-image">
-
-          <img
-            src="../assets/images/home/Jason_and_Lucia_Robbery_With_Logo_landscape.webp"
-            alt="Jason e Lucia no primeiro trailer de Grand Theft Auto VI"
-            width="1600"
-            height="900"
-            loading="lazy"
-            decoding="async">
-
-        </div>
-
-        <div class="news-card-body">
-
-          <div class="news-card-top">
-
-            <span class="badge badge-confirmado">
-              ANÚNCIO OFICIAL
-            </span>
-
-            <p class="meta">
-
-              Rockstar Games ·
-
-              <time datetime="2023-12-04">
-                04/12/2023
-              </time>
-
-            </p>
-
-          </div>
-
-          <h2>
-            Trailer 1 revela oficialmente GTA VI,
-            Lucia e Vice City
-          </h2>
-
-          <p class="news-card-description">
-
-            O primeiro trailer confirmou o nome
-            Grand Theft Auto VI, apresentou Lucia,
-            mostrou a nova Vice City e anunciou versões
-            para PlayStation 5 e Xbox Series X|S.
-
-          </p>
-
-          <a
-            class="btn btn-secondary news-card-link"
-            href="./gta-vi-trailer-1/index.html"
-            aria-label="Relembrar o primeiro trailer oficial de GTA VI">
-
-            Relembrar anúncio
-
-          </a>
-
-        </div>
-
-      </article>
-
-      <div
-        class="news-empty"
-        id="news-empty"
-        role="status">
+      <div>
 
         <strong>
-          Nenhuma notícia encontrada
+          Jogadas da Semana
         </strong>
 
         <p>
+          Em breve, os melhores momentos da comunidade GTA6Zoone.
+        </p>
 
-          Ainda não existem publicações disponíveis
-          nessa categoria.
+        <a
+          class="btn btn-secondary"
+          href="https://www.youtube.com/channel/UCR-PxT2Lt8Pte8I_f_zdtDg"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          Acessar canal GTA6Zoone
+
+        </a>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- ==================================================
+     MAPA — VICE CITY E LEONIDA
+================================================== -->
+
+<section class="section">
+
+  <div class="container">
+
+
+    <div class="card">
+
+
+      <div class="card-image">
+
+        <img
+          src="./assets/images/home/Vice_City_10.webp"
+          alt="Vice City em Grand Theft Auto VI"
+          loading="lazy"
+          decoding="async">
+
+      </div>
+
+
+      <div class="card-body">
+
+        <span class="eyebrow">
+          Mapa
+        </span>
+
+        <h2>
+          Explore Vice City e Leonida
+        </h2>
+
+        <p class="muted">
+
+          Navegue pelos destinos já conhecidos de GTA VI.
+          O mapa interativo do GTA6Zoone será ampliado
+          conforme novas localizações puderem ser verificadas.
+
+        </p>
+
+        <p>
+
+          <a
+            class="btn"
+            href="./mapa/index.html">
+
+            Abrir mapa interativo
+
+          </a>
 
         </p>
 
       </div>
 
-    </div>
-
-  </div>
-
-</section>
-
-<!-- =========================================================
-     POLÍTICA EDITORIAL
-========================================================== -->
-
-<section class="section news-policy-section">
-
-  <div class="container news-container">
-
-    <div class="news-policy">
-
-      <span class="eyebrow">
-        CRITÉRIOS EDITORIAIS
-      </span>
-
-      <h2>
-        Notícias verificadas e contextualizadas
-      </h2>
-
-      <p>
-
-        O GTA6Zoone prioriza anúncios publicados pela
-        Rockstar Games, documentos da Take-Two Interactive
-        e materiais oficiais relacionados a
-        Grand Theft Auto VI.
-
-      </p>
-
-      <p>
-
-        Notícias antigas permanecem disponíveis para
-        registrar a cronologia do desenvolvimento.
-        Quando uma data ou informação é alterada,
-        o artigo histórico recebe contexto e direciona
-        o leitor para a informação mais recente.
-
-      </p>
-
-      <p>
-
-        Rumores, teorias, vazamentos e análises não são
-        apresentados como fatos. Quando esse tipo de
-        conteúdo for publicado, sua classificação aparecerá
-        de forma clara no título, no texto e na
-        identificação visual.
-
-      </p>
-
-      <div class="news-status-row">
-
-        <span class="badge badge-confirmado">
-          CONFIRMADO
-        </span>
-
-        <span class="badge">
-          HISTÓRICO
-        </span>
-
-        <span class="badge">
-          RUMOR
-        </span>
-
-        <span class="badge">
-          TEORIA
-        </span>
-
-      </div>
-
-      <p>
-
-        <a href="../sobre/index.html">
-
-          Conheça o GTA6Zoone, o responsável pelo projeto
-          e nossos critérios editoriais
-
-        </a>
-
-      </p>
 
     </div>
 
   </div>
 
 </section>
+
 
 </main>
 
-<!-- =========================================================
+
+<!-- ==================================================
      FOOTER
-========================================================== -->
+================================================== -->
 
 <footer class="site-footer">
 
   <div class="container">
 
+
     <div class="footer-grid">
+
+
+      <!-- GTA6ZOONE -->
 
       <div>
 
@@ -2327,12 +1790,15 @@
 
         <p class="muted">
 
-          Portal e enciclopédia independente
-          em português sobre Grand Theft Auto VI.
+          Portal e enciclopédia independente em português
+          sobre Grand Theft Auto VI.
 
         </p>
 
       </div>
+
+
+      <!-- EXPLORAR -->
 
       <div>
 
@@ -2342,33 +1808,32 @@
 
         <div class="footer-links">
 
-          <a href="../gta-6/index.html">
+          <a href="./gta-6/index.html">
             GTA 6
           </a>
 
-          <a href="../mapa/index.html">
+          <a href="./mapa/index.html">
             Mapa
           </a>
 
-          <a href="../wiki/index.html">
+          <a href="./wiki/index.html">
             Wiki
           </a>
 
-          <a href="../guias/index.html">
+          <a href="./guias/index.html">
             Guias
           </a>
 
-          <a
-            href="../noticias/index.html"
-            aria-current="page">
-
+          <a href="./noticias/index.html">
             Notícias
-
           </a>
 
         </div>
 
       </div>
+
+
+      <!-- COMUNIDADE -->
 
       <div>
 
@@ -2387,6 +1852,7 @@
 
           </a>
 
+
           <a
             href="https://www.instagram.com/gta6zoone/"
             target="_blank"
@@ -2400,6 +1866,9 @@
 
       </div>
 
+
+      <!-- INSTITUCIONAL -->
+
       <div>
 
         <h3>
@@ -2408,27 +1877,27 @@
 
         <div class="footer-links">
 
-          <a href="../sobre/index.html">
+          <a href="./sobre/index.html">
             Sobre
           </a>
 
-          <a href="../contato/index.html">
+          <a href="./contato/index.html">
             Contato
           </a>
 
-          <a href="../politica-de-privacidade/index.html">
+          <a href="./politica-de-privacidade/index.html">
             Privacidade
           </a>
 
-          <a href="../politica-de-cookies/index.html">
+          <a href="./politica-de-cookies/index.html">
             Cookies
           </a>
 
-          <a href="../termos-de-uso/index.html">
+          <a href="./termos-de-uso/index.html">
             Termos
           </a>
 
-          <a href="../aviso-legal/index.html">
+          <a href="./aviso-legal/index.html">
             Aviso legal
           </a>
 
@@ -2436,7 +1905,9 @@
 
       </div>
 
+
     </div>
+
 
     <p class="legal">
 
@@ -2446,129 +1917,11 @@
 
     </p>
 
+
   </div>
 
 </footer>
 
-<!-- =========================================================
-     FILTROS DAS NOTÍCIAS
-========================================================== -->
-
-<script>
-
-  (() => {
-
-    "use strict";
-
-    const filters =
-      document.querySelectorAll("[data-news-filter]");
-
-    const cards =
-      document.querySelectorAll("[data-news-category]");
-
-    const status =
-      document.getElementById("news-results-status");
-
-    const empty =
-      document.getElementById("news-empty");
-
-    const categoryNames = {
-
-      all: "todas as categorias",
-      gta6: "GTA 6",
-      rockstar: "Rockstar",
-      trailers: "Trailers",
-      lancamento: "Lançamento",
-      musica: "Música",
-      historico: "Histórico"
-
-    };
-
-    function updateResults(selected) {
-
-      let visibleCount = 0;
-
-      cards.forEach(card => {
-
-        const categories =
-          card.dataset.newsCategory.split(" ");
-
-        const show =
-          selected === "all" ||
-          categories.includes(selected);
-
-        card.hidden = !show;
-
-        if (show) {
-          visibleCount += 1;
-        }
-
-      });
-
-      empty.classList.toggle(
-        "is-visible",
-        visibleCount === 0
-      );
-
-      if (selected === "all") {
-
-        status.textContent =
-          "Exibindo " +
-          visibleCount +
-          (visibleCount === 1
-            ? " notícia."
-            : " notícias.");
-
-        return;
-
-      }
-
-      status.textContent =
-        "Exibindo " +
-        visibleCount +
-        (visibleCount === 1
-          ? " notícia em "
-          : " notícias em ") +
-        categoryNames[selected] +
-        ".";
-
-    }
-
-    filters.forEach(button => {
-
-      button.addEventListener("click", () => {
-
-        const selected =
-          button.dataset.newsFilter;
-
-        filters.forEach(item => {
-
-          const isActive =
-            item === button;
-
-          item.classList.toggle(
-            "active",
-            isActive
-          );
-
-          item.setAttribute(
-            "aria-pressed",
-            String(isActive)
-          );
-
-        });
-
-        updateResults(selected);
-
-      });
-
-    });
-
-    updateResults("all");
-
-  })();
-
-</script>
 
 </body>
 </html>
